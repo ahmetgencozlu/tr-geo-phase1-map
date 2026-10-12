@@ -1,522 +1,648 @@
 {
- "generated_at": "2026-10-12 21:27:49.688949+00",
- "total": 11935,
+ "generated_at": "2026-10-12 21:48:11.981342+00",
+ "total": 39602,
  "raw_osm_objects": 12955,
  "by_category": {
-  "technopark": {
-   "total": 63,
-   "with_polygon": 54,
-   "verified_address": 18
-  },
-  "mass_housing": {
-   "total": 313,
-   "with_polygon": 299,
-   "verified_address": 34
-  },
   "residential_site": {
-   "total": 10416,
+   "total": 33159,
    "with_polygon": 9922,
    "verified_address": 2862
   },
+  "technopark": {
+   "total": 228,
+   "with_polygon": 54,
+   "verified_address": 18
+  },
   "plaza": {
-   "total": 1143,
+   "total": 5522,
    "with_polygon": 1041,
    "verified_address": 564
+  },
+  "mass_housing": {
+   "total": 693,
+   "with_polygon": 299,
+   "verified_address": 34
   }
  },
  "by_role": {
-  "mapped_complex_boundary": 5380,
   "building_footprint": 2060,
+  "mapped_complex_boundary": 5380,
   "candidate_area_polygon": 3876,
-  "point_only": 619
+  "point_only": 28286
  },
- "review": 314,
+ "review": 26701,
  "by_province": [
   {
    "province": "İstanbul",
-   "total": 3279,
+   "total": 7691,
    "with_polygon": 3113
   },
   {
    "province": "Ankara",
-   "total": 1858,
+   "total": 3629,
    "with_polygon": 1812
   },
   {
-   "province": "Balıkesir",
-   "total": 852,
-   "with_polygon": 833
-  },
-  {
-   "province": "Diyarbakır",
-   "total": 456,
-   "with_polygon": 454
-  },
-  {
-   "province": "Batman",
-   "total": 436,
-   "with_polygon": 435
-  },
-  {
-   "province": "Kocaeli",
-   "total": 402,
-   "with_polygon": 379
-  },
-  {
-   "province": "Antalya",
-   "total": 396,
-   "with_polygon": 361
-  },
-  {
-   "province": "Tekirdağ",
-   "total": 379,
-   "with_polygon": 326
-  },
-  {
    "province": "İzmir",
-   "total": 365,
+   "total": 2330,
    "with_polygon": 336
   },
   {
+   "province": "Antalya",
+   "total": 2143,
+   "with_polygon": 361
+  },
+  {
    "province": "Bursa",
-   "total": 269,
+   "total": 1974,
    "with_polygon": 243
   },
   {
-   "province": "Isparta",
-   "total": 250,
-   "with_polygon": 248
-  },
-  {
-   "province": "Konya",
-   "total": 199,
-   "with_polygon": 195
-  },
-  {
-   "province": "Amasya",
-   "total": 165,
-   "with_polygon": 162
-  },
-  {
-   "province": "Muğla",
-   "total": 150,
-   "with_polygon": 115
-  },
-  {
-   "province": "Denizli",
-   "total": 148,
-   "with_polygon": 144
-  },
-  {
-   "province": "Sivas",
-   "total": 143,
-   "with_polygon": 141
-  },
-  {
-   "province": "Aydın",
-   "total": 137,
-   "with_polygon": 123
+   "province": "Balıkesir",
+   "total": 1610,
+   "with_polygon": 833
   },
   {
    "province": "Mersin",
-   "total": 133,
+   "total": 1309,
    "with_polygon": 113
   },
   {
-   "province": "Düzce",
-   "total": 125,
-   "with_polygon": 120
+   "province": "Aydın",
+   "total": 1178,
+   "with_polygon": 123
   },
   {
-   "province": "Sakarya",
-   "total": 122,
+   "province": "Kocaeli",
+   "total": 1158,
+   "with_polygon": 379
+  },
+  {
+   "province": "Konya",
+   "total": 1119,
+   "with_polygon": 195
+  },
+  {
+   "province": "Muğla",
+   "total": 1102,
    "with_polygon": 115
   },
   {
-   "province": "Kahramanmaraş",
-   "total": 119,
-   "with_polygon": 113
-  },
-  {
-   "province": "Edirne",
-   "total": 118,
-   "with_polygon": 115
-  },
-  {
-   "province": "Uşak",
-   "total": 108,
-   "with_polygon": 107
-  },
-  {
-   "province": "Trabzon",
-   "total": 98,
-   "with_polygon": 94
-  },
-  {
-   "province": "Eskişehir",
-   "total": 94,
-   "with_polygon": 92
+   "province": "Tekirdağ",
+   "total": 1003,
+   "with_polygon": 326
   },
   {
    "province": "Adana",
-   "total": 84,
+   "total": 662,
    "with_polygon": 73
   },
   {
-   "province": "Çanakkale",
-   "total": 84,
-   "with_polygon": 73
+   "province": "Diyarbakır",
+   "total": 641,
+   "with_polygon": 454
+  },
+  {
+   "province": "Sakarya",
+   "total": 627,
+   "with_polygon": 115
   },
   {
    "province": "Samsun",
-   "total": 66,
+   "total": 547,
    "with_polygon": 64
   },
   {
-   "province": "Mardin",
-   "total": 63,
-   "with_polygon": 63
-  },
-  {
-   "province": "Kırklareli",
-   "total": 62,
-   "with_polygon": 58
-  },
-  {
-   "province": "Adıyaman",
-   "total": 52,
-   "with_polygon": 51
-  },
-  {
-   "province": "Manisa",
-   "total": 51,
-   "with_polygon": 50
-  },
-  {
-   "province": "Osmaniye",
-   "total": 43,
-   "with_polygon": 42
+   "province": "Denizli",
+   "total": 521,
+   "with_polygon": 144
   },
   {
    "province": "Gaziantep",
-   "total": 40,
+   "total": 496,
    "with_polygon": 36
   },
   {
-   "province": "Erzurum",
-   "total": 39,
-   "with_polygon": 37
+   "province": "Edirne",
+   "total": 488,
+   "with_polygon": 115
+  },
+  {
+   "province": "Trabzon",
+   "total": 483,
+   "with_polygon": 94
+  },
+  {
+   "province": "Batman",
+   "total": 467,
+   "with_polygon": 435
+  },
+  {
+   "province": "Çanakkale",
+   "total": 441,
+   "with_polygon": 73
+  },
+  {
+   "province": "Isparta",
+   "total": 416,
+   "with_polygon": 248
+  },
+  {
+   "province": "Kahramanmaraş",
+   "total": 397,
+   "with_polygon": 113
+  },
+  {
+   "province": "Eskişehir",
+   "total": 375,
+   "with_polygon": 92
+  },
+  {
+   "province": "Manisa",
+   "total": 368,
+   "with_polygon": 50
   },
   {
    "province": "Hatay",
-   "total": 38,
+   "total": 336,
    "with_polygon": 35
   },
   {
    "province": "Kayseri",
-   "total": 38,
+   "total": 331,
    "with_polygon": 31
   },
   {
-   "province": "Kütahya",
-   "total": 36,
-   "with_polygon": 33
-  },
-  {
-   "province": "Zonguldak",
-   "total": 29,
-   "with_polygon": 25
-  },
-  {
-   "province": "Kastamonu",
-   "total": 29,
-   "with_polygon": 25
-  },
-  {
-   "province": "Yalova",
-   "total": 27,
-   "with_polygon": 26
-  },
-  {
-   "province": "Bolu",
-   "total": 26,
-   "with_polygon": 23
-  },
-  {
-   "province": "Muş",
-   "total": 23,
-   "with_polygon": 6
-  },
-  {
-   "province": "Tokat",
-   "total": 22,
-   "with_polygon": 18
-  },
-  {
-   "province": "Malatya",
-   "total": 19,
-   "with_polygon": 15
-  },
-  {
-   "province": "Karabük",
-   "total": 18,
-   "with_polygon": 15
-  },
-  {
    "province": "Ordu",
-   "total": 17,
+   "total": 304,
    "with_polygon": 17
   },
   {
-   "province": "Rize",
-   "total": 16,
+   "province": "Amasya",
+   "total": 258,
+   "with_polygon": 162
+  },
+  {
+   "province": "Düzce",
+   "total": 242,
+   "with_polygon": 120
+  },
+  {
+   "province": "Kırklareli",
+   "total": 240,
+   "with_polygon": 58
+  },
+  {
+   "province": "Zonguldak",
+   "total": 224,
+   "with_polygon": 25
+  },
+  {
+   "province": "Malatya",
+   "total": 223,
    "with_polygon": 15
   },
   {
-   "province": "Çankırı",
-   "total": 16,
-   "with_polygon": 16
+   "province": "Sivas",
+   "total": 219,
+   "with_polygon": 141
   },
   {
-   "province": "Şanlıurfa",
-   "total": 15,
-   "with_polygon": 13
+   "province": "Uşak",
+   "total": 205,
+   "with_polygon": 107
   },
   {
-   "province": "Aksaray",
-   "total": 15,
-   "with_polygon": 15
-  },
-  {
-   "province": "Van",
-   "total": 13,
-   "with_polygon": 13
-  },
-  {
-   "province": "Nevşehir",
-   "total": 12,
-   "with_polygon": 10
-  },
-  {
-   "province": "Yozgat",
-   "total": 12,
-   "with_polygon": 11
-  },
-  {
-   "province": "Giresun",
-   "total": 12,
-   "with_polygon": 10
-  },
-  {
-   "province": "Çorum",
-   "total": 12,
-   "with_polygon": 12
-  },
-  {
-   "province": "Hakkâri",
-   "total": 10,
-   "with_polygon": 8
-  },
-  {
-   "province": "Erzincan",
-   "total": 8,
-   "with_polygon": 7
+   "province": "Kastamonu",
+   "total": 192,
+   "with_polygon": 25
   },
   {
    "province": "Afyonkarahisar",
-   "total": 8,
+   "total": 191,
    "with_polygon": 8
   },
   {
-   "province": "Şırnak",
-   "total": 7,
-   "with_polygon": 7
+   "province": "Karabük",
+   "total": 187,
+   "with_polygon": 15
   },
   {
-   "province": "Kırşehir",
-   "total": 7,
-   "with_polygon": 7
+   "province": "Kütahya",
+   "total": 185,
+   "with_polygon": 33
   },
   {
-   "province": "Bilecik",
-   "total": 7,
-   "with_polygon": 7
+   "province": "Giresun",
+   "total": 183,
+   "with_polygon": 10
   },
   {
-   "province": "Artvin",
-   "total": 6,
-   "with_polygon": 6
+   "province": "Tokat",
+   "total": 168,
+   "with_polygon": 18
   },
   {
-   "province": "Bartın",
-   "total": 6,
-   "with_polygon": 6
+   "province": "Yalova",
+   "total": 168,
+   "with_polygon": 26
+  },
+  {
+   "province": "Osmaniye",
+   "total": 160,
+   "with_polygon": 42
+  },
+  {
+   "province": "Şanlıurfa",
+   "total": 149,
+   "with_polygon": 13
+  },
+  {
+   "province": "Erzurum",
+   "total": 148,
+   "with_polygon": 37
+  },
+  {
+   "province": "Bolu",
+   "total": 145,
+   "with_polygon": 23
+  },
+  {
+   "province": "Rize",
+   "total": 137,
+   "with_polygon": 15
   },
   {
    "province": "Niğde",
-   "total": 6,
+   "total": 126,
    "with_polygon": 6
   },
   {
+   "province": "Mardin",
+   "total": 124,
+   "with_polygon": 63
+  },
+  {
    "province": "Elâzığ",
-   "total": 5,
+   "total": 111,
    "with_polygon": 4
   },
   {
-   "province": "Bitlis",
-   "total": 5,
-   "with_polygon": 5
+   "province": "Van",
+   "total": 110,
+   "with_polygon": 13
   },
   {
-   "province": "Kırıkkale",
-   "total": 4,
-   "with_polygon": 2
+   "province": "Adıyaman",
+   "total": 105,
+   "with_polygon": 51
+  },
+  {
+   "province": "Çorum",
+   "total": 98,
+   "with_polygon": 12
+  },
+  {
+   "province": "Aksaray",
+   "total": 96,
+   "with_polygon": 15
+  },
+  {
+   "province": "Nevşehir",
+   "total": 94,
+   "with_polygon": 10
+  },
+  {
+   "province": "Bartın",
+   "total": 94,
+   "with_polygon": 6
+  },
+  {
+   "province": "Yozgat",
+   "total": 86,
+   "with_polygon": 11
+  },
+  {
+   "province": "Bilecik",
+   "total": 78,
+   "with_polygon": 7
   },
   {
    "province": "Burdur",
-   "total": 4,
+   "total": 75,
    "with_polygon": 4
   },
   {
-   "province": "Bingöl",
-   "total": 3,
-   "with_polygon": 3
+   "province": "Çankırı",
+   "total": 66,
+   "with_polygon": 16
+  },
+  {
+   "province": "Karaman",
+   "total": 63,
+   "with_polygon": 2
+  },
+  {
+   "province": "Kırşehir",
+   "total": 54,
+   "with_polygon": 7
+  },
+  {
+   "province": "Kırıkkale",
+   "total": 49,
+   "with_polygon": 2
+  },
+  {
+   "province": "Artvin",
+   "total": 47,
+   "with_polygon": 6
+  },
+  {
+   "province": "Sinop",
+   "total": 45,
+   "with_polygon": 1
+  },
+  {
+   "province": "Muş",
+   "total": 43,
+   "with_polygon": 6
+  },
+  {
+   "province": "Erzincan",
+   "total": 42,
+   "with_polygon": 7
+  },
+  {
+   "province": "Bitlis",
+   "total": 32,
+   "with_polygon": 5
   },
   {
    "province": "Gümüşhane",
-   "total": 3,
-   "with_polygon": 3
-  },
-  {
-   "province": "Siirt",
-   "total": 3,
+   "total": 26,
    "with_polygon": 3
   },
   {
    "province": "Kars",
-   "total": 3,
+   "total": 26,
    "with_polygon": 2
   },
   {
-   "province": "Karaman",
-   "total": 2,
-   "with_polygon": 2
+   "province": "Bingöl",
+   "total": 23,
+   "with_polygon": 3
   },
   {
-   "province": "Sinop",
-   "total": 2,
+   "province": "Kilis",
+   "total": 20,
    "with_polygon": 1
   },
   {
    "province": "Ağrı",
-   "total": 2,
+   "total": 20,
    "with_polygon": 2
   },
   {
-   "province": "Kilis",
-   "total": 1,
-   "with_polygon": 1
+   "province": "Şırnak",
+   "total": 16,
+   "with_polygon": 7
+  },
+  {
+   "province": "Siirt",
+   "total": 16,
+   "with_polygon": 3
+  },
+  {
+   "province": "Hakkâri",
+   "total": 16,
+   "with_polygon": 8
   },
   {
    "province": "Bayburt",
-   "total": 1,
+   "total": 10,
    "with_polygon": 1
-  },
-  {
-   "province": "Ardahan",
-   "total": 1,
-   "with_polygon": 0
   },
   {
    "province": "Iğdır",
-   "total": 1,
+   "total": 9,
    "with_polygon": 1
+  },
+  {
+   "province": "Tunceli",
+   "total": 6,
+   "with_polygon": 0
+  },
+  {
+   "province": "Ardahan",
+   "total": 6,
+   "with_polygon": 0
   }
  ],
  "admin_tree": {
   "Adana": {
    "Ceyhan": [
+    "Altıocak Mahallesi",
     "Belediye Evleri Mahallesi",
-    "Hürriyet Mahallesi"
+    "Cumhuriyet Mahallesi",
+    "Hürriyet Mahallesi",
+    "Ulus Mahallesi",
+    "İstiklal Mahallesi",
+    "Şahin Özbilen Mahallesi"
    ],
+   "Karaisalı": null,
+   "Karataş": null,
+   "Kozan": null,
    "Pozantı": null,
    "Sarıçam": [
     "Balcalı Mahallesi",
+    "Elif Su Uludağ Mahallesi",
     "Gültepe Mahallesi",
-    "Yeni Mahalle"
+    "Kemalpaşa Mahallesi",
+    "Mehmet Akif Ersoy Mahallesi",
+    "Yavuz Sultan Selim Mahallesi",
+    "Yeni Mahalle",
+    "Yeşiltepe Mahallesi",
+    "Çarkıpare Mahallesi"
    ],
    "Seyhan": [
+    "2000 Evler Mahallesi",
+    "Akkapı Mahallesi",
+    "Aydınlar Mahallesi",
+    "Bahçeşehir Mahallesi",
+    "Barış Mahallesi",
+    "Cemalpaşa Mahallesi",
+    "Döşeme Mahallesi",
+    "Fatih Mahallesi",
+    "Fevzipaşa Mahallesi",
+    "Gazipaşa Mahallesi",
     "Gürselpaşa Mahallesi",
+    "Hurmalı Mahallesi",
     "Karakuyu Mahallesi",
+    "Karasoku Mahallesi",
+    "Kavaklı Mahallesi",
+    "Kayalıbağ Mahallesi",
     "Kocavezir Mahallesi",
+    "Koza Mahallesi",
+    "Kurtuluş Mahallesi",
     "Kuruköprü Mahallesi",
+    "Mithatpaşa Mahallesi",
+    "Onur Mahallesi",
     "Pınar Mahallesi",
+    "Reşatbey Mahallesi",
+    "Sakarya Mahallesi",
+    "Sarıhamzalı Mahallesi",
+    "Sarıyakup Mahallesi",
+    "Sümer Mahallesi",
+    "Tellidere Mahallesi",
     "Tepebağ Mahallesi",
-    "Çınarlı Mahallesi"
+    "Türkocağı Mahallesi",
+    "Ulucamii Mahallesi",
+    "Yeni Mahalle",
+    "Yenibaraj Mahallesi",
+    "Yeşiloba Mahallesi",
+    "Yeşilyurt Mahallesi",
+    "Zeytinli Mahallesi",
+    "Çınarlı Mahallesi",
+    "İsmetpaşa Mahallesi",
+    "İstiklal Mahallesi"
    ],
    "Yumurtalık": [
+    "Devrişiye Mahallesi",
     "Kemalpaşa Mahallesi",
     "Yumurtalık Mahallesi"
    ],
    "Yüreğir": [
+    "19 Mayıs Mahallesi",
+    "Akdeniz Mahallesi",
     "Atakent Mahallesi",
+    "Cumhuriyet Mahallesi",
+    "Dede Korkut Mahallesi",
+    "Güzelevler Mahallesi",
+    "Haydaroğlu Mahallesi",
+    "Karacaoğlan Mahallesi",
+    "Kazım Karabekir Mahallesi",
+    "Kiremithane Mahallesi",
     "Kışla Mahallesi",
+    "Levent Mahallesi",
+    "P.T.T Mahallesi",
+    "Sinanpaşa Mahallesi",
+    "Ulubatlı Hasan Mahallesi",
     "Yavuzlar Mahallesi",
-    "Yenidoğan Mahallesi"
+    "Yenidoğan Mahallesi",
+    "Özgür Mahallesi"
    ],
    "Çukurova": [
     "Belediye Evleri Mahallesi",
+    "Beyazevler Mahallesi",
     "Güzelyalı Mahallesi",
     "Huzurevleri Mahallesi",
     "Karslılar Mahallesi",
+    "Kurttepe Mahallesi",
     "Mahfesığmaz Mahallesi",
     "Toros Mahallesi",
     "Yurt Mahallesi",
     "Yüzüncüyıl Mahallesi",
     "Şambayadı Mahallesi"
-   ]
+   ],
+   "İmamoğlu": null
   },
   "Adıyaman": {
    "Adıyaman Merkez": [
+    "Bahçecik Mahallesi",
+    "Bahçelievler Mahallesi",
+    "Barbaros Hayrettin Mahallesi",
     "Cumhurriyet Mahallesi",
     "Hocaömer Mahallesi",
     "Karapınar Mahallesi",
+    "Kayalık Mahallesi",
     "Malazgirt Mahallesi",
     "Mehmet Akif Mahallesi",
+    "Mimar Sinan Mahallesi",
+    "Musalla Mahallesi",
     "Siteler Mahallesi",
     "Sümerevler Mahallesi",
-    "Yeni Mahallesi"
+    "Turgut Reis Mahallesi",
+    "Yavuz Selim Mah.",
+    "Yeni Mahallesi",
+    "Yeni Sanayi Mahallesi",
+    "Yunus Emre Mahallesi"
    ],
+   "Besni": null,
+   "Gerger": null,
    "Gölbaşı": null,
-   "Kâhta": null
+   "Kâhta": null,
+   "Tut": null
   },
   "Afyonkarahisar": {
    "Afyonkarahisar Merkez": [
-    "Güvenevler Mahallesi"
+    "Cumhuriyet Mahallesi",
+    "Derviş Paşa Mahallesi",
+    "Dumlupınar Mahallesi",
+    "Eşrefpaşa Mahallesi",
+    "Fatih Mahallesi",
+    "Güvenevler Mahallesi",
+    "Karaman Mahallesi",
+    "Kasımpaşa Mahallesi",
+    "Kocatepe Mahallesi",
+    "Marulcu Mahallesi",
+    "Nazmi Saatçi Mahallesi",
+    "Sahipata Mahallesi",
+    "Selçuklu Mahallesi",
+    "Yenice Mahallesi",
+    "Örnekevler Mahallesi"
+   ],
+   "Bolvadin": [
+    "Alaca Mahallesi",
+    "Ethem Kelekçi Mahallesi",
+    "Kaymaz Mahallesi",
+    "Konak Mahallesi",
+    "Lala Sinan Paşa Mahallesi"
    ],
    "Dazkırı": null,
+   "Dinar": null,
    "Emirdağ": [
-    "Adaçal Mahallesi"
-   ]
+    "Adaçal Mahallesi",
+    "Aziziye Mahallesi"
+   ],
+   "Evciler": null,
+   "Sandıklı": null,
+   "Sultandağı": null,
+   "Çay": null,
+   "Şuhut": null
   },
   "Aksaray": {
    "Aksaray Merkez": [
+    "Büyük Bölcek Mahallesi",
+    "Hamidiye Mahallesi",
     "Hasas Mahallesi",
+    "Küçük Bölcek Mahallesi",
+    "Meydan Mahallesi",
     "Minarecik Mahallesi",
-    "Nakkaş Mahallesi"
+    "Nakkaş Mahallesi",
+    "Taşpazar Mahallesi",
+    "Çerdiğin Mahallesi",
+    "Şamlı Mahallesi",
+    "Şeyhhamit Mahallesi",
+    "Şifahane Mahallesi"
    ],
    "Eskil": null,
    "Ortaköy": null,
+   "Sarıyahşi": null,
    "Sultanhanı": null
   },
   "Amasya": {
    "Amasya Merkez": [
     "Akbilek Mahallesi",
+    "Bahçeleriçi Mahallesi",
     "Beyazıtpaşa Mahallesi",
     "Dere Mahallesi",
     "Ellibeşevler Mahallesi",
+    "Fethiye Mahallesi",
+    "Göllü Bağları Mahallesi",
     "Hacı İlyas Mahallesi",
     "Hacılar Meydanı Mahallesi",
+    "Helvacı Mahallesi",
+    "Hızırpaşa Mahallesi",
     "Kirazlıdere Mahallesi",
     "Mehmet Paşa Mahallesi",
     "Pirinççi Mahallesi",
@@ -525,20 +651,33 @@
     "Üçler Mahallesi",
     "Şeyhcui Mahallesi"
    ],
+   "Göynücek": null,
    "Gümüşhacıköy": null,
+   "Merzifon": [
+    "Camicedit Mahallesi"
+   ],
    "Suluova": [
     "Borsa Mahallesi"
-   ]
+   ],
+   "Taşova": null
   },
   "Ankara": {
    "Akyurt": [
+    "Balıkhisar Mahallesi",
+    "Beyazıt Mahallesi",
     "Büğdüz Mahallesi",
+    "Saracalar Mahallesi",
     "Yeşiltepe Mahallesi"
    ],
    "Altındağ": [
+    "Atıfbey Mahallesi",
     "Aydınlıkevler Mahallesi",
     "Baraj Mahallesi",
+    "Battalgazi Mahallesi",
+    "Başpınar Mahallesi",
+    "Beşikkaya Mahallesi",
     "Doğantepe Mahallesi",
+    "Feridun Çelik Mahallesi",
     "Gültepe Mahallesi",
     "Güneşevler Mahallesi",
     "Hacettepe Mahallesi",
@@ -546,16 +685,42 @@
     "Kale Mahallesi",
     "Karacaören Mahallesi",
     "Karapürçek Mahallesi",
-    "Zübeyde Hanım Mahallesi"
+    "Kavaklı Mahallesi",
+    "Ulubey Mahallesi",
+    "Yıldıztepe Mahallesi",
+    "Zübeyde Hanım Mahallesi",
+    "Önder Mahallesi",
+    "Örnek Mahallesi"
+   ],
+   "Ayaş": [
+    "Emine Tevfika Ayaşlı Mahallesi",
+    "Ferahfaki Mahallesi",
+    "Hacırecep Mahallesi"
+   ],
+   "Balâ": [
+    "Beynam Mahallesi"
+   ],
+   "Beypazarı": [
+    "Ayvaşık Mahallesi",
+    "Başağaç Mahallesi",
+    "Cumhuriyet Mahallesi",
+    "Hacıkara Mahallesi"
    ],
    "Elmadağ": [
+    "Hasanoğlan Bahçelievler Mahallesi",
+    "Hasanoğlan Havuzbaşı Mahallesi",
+    "Kemalpaşa Mahallesi",
     "Tatlıca Mahallesi"
    ],
    "Etimesgut": [
+    "30 Ağustos Mahallesi",
     "Ahi Mesut Mahallesi",
+    "Alsancak Mahallesi",
     "Altay Mahallesi",
+    "Atakent Mahallesi",
     "Atayurt Mahallesi",
     "Ayyıldız Mahallesi",
+    "Aşağıyurtçu Mahallesi",
     "Bahçekapı Mahallesi",
     "Balıkuyumcu Mahallesi",
     "Bağlıca Mahallesi",
@@ -563,12 +728,14 @@
     "Elvan Mahallesi",
     "Erler Mahallesi",
     "Eryaman Mahallesi",
+    "Etiler Mahallesi",
     "Fatih Sultan Mahallesi",
     "Göksu Mahallesi",
     "Güzelkent Mahallesi",
     "Kazım Karabekir Mahallesi",
     "Orhun Mahallesi",
     "Oğuzlar Mahallesi",
+    "Piyade Mahallesi",
     "Süvari Mahallesi",
     "Topçu Mahallesi",
     "Tunahan Mahallesi",
@@ -587,13 +754,16 @@
    "Gölbaşı": [
     "Bahçelievler Mahallesi",
     "Eymir Mahallesi",
+    "Gaziosmanpaşa Mahallesi",
     "Hacılar Mahallesi",
     "Karşıyaka Mahallesi",
     "Kızılcaşar Mahallesi",
     "Seğmenler Mahallesi",
+    "Taşpınar Mahallesi",
     "Tulumtaş Mahallesi",
     "İkizce Mahallesi",
-    "İncek Mahallesi"
+    "İncek Mahallesi",
+    "Şafak Mahallesi"
    ],
    "Güdül": [
     "Güneyce Mahallesi"
@@ -603,44 +773,105 @@
     "Yeni Mahallesi"
    ],
    "Kahramankazan": [
+    "Atatürk Mahallesi",
+    "Satıkadın Mahallesi",
+    "Yassıören Mahallesi",
     "Yıldırımbeyazıt Mahallesi"
    ],
+   "Kalecik": [
+    "Ahikemal Şenyurt Mahallesi",
+    "Yenidoğan Yeşilyurt Mahallesi"
+   ],
    "Keçiören": [
+    "19 Mayıs Mahallesi",
+    "Adnan Menderes Mahallesi",
+    "Atapark Mahallesi",
     "Ayvalı Mahallesi",
     "Aşağı Eğlence Mahallesi",
+    "Bademlik Mahallesi",
     "Basınevleri Mahallesi",
     "Bağlarbaşı Mahallesi",
     "Esertepe Mahallesi",
+    "Etlik Mahallesi",
     "Güzelyurt Mahallesi",
     "Güçlükaya Mahallesi",
+    "Hasköy Mahallesi",
+    "Kafkas Mahallesi",
+    "Kalaba Mahallesi",
+    "Kamil Ocak Mahallesi",
+    "Kanuni Mahallesi",
+    "Karakaya Mahallesi",
+    "Karşıyaka Mahallesi",
     "Kavacık Subayevleri Mahallesi",
     "Kuşcağız Mahallesi",
     "Osmangazi Mahallesi",
     "Ovacık Mahallesi",
     "Pınarbaşı Mahallesi",
     "Sancaktepe Mahallesi",
+    "Tepebaşı Mahallesi",
+    "Ufuktepe Mahallesi",
+    "Uyanış Mahallesi",
     "Yakacık Mahallesi",
     "Yayla Mahallesi",
+    "Yeşiltepe Mahallesi",
     "Yükseltepe Mahallesi",
     "İncirli Mahallesi",
     "Şehit Kubilay Mahallesi"
    ],
-   "Mamak": [
-    "Altınevler Mahallesi",
-    "Balkiraz Mahallesi",
-    "Diriliş Mahallesi",
-    "Durali Alıç Mahallesi",
-    "General Zeki Doğan Mahallesi",
-    "Hürel Mahallesi",
+   "Kızılcahamam": [
+    "Akçay Mahallesi",
     "Karşıyaka Mahallesi",
+    "Yenice Mahallesi"
+   ],
+   "Mamak": [
+    "Akdere Mahallesi",
+    "Akşemsettin Mahallesi",
+    "Altınevler Mahallesi",
+    "Araplar Mahallesi",
+    "Balkiraz Mahallesi",
+    "Başak Mahallesi",
+    "Cengizhan Mahallesi",
+    "Demirlibahçe Mahallesi",
+    "Derbent Mahallesi",
+    "Diriliş Mahallesi",
+    "Dostlar Mahallesi",
+    "Durali Alıç Mahallesi",
+    "Ege Mahallesi",
+    "General Zeki Doğan Mahallesi",
+    "Gülveren Mahallesi",
+    "Harman Mahallesi",
+    "Hürel Mahallesi",
+    "Hüseyingazi Mahallesi",
+    "Karaağaç Mahallesi",
+    "Karşıyaka Mahallesi",
+    "Küçük Kayaş Mahallesi",
+    "Kıbrısköy Mahallesi",
+    "Kızılca Mahallesi",
+    "Peyami Safa Mahallesi",
+    "Tuzluçayır Mahallesi",
+    "Türközü Mahallesi",
+    "Yeni Bayındır Mahallesi",
+    "Yeşilbayır Mahallesi",
+    "Zirvekent Mahallesi",
+    "Çağlayan Mahallesi",
     "Üreğil Mahallesi",
     "Şafaktepe Mahallesi",
-    "Şahap Gürler Mahallesi"
+    "Şahap Gürler Mahallesi",
+    "Şahintepe Mahallesi"
    ],
    "Nallıhan": [
-    "Fatih Mahallesi"
+    "100. Yıl Mahallesi",
+    "Atatürk Mahallesi",
+    "Fatih Mahallesi",
+    "Nasuhpaşa Mahallesi"
    ],
    "Polatlı": [
+    "Fatih Mahallesi",
+    "Gazi Mahallesi",
+    "Gülveren Mahallesi",
+    "Kurtuluş Mahallesi",
+    "Mehmetakif Mahallesi",
+    "Yeni Mahalle",
     "İstiklal Mahallesi",
     "Şehitlik Mahallesi",
     "Şentepe Mahallesi"
@@ -653,123 +884,198 @@
     "Mimar Sinan Mahallesi",
     "Saray Cumhuriyet Mahallesi",
     "Saray Fatih Mahallesi",
+    "Saray Osmangazi Mahallesi",
+    "Sirkeli Yeşilova Mahallesi",
     "Tevfik İleri Mahallesi",
     "Yunus Emre Mahallesi"
    ],
    "Sincan": [
+    "29 Ekim Mahallesi",
+    "Ahi Evran Mahallesi",
+    "Ahi Evran OSB Mahallesi",
+    "Alcı Mahallesi",
     "Andiçen Mahallesi",
     "Atatürk Mahallesi",
+    "Cumhuriyet Mahallesi",
     "Ertuğrulgazi Mahallesi",
+    "Fatih Mahallesi",
     "Fevzi Çakmak Mahallesi",
+    "Gazi Osmanpaşa Mahallesi",
     "Gökçek Mahallesi",
+    "Malazgirt Mahallesi",
     "Malıköy Mahallesi",
+    "Maraşal Çakmak Mahallesi",
+    "Menderes Mahallesi",
     "Mevlana Mahallesi",
+    "Mustafa Kemal Mahallesi",
     "Osmanlı Mahallesi",
+    "Plevne Mahallesi",
     "Pınarbaşı Mahallesi",
+    "Saraycık Mahallesi",
     "Selçuklu Mahallesi",
     "Tandoğan Mahallesi",
     "Törekent Mahallesi",
-    "Ulubatlı Hasan Mahallesi"
+    "Ulubatlı Hasan Mahallesi",
+    "Yunus Emre Mahallesi",
+    "Çiçektepe Mahallesi",
+    "Çoğlu Mahallesi"
    ],
    "Yenimahalle": [
+    "25 Mart Mahallesi",
     "Ata Mahallesi",
+    "Avcılar Mahallesi",
     "Aşağı Yahyalar Mahallesi",
+    "Barıştepe Mahallesi",
     "Batı Sitesi Mahallesi",
     "Beştepe Mahallesi",
+    "Burç Mahallesi",
     "Cumhuriyet Mahallesi",
     "Demetevler Mahallesi",
+    "Demetgül Mahallesi",
+    "Demetlale Mahallesi",
     "Emniyet Mahallesi",
     "Ergazi Mahallesi",
+    "Ergenekon Mahallesi",
     "Gayret Mahallesi",
+    "Gazi Mahallesi",
     "Güventepe Mahallesi",
+    "Güzelyaka Mahallesi",
     "Işınlar Mahallesi",
+    "Kaletepe Mahallesi",
     "Karacakaya Mahallesi",
     "Kardelen Mahallesi",
+    "Karşıyaka Mahallesi",
+    "Kayalar Mahallesi",
     "Kentkoop Mahallesi",
     "Kuzey Yıldızı Mahallesi",
     "Macun Mahallesi",
     "Mehmet Akif Ersoy Mahallesi",
+    "Memlik Mahallesi",
     "Ostim Mahallesi",
     "Ostim OSB Mahallesi",
     "Pamuklar Mahallesi",
+    "Ragıp Tüzün Mahallesi",
     "Serhat Mahallesi",
     "Susuz Mahallesi",
     "Turgut Özal Mahallesi",
     "Uğur Mumcu Mahallesi",
     "Varlık Mahallesi",
     "Yeni Batı Mahallesi",
+    "Yeniçağ Mahallesi",
     "Yeşilevler Mahallesi",
+    "Yukarı Yahyalar Mahallesi",
+    "Yunus Emre Mahallesi",
     "Yuvaköy Mahallesi",
     "Çakırlar Mahallesi",
+    "Çamlıca Mahallesi",
     "Çiğdemtepe Mahallesi",
+    "Özevler Mahallesi",
     "İlkyerleşim Mahallesi",
     "İnönü Mahallesi",
     "İvedikköy Mahallesi"
    ],
+   "Çamlıdere": [
+    "Beyler Mahallesi",
+    "Kayabaşı Mahallesi"
+   ],
    "Çankaya": [
+    "100. Yıl Mahallesi",
     "50. Yıl Mahallesi",
+    "Ahlatlıbel Mahallesi",
     "Akpınar Mahallesi",
     "Alacaatlı Mahallesi",
+    "Anıttepe Mahallesi",
     "Ata Mahallesi",
+    "Aydınlar Mahallesi",
     "Ayrancı Mahallesi",
     "Aziziye Mahallesi",
     "Aşağı Öveçler Mahallesi",
+    "Bademlidere Mahallesi",
     "Balgat Mahallesi",
+    "Barbaros Mahallesi",
+    "Bayraktar Mahallesi",
     "Bağcılar Mahallesi",
     "Beytepe Mahallesi",
     "Birlik Mahallesi",
     "Büyükesat Mahallesi",
+    "Cebeci Mahallesi",
+    "Cevizlidere Mahallesi",
     "Cumhuriyet Mahallesi",
     "Devlet Mahallesi",
     "Dodurga Mahallesi",
+    "Doğuş Mahallesi",
     "Dumlupınar Mahallesi",
     "Ehlibeyt Mahallesi",
     "Emek Mahallesi",
     "Eti Mahallesi",
     "Fidanlık Mahallesi",
+    "Gaziosmanpaşa Mahallesi",
+    "Güvenevler Mahallesi",
     "Güzeltepe Mahallesi",
     "Harbiye Mahallesi",
     "Hilal Mahallesi",
     "Huzur Mahallesi",
+    "Karapınar Mahallesi",
     "Kavaklıdere Mahallesi",
     "Kazım Özalp Mahallesi",
     "Keklik Pınarı Mahallesi",
+    "Kocatepe Mahallesi",
     "Konutkent Mahallesi",
     "Korkutreis Mahallesi",
     "Koru Mahallesi",
+    "Kültür Mahallesi",
     "Kırkkonaklar Mahallesi",
     "Kızılay Mahallesi",
     "Kızılırmak Mahallesi",
+    "Malazgirt Mahallesi",
+    "Maltepe Mahallesi",
+    "Mebusevleri Mahallesi",
     "Metin Akkuş Mahallesi",
     "Meşrutiyet Mahallesi",
     "Mustafa Kemal Mahallesi",
     "Mutlukent Mahallesi",
+    "Mürsel Uluç Mahallesi",
+    "Naci Çakır Mahallesi",
     "Nasuh Akar Mahallesi",
     "Or-An Mahallesi",
+    "Osman Temiz Mahallesi",
+    "Oğuzlar Mahallesi",
     "Prof. Dr. Ahmet Taner Kışlalı Mahallesi",
     "Remzi Oğuz Arık Mahallesi",
     "Sakarya Mahallesi",
     "Sancak Mahallesi",
+    "Sağlık Mahallesi",
+    "Seyranbağları Mahallesi",
     "Söğütözü Mahallesi",
+    "Tınaztepe Mahallesi",
+    "Yakupabdal Mahallesi",
     "Yaşamkent Mahallesi",
     "Yukarı Bahçelievler Mahallesi",
     "Yukarı Öveçler Mahallesi",
     "Yücetepe Mahallesi",
     "Yıldızevler Mahallesi",
     "Çankaya Mahallesi",
+    "Çavuşlu Mahallesi",
     "Çayyolu Mahallesi",
     "Çiğdem Mahallesi",
     "Çukurambar Mahallesi",
+    "Öveçler Mahallesi",
     "Ümit Mahallesi",
     "Üniversiteler Mahallesi",
     "İlkadım Mahallesi",
     "İlkbahar Mahallesi",
+    "İncesu Mahallesi",
     "İşçi Blokları Mahallesi",
-    "Şehit Cengiz Karaca Mahallesi"
+    "Şehit Cengiz Karaca Mahallesi",
+    "Şehit Cevdet Özdemir Mahallesi"
    ],
    "Çubuk": [
     "Atatürk Mahallesi",
+    "Cumhuriyet Mahallesi",
+    "Esenboğa Mahallesi",
+    "Fatih Mahallesi",
     "Muhsin Yazıcıoğlu Mahallesi",
+    "Yavuz Selim Mahallesi",
     "Yukarı Çavundur Mahallesi",
     "Yıldırım Beyazıt Mahallesi"
    ],
@@ -778,53 +1084,103 @@
    ]
   },
   "Antalya": {
+   "Akseki": [
+    "Demirciler Mahallesi"
+   ],
    "Aksu": [
     "Altıntaş Mahallesi",
-    "Kemerağzı Mahallesi"
+    "Hacıaliler Mahallesi",
+    "Kemerağzı Mahallesi",
+    "Pınarlı Mahallesi",
+    "Soğucaksu Mahallesi",
+    "Çalkaya Mahallesi"
    ],
    "Alanya": [
     "Basırlı Mahallesi",
+    "Büyükhasbahçe Mahallesi",
     "Cikcilli Mahallesi",
     "Cumhuriyet Mahallesi",
+    "Fığla Mahallesi",
+    "Güller Pınarı Mahallesi",
+    "Hacet Mahallesi",
     "Kadıpaşa Mahallesi",
+    "Küçükhasbahçe Mahallesi",
     "Kızlar Pınarı Mahallesi",
     "Oba Mahallesi",
     "Saray Mahallesi",
+    "Sugözü Mahallesi",
     "Tosmur Mahallesi",
     "Çarşı Mahallesi",
+    "Çıplaklı Mahallesi",
     "Şekerhane Mahallesi"
    ],
+   "Demre": null,
    "Döşemealtı": null,
    "Elmalı": null,
+   "Finike": null,
    "Gazipaşa": [
     "Bakılar Mahallesi",
+    "Gazi Mahallesi",
     "Koru Mahallesi",
     "Pazarcı Mahallesi"
    ],
    "Kaş": null,
    "Kemer": null,
    "Kepez": [
+    "Ahatlı Mahallesi",
+    "Aktoprak Mahallesi",
+    "Altınova Düden Mahallesi",
     "Altınova Orta Mahallesi",
+    "Altınova Sinan Mahallesi",
     "Atatürk Mahallesi",
     "Ayanoğlu Mahallesi",
     "Aydoğmuş Mahallesi",
+    "Baraj Mahallesi",
+    "Barış Mahallesi",
+    "Demirel Mahallesi",
+    "Duacı Mahallesi",
+    "Duraliler Mahallesi",
     "Düdenbaşı Mahallesi",
+    "Emek Mahallesi",
+    "Esentepe Mahallesi",
+    "Fabrikalar Mahallesi",
+    "Fevzi Çakmak Mahallesi",
+    "Gazi Mahallesi",
     "Göksu Mahallesi",
     "Göçerler Mahallesi",
+    "Gülveren Mahallesi",
+    "Gündoğdu Mahallesi",
     "Güneş Mahallesi",
+    "Habibler Mahallesi",
+    "Hüsnü Karakaş Mahallesi",
     "Kanal Mahallesi",
+    "Karşıyaka Mahallesi",
     "Kuzeyyaka Mahallesi",
     "Kültür Mahallesi",
+    "Mehmet Akif Ersoy Mahallesi",
+    "Sütçüler Mahallesi",
+    "Teomanpaşa Mahallesi",
+    "Ulus Mahallesi",
+    "Varsak Karşıyaka Mahallesi",
+    "Yeni Doğan Mahallesi",
+    "Yeni Emek Mahallesi",
     "Yeşiltepe Mahallesi",
+    "Yükseliş Mahallesi",
     "Zafer Mahallesi",
+    "Zeytinlik Mahallesi",
+    "Çamlıbel Mahallesi",
     "Çankaya Mahallesi",
-    "Şafak Mahallesi"
+    "Ünsal Mahallesi",
+    "Şafak Mahallesi",
+    "Şelale Mahallesi"
    ],
    "Konyaaltı": [
     "Akkuyu Mahallesi",
+    "Altınkum Mahallesi",
     "Arapsuyu Mahallesi",
     "Gürsu Mahallesi",
     "Hurma Mahallesi",
+    "Kuşkavağı Mahallesi",
     "Liman Mahallesi",
     "Molla Yusuf Mahallesi",
     "Pınarbaşı Mahallesi",
@@ -832,52 +1188,104 @@
     "Siteler Mahallesi",
     "Toros Mahallesi",
     "Uluç Mahallesi",
-    "Uncalı Mahallesi"
+    "Uncalı Mahallesi",
+    "Öğretmenevleri Mahallesi"
    ],
-   "Kumluca": null,
-   "Manavgat": null,
+   "Korkuteli": null,
+   "Kumluca": [
+    "Yeni Mahallesi"
+   ],
+   "Manavgat": [
+    "Aşağıhisar Mahallesi",
+    "Aşağıpazarcı Mahallesi",
+    "Eski Hisar Mahallesi",
+    "Yukarıhisar Mahallesi"
+   ],
    "Muratpaşa": [
+    "Altındağ Mahallesi",
+    "Bahçelievler Mahallesi",
+    "Cumhuriyet Mahallesi",
+    "Demircikara Mahallesi",
+    "Deniz Mahallesi",
     "Doğuyaka Mahallesi",
     "Dutlubahçe Mahallesi",
     "Elmalı Mahallesi",
+    "Ermenek Mahallesi",
     "Etiler Mahallesi",
     "Fener Mahallesi",
     "Gebizli Mahallesi",
+    "Gençlik Mahallesi",
+    "Güvenlik Mahallesi",
+    "Güzelbağ Mahallesi",
     "Güzeloba Mahallesi",
     "Güzeloluk Mahallesi",
+    "Haşimişcan Mahallesi",
+    "Konuksever Mahallesi",
     "Kırcami Mahallesi",
     "Kızılarık Mahallesi",
+    "Kızılsaray Mahallesi",
     "Kızıltoprak Mahallesi",
     "Kışla Mahallesi",
     "Mehmetçik Mahallesi",
     "Meltem Mahallesi",
+    "Memurevleri Mahallesi",
     "Meydankavağı Mahallesi",
+    "Muratpaşa Mahallesi",
+    "Sedir Mahallesi",
+    "Selçuk Mahallesi",
     "Sinan Mahallesi",
     "Soğuksu Mahallesi",
+    "Tahılpazarı Mahallesi",
     "Tarım Mahallesi",
+    "Varlık Mahallesi",
+    "Yenigöl Mahallesi",
     "Yenigün Mahallesi",
     "Yeşilbahçe Mahallesi",
+    "Yeşildere Mahallesi",
+    "Yeşilova Mahallesi",
     "Yüksekalan Mahallesi",
+    "Yıldız Mahallesi",
+    "Zerdalilik Mahallesi",
+    "Zümrütova Mahallesi",
     "Çaybaşı Mahallesi",
     "Çağlayan Mahallesi",
+    "Üçgen Mahallesi",
     "Şirinyalı Mahallesi"
    ],
    "Serik": [
+    "Akçaalan Mahallesi",
+    "Belek Mahallesi",
+    "Boğazkent Mahallesi",
     "Cumalı Mahallesi",
-    "Kadriye Mahallesi"
+    "Evrenpaşa Mahallesi",
+    "Gedik Mahallesi",
+    "Kadriye Mahallesi",
+    "Karadayı Mahallesi",
+    "Kökez Mahallesi",
+    "Merkez Mahallesi",
+    "Orta Mahalle",
+    "Yenimahalle Mahallesi"
    ]
   },
   "Ardahan": {
+   "Ardahan Merkez": null,
    "Damal": [
     "Mustafa Kemal Mahallesi"
-   ]
+   ],
+   "Göle": null
   },
   "Artvin": {
    "Ardanuç": [
     "Merkez Mahallesi"
    ],
    "Arhavi": null,
-   "Hopa": null
+   "Artvin Merkez": [
+    "Çarşı Mahallesi",
+    "Çayağzı Mahallesi"
+   ],
+   "Hopa": null,
+   "Kemalpaşa": null,
+   "Şavşat": null
   },
   "Aydın": {
    "Bozdoğan": [
@@ -889,41 +1297,89 @@
    ],
    "Efeler": [
     "Adnan Menderes Mahallesi",
+    "Cumhuriyet Mahallesi",
     "Efeler Mahallesi",
     "Fatih Mahallesi",
-    "Girne Mahallesi"
+    "Girne Mahallesi",
+    "Güzelhisar Mahallesi",
+    "Hasanefendi - Ramazan Paşa Mahallesi",
+    "Kurtuluş Mahallesi",
+    "Yedi Eylül Mahallesi",
+    "Zeybek Mahallesi",
+    "İstiklal Mahallesi"
    ],
+   "Germencik": null,
+   "Karacasu": null,
+   "Karpuzlu": null,
+   "Koçarlı": null,
    "Kuyucak": null,
    "Kuşadası": [
+    "Camiatik Mahallesi",
+    "Camikebir Mahallesi",
+    "Cumhuriyet Mahallesi",
     "Davutlar Mahallesi",
     "Güzelçamlı Mahallesi",
     "Hacıfeyzullah Mahallesi",
-    "Türkmen Mahallesi"
+    "Türkmen Mahallesi",
+    "Yaylaköy Mahallesi"
+   ],
+   "Köşk": null,
+   "Nazilli": [
+    "Cumhuriyet Mahallesi",
+    "Karaçay Mahallesi"
    ],
    "Sultanhisar": null,
-   "Söke": null
+   "Söke": [
+    "Atatürk Mahallesi",
+    "Kemalpaşa Mahallesi",
+    "Konak Mahallesi",
+    "Yenicamii Mahallesi"
+   ],
+   "Yenipazar": null,
+   "Çine": null,
+   "İncirliova": null
   },
   "Ağrı": {
+   "Ağrı Merkez": [
+    "Abide Mahallesi",
+    "Bahçelievler Mahallesi",
+    "Fırat Mahallesi",
+    "Yavuz Mahallesi"
+   ],
+   "Diyadin": null,
    "Doğubayazıt": null,
-   "Patnos": null
+   "Patnos": null,
+   "Tutak": null
   },
   "Balıkesir": {
    "Altıeylül": [
+    "Altı Eylül Mahallesi",
+    "Ayşebacı",
     "Bahçelievler Mahallesi",
-    "Plevne Mahallesi"
+    "Hacı İlbey Mahallesi",
+    "Plevne Mahallesi",
+    "Sütlüce Mahallesi",
+    "Yıldız Mahallesi"
    ],
    "Ayvalık": [
     "150 Evler Mahallesi",
     "Ali Çetinkaya Mahallesi",
+    "Altınova Mahallesi",
+    "Fevzipaşa-Vehbibey Mahallesi",
     "Küçükköy Mahallesi",
     "Mithatpaşa Mahallesi",
-    "Sahil Kent Mahallesi"
+    "Namık Kemal Mahallesi",
+    "Sahil Kent Mahallesi",
+    "Sefa Çamlık Mahallesi",
+    "İsmetpaşa Mahallesi"
    ],
+   "Balya": null,
    "Bandırma": [
     "100. Yıl Mahallesi",
     "17 Eylül Mahallesi",
     "600 Evler Mahallesi",
     "Ayyıldız Mahallesi",
+    "Bentbaşı Mahallesi",
     "Dere Mahallesi",
     "Edincik Mahallesi",
     "Günaydın Mahallesi",
@@ -940,48 +1396,96 @@
     "Çalışkanlar Mahallesi",
     "Çınarlı Mahallesi",
     "Ömerli Mahallesi",
-    "İhsaniye Mahallesi"
+    "İhsaniye Mahallesi",
+    "Şirinçavuş Mahallesi"
    ],
    "Bigadiç": null,
    "Burhaniye": null,
+   "Dursunbey": null,
    "Edremit": null,
    "Erdek": [
+    "Alaettin Mahallesi",
+    "Doğanlar Mahallesi",
+    "Hamamlı Mahallesi",
+    "Karşıyaka Mahallesi",
     "Narlı Mahallesi",
+    "Ocaklar Mahallesi",
+    "Sahil Mahallesi",
+    "Tatlısu Mahallesi",
+    "Turan Mahallesi",
+    "Yalı Mahallesi",
     "Zeytinli Mahallesi"
    ],
    "Gömeç": null,
    "Gönen": [
-    "Kınalar Mahallesi"
+    "100. Yıl Mahallesi",
+    "Akçaali Mahallesi",
+    "Altay Mahallesi",
+    "Gündoğdu Mahallesi",
+    "Karşıyaka Mahallesi",
+    "Kurtuluş Mahallesi",
+    "Kınalar Mahallesi",
+    "Reşadiye Mahallesi",
+    "Sarıköy Mahallesi",
+    "Tırnova Mahallesi"
    ],
+   "Havran": null,
    "Karesi": [
     "1. Sakarya Mahallesi",
+    "Atatürk Mahallesi",
+    "Dumlupınar Mahallesi",
+    "Ege Mahallesi",
+    "Eski Kuyumcular Mahallesi",
+    "Hisariçi Mahallesi",
     "Maltepe Mahallesi",
     "Paşa Alanı Mahallesi",
     "Toygar Mahallesi",
     "Yeni Mahalle"
    ],
+   "Kepsut": null,
+   "Manyas": null,
    "Marmara": [
     "Cumhuriyet Mahallesi",
-    "Ekinlik Mahallesi"
+    "Deniz Mahallesi",
+    "Ekinlik Mahallesi",
+    "Yiğitler Mahallesi"
    ],
-   "Sındırgı": null
+   "Susurluk": [
+    "Burhaniye Mahallesi",
+    "Yeni Mahallesi"
+   ],
+   "Sındırgı": null,
+   "İvrindi": null
   },
   "Bartın": {
    "Amasra": [
-    "Kaleşah"
+    "Amasra Merkez",
+    "Kaleşah",
+    "Çakrazşeyhler"
    ],
-   "Bartın Merkez": null
+   "Bartın Merkez": [
+    "Köyortası Mahallesi",
+    "Orta Mahalle"
+   ],
+   "Kurucaşile": [
+    "Kurucaşile Merkez"
+   ],
+   "Ulus": null
   },
   "Batman": {
    "Batman Merkez": [
+    "Akça Köyü",
     "Bahçelievler Mahallesi",
     "Bayındır Mahallesi",
     "Başakşehir Mahallesi",
     "Belde Mahallesi",
+    "Binatlı Köyü",
     "Cudi Mahallesi",
     "Cumhuriyet Mahallesi",
+    "Diktepe Köyü",
     "Fatih Mahallesi",
     "Gap Mahallesi",
+    "Girbereşik Mahallesi",
     "Gültepe Mahallesi",
     "Hilal Mahallesi",
     "Huzur Mahallesi",
@@ -989,6 +1493,7 @@
     "Korik Mahallesi",
     "Kösetarla Köyü",
     "Kültür Mahallesi",
+    "Kısmet Mahallesi",
     "Meydan Mahallesi",
     "Pazaryeri Mahallesi",
     "Petrol Mahallesi",
@@ -1002,85 +1507,214 @@
     "Yenişehir Mahallesi",
     "Ziyagökalp Mahallesi",
     "Çamlıtepe Mahallesi",
+    "Çarşı Mahallesi",
     "Şafak Mahallesi",
     "Şirinevler Mahallesi"
    ],
    "Beşiri": [
     "Bağdu Mahallesi"
+   ],
+   "Gercüş": [
+    "Bağlarbaşı Mahallesi"
+   ],
+   "Kozluk": [
+    "Sağlık Mahallesi"
    ]
   },
   "Bayburt": {
    "Bayburt Merkez": [
+    "Camiikebir Mahallesi",
+    "Esentepe Mahallesi",
+    "Gençosman Mahallesi",
+    "Tuzcuzade Mahallesi",
+    "Zahit Mahallesi",
     "Şingah Mahallesi"
    ]
   },
   "Bilecik": {
    "Bilecik Merkez": [
     "Bahçelievler Mahallesi",
+    "Beşiktaş Mahallesi",
+    "Cumhuriyet Mahallesi",
+    "Ertuğrulgazi Mahallesi",
     "Gazipaşa Mahallesi",
-    "Osmangazi Mahallesi"
+    "Hürriyet Mahallesi",
+    "Osmangazi Mahallesi",
+    "İsmetpaşa Mahallesi"
    ],
    "Bozüyük": [
+    "4 Eylül Mahallesi",
     "Kasımpaşa Mahallesi",
+    "Yediler Mahallesi",
+    "Yeni Mahalle",
+    "Yenidoğan Mahallesi",
     "Yeşilkent Mahallesi"
    ],
+   "Osmaneli": null,
+   "Söğüt": null,
    "İnhisar": null
   },
   "Bingöl": {
    "Bingöl Merkez": [
+    "Bahçelievler Mahallesi",
     "Karşıyaka Mahallesi",
+    "Kültür Mahallesi",
+    "Recep Tayyip Erdoğan Mahallesi",
     "Saray Mahallesi",
-    "Yenişehir Mahallesi"
-   ]
+    "Yenişehir Mahallesi",
+    "İnönü Mahallesi",
+    "Şehit Mustafa Gündoğdu Mahallesi"
+   ],
+   "Genç": [
+    "Kültür Mahallesi"
+   ],
+   "Solhan": null
   },
   "Bitlis": {
+   "Adilcevaz": null,
    "Ahlat": null,
    "Bitlis Merkez": [
+    "Atatürk Mahallesi",
     "Beş Minare Mahallesi",
     "Hüsrev Paşa Mahallesi"
    ],
+   "Güroymak": null,
    "Tatvan": [
+    "Aydınlar Mahallesi",
+    "Fatih Mahallesi",
+    "Fuar Mahallesi",
+    "Kale Mahallesi",
     "Karşıyaka Mahallesi",
     "Kültür Mahallesi"
    ]
   },
   "Bolu": {
    "Bolu Merkez": [
+    "Akpınar Mahallesi",
+    "Aktaş Mahallesi",
+    "Akçaalan Köyü",
     "Alpağut Mahallesi",
+    "Alpağutbey Mahallesi",
+    "Aşağısoku Mahallesi",
     "Bahçelievler Mahallesi",
     "Beşkavaklar Mahallesi",
+    "Borazanlar Mahallesi",
     "Dağkent Mahallesi",
+    "Dereceören Köyü",
+    "Gölyüzü Mahallesi",
+    "Karacasu Fatih Mahallesi",
+    "Karamanlı Mahallesi",
+    "Karaçayır Mahallesi",
+    "Kuruçay Mahallesi",
     "Kültür Mahallesi",
     "Kürkçüler Mahallesi",
+    "Kılıçarslan Mahallesi",
+    "Mesciler Köyü",
+    "Okçular Köyü",
     "Paşaköy Mahallesi",
     "Sağlık Mahallesi",
+    "Sümer Mahallesi",
+    "Tabaklar Mahallesi",
+    "Tepecik Mahallesi",
     "Umutkent Mahallesi",
+    "Yaşamkent Mahallesi",
+    "Çakmaklar Mahallesi",
+    "Çıkınlar Mahallesi",
     "İzzet Baysal Mahallesi"
+   ],
+   "Gerede": [
+    "Dayıoğlu Mahallesi",
+    "Demirciler Mahallesi"
+   ],
+   "Göynük": [
+    "Sofu Ali Mahallesi"
+   ],
+   "Kıbrıscık": [
+    "Köroğlu Mahallesi"
    ],
    "Mengen": [
     "Beşler Mahallesi",
     "Türkbeyli Mahallesi"
    ],
+   "Mudurnu": [
+    "Büyükcami Mahallesi",
+    "Merkez Mahallesi",
+    "Musalla Mahallesi",
+    "Seyrancık Mahallesi"
+   ],
    "Seben": [
-    "Susuz Köyü"
+    "Bozyer Köyü",
+    "Solaklar Köyü",
+    "Susuz Köyü",
+    "Çarşı Mahallesi"
+   ],
+   "Yeniçağa": [
+    "Asil Bey Mahallesi",
+    "Camiatik Mahallesi"
    ]
   },
   "Burdur": {
    "Bucak": [
-    "Mehmet Akif Mahallesi"
+    "Mehmet Akif Mahallesi",
+    "Sanayi Mahallesi",
+    "Çamlıca Mahallesi"
    ],
    "Burdur Merkez": [
-    "Fevzi Çakmak Mahallesi"
+    "Armağan İlci Mahallesi",
+    "Atatürk Mahallesi",
+    "Aydınlıkevler Mahallesi",
+    "Bahçelievler Mahallesi",
+    "Bağlar Mahallesi",
+    "Bozkurt Mahallesi",
+    "Emek Mahallesi",
+    "Fevzi Çakmak Mahallesi",
+    "Sinan Mahallesi",
+    "Yeni Mahalle",
+    "Özgür Mahallesi",
+    "Şekerevler Mahallesi",
+    "Şirinevler Mahallesi"
    ],
-   "Karamanlı": null
+   "Gölhisar": null,
+   "Karamanlı": null,
+   "Tefenni": null,
+   "Yeşilova": null,
+   "Çavdır": null
   },
   "Bursa": {
    "Gemlik": [
     "Cumhuriyet Mahallesi",
-    "Hisar Mahallesi"
+    "Dr. Ziya Kaya Mahallesi",
+    "Eşref Dinçer Mahallesi",
+    "Hamidiye Mahallesi",
+    "Hisar Mahallesi",
+    "Kayhan Mahallesi",
+    "Umurbey Mahallesi",
+    "Yeni Mahallesi"
    ],
+   "Gürsu": [
+    "Kurtuluş Mahallesi",
+    "Zafer Mahallesi",
+    "İstiklal Mahallesi"
+   ],
+   "Harmancık": null,
    "Karacabey": [
-    "Emirsultan Mahallesi"
+    "Canbalı Mahallesi",
+    "Drama Mahallesi",
+    "Emirsultan Mahallesi",
+    "Gazi Mahallesi",
+    "Hamidiye Mahallesi",
+    "Hüdavendigar Mahallesi",
+    "Runguşpaşa Mahallesi",
+    "Saadet Mahallesi",
+    "Yenice Mahallesi"
+   ],
+   "Keles": null,
+   "Kestel": [
+    "Ahmetvefikpaşa Mahallesi",
+    "Esentepe Mahallesi",
+    "Kale Mahallesi",
+    "Vanimehmet Mahallesi",
+    "Yeni Mahallesi"
    ],
    "Mudanya": [
     "Çağrışan Mahallesi"
@@ -1091,63 +1725,164 @@
     "23 Nisan Mahallesi",
     "29 Ekim Mahallesi",
     "30 Ağustos Zafer Mahallesi",
+    "Ahmet Yesevi Mahallesi",
+    "Alaaddinbey Mahallesi",
     "Altınşehir Mahallesi",
+    "Ataevler Mahallesi",
     "Balat Mahallesi",
     "Barış Mahallesi",
     "Beşevler Mahallesi",
     "Cumhuriyet Mahallesi",
+    "Demirci Mahallesi",
+    "Doğanköy Mahallesi",
     "Dumlupınar Mahallesi",
     "Ertuğrul Mahallesi",
     "Esentepe Mahallesi",
     "Fethiye Mahallesi",
     "Görükle Mahallesi",
+    "Gümüştepe Mahallesi",
+    "Işıktepe Mahallesi",
     "Karaman Mahallisi",
     "Konak Mahallesi",
     "Kurtuluş Mahallesi",
+    "Kültür Mahallesi",
+    "Minareliçavuş Mahallesi",
     "Odunluk Mahallesi",
     "Yüzüncüyıl Mahallesi",
     "Çamlıca Mahallesi",
+    "Özlüce Mahallesi",
     "Üçevler Mahallesi",
     "İhsaniye Mahallesi"
    ],
+   "Orhaneli": null,
    "Orhangazi": null,
    "Osmangazi": [
+    "Ahmatpaşa Mahallesi",
     "Akpınar Mahallesi",
+    "Aktarhüssam Mahallesi",
+    "Alacamascit Mahallesi",
     "Alaşarköy Mahallesi",
+    "Alemdar Mahallesi",
     "Altınova Mahallesi",
+    "Altıparmak Mahallesi",
+    "Bağlarbaşı Mahallesi",
+    "Başaran Mahallesi",
+    "Demirtaş Barbaros Mahallesi",
     "Demirtaş Cumhuriyet Mahallesi",
+    "Demirtaş Dumlupınar Mahallesi",
+    "Demirtaş Sakarya Mahallesi",
     "Demirtaşpaşa Mahallesi",
+    "Dikkaldırım Mahallesi",
+    "Doğanbey Mahallesi",
+    "Doğanevler Mahallesi",
     "Elmasbahçeler Mahallesi",
+    "Emek Adnan Menderes Mahallesi",
+    "Emek Fatih Sultan Mehmet Mahallesi",
+    "Emek Zekai Gümüşdiş Mahallesi",
     "Gaziakdemir Mahallesi",
     "Geçit Mahallesi",
+    "Gülbahçe Mahallesi",
     "Güneştepe Mahallasi",
+    "Hacıilyas Mahallesi",
     "Hamitler Mahallesi",
+    "Hamzabey Mahallesi",
+    "Hocaalizade Mahallesi",
     "Hüdavendigar Mahallesi",
     "Kayıhan Mahallesi",
+    "Kemerçeşme Mahallesi",
+    "Kiremitçi Mahallesi",
+    "Kuruçeşme Mahallesi",
     "Kükürtlü Mahallesi",
+    "Küplüpınar Mahellesi",
+    "Küçükbalıklı Mahallesi",
     "Kırcaali Mahallesi",
+    "Maksem Mahallesi",
+    "Mehmet Akif Mahallesi",
     "Nalbantoğlu Mahallesi",
+    "Namık Kemal Mahallesi",
     "Nilüferköy Mahallesi",
+    "Orhanbey Mahallesi",
+    "Osmangazi Mahallesi",
+    "Ovaakça Merkez",
+    "Ovaakça Santral",
+    "Ovaakça Çeşmebaşı Mahallesi",
     "Panayır Mahallesi",
+    "Reyhan Mahallesi",
     "Sakarya Mahallesi",
+    "Santral Garaj Mahallesi",
+    "Selamet Mahallesi",
     "Soğanlı Mahallasi",
     "Soğukkuyu Mahallesi",
+    "Sırameşeler Mahallesi",
+    "Tahtakale Mahallesi",
+    "Tayakadın Mahallesi",
+    "Tuna Mahallesi",
+    "Tuzpazarı Mahallesi",
+    "Ulu Mahallesi",
+    "Veysel Karani Mahallesi",
     "Yenibağlar Mahallesi",
     "Yenikaraman Mahallesi",
-    "Yunuseli Mahallesi"
+    "Yenikent Mahallesi",
+    "Yunuseli Mahallesi",
+    "Çağlayan Mahallesi",
+    "Çekirge Mahallesi",
+    "Çırpan Mahallesi",
+    "Şehreküstü Mahallesi"
    ],
    "Yenişehir": null,
    "Yıldırım": [
+    "152 Evler Mahallesi",
+    "75. Yıl Mahallesi",
+    "Baruthane Mahallesi",
+    "Bağlaraltı Mahallesi",
+    "Demetevler Mahallesi",
+    "Değirmenlikızık Mahallesi",
+    "Değirmenönü Mahallesi",
     "Duaçınarı Mahallesi",
+    "Emirsultan Mahallesi",
+    "Erikli Mahallesi",
+    "Ertuğrulgazi Mahallesi",
+    "Esenevler Mahallesi",
+    "Eğitim Mahallesi",
+    "Fidyekızık Mahallesi",
+    "Güllük Mahallesi",
+    "Hacivat Mahallesi",
+    "Kaplıkaya Mahallesi",
     "Karaağaç Mahallesi",
-    "Yiğitler Mahallesi"
+    "Karamazak Mahallesi",
+    "Kazım Karabekir Mahallesi",
+    "Mevlana Mahallesi",
+    "Meydancık Mahallesi",
+    "Millet Mahallesi",
+    "Mimar Sinan Mahallesi",
+    "Mollaarap Mahallesi",
+    "Musababa Mahallesi",
+    "Piremir Mahallesi",
+    "Selimzade Mehallesi",
+    "Selçukbey Mahallesi",
+    "Sinandede Mahallesi",
+    "Siteler Mahallesi",
+    "Vakıf Mahallesi",
+    "Yenimahalle Mahallesi",
+    "Yiğitler Mahallesi",
+    "Yunus Emre Mahallesi",
+    "Yıldırım Mahallesi",
+    "Zümrütevler Mahallesi",
+    "Şükraniye Mahallesi"
    ],
    "İnegöl": [
+    "Burhaniye Mah.",
+    "Cumhuriyet Mahallesi",
     "Esentepe Mahallesi",
     "Fatih Mahallesi",
+    "Hamidiye Mahallesi",
     "Kemalpaşa Mahallesi",
     "Mahmudiye Mahallesi",
+    "Mesudiye Mahallesi",
+    "Osmaniye Mahallesi",
+    "Sinanbey Mahallesi",
     "Süleymaniye Mahallesi",
+    "Süleymaniye OSB Mahallesi",
     "Turgutalp Mahallesi",
     "Yeni Mahallesi",
     "Yunusemre Mahallesi",
@@ -1157,47 +1892,107 @@
   },
   "Denizli": {
    "Acıpayam": null,
+   "Babadağ": null,
+   "Baklan": null,
    "Bekilli": null,
    "Bozkurt": null,
+   "Buldan": null,
+   "Honaz": null,
+   "Kale": [
+    "Toki Mahallesi"
+   ],
    "Merkezefendi": [
     "1200 Evler Mahallesi",
     "Adalet Mahallesi",
+    "Akkonak Mahallesi",
+    "Akçeşme Mahallesi",
+    "Altıntop Mahallesi",
     "Bahçelievler Mahallesi",
+    "Başkarcı Mahallesi",
     "Bereketler Mahallesi",
+    "Bozburun Mahallesi",
     "Değirmenönü Mahallesi",
+    "Eskihisar Mahallesi",
     "Gerzele Mahallesi",
     "Gültepe Mahallesi",
+    "Gümüşçay Mahallesi",
+    "Hacıeyüplü Mahallesi",
     "Hallaçlar Mahallesi",
     "Karahasanlı Mahallesi",
     "Karaman Mahallesi",
     "Kayalar Mahallesi",
     "Kumkısık Mahallesi",
     "Mehmet Akif Ersoy Mahallesi",
+    "Merkezefendi Mahallesi",
+    "Muratdede Mahallesi",
+    "Saraylar Mahallesi",
+    "Saruhan Mahallesi",
     "Selçuk Bey Mahallesi",
+    "Servergazi Mahallesi",
     "Sevindik Mahallesi",
     "Sümer Mahallesi",
     "Sırakapılar Mahallesi",
     "Yenişafak Mahallesi",
     "Yenişehir Mahallesi",
     "Çakmak Mahallesi",
+    "İlbade Mahallesi",
     "Şemikler Mahallesi"
    ],
    "Pamukkale": [
+    "15 Mayıs Mahallesi",
+    "Aktepe Mahallesi",
+    "Asmalıevler Mahallesi",
+    "Atalar Mahallesi",
+    "Bağbaşı Mahallesi",
+    "Cumhuriyet Mahallesi",
+    "Deliktaş Mahallesi",
+    "Dokuzkavaklar Mahallesi",
+    "Fatih Mahallesi",
+    "Gökpınar Mahallesi",
+    "Hacıkaplanlar Mahallesi",
+    "Kervansaray Mahallesi",
+    "Kuşpınar Mahallesi",
     "Kınıklı Mahallesi",
+    "Mehmetçik Mahallesi",
+    "Pelitlibağ Mahallesi",
     "Siteler Mahallesi",
+    "Tekke Mahallesi",
+    "Topraklık Mahallesi",
     "Yunusemre Mahallesi",
-    "Zeytinköy Mahallesi"
+    "Zeytinköy Mahallesi",
+    "Zümrüt Mahallesi",
+    "İncilipınar Mahallesi"
    ],
+   "Sarayköy": null,
+   "Serinhisar": null,
    "Tavas": null,
+   "Çal": null,
+   "Çameli": [
+    "Elmalı Mahallesi"
+   ],
    "Çivril": [
-    "Akpınar Mahallesi"
+    "Akpınar Mahallesi",
+    "Çarşı Mahallesi",
+    "Şehitler Mahallesi"
    ]
   },
   "Diyarbakır": {
    "Bağlar": [
+    "Alipınar Mahallesi",
     "Bağcılar Mahallesi",
+    "Fatih Mahallesi",
+    "Kaynartepe Mahallesi",
     "Mevlana Halit Mahallesi",
-    "Selahattin Eyyubi Mahallesi"
+    "Selahattin Eyyubi Mahallesi",
+    "Yeniköy Mahallesi",
+    "Şeyh Şamil Mahallesi"
+   ],
+   "Bismil": [
+    "Altıok Mahallesi",
+    "Fatih Mahallesi",
+    "Fırat Mahallesi",
+    "Kurtuluş Mahallesi",
+    "Sanayi Mahallesi"
    ],
    "Ergani": null,
    "Kayapınar": [
@@ -1216,36 +2011,48 @@
     "Dabanoğlu Mahallesi",
     "Fatihpaşa Mahallesi",
     "Hasırlı Mahallesi",
-    "Melikahmet Mahallesi"
+    "Melikahmet Mahallesi",
+    "Süleyman Nazif Mahallesi",
+    "Ziya Gökalp Mahallesi"
    ],
    "Yenişehir": [
     "Aziziye Mahallesi",
     "Gürdoğan Mahallesi",
     "Kooperatifler Mahallesi",
     "Yenişehir Mahallesi",
+    "Yolaltı Mahallesi",
     "Üçkuyu Mahallesi",
     "Şehitlik Mahallesi"
    ],
-   "Çermik": null
+   "Çermik": null,
+   "Çınar": null
   },
   "Düzce": {
    "Akçakoca": null,
    "Cumayeri": null,
    "Düzce Merkez": [
+    "Bahçelievler Mahallesi",
+    "Burhaniye Mahallesi",
     "Camikebir Mahallesi",
     "Cedidiye Mahallesi",
     "Demetevler Mahallesi",
+    "Esentepe Mahallesi",
     "Fatih Mahallesi",
     "Güzelbahçe Mahallesi",
     "Kiremitocağı Mahallesi",
     "Kültür Mahallesi",
+    "Nalbantoğlu Mahallesi",
+    "Nusrettin Mahallesi",
     "Uzunmustafa Mahallesi",
     "Yeni Mahallesi",
     "Çamlıevler Mahallesi",
+    "Çay Mahallesi",
     "Şerefiye Mahallesi"
    ],
    "Gölyaka": null,
-   "Kaynaşlı": null
+   "Gümüşova": null,
+   "Kaynaşlı": null,
+   "Yığılca": null
   },
   "Edirne": {
    "Edirne Merkez": [
@@ -1254,60 +2061,122 @@
     "Abdurrahman Mahallesi",
     "Atatürk Mahallesi",
     "Cumhuriyet Mahallesi",
+    "Dilaverbey Mahallesi",
     "Fatih Mahallesi",
+    "Kemalköy Köyü",
     "Koca Sinan Mahallesi",
     "Kurtuluş Mahallesi",
+    "Nişancıpaşa Mahallesi",
     "Sabuni Mahallesi",
+    "Talatpaşa Mahallesi",
+    "Yancıkçı Şahin Mahallesi",
+    "Yeniimaret Mahallesi",
+    "Çavuşbey Mahallesi",
     "İstasyon Mahallesi",
     "Şükrüpaşa Mahallesi"
    ],
    "Enez": [
+    "Büyükevren köyü",
     "Gaziömerbey Mahallesi",
-    "Gülçavuş köyü"
+    "Gülçavuş köyü",
+    "Sultaniça köyü",
+    "Vakıf köyü"
    ],
    "Havsa": [
-    "Cumhuriyet Mahallesi"
+    "Cumhuriyet Mahallesi",
+    "Hacıgazi Mahallesi"
    ],
    "Keşan": [
+    "Aşağı Zaferiye Mahallesi",
     "Büyük Cami Mahallesi",
-    "Yukarı Zaferiye Mahallesi"
+    "Yeni Mahalle",
+    "Yukarı Zaferiye Mahallesi",
+    "İspat Cami Mahallesi"
    ],
+   "Lalapaşa": null,
    "Meriç": null,
    "Süloğlu": [
-    "Küküler Köyü"
+    "Küküler Köyü",
+    "Merkez Mahallesi",
+    "Şafak Mahallesi"
    ],
-   "Uzunköprü": null
+   "Uzunköprü": null,
+   "İpsala": null
   },
   "Elâzığ": {
    "Ağın": [
     "Afet Evleri Mahallesi"
    ],
    "Elâzığ Merkez": [
+    "Abdullah Paşa Mahallesi",
     "Ataşehir Mahallesi",
-    "Çaydaçıra Mahallesi"
+    "Cumhuriyet Mahallesi",
+    "Güneykent Mahallesi",
+    "Hilalkent Mahallesi",
+    "Kültür Mahallesi",
+    "Rızaiye Mahallesi",
+    "Sanayi Mahallesi",
+    "Sarayatik Mahallesi",
+    "Sürsürü Mahallesi",
+    "Çarşı Mahallesi",
+    "Çaydaçıra Mahallesi",
+    "Üniversite Mahallesi",
+    "İcadiye Mahallesi",
+    "İzzet Paşa Mahallesi"
    ],
    "Karakoçan": null,
-   "Kovancılar": null
+   "Keban": [
+    "Fırat Mahallesi"
+   ],
+   "Kovancılar": null,
+   "Maden": null,
+   "Sivrice": null
   },
   "Erzincan": {
    "Erzincan Merkez": [
     "Atatürk Mahallesi",
+    "Ergenekon Mahallesi",
+    "Fatih Mahallesi",
     "Karaağaç Mahallesi",
+    "Menderes Mahallesi",
+    "Mimar Sinan Mahallesi",
+    "Osmanlı Mahallesi",
     "Çarşı Mahallesi",
-    "İnönü Mahallesi"
+    "İnönü Mahallesi",
+    "İzzetpaşa Mahallesi"
    ],
    "Kemah": [
     "Çarşı Mahallesi"
-   ]
+   ],
+   "Refahiye": null,
+   "Tercan": null,
+   "Çayırlı": [
+    "Barbaros Mahallesi"
+   ],
+   "Üzümlü": null,
+   "İliç": null
   },
   "Erzurum": {
-   "Aşkale": null,
-   "Hınıs": null,
-   "Oltu": null,
-   "Palandöken": [
-    "Adnan Menderes Mahallesi",
-    "Hüseyin Avni Ulaş Mahallesi"
+   "Aziziye": [
+    "Gez Köyü OSB",
+    "Gezköy Mahallesi",
+    "Saltuklu Mahallesi",
+    "Selçuklu Mahallesi"
    ],
+   "Aşkale": null,
+   "Horasan": null,
+   "Hınıs": null,
+   "Narman": null,
+   "Oltu": null,
+   "Olur": null,
+   "Palandöken": [
+    "Abdurrahman Gazi Mahallesi",
+    "Adnan Menderes Mahallesi",
+    "Hüseyin Avni Ulaş Mahallesi",
+    "Müftü Solakzade Mahallesi",
+    "Yunusemre Mahallesi"
+   ],
+   "Pasinler": null,
    "Tortum": null,
    "Yakutiye": [
     "Kazım Karabekir Paşa Mahallesi",
@@ -1316,79 +2185,244 @@
     "Muratpaşa Mahallesi",
     "Rabia Ana Mahallesi",
     "Ömer Nasuhi Bilmen Mahallesi",
-    "Üniversite"
+    "Üniversite",
+    "Şükrüpaşa Mahallesi"
    ],
    "İspir": null
   },
   "Eskişehir": {
    "Beylikova": null,
+   "Mihalgazi": null,
+   "Mihalıççık": null,
    "Odunpazarı": [
     "Akarbaşı Mahallesi",
+    "Akcami Mahallesi",
+    "Alanönü Mahallesi",
+    "Arifiye Mahallesi",
+    "Dede Mahallesi",
     "Erenköy Mahallesi",
     "Gökmeydan Mahallesi",
+    "Göztepe Mahallesi",
+    "Gündoğdu Mahallesi",
+    "Huzur Mahallesi",
+    "Karapınar Mahallesi",
     "Kurtuluş Mahallesi",
+    "Kırmızıtoprak Mahallesi",
+    "Orhangazi Mahallesi",
+    "Osmangazi Mahallesi",
+    "Paşa Mahallesi",
     "Sümer Mahallesi",
-    "Çankaya Mahallesi"
+    "Vişnelik Mahallesi",
+    "Yıldıztepe Mahallesi",
+    "Çankaya Mahallesi",
+    "İstiklal Mahallesi"
    ],
    "Sarıcakaya": null,
+   "Seyitgazi": null,
+   "Sivrihisar": [
+    "Yenice Mahallesi"
+   ],
    "Tepebaşı": [
     "Aşağıkartal Mahallesi",
+    "Aşağısöğütönü Mahallesi",
+    "Bahçelievler Mahallesi",
     "Batıkent Mahallesi",
     "Boyacıoğlu Mahallesi",
+    "Cumhuriye Mahallesi",
     "Ertuğrulgazi Mahallesi",
+    "Eskibağlar Mahallesi",
+    "Fatih Mahallesi",
+    "Fevziçakmak Mahallesi",
+    "Güllük Mahallesi",
+    "Hacı Ali Bey Mahallesi",
+    "Hacı Seyit Mahallesi",
+    "Hayriye Mahallesi",
     "Hoşnudiye Mahallesi",
+    "Kumlubel Mahallesi",
+    "Merkez Yeni Mahallesi",
+    "Sazova Mahallesi",
+    "Tunalı Mahallesi",
     "Uluönder Mahallesi",
     "Yaşamkent Mahallesi",
     "Yenibağlar Mahallesi",
     "Yeşiltepe Mahallesi",
-    "Çamlıca Mahallesi"
+    "Yukarı Söğütönü Mahallesi",
+    "Zafer Mahallesi",
+    "Zincirlikuyu Mahallesi",
+    "Çamlıca Mahallesi",
+    "Ömerağa Mahallesi",
+    "Şirintepe Mahallesi"
    ]
   },
   "Gaziantep": {
+   "Araban": [
+    "Başpınar Mahallesi"
+   ],
+   "Nizip": [
+    "Atatürk Mahallesi",
+    "Belkıs Merkez Mahallesi",
+    "Eyüp Sultan Mahallesi",
+    "Fatih Sultan Mahallesi",
+    "Fevzi Paşa Mahallesi",
+    "Fırat Mahallesi",
+    "Menderes Mahallesi",
+    "Mimar Sinan Mahallesi",
+    "Sekili Mahallesi",
+    "Sultan Abdülhamit Mahallesi",
+    "Yeşilevler Mahallesi",
+    "Yunus Emre Mahallesi",
+    "İstasyon Mahallesi",
+    "Şahinbey Mahallesi"
+   ],
+   "Nurdağı": [
+    "Atatürk Mahallesi",
+    "Karşıyaka Mahallesi"
+   ],
+   "Oğuzeli": [
+    "Fatih Mahallesi",
+    "Mimar Sinan Mahallesi"
+   ],
    "İslahiye": [
+    "Atatürk Mahallesi",
+    "Aydınlık Mahallesi",
+    "Beyler Mahallesi",
     "Göltepe Mahallesi",
-    "Serinevler Mahallesi"
+    "Serinevler Mahallesi",
+    "Çamlıca Mahallesi"
    ],
    "Şahinbey": [
     "23 Nisan Mahallesi",
+    "60. Yıl Mahallesi",
+    "75. Yıl Mahallesi",
+    "Abdülhamid Han Mahallesi",
     "Akkent Mahallesi",
+    "Akyol Mahallesi",
+    "Alaybey Mahallesi",
+    "Alleben Mahallesi",
+    "Aydınbaba Mahallesi",
+    "Barak Mahallesi",
+    "Bey Mahallesi",
     "Beştepe Mahallesi",
+    "Binevler Mahallesi",
+    "Bozoklar Mahallesi",
+    "Burç Esentepe Mahallesi",
     "Burç Karakuyu Mahallesi",
+    "Bülbülzade Mahallesi",
+    "Cebeler Mahallesi",
+    "Cumhuriyet Mahallesi",
+    "Deniz Mahallesi",
+    "Dumlupınar Mahallesi",
+    "Durantaş Mahallesi",
+    "Fidanlık Mahallesi",
+    "Geylani Mahallesi",
     "Güneykent Mahallesi",
+    "Güneş Mahallesi",
     "Karataş Mahallesi",
+    "Kavaklık Mahallesi",
+    "Kepenek Mahallesi",
+    "Kozluca Mahallesi",
+    "Kurbanbaba Mahallesi",
+    "Küçükkızılhisar Mahallesi",
+    "Mavikent Mahallesi",
+    "Narlıtepe Mahallesi",
     "Nuripazarbaşı Mahallesi",
+    "Onur Mahallesi",
+    "Perilikaya Mahallesi",
+    "Serince Mahallesi",
+    "Serinevler Mahallesi",
+    "Suyabatmaz Mahallesi",
+    "Tekstilkent Mahallesi",
+    "Türktepe Mahallesi",
+    "Ulaş Mahallesi",
     "Yeditepe Mahallesi",
+    "Yeşilyurt Mahallesi",
     "Çamtepe Mahallesi",
-    "Şahintepe Mahallesi"
+    "İbn-i Sina Mahallesi",
+    "Şahintepe Mahallesi",
+    "Şahveli Mahallesi"
    ],
    "Şehitkamil": [
     "15 Temmuz Mahallesi",
+    "29 Ekim Mahallesi",
+    "8 Şubat Mahallesi",
+    "Atatürk Mahallesi",
+    "Batıkent Mahallesi",
+    "Başpınar OSB Mahallesi",
+    "Belkız Mahallesi",
     "Beykent Mahallesi",
+    "Beylerbeyi Mahallesi",
+    "Burak Mahallesi",
     "Büyükpınar Mahallesi",
     "Değirmiçem Mahallesi",
     "Fıstıklık Mahallesi",
     "Gazikent Mahallesi",
+    "Gaziler Mahallesi",
     "Güvenevler Mahallesi",
     "Karacaahmet Mahallesi",
+    "Karacaoğlan Mahallesi",
+    "Karşıyaka Mahallesi",
+    "Kayaönü Mahallesi",
+    "Merveşehir Mahallesi",
     "Mücahitler Mahallesi",
     "Osmangazi Mahallesi",
-    "Seyrantepe Mahallesi"
+    "Pancarlı Mahallesi",
+    "Sacır Mahallesi",
+    "Sanayi Mahallesi",
+    "Sarıgüllük Mahallesi",
+    "Selimiye Mahallesi",
+    "Seyrantepe Mahallesi",
+    "Yaprak Mahallesi",
+    "İbrahimli Mahallesi",
+    "Şirinevler Mahallesi"
    ]
   },
   "Giresun": {
    "Alucra": null,
-   "Giresun Merkez": null,
+   "Bulancak": null,
+   "Dereli": null,
+   "Espiye": null,
+   "Giresun Merkez": [
+    "Fevzi Çakmak Mahallesi",
+    "Gemilerçekeği Mahallesi",
+    "Güre Mahallesi",
+    "Hacımiktat Mahallesi",
+    "Hacısiyam Mahallesi",
+    "Kapu Mahallesi",
+    "Nizamiye Mahallesi",
+    "Sultan Selim Mahallesi",
+    "Çınarlar Mahallesi",
+    "Şeyhkeramettin Mahallesi"
+   ],
+   "Görele": null,
+   "Keşap": null,
+   "Piraziz": null,
    "Tirebolu": null,
+   "Yağlıdere": null,
    "Şebinkarahisar": null
   },
   "Gümüşhane": {
    "Gümüşhane Merkez": [
     "Bağlarbaşı Mahallesi",
     "Hasanbey Mahallesi",
-    "Oltanbey Mahallesi"
-   ]
+    "Karaer Mahallesi",
+    "Karşıyaka Mahallesi",
+    "Oltanbey Mahallesi",
+    "Yenimahalle Mahallesi",
+    "Özcan Mahallesi",
+    "İnönü Mahallesi"
+   ],
+   "Kelkit": [
+    "Cumhuriyet Mahallesi"
+   ],
+   "Köse": null,
+   "Kürtün": null,
+   "Torul": null,
+   "Şiran": null
   },
   "Hakkâri": {
+   "Hakkari Merkez": [
+    "Pehlivan Mahallesi"
+   ],
    "Yüksekova": [
     "Dize Mahallesi",
     "Esen Yurt Mahallesi",
@@ -1400,77 +2434,194 @@
   },
   "Hatay": {
    "Antakya": [
+    "Akasya Mahallesi",
+    "Akevler Mahallesi",
+    "Altınçay Mahallesi",
     "Cebrail Mahallesi",
+    "Cumhuriyet Mahallesi",
+    "Ekinci Mahallesi",
     "Emek Mahallesi",
+    "Gazi Mahallesi",
     "General Şükrü Kanatlı Mahallesi",
+    "Haraparası Mahallesi",
     "Odabaşı Mahallesi",
-    "Saraykent Mahallesi"
+    "Saraykent Mahallesi",
+    "Zenginler Mahallesi",
+    "Ürgenpaşa Mahallesi"
    ],
    "Arsuz": [
+    "Akçalı Mahallesi",
+    "Arpaderesi Mahallesi",
+    "Arpaçiftlik Mahallesi",
     "Gökmeydan Mahallesi",
     "Karaağaç Konarlı Mahallesi",
     "Karaağaç Övündük Mahallesi"
    ],
    "Belen": [
-    "Halilbey Mahallesi"
+    "Fatih Mahallesi",
+    "Halilbey Mahallesi",
+    "Kömürçukuru Mahallesi",
+    "Sarımazı Mahallesi",
+    "İssume Mahallesi",
+    "Şekere Mahallesi"
    ],
    "Defne": [
-    "Harbiye Mahallesi"
+    "Armutlu Mahallesi",
+    "Aşağıokçular Mahallesi",
+    "Ballıöz Mahallesi",
+    "Dursunlu Mahallesi",
+    "Harbiye Mahallesi",
+    "Subaşı Mahallesi",
+    "Sümerler Mahallesi",
+    "Çekmece Mahallesi"
+   ],
+   "Dörtyol": [
+    "Kışlalar Mahallesi",
+    "Numune Evler Mahallesi",
+    "Yeniyurt Mahallesi",
+    "Yeşilköy Mahallesi",
+    "Çaylı Mahallesi",
+    "Özerli Mahallesi"
+   ],
+   "Erzin": [
+    "Bahçelievler Mahallesi",
+    "Mahmutlu Mahallesi",
+    "Yeni Mahalle",
+    "İsali Mahallesi",
+    "İstiklal Mahallesi"
    ],
    "Hassa": null,
    "Kırıkhan": null,
+   "Payas": [
+    "Karacami Mahallesi",
+    "Karşı Mahalle",
+    "Kürtül Mahallesi",
+    "Yenişehir Mahallesi",
+    "Yıldırım Beyazıt Mahallesi"
+   ],
+   "Reyhanlı": null,
    "Samandağ": null,
+   "Yayladağı": null,
    "İskenderun": [
-    "Mustafa Kemal Mahallesi"
+    "Büyükdere Mahallesi",
+    "Dumlupınar Mah.",
+    "Hürriyet Mah.",
+    "Muradiye Mah.",
+    "Mustafa Kemal Mahallesi",
+    "Savaş Mah.",
+    "Yenişehir Mah."
    ]
   },
   "Isparta": {
    "Aksu": null,
    "Eğirdir": [
+    "Altınkum Mahallesi",
+    "Menderes Mahallesi",
     "Pınarpazarı Mahallesi",
+    "Yazla Mahallesi",
     "İstasyon Mahallesi"
    ],
    "Gelendost": null,
+   "Gönen": null,
    "Isparta Merkez": [
     "Akkent Mahallesi",
+    "Anadolu Mahallesi",
+    "Ayazmana Mahallesi",
+    "Bahçelievler Mahallesi",
     "Batıkent Mahallesi",
     "Binbirevler Mahallesi",
     "Davraz Mahallesi",
     "Dere Mahallesi",
+    "Emre Mahallesi",
     "Fatih Mahallesi",
+    "Gazikemal Mahallesi",
+    "Gülevler Mahallesi",
     "Gülistan Mahallesi",
+    "Halife Sultan Mahallesi",
+    "Halıkent Mahallesi",
     "Hızırbey Mahallesi",
     "Işıkkent Mahallesi",
     "Karaağaç Mahallesi",
+    "Kepeci Mahallesi",
+    "Keçeci Mahallesi",
     "Mehmet Tönge Mahallesi",
+    "Modernevler Mahallesi",
     "Muzaffer Türkeş Mahallesi",
     "Pirimehmet Mahallesi",
+    "Sanayi Mahallesi",
+    "Sermet Mahallesi",
     "Sidre Mahallesi",
+    "Sülübey Mahallesi",
+    "Vatan Mahallesi",
+    "Yedişehitler Mahallesi",
+    "Yeni Yüzyıl Mahallesi",
     "Zafer Mahallesi",
     "Çelebiler Mahallesi",
-    "Çünür Mahallesi"
-   ]
+    "Çünür Mahallesi",
+    "İskender Mahallesi",
+    "İstiklal Mahallesi"
+   ],
+   "Keçiborlu": null,
+   "Senirkent": null,
+   "Sütçüler": null,
+   "Uluborlu": null,
+   "Yalvaç": null,
+   "Şarkikaraağaç": null
   },
   "Iğdır": {
-   "Iğdır Merkez": null
+   "Iğdır Merkez": [
+    "Bağlar Mahallesi",
+    "Söğütlü Mahallesi"
+   ],
+   "Tuzluca": null
   },
   "Kahramanmaraş": {
    "Afşin": null,
    "Andırın": null,
-   "Dulkadiroğlu": null,
-   "Elbistan": null,
-   "Göksun": null,
+   "Dulkadiroğlu": [
+    "Bahçeli Evler Mahallesi",
+    "Egemenlik Mahallesi",
+    "Kurtuluş Mahallesi",
+    "Mehmet Akif Mahallesi",
+    "Menderes Mahallesi",
+    "Yavuz Selim Mahallesi",
+    "Yeni Şehir Mahallesi",
+    "İsmet Paşa Mahallesi"
+   ],
+   "Elbistan": [
+    "Cumhuriyet Mahallesi",
+    "Orhangazi Mahallesi"
+   ],
+   "Göksun": [
+    "Bahçelievler Mahallesi",
+    "Kurtuluş Mahallesi"
+   ],
    "Onikişubat": [
+    "5 Nisan Mahallesi",
+    "Abdülhamid Han Mahallesi",
     "Akif İnan Mahallesi",
     "Akçakoyunlu Mahallesi",
+    "Ağcalı Mahallesi",
+    "Barbaros Mahallesi",
     "Bin Evler Mahallesi",
     "Boğaziçi Mahallesi",
     "Cumhuriyet Mahallesi",
+    "Gayberli Mahallesi",
     "Gedemen Mahallesi",
+    "Hacı Bayram Veli Mahallesi",
     "Haydarbey Mahallesi",
+    "Hayrullah Mahallesi",
     "Hürriyet Mahallesi",
+    "Karamanlı Mahallesi",
     "Maarif Mahallesi",
+    "Malik Ejder Mahallesi",
+    "Mercimektepe Mahallesi",
+    "Mimar Sinan Mahallesi",
+    "Molla Gürani Mahallesi",
     "Necip Fazıl Mahallesi",
+    "Oruç Reis Mahallesi",
+    "Osman Gazi Mahallesi",
+    "Rasim Özdenören Mahallesi",
     "Saçaklızade Mahallesi",
     "Selçuklu Mahallesi",
     "Süleyman Şah Mahallesi",
@@ -1480,155 +2631,369 @@
     "Yamaçtepe Mahallesi",
     "Yirmiikigün Mahallesi",
     "Yunus Emre Mahallesi",
+    "Yusuflar Mahallesi",
     "Üngüt Mahallesi",
-    "Şehit Abdullah Çavuş Mahallesi"
-   ]
+    "Şazi Bey Mahallesi",
+    "Şehit Abdullah Çavuş Mahallesi",
+    "Şehit Evliya Mahallesi"
+   ],
+   "Pazarcık": null,
+   "Türkoğlu": null
   },
   "Karabük": {
    "Eskipazar": [
+    "Merkez Mahallesi",
+    "Yamanlar Mahallesi",
     "Yeni Mahalle"
    ],
    "Karabük Merkez": [
     "100. Yıl Mahallesi",
+    "5000 Evler 75. Yıl Mahallesi",
+    "5000 Evler Bahçelievler Mahallesi",
+    "5000 Evler Cumhuriyet Mahallesi",
+    "Adatepe Mahallesi",
     "Bayır Mahallesi",
     "Ergenekon Mahallesi",
-    "Kılavuzlar Mahallesi"
+    "Hürriyet Mahallesi",
+    "Kartaltepe Mahallesi",
+    "Kurtuluş Mahallesi",
+    "Kılavuzlar Mahallesi",
+    "Soğuksu Mahallesi",
+    "Yeni Mahallesi",
+    "Yeşil Mahallesi",
+    "Üniversite Mahallesi",
+    "Şirinevler Mahallesi"
    ],
-   "Safranbolu": null
+   "Safranbolu": null,
+   "Yenice": null
   },
   "Karaman": {
+   "Ayrancı": [
+    "Dede"
+   ],
+   "Ermenek": [
+    "Güllük Mahallesi",
+    "Seyran Mahallesi"
+   ],
    "Karaman Merkez": [
-    "Valide Sultan Mahallesi"
-   ]
+    "Ahiosman Mahallesi",
+    "Ahmet Yesevi Mahallesi",
+    "Alacasuluk Mahallesi",
+    "Fenari Mahallesi",
+    "Hacıcelal Mahallesi",
+    "Hisar Mahallesi",
+    "Karamanoğlu Mehmet Bey Mahallesi",
+    "Koçakdede Mahallesi",
+    "Külhan Mahallesi",
+    "Osmangazi Mahallesi",
+    "Rauf Denktaş Mahallesi",
+    "Siyahser Mahallesi",
+    "Tabduk Emre Mahallesi",
+    "Valide Sultan Mahallesi",
+    "Çeltek Mahallesi",
+    "İmaret Mahallesi",
+    "Şeyh Edebali Mahallesi"
+   ],
+   "Sarıveliler": null
   },
   "Kars": {
    "Kars Merkez": [
+    "Bülbül Mahallesi",
+    "Cumhuriyet Mahallesi",
+    "Kaleiçi Mahallesi",
+    "Karadağ Mahallesi",
+    "Ortakapı Mahallesi",
+    "Yenişehir Mahallesi",
     "Yusufpaşa Mahallesi",
+    "Örnek Mahallesi",
     "İstasyon Mahallesi",
     "Şehitler Mahallesi"
-   ]
+   ],
+   "Kağızman": null,
+   "Sarıkamış": null
   },
   "Kastamonu": {
+   "Abana": [
+    "Abana Merkez Mahallesi",
+    "Konakören Mahallesi"
+   ],
    "Araç": null,
+   "Azdavay": null,
    "Bozkurt": [
     "Bozkurt Merkez Mahallesi"
    ],
+   "Cide": null,
+   "Daday": null,
+   "Devrekani": null,
    "Hanönü": null,
    "Kastamonu Merkez": [
+    "Aktekke Mahallesi",
+    "Beyçelebi Mahallesi",
     "Candaroğulları Mahallesi",
+    "Cebrail Mahallesi",
     "Esentepe Mahallesi",
+    "Hepkebirler Mahallesi",
     "Kuzeykent Mahallesi",
+    "Mehmet Akif Ersoy Mahallesi",
     "Saraçlar Mahallesi",
     "Topçuoğlu Mahallesi",
     "İnönü Mahallesi"
+   ],
+   "Küre": null,
+   "Seydiler": null,
+   "Tosya": null,
+   "Çatalzeytin": null,
+   "İhsangazi": null,
+   "İnebolu": [
+    "Aşağıhatipbağı Mahallesi",
+    "Cünüriye Mahallesi"
    ]
   },
   "Kayseri": {
+   "Bünyan": [
+    "Fatih Mahallesi",
+    "Yakutiye Mahallesi"
+   ],
+   "Develi": [
+    "Mustafa Asım Köksal Mahallesi"
+   ],
    "Hacılar": [
     "Akyazı Mahallesi",
     "Aşağı Mahallesi",
+    "Erciyes Mahallesi",
     "Yeni Mahallesi"
    ],
    "Kocasinan": [
+    "Ahi Evran Mahallesi",
+    "Alsancak Mahallesi",
+    "Barbaros Mahallesi",
+    "Beyazşehir Mahallesi",
+    "Cumhuriyet Mahallesi",
     "Erciyesevler Mahallesi",
+    "Erkilet Ertuğrul Gazi Mahallesi",
+    "Erkilet Osman Gazi Mahallesi",
+    "Fevzi Çakmak Mahallesi",
     "Gevher Nesibe Mahallesi",
+    "Hoca Ahmet Yesevi Mahallesi",
     "Höbek Mahallesi",
+    "Kayabaşı Mahallesi",
+    "Kocasinan Mahallesi",
+    "Mevlana Mahallesi",
+    "Mimarsinan Mahallesi",
+    "Mithatpaşa Mahallesi",
+    "Oruçreis Mahallesi",
+    "Oymaağaç Mahallesi",
+    "Plevne Mahallesi",
     "Sahabiye Mahallesi",
+    "Sanayi Mahallesi",
+    "Saray Bosna Mahallesi",
+    "Turgut Reis Mahallesi",
+    "Uğurevler Mahallesi",
+    "Yakut Mahallesi",
+    "Yavuz Mahallesi",
+    "Yavuz Selim Mahallesi",
+    "Yeni Mahallesi",
     "Yenidoğan Mahallesi",
+    "Yenipervane Mahallesi",
+    "Yunusemre Mahallesi",
     "Yıldızevler Mahallesi",
     "Zümrüt Mahallesi",
     "Şeker Mahallesi"
    ],
    "Melikgazi": [
+    "30 Ağustos Mahallesi",
+    "Alpaslan Mahallesi",
     "Altınoluk Mahallesi",
+    "Anafartalar Mahallesi",
+    "Anbar Mahallesi",
+    "Aydınlıkevler Mahallesi",
     "Cumhuriyet Mahallesi",
+    "Erenköy Mahallesi",
+    "Esentepe Mahallesi",
+    "Esenyurt Mahallesi",
+    "Germir Mahallesi",
     "Gesi",
+    "Gesi Cumhuriyet Mahallesi",
     "Gökkent Mahallesi",
+    "Gültepe Mahallesi",
     "Gülük Mahallesi",
+    "Hisarcık Erciyes Mahallesi",
+    "Hunat Mahallesi",
+    "Hürriyet Mahallesi",
+    "Karacaoğlu Mahallesi",
+    "Kemeraltı Mahallesi",
+    "Keykubat Mahallesi",
+    "Kocatepe Mahallesi",
     "Konaklar Mahallesi",
+    "Köşk Mahallesi",
+    "Küçük Mustafa Mahallesi",
+    "Küçükali Mahallesi",
+    "Kılıçaslan Mahallesi",
+    "Melikgazi Mahallesi",
+    "Mimarsinan",
     "Mimarsinan Fatih Mahallesi",
+    "Nurihas Mahallesi",
+    "Osman Kavuncu Mahallesi",
     "Osmanlı Mahallesi",
+    "Sakarya Mahallesi",
+    "Selçuklu Mahallesi",
     "Tacettin Veli Mahallesi",
     "Tavlusun Mahallesi",
     "Tınaztepe Mahallesi",
     "Yeni Mahallesi",
+    "Yeniköy Mahallesi",
+    "Yeşilyurt Mahallesi",
+    "Yıldırım Beyazit Mahallesi",
+    "Çorakçılar Mahallesi",
     "Şehit Nazımbey Mahallesi"
    ],
    "Sarız": [
     "Ördekli Mahallesi"
    ],
    "Talas": [
-    "Mevlana Mahallesi"
+    "Bahçelievler Mahallesi",
+    "Kiçiköy Mahallesi",
+    "Mevlana Mahallesi",
+    "Reşadiye Mahallesi",
+    "Tablakaya Mahallesi",
+    "Yenidoğan Mahallesi"
    ],
    "Yahyalı": [
+    "75. Yıl Mahallesi",
     "Seydili Mahallesi"
    ],
    "Yeşilhisar": [
+    "Cumhuriyet Mahallesi",
     "Yavuz Selim Mahallesi"
    ],
    "Özvatan": [
     "Küpeli Mahallesi"
+   ],
+   "İncesu": [
+    "Kızılören Aşağı Mahallesi",
+    "Süksün Zafer Mahallesi"
    ]
   },
   "Kilis": {
    "Kilis Merkez": [
-    "Mehmet Sanlı Mahallesi"
+    "Albay İbrahim Karaoğlanoğlu Mahallesi",
+    "Atatürk Mahallesi",
+    "Doğan Güreş Paşa Mahallesi",
+    "Ebulüla Mahallesi",
+    "Ekrem Çetin Mahallesi",
+    "Hakverdi Mahallesi",
+    "Mehmet Abdi Bulut Mahallesi",
+    "Mehmet Sanlı Mahallesi",
+    "Necmettin Erbakan Mahallesi",
+    "Tekye Mahallesi",
+    "Yaşar Aktürk Mahallesi",
+    "Şehitler Mahallesi"
    ]
   },
   "Kocaeli": {
    "Başiskele": [
+    "Altınkent Mahallesi",
     "Atakent Mahallesi",
+    "Aydınkent Mahallesi",
+    "Bahçecik Kılıçaslan Mahallesi",
     "Bahçecik Şehitekrem Mahallesi",
+    "Barbaros Mahallesi",
     "Damlar Mahallesi",
+    "Döngel Mahallesi",
     "Fatih Mahallesi",
+    "Karadenizliler Mahallesi",
+    "Kullar Yakacık Mahallesi",
+    "Körfez Mahallesi",
+    "Mahmutpaşa Mahallesi",
     "Ovacık Mahallesi",
     "Paşadağ Mahallesi",
+    "Sahil Mahallesi",
+    "Sepetlipınar Mahallesi",
+    "Serdar Mahallesi",
+    "Seymen Mahallesi",
+    "Vezirçiftliği Mahallesi",
     "Yeniköy Merkez Mahallesi",
+    "Yeşilkent Mahallesi",
     "Yeşilyurt Mahallesi"
    ],
    "Darıca": [
+    "Abdi İpekçi Mahallesi",
     "Bayramoğlu Mahallesi",
     "Bağlarbaşı Mahallesi",
     "Cami Mahallesi",
     "Emek Mahallesi",
+    "Fevziçakmak Mahallesi",
+    "Kazımkarabekir Mahallesi",
+    "Nenehatun Mahallesi",
     "Osmangazi Mahallesi",
-    "Piri Reis Mahallesi"
+    "Piri Reis Mahallesi",
+    "Yeni Mahalle"
    ],
    "Derince": [
+    "Deniz Mahallesi",
     "Dumlupınar Mahallesi",
     "Mersincik Mahallesi",
+    "Sırrıpaşa Mahallesi",
     "Yavuz Sultan Mahallesi",
     "Yenikent Mahallesi",
-    "Çınarlı Mahallesi"
+    "Çenedağ Mahallesi",
+    "Çınarlı Mahallesi",
+    "İbnisina Mahallesi"
    ],
    "Dilovası": [
-    "Köseler Mahallesi"
+    "Diliskelesi Mahallesi",
+    "Köseler Mahallesi",
+    "Mimar Sinan Mahallesi",
+    "Tepecik Mahallesi"
    ],
    "Gebze": [
+    "Arapçeşme Mahallesi",
     "Balçık Mahallesi",
     "Barış Mahallesi",
+    "Beylikbağı Mahallesi",
+    "Cumaköy Mahallesi",
+    "Cumhuriyet Mahallesi",
+    "Gaziler Mahallesi",
+    "Güzeller Mahallesi",
     "Hacıhalil Mahallesi",
+    "Kadıllı Mahallesi",
     "Kirazpınar Mahallesi",
     "Köşklü Çeşme Mahallesi",
+    "Mevlana Mahallesi",
+    "Mollafenari Mahallesi",
+    "Muallim Mahallesi",
     "Osman Yılmaz Mahallesi",
+    "Ovacık Mahallesi",
     "Sultan Orhan Mahallesi",
     "Tatlıkuyu Mahallesi",
     "Tavşanlı Mahallesi",
     "Yenikent Mahallesi",
+    "İnönü Mahallesi",
     "İstasyon Mahallesi"
    ],
    "Gölcük": [
     "Atatürk Mahallesi",
+    "Cumhuriyet Mahallesi",
+    "Deniz Evler Mahallesi",
+    "Değirmendere Merkez Mahallesi",
+    "Değirmendere Yalı Mahallesi",
     "Donanma Mahallesi",
+    "Dumlupınar Mahallesi",
     "Düzağaç Mahallesi",
+    "Halıdere Yeni Mahallesi",
+    "Hisareyn Merkez Mahallesi",
     "Karaköprü Mahallesi",
+    "Körfez Mahallesi",
     "Merkez Mahallesi",
+    "Piyalepaşa Mahallesi",
     "Topçular Mahallesi",
+    "Yazlık Yeni Mahallesi",
     "Yeni Mahallesi",
     "Yukarı Mahallesi",
     "Yunus Emre Mahallesi",
     "Yüzbaşılar Mahallesi",
     "Çiftlik Mahallesi",
+    "İpek Yolu Mahallesi",
     "Şehitler Mahallesi",
     "Şirinköy Mahallesi"
    ],
@@ -1637,24 +3002,49 @@
     "Cebeci Mahallesi",
     "Kefken Mahallesi",
     "Kerpe Mahallesi",
-    "Çalköy Mahallesi"
+    "Kurtyeri Mahallesi",
+    "Orhan Mahallesi",
+    "Çalköy Mahallesi",
+    "Çarşı Mahallesi"
    ],
    "Karamürsel": [
+    "4 Temmuz Mahallesi",
+    "Dereköy Mahallesi",
+    "Ereğli Mahallesi",
+    "Kayacık Mahallesi",
     "Pazarköy Mahallesi",
     "Çamçukur Mahallesi"
    ],
    "Kartepe": [
+    "Acısu Mahallesi",
+    "Arslanbey Mahallesi",
+    "Ataevler Mahallesi",
+    "Ataşehir Mahallesi",
+    "Balaban Mahallesi",
+    "Derbent Mahallesi",
     "Dumlupınar Mahallesi",
     "Emekevler Mahallesi",
+    "Ertuğrul Gazi Mahallesi",
     "Fatih Sultan Mehmet Mahallesi",
+    "Karatepe Mahallesi",
     "Ketenciler Mahallesi",
     "Köseköy Mahallesi",
     "Maşukiye Mahallesi",
-    "Nusretiye Mahallesi"
+    "Nusretiye Mahallesi",
+    "Uzunçiftlik Mahallesi",
+    "İstasyon Mahallesi"
    ],
    "Körfez": [
+    "Atalar Mahallesi",
+    "Fatih Mahallesi",
+    "Güney Mahallesi",
+    "Hacı Osman Mahallesi",
+    "Kalburcu Mahallesi",
+    "Kuzey Mahallesi",
     "Mimar Sinan Mahallesi",
     "Yavuz Sultan Selim Mahallesi",
+    "Yeniyalı Mahallesi",
+    "Çamlıtepe Mahallesi",
     "İlimtepe Mahallesi",
     "Şirinyalı Mahallesi"
    ],
@@ -1664,99 +3054,204 @@
     "Cumhuriyet Mahallesi",
     "Emek Mahallesi",
     "Yeni Mahalle",
+    "Özgürlük Mahallesi",
     "Şekerpınar Mahallesi"
    ],
    "İzmit": [
     "28 Haziran Mahallesi",
     "Akarca Mahallesi",
     "Akpınar Mahallesi",
+    "Alikahya Atatürk Mahallesi",
     "Alikahya Cumhuriyet Mahallesi",
     "Alikahya Fatih Mahallesi",
     "Alikahya Merkez Mahallesi",
+    "Arızlı Mahallesi",
     "Ayazma Mahallesi",
     "Cumhuriyet Mahallesi",
     "Erenler Mahallesi",
+    "Fevzi Çakmak Mahallesi",
+    "Gültepe Mahallesi",
+    "Gündoğdu Mahallesi",
+    "Hacıhızır Mahallesi",
+    "Hatipköy Mahallesi",
     "Kabaoğlu Mahallesi",
     "Karaabdülbaki Mahallesi",
     "Karabaş Mahallesi",
     "Kemalpaşa Mahallesi",
     "Kocatepe Mahallesi",
+    "Kozluk Mahallesi",
+    "Kuruçeşme Fatih Mahallesi",
     "Körfez Mahallesi",
+    "Malta Mahallesi",
     "Mehmet Ali Paşa Mahallesi",
     "Orhan Mahallesi",
+    "Sanayi Mahallesi",
     "Sapakpınar Mahallesi",
     "Sekbanlı Mahallesi",
     "Sepetçi Mahallesi",
+    "Serdar Mahallesi",
     "Tavşantepe Mahallesi",
     "Tepecik Mahallesi",
     "Tepeköy Mahallesi",
     "Topçular Mahallesi",
     "Turgut Mahallesi",
+    "Tüysüzler Mahallesi",
+    "Veliahmet Mahallesi",
     "Yahyakaptan Mahallesi",
+    "Yassıbağ Mahallesi",
+    "Yeni Mahalle",
+    "Yenidoğan Mahallesi",
     "Yenişehir Mahallesi",
     "Yeşilova Mahallesi",
+    "Zabıtan Mahallesi",
     "Çayırköy Mahallesi",
     "Ömerağa Mahallesi",
     "Şirintepe Mahallesi"
    ]
   },
   "Konya": {
-   "Akşehir": null,
+   "Akören": null,
+   "Akşehir": [
+    "Ahicelal Mahallesi",
+    "Yenimahalle"
+   ],
    "Altınekin": null,
+   "Beyşehir": null,
    "Bozkır": [
+    "Demirasaf Mahallesi",
     "Yukarı Mahalle"
    ],
-   "Ereğli": [
-    "Hacımutahir Mahallesi",
-    "Mehmet Akif Mahallesi",
-    "Toros Mahallesi"
+   "Cihanbeyli": null,
+   "Derebucak": null,
+   "Doğanhisar": null,
+   "Emirgazi": [
+    "Akmescit Mahallesi"
    ],
+   "Ereğli": [
+    "Aydınlar Mahallesi",
+    "Barbaros Mahallesi",
+    "Batıalagözlü Mahallesi",
+    "Boyacıali Mahallesi",
+    "Cahı Mahallesi",
+    "Camikebir Mahallesi",
+    "Cumhuriyet Mahallesi",
+    "Doğualagözlü Mahallesi",
+    "Eti Mahallesi",
+    "Fatih Mahallesi",
+    "Gülbahçe Mahallesi",
+    "Hacımutahir Mahallesi",
+    "Hıdırlı Mahallesi",
+    "Kazancı Mahallesi",
+    "Mehmet Akif Mahallesi",
+    "Pirömer Mahallesi",
+    "Talatpaşa Mahallesi",
+    "Toros Mahallesi",
+    "Yunuslu Mahallesi",
+    "Ziya Gökalp Mahallesi",
+    "Şinasi Mahallesi"
+   ],
+   "Hadim": null,
    "Halkapınar": [
     "Bahçelievler Mahallesi"
    ],
+   "Hüyük": null,
+   "Ilgın": [
+    "Ayvatdede Mahallesi",
+    "Camiiatik Mahallesi",
+    "Millî Egemenlik Mahallesi"
+   ],
+   "Kadınhanı": null,
+   "Karapınar": null,
    "Karatay": [
     "Akabe Mahallesi",
     "Araplar Mahallesi",
     "Aziziye Mahallesi",
     "Emirgazi Mahallesi",
+    "Erenler Mahallesi",
+    "Fetih Mahallesi",
     "Fevziçakmak Mahallesi",
+    "Gaziosmanpaşa Mahallesi",
     "Hacıveyiszade Mahallesi",
+    "Hamzaoğlu Mahallesi",
+    "Kalenderhane Mahallesi",
+    "Karaaslan Mahallesi",
+    "Keçeciler Mahallesi",
     "Kumköprü Mahallesi",
+    "Mengene Mahallesi",
     "Nakipoğlu Mahallesi",
+    "Sarıyakup Mahallesi",
     "Sedirler Mahallesi",
+    "Selimsultan Mahallesi",
+    "Sultan Mesud Mahallesi",
     "Tatlıcak Mahallesi",
     "Ulubatlıhasan Mahallesi",
+    "Yediler Mahallesi",
+    "Çatalhüyük Mahallesi",
     "Çimenlik Mahallesi",
+    "İşgalaman Mahallesi",
     "Şemsitebrizi Mahallesi"
    ],
+   "Kulu": [
+    "Camikebir Mahallesi",
+    "Fatih Sultan Mehmet Mahallesi",
+    "Kemaliye Mahallesi",
+    "Tuzyaka Mahallesi"
+   ],
    "Meram": [
+    "Alavardı Mahallesi",
+    "Alpaslan Mahallesi",
+    "Ateşbaz Veli Mahallesi",
     "Ayanbey Mahallesi",
     "Aydoğdu Mahallesi",
+    "Aymanas Mahallesi",
+    "Aşkan Mahallesi",
     "Harmancık Mahallesi",
     "Hatıp Mahallesi",
     "Havzan Mahallesi",
     "Karahüyük Mahallesi",
     "Konevi Mahallesi",
+    "Kovanağzı Mahallesi",
     "Kozağaç Mahallesi",
+    "Köyceğiz Mahallesi",
     "Lalebahçe Mahallesi",
+    "Melikşah Mahallesi",
+    "Osman Gazi Mahallesi",
     "Pirebi Mahallesi",
     "Sahibata Mahallesi",
+    "Uluğbey Mahallesi",
     "Uluırmak Mahallesi",
+    "Uzunharmanlar Mahallesi",
+    "Yaka Mahallesi",
+    "Yaylapınar Mahallesi",
     "Yenişehir Mahallesi",
     "Çaybaşı Mahallesi"
+   ],
+   "Sarayönü": [
+    "Saraç Mahallesi"
    ],
    "Selçuklu": [
     "Akademi Mahallesi",
     "Akıncılar Mahallesi",
+    "Akşemsettin Mahallesi",
+    "Aydınlıkevler Mahallesi",
+    "Aşağıpınarbaşı Mahallesi",
+    "Bedir Mahallesi",
     "Beyhekim Mahallesi",
     "Binkonutlar Mahallesi",
     "Bosna Hersek Mahallesi",
     "Buhara Mahallesi",
+    "Büyükkayacık Mahallesi",
     "Cumhuriyet Mahallesi",
+    "Dumlupınar Mahallesi",
     "Erenköy Mahallesi",
+    "Esenler Mahallesi",
+    "Fatih Mahallesi",
+    "Ferhuniye Mahallesi",
     "Feritpaşa Mahallesi",
     "Hacıkaymak Mahallesi",
     "Hanaybaşı Mahallesi",
+    "Hocacihan Mahallesi",
+    "Horozluhan Mahallesi",
     "Hüsamettin Çelebi Mahallesi",
     "Işıklar Mahallesi",
     "Kosova Mahallesi",
@@ -1766,7 +3261,9 @@
     "Musalla Bağları Mahallesi",
     "Nişantaş Mahallesi",
     "Parsana Mahallesi",
+    "Sakarya Mahallesi",
     "Sancak Mahallesi",
+    "Selahaddini Eyyubi Mahallesi",
     "Selçuk Mahallesi",
     "Sille Ak Mahallesi",
     "Sille Mahallesi",
@@ -1776,134 +3273,331 @@
     "Şeyh Şamil Mahallesi"
    ],
    "Seydişehir": [
+    "Aktaş Mahallesi",
     "Alaylar Bir Mahallesi",
-    "Alaylar İki Mahallesi"
+    "Alaylar İki Mahallesi",
+    "Kızılcalar Mahallesi",
+    "Seyitharun Mahallesi",
+    "Ulukapı Mahallesi"
+   ],
+   "Taşkent": [
+    "Hıra Mahallesi"
+   ],
+   "Yunak": null,
+   "Çumra": [
+    "Bakkalbaşı Mahallesi",
+    "Bardakçı Mahallesi",
+    "Bağlar Mahallesi",
+    "Cumhuriyet Mahallesi",
+    "Çaybaşı Mahallesi",
+    "İzzetbey Mahallesi"
    ]
   },
   "Kütahya": {
-   "Gediz": null,
+   "Altıntaş": null,
+   "Emet": null,
+   "Gediz": [
+    "Fırdan Köyü"
+   ],
+   "Hisarcık": null,
    "Kütahya Merkez": [
     "75. Yıl Mahallesi",
+    "Alipaşa Mahallesi",
     "Balıklı Mahallesi",
     "Cumhuriyet Mahallesi",
     "Dumlupınar Mahallesi",
-    "Yunusemre Mahallesi"
-   ]
+    "Fatih Mahallesi",
+    "Fuatpaşa Mahallesi",
+    "Gaybiefendi Mahallesi",
+    "Servi Mahallesi",
+    "Vefa Mahallesi",
+    "Yunusemre Mahallesi",
+    "Yıldırım Beyazıt Mahallesi"
+   ],
+   "Simav": [
+    "4 Eylül Mahallesi",
+    "Esenevler Mahallesi",
+    "Fatih Mahallesi",
+    "Muradınlar Mahallesi"
+   ],
+   "Tavşanlı": null,
+   "Şaphane": null
   },
   "Kırklareli": {
    "Babaeski": [
+    "Atatürk Mahallesi",
+    "Cumhuriyet Mahallesi",
+    "Dindoğru Mahallesi",
+    "Gazikemal Mahallesi",
+    "Gaziosmanpaşa Mahallesi",
     "Gülbahçe Mahallesi",
+    "Hacıhasan Mahallesi",
+    "Hamidiye Mahallesi",
+    "Kurtuluş Mahallesi",
     "Yeni Mahalle",
     "Şeker Mahallesi"
    ],
    "Demirköy": [
     "Deniz Mahallesi",
     "Hamdibey Mahallesi",
-    "Orhaniye Mahallesi"
+    "Limanköy",
+    "Orhaniye Mahallesi",
+    "Yeni Mahalle"
    ],
    "Kırklareli Merkez": [
+    "Akalar Mahallesi",
     "Atatürk Mahallesi",
     "Bademlik Mahallesi",
+    "Cumhuriyet Mahallesi",
     "Demirtaş Mahallesi",
-    "Karakaş Mahallesi"
+    "Karacaibrahim Mahallesi",
+    "Karakaş Mahallesi",
+    "Pınar Mahallesi",
+    "İstasyon Mahallesi"
    ],
    "Lüleburgaz": [
     "8 Kasım Mahallesi",
     "Atatürk Mahallesi",
     "Ayvalı",
     "Gençlik Mahallesi",
+    "Gündoğu Mahallesi",
+    "Güneş Mahallesi",
+    "Hürriyet Mahallesi",
+    "Kocasinan Mahallesi",
+    "Kurtuluş Mahallesi",
     "Sevgi Mahallesi",
     "Siteler Mahallesi",
     "Yeni Mahalle",
+    "Yıldırım Mahallesi",
+    "Yıldız Mahallesi",
     "Zafer Mahallesi",
     "Özerler Mahallesi",
+    "İnönü Mahallesi",
     "İstiklal Mahallesi"
    ],
    "Pınarhisar": [
-    "Camiikebir Mahallesi"
+    "Beylik Mahallesi",
+    "Camiikebir Mahallesi",
+    "Dere Mahallesi",
+    "Orta Mahalle"
    ],
    "Vize": [
     "Devlet Mahallesi",
+    "Evren Mahallesi",
+    "Gazi Mahallesi",
     "Güven Mahallesi",
     "Hürriyet Mahallesi"
    ]
   },
   "Kırıkkale": {
+   "Bahşılı": [
+    "Doğanay Mahallesi"
+   ],
    "Karakeçili": [
     "Yeşilevler Mahallesi"
    ],
    "Kırıkkale Merkez": [
     "Bahçelievler Mahallesi",
-    "Fabrikalar Mahallesi"
+    "Bağlarbaşı Mahallesi",
+    "Fabrikalar Mahallesi",
+    "Gündoğdu Mahallesi",
+    "Gürler Mahallesi",
+    "Kaletepe Mahallesi",
+    "Kurtuluş Mahallesi",
+    "Osmangazi Mahallesi",
+    "Tepebaşı Mahallesi",
+    "Yaylacık Mahallesi",
+    "Yenidoğan Mahallesi",
+    "Yenimahalle Mahallesi",
+    "Çalılıöz Mahallesi"
    ],
    "Yahşihan": null
   },
   "Kırşehir": {
-   "Kaman": null,
+   "Boztepe": null,
+   "Kaman": [
+    "Orta Mahalle",
+    "Yenimahalle"
+   ],
    "Kırşehir Merkez": [
     "Ahievran Mahallesi",
     "Aşıkpaşa Mahallesi",
     "Medrese Mahallesi"
    ],
    "Mucur": [
-    "Osmangazi Mahallesi"
-   ]
+    "Hamidiye Mahallesi",
+    "Osmangazi Mahallesi",
+    "Yenice Mahallesi"
+   ],
+   "Çiçekdağı": null
   },
   "Malatya": {
    "Battalgazi": [
+    "B.Hüseyinbey Mahallesi",
+    "B.Mustafa Paşa Mahallesi",
+    "Başharık Mahallesi",
     "Bulgurlu Mahallesi",
+    "Cevherizade Mahallesi",
+    "Dabakhane Mahallesi",
+    "Fırat Mahallesi",
+    "Göztepe Mahallesi",
+    "Hacı Abdi Mahallesi",
     "Halfettin Mahallesi",
+    "Hidayet Mahallesi",
+    "Kavaklıbağ Mahallesi",
+    "Kernek Mahallesi",
     "Merkez Beydağı Mahallesi",
+    "Niyazi Mahallesi",
+    "Paşaköşkü Mahallesi",
     "Sarıcıoğlu Mahallesi",
+    "Selçuklu Mahallesi",
     "Tandoğan Mahallesi",
+    "Yenihamam Mahallesi",
     "Yıldıztepe Mahallesi",
+    "Zafer Mahallesi",
     "Çamurlu Mahallesi",
+    "Çöşnük Mahallesi",
+    "Üçbağlar Mahallesi",
+    "İsmetiye Mahallesi",
+    "İzzetiye Mahallesi",
     "Şifa Mahallesi"
    ],
    "Darende": [
-    "Hacıderviş Mahallesi"
+    "Hacıderviş Mahallesi",
+    "Heyiketeği Mahallesi",
+    "Nadir Mahallesi"
+   ],
+   "Doğanşehir": [
+    "Doğu Mahallesi",
+    "Erkenek Mahallesi",
+    "Esentepe Mahallesi",
+    "Yeni Mahalle"
+   ],
+   "Hekimhan": [
+    "Bahçelievler Mahallesi"
    ],
    "Yeşilyurt": [
+    "1. Organize Sanayi Bölgesi Mahallesi",
+    "2. Organize Sanayi Bölgesi Mahallesi",
+    "Abdulgaffar Mahallesi",
+    "Aşağı Bağlar Mahallesi",
+    "Bentbaşı Mahallesi",
     "Bostanbaşı Mahallesi",
+    "Cevatpaşa Mahallesi",
+    "Cumhuriyet Mahallesi",
+    "Hoca Ahmet Yesevi Mahallesi",
+    "Karakavak Mahallesi",
     "Koyunoğlu Mahallesi",
     "Salköprü Mahallesi",
+    "Samanlı Mahallesi",
+    "Tecde Mahallesi",
     "Turgut Özal Mahallesi",
     "Yakınca Mahallesi",
+    "Yavuz Selim Mahallesi",
+    "Zaviye Mahallesi",
+    "Çavuşoğlu Mahallesi",
+    "Çilesiz Mahallesi",
     "Çukurdere Mahallesi",
+    "Öncü Mahallesi",
+    "Özalper Mahallesi",
+    "İlyas Mahallesi",
     "İnönü Mahallesi",
     "Şeyh Bayram Mahallesi"
    ]
   },
   "Manisa": {
    "Akhisar": [
+    "Atatürk Mahallesi",
+    "Cumhuriyet Mahallesi",
+    "Efendi Mahallesi",
     "Hacıishak Mahallesi",
-    "Hürriyet Mahallesi"
+    "Hürriyet Mahallesi",
+    "Reşatbey Mahallesi",
+    "Ulucami Mahallesi"
    ],
+   "Alaşehir": [
+    "Yenice Mahallesi"
+   ],
+   "Demirci": null,
+   "Gölmarmara": null,
+   "Kula": [
+    "4 Eylül Mahallesi",
+    "Akgün Mahallesi",
+    "Camii Cedit Mahallesi",
+    "Zaferiye Mahallesi"
+   ],
+   "Köprübaşı": null,
+   "Kırkağaç": null,
    "Salihli": [
-    "Yörük"
+    "Aksoy",
+    "Cumhuriyet",
+    "Güneş",
+    "Kocaçeşme",
+    "Mitatpaşa",
+    "Sağlık",
+    "Yörük",
+    "Şehitler"
+   ],
+   "Saruhanlı": null,
+   "Sarıgöl": [
+    "Konak Mahallesi"
    ],
    "Selendi": null,
+   "Soma": null,
+   "Turgutlu": [
+    "Cumhuriyet Mahallesi",
+    "Kurtuluş Mahallesi",
+    "Subaşı Mahallesi"
+   ],
    "Yunusemre": [
+    "75. Yıl Mahallesi",
     "Akgedik Mahallesi",
+    "Akmescit Mahallesi",
+    "Atatürk Mahallesi",
+    "Barbaros Mahallesi",
+    "Cumhuriyet Mahallesi",
     "Güzelyurt Mah.",
     "Hafsa Sultan Mahallesi",
+    "Keçiliköy Mahallesi",
+    "Keçiliköy OSB Mahallesi",
+    "Laleli Mahallesi",
+    "Merkez Efendi Mahallesi",
+    "Mesir Mahallesi",
     "Muradiye Mahallesi",
-    "Uncubozköy Mahallesi"
+    "Tevfikiye Mahallesi",
+    "Uncubozköy Mahallesi",
+    "Yenimahalle Mahallesi"
    ],
    "Şehzadeler": [
+    "1.Anafartalar Mahallesi",
     "2.Anafartalar Mahallesi",
+    "Adnan Menderes Mahallesi",
+    "Dilşikar Mahallesi",
+    "Kuşlubahçe Mahallesi",
+    "Nurlupınar Mahallesi",
+    "Peker Mahallesi",
+    "Sakarya Mahallesi",
+    "Utku Mahallesi",
     "Yarhasanlar Mahallesi"
    ]
   },
   "Mardin": {
    "Artuklu": [
     "13 Mart Mahallesi",
-    "Yenişehir Mahallesi"
+    "Yenişehir Mahallesi",
+    "Şar Mahallesi"
    ],
    "Dargeçit": [
     "Bahçebaşı Mahallesi"
    ],
-   "Kızıltepe": null,
+   "Kızıltepe": [
+    "Atatürk Mahallesi",
+    "Tepebaşı Mahallesi",
+    "Yeni Mahalle",
+    "Yenikent Mahallesi",
+    "Zergan Mahallesi",
+    "İpek Mahallesi"
+   ],
    "Mazıdağı": [
     "Poyraz Mahallesi"
    ],
@@ -1911,71 +3605,160 @@
     "Bahçelievler Mahallesi",
     "Bağlar Mahallesi",
     "Gölcük Mahallesi",
-    "Seyitler Mahallesi"
+    "Seyitler Mahallesi",
+    "Yeni Mahallesi",
+    "Yunus Emre Mahallesi"
    ],
    "Nusaybin": [
-    "8 Mart Mahallesi"
+    "8 Mart Mahallesi",
+    "Fırat Mahallesi",
+    "Yeşilkent Mahallesi"
    ]
   },
   "Mersin": {
    "Akdeniz": [
+    "Bahçe Mahallesi",
+    "Bahşiş Mahallesi",
     "Barış Mahallesi",
     "Cami Şerif Mahallesi",
     "Hal Mahallesi",
+    "Kiremithane Mahallesi",
     "Mahmudiye Mahallesi",
+    "Mesudiye Mahallesi",
+    "Mithatpaşa Mahallesi",
+    "Nusratiye Mahallesi",
+    "Turgutreis Mahallesi",
     "Yeni Mahallesi",
     "Çankaya Mahallesi",
-    "İhsaniye Mahallesi"
+    "Üçocak Mahallesi",
+    "İhsaniye Mahallesi",
+    "Şevketsümer Mahallesi"
    ],
    "Anamur": null,
+   "Aydıncık": null,
    "Bozyazı": null,
    "Erdemli": null,
    "Gülnar": null,
    "Mezitli": [
     "Akdeniz Mahallesi",
+    "Atatürk Mahallesi",
     "Fatih Mahallesi",
     "Menderes Mahallesi",
-    "Merkez Mahallesi"
+    "Merkez Mahallesi",
+    "Viranşehir Mahallesi",
+    "Yeni Mahallesi"
    ],
+   "Mut": null,
    "Silifke": null,
    "Tarsus": [
     "Akşemsettin Mahallesi",
+    "Altaylılar Mahallesi",
     "Anıt Mahallesi",
+    "Atatürk Mahallesi",
+    "Barbaros Mahallesi",
+    "Bağlar Mahallesi",
+    "Beydeğirmeni Mahallesi",
+    "Duatepe Mahallesi",
     "Ergenekon Mahallesi",
+    "Fatih Mahallesi",
+    "Ferahimşalvuz Mahallesi",
+    "Gözlükule Mahallesi",
+    "Hürriyet Mahallesi",
+    "Kavaklı Mahallesi",
     "Kırklarsırtı Mahallesi",
     "Kızılmurat Mahallesi",
     "Mithatpaşa Mahallesi",
+    "Tekke Mahallesi",
+    "Tozkoparan Zahit Mahallesi",
+    "Yarbay Şemsettin Mahallesi",
     "Yeni Mahallesi",
+    "Yeni Ömerli Mahallesi",
+    "Öğretmenler Mahallesi",
     "Şehitishak Mahallesi",
-    "Şehitler Tepesi Mahallesi"
+    "Şehitler Tepesi Mahallesi",
+    "Şehitmustafa Mahallesi"
    ],
    "Toroslar": [
+    "Akbelen Mahallesi",
+    "Alsancak Mahallesi",
+    "Demirtaş Mahallesi",
+    "Güneykent Mahallesi",
+    "Halkkent Mahallesi",
+    "Hüseyin Okan Merzeci Mahallesi",
     "Korukent Mahallesi",
+    "Mevlana Mahallesi",
+    "Mithat Toroğlu Mahallesi",
+    "Mustafa Kemal Mahallesi",
+    "Osmaniye Mahallesi",
     "Portakal Mahahallesi",
-    "Tozkoparan Mahallesi"
+    "Sağlık Mahallesi",
+    "Toroslar Mahallesi",
+    "Tozkoparan Mahallesi",
+    "Turgut Türkalp Mahallesi",
+    "Turunçlu Mahallesi",
+    "Zeki Ayan Mahallesi",
+    "Çavuşlu Mahallesi",
+    "Çağdaşkent Mahallesi",
+    "Çukurova Mahallesi"
    ],
    "Yenişehir": [
+    "50. Yıl Mahallesi",
+    "Akkent Mahallesi",
+    "Aydınlıkevler Mahallesi",
+    "Bahçelievler Mahallesi",
     "Barbaros Mahallesi",
+    "Batıkent Mahallesi",
+    "Cumhuriyet Mahallesi",
+    "Dumlupınar Mahallesi",
+    "Eğriçam Mahallesi",
     "Fuatmorel Mahallesi",
+    "Gazi Mahallesi",
+    "Güvenevler Mahallesi",
+    "Hürriyet Mahallesi",
+    "Kuzeykent Mahallesi",
+    "Limonluk Mahallesi",
     "Menteş Mahallesi",
-    "Çiftlikköy Mahallesi"
-   ]
+    "Palmiye Mahallesi",
+    "Pirireis Mahallesi",
+    "Çiftlikköy Mahallesi",
+    "İnönü Mahallesi"
+   ],
+   "Çamlıyayla": null
   },
   "Muğla": {
    "Bodrum": [
-    "Akyarlar Mahallesi"
+    "Akyarlar Mahallesi",
+    "Akçaalan Mahallesi",
+    "Eskiçeşme Mahallesi",
+    "Tepecik Mahallesi",
+    "Çarşı Mahallesi"
    ],
    "Dalaman": null,
    "Datça": null,
    "Fethiye": [
     "Akarca Mahallesi",
+    "Babataşı Mahallesi",
+    "Cami Mahallesi",
     "Cumhuriyet Mahallesi",
+    "Foça Mahallesi",
+    "Karagedik Mahallesi",
+    "Karagözler Mahallesi",
+    "Kargı Mahallesi",
+    "Kayaköy Mahallesi",
+    "Kesikkapı Mahallesi",
     "Patlangıç Mahallesi",
+    "Pazaryeri Mahallesi",
     "Taşyaka Mahallesi",
     "Tuzla Mahallesi",
+    "Yeni Mahalle",
+    "Çatalarık Mahallesi",
+    "Çiftlik Mahallesi",
     "Ölüdeniz Mahallesi"
    ],
-   "Köyceğiz": null,
+   "Kavaklıdere": null,
+   "Köyceğiz": [
+    "Ulucami Mahallesi"
+   ],
    "Marmaris": null,
    "Menteşe": [
     "Emirbeyazıt Mahallesi",
@@ -1987,61 +3770,175 @@
    "Milas": null,
    "Ortaca": null,
    "Seydikemer": null,
+   "Ula": null,
    "Yatağan": null
   },
   "Muş": {
+   "Bulanık": null,
    "Muş Merkez": [
+    "Hürriyet Mahallesi",
+    "Karşıyaka Mahallesi",
     "Kültür Mahallesi",
     "Minare Mahallesi",
+    "Muratpaşa Mahallesi",
     "Saray Mahallesi",
     "Sunay Mahallesi",
+    "Yeni Mahalle",
     "Yeşilyurt Mahallesi"
    ]
   },
   "Nevşehir": {
+   "Acıgöl": null,
    "Avanos": null,
+   "Gülşehir": [
+    "Tuzköyü Mahallesi"
+   ],
    "Hacıbektaş": null,
+   "Kozaklı": [
+    "Abdi Köyü"
+   ],
    "Nevşehir Merkez": [
-    "Bekdik Mahallesi"
-   ]
+    "20 Temmuz Mahallesi",
+    "Bahçelievler Mahallesi",
+    "Bekdik Mahallesi",
+    "Cevher Dudayev Mahallesi",
+    "Sümer Mahallesi"
+   ],
+   "Ürgüp": null
   },
   "Niğde": {
+   "Bor": null,
    "Niğde Merkez": [
+    "Aşağı Kayabaşı Mahallesi",
+    "Efendibey Mahallesi",
     "Kale Mahallesi",
+    "Kayaardı Mahallesi",
+    "Kumluca Mahallesi",
     "Nar Mahallesi",
+    "Sarıköprü Mahallesi",
     "Selçuk Mahallesi",
-    "Şahsüleyman Mahallesi"
+    "Yukarı Kayabaşı Mahallesi",
+    "İlhanlı Mahallesi",
+    "İnönü Mahallesi",
+    "Şahsüleyman Mahallesi",
+    "Şehitler Mahallesi"
    ],
-   "Ulukışla": null
+   "Ulukışla": null,
+   "Çiftlik": null
   },
   "Ordu": {
+   "Akkuş": [
+    "Yazlıkbelen Mahallesi"
+   ],
    "Altınordu": [
+    "Akyazı Mahallesi",
+    "Akçatepe Mahallesi",
+    "Bahçelievler Mahallesi",
+    "Bucak Mahallesi",
     "Cumhuriyet Mahallesi",
     "Durugöl Mahallesi",
+    "Düz Mahallesi",
+    "Eskipazar Mahallesi",
+    "Güzelyalı Mahallesi",
+    "Karacaömer Mahallesi",
+    "Karapınar Mahallesi",
     "Karşıyaka Mahallesi",
+    "Kirazlimanı Mahallesi",
+    "Kumbaşı Mahallesi",
+    "Nizamettin Mahallesi",
+    "Saray Mahallesi",
+    "Selimiye Mahallesi",
+    "Terzili Mahallesi",
     "Yeni Mahallesi",
-    "Şahincili Mahallesi"
+    "Şahincili Mahallesi",
+    "Şarkiye Mahallesi",
+    "Şirinevler Mahallesi"
    ],
    "Fatsa": [
     "Ayazlı Mahallesi",
-    "Fatih Mahallesi"
+    "Dolunay Mahallesi",
+    "Dumlupınar Mahallesi",
+    "Evkaf Mahallesi",
+    "Fatih Mahallesi",
+    "Kurtuluş Mahallesi",
+    "Mustafakemalpaşa Mahallesi",
+    "Sakarya Mahallesi",
+    "Yalıköy Mahallesi",
+    "Şerefiye Mahallesi"
+   ],
+   "Gölköy": [
+    "Gölköy Mahallesi",
+    "Kuşluvan Mahallesi"
+   ],
+   "Gülyalı": [
+    "Turnasuyu Mahallesi",
+    "Yeniköy Mahallesi",
+    "Ürümbey Mahallesi"
+   ],
+   "Kabadüz": [
+    "Musakırık Mahallesi"
+   ],
+   "Korgan": [
+    "Karakoyunlu Mahallesi",
+    "Tepe Mahallesi",
+    "Yenipınar Mahallesi"
+   ],
+   "Kumru": [
+    "Balı Mahallesi",
+    "Karacali Mahallesi",
+    "Samur Mahallesi"
+   ],
+   "Mesudiye": [
+    "Merkez Mahallesi"
+   ],
+   "Perşembe": [
+    "Boğazcık Mahallesi",
+    "Efirli Mahallesi",
+    "Hamidiye Mahallesi",
+    "Kacalı Mahallesi",
+    "Kaleyaka Mahallesi",
+    "Çerli Mahallesi",
+    "Çınar Mahallesi"
+   ],
+   "Ulubey": [
+    "Yolbaşı Mahallesi",
+    "Çatallı Mahallesi"
    ],
    "Ünye": [
-    "Gölevi"
+    "Atatürk Mahallesi",
+    "Burunucu Mahallesi",
+    "Cevizdere Mahallesi",
+    "Gölevi",
+    "Hamidiye",
+    "Kaledere",
+    "Keş Mahallesi",
+    "Liseler Mahallesi",
+    "Çamurlu Mahallesi",
+    "Çınarlık Mahallesi"
    ]
   },
   "Osmaniye": {
+   "Bahçe": null,
    "Düziçi": null,
    "Kadirli": [
     "Cemalpaşa Mahallesi",
     "Cengiz Topel Mahallesi",
+    "Dere Mahallesi",
     "Oruçbey Köyü",
+    "Pazar Mahallesi",
     "Sarıtanışmanlı Köyü",
+    "Tufanpaşa Mahallesi",
+    "Yeni Mahallesi",
+    "Şehit Kansu Küçükateş Mahallesi",
     "Şehit Mustafa Yağız Mahallesi",
-    "Şehit Orhan Gök Mahallesi"
+    "Şehit Orhan Gök Mahallesi",
+    "Şehit Vedat Kocadallı Mahallesi"
    ],
    "Osmaniye Merkez": [
     "Adnan Menderes Mahallesi",
+    "Ali Bekirli Mahallesi",
+    "Alibeyli Mahallesi",
+    "Cumhuriyet Mahallesi",
     "Esenevler Mahallesi"
    ],
    "Toprakkale": [
@@ -2049,79 +3946,207 @@
    ]
   },
   "Rize": {
+   "Ardeşen": [
+    "Armağan",
+    "Barış Mahallesi",
+    "Beyazkaya",
+    "Fatih Mahallesi",
+    "Fırtına Mahallesi",
+    "Manganez",
+    "Müftü Mahallesi",
+    "Yavuz Selim Mahallesi",
+    "Yeni Mahallesi"
+   ],
    "Fındıklı": [
-    "Aksu Mahallesi"
+    "Aksu Mahallesi",
+    "Liman Mahallesi",
+    "Merkez Mahallesi",
+    "Sahil Mahallesi",
+    "Sümer"
    ],
    "Güneysu": [
-    "Adacami"
+    "Adacami",
+    "Eskicami"
    ],
    "Hemşin": [
     "Ortaköy"
    ],
    "Pazar": [
-    "Hamidiye"
+    "Cumhuriyet",
+    "Güzelyalı Mahallesi",
+    "Hamidiye",
+    "Kirazlık",
+    "Ocak",
+    "Pazar",
+    "Zafer"
    ],
    "Rize Merkez": [
     "Bağdatlı Mahallesi",
+    "Boğaz Mahallesi",
+    "Camiönü Mahallesi",
+    "Dağınıksu Mahallesi",
+    "Eminettin Mahallesi",
+    "Engindere Mahallesi",
+    "Fener Mahallesi",
     "Gülbahar Mahallesi",
+    "Hamidiye Mahallesi",
+    "Kale Mahallesi",
+    "Kaplıca Mahallesi",
+    "Mermerdelen Mahallesi",
     "Müftü Mahallesi",
     "Paşakuyu Mahallesi",
+    "Piriçelebi Mahallesi",
+    "Portakallık Mahallesi",
+    "Taşlıdere Mahallesi",
+    "Tophane Mahallesi",
+    "Yeniköy Mahallesi",
     "Çamlıbel Mahallesi",
+    "Çarşı Mahallesi",
     "İslampaşa Mahallesi"
    ],
    "Çamlıhemşin": [
-    "Güllü"
+    "Aşağı Şimşirli",
+    "Behice",
+    "Dikkaya",
+    "Güllü",
+    "Kaplıca",
+    "Konaklar Mah.",
+    "Köprübaşı",
+    "Merkez",
+    "Yolkıyı",
+    "Yukarı Şimşirli",
+    "Çat",
+    "Şenyuva"
+   ],
+   "Çayeli": [
+    "Büyük Taşhane",
+    "Eskipazar",
+    "Sabuncular",
+    "Taşhane",
+    "Yaka",
+    "Yalı",
+    "Yenipazar",
+    "Şairler"
+   ],
+   "İyidere": [
+    "Fıçıtaşı"
    ]
   },
   "Sakarya": {
    "Adapazarı": [
     "15 Temmuz Camili Mahallesi",
+    "Akıncılar Mahallesi",
+    "Cumhuriyet Mahallesi",
     "Güneşler Merkez Mahallesi",
+    "Karaman Mahallesi",
+    "Karapınar Mahallesi",
     "Korucuk Mahallesi",
+    "Kurtuluş Mahallesi",
+    "Maltepe Mahallesi",
+    "Mithatpaşa Mahallesi",
     "Orta Mahalle",
     "Ozanlar Mahallesi",
+    "Papuççular Mahallesi",
+    "Sakarya Mahallesi",
+    "Semerciler Mahallesi",
     "Tekeler Mahallesi",
     "Tepekum Mahallesi",
+    "Tuzla Mahallesi",
+    "Tığcılar Mahallesi",
     "Yağcılar Mahallesi",
-    "Yenigün Mahallesi"
+    "Yenidoğan Mahallesi",
+    "Yenigün Mahallesi",
+    "Çukurahmediye Mahallesi",
+    "İstiklal Mahallesi",
+    "Şeker Mahallesi",
+    "Şirinevler Mahallesi"
    ],
    "Akyazı": null,
    "Arifiye": [
+    "Arifbey Mahallesi",
+    "Hanlı Merkez Mahallesi",
     "Hanlıköy Mahallesi",
     "Neviye Mahallesi"
    ],
+   "Erenler": [
+    "Bağlar Mahallesi",
+    "Dilmen Mahallesi",
+    "Erenler Mahallesi",
+    "Hacıoğlu Mahallesi",
+    "Küpçüler Mahallesi",
+    "Tabakhane Mahallesi",
+    "Yeni Mahallesi",
+    "Yeşiltepe Mahallesi"
+   ],
+   "Ferizli": [
+    "Sinanoğlu Mahallesi",
+    "İnönü Mahallesi",
+    "İstiklal Mahallesi"
+   ],
    "Geyve": null,
    "Hendek": [
+    "Akova Mahallesi",
+    "Başpınar Mahallesi",
+    "Dereboğazı Mahallesi",
+    "Rasimpaşa Mahallesi",
     "Yenimahalle Mahallesi"
    ],
    "Karapürçek": null,
    "Karasu": [
     "Aziziye Mahallesi",
-    "Yalı Mahallesi"
+    "Denizköy Mahallesi",
+    "Kabakoz Mahallesi",
+    "Karasu Mahallesi",
+    "Yalı Mahallesi",
+    "Yeni Mahalle",
+    "Yuvalıdere Mahallesi",
+    "İncilli Mahallesi"
+   ],
+   "Kaynarca": [
+    "Orta Mahalle"
    ],
    "Kocaali": [
-    "Yalı Mahallesi"
+    "Alandere Mahallesi",
+    "Yalı Mahallesi",
+    "Yayla Mahallesi"
    ],
+   "Pamukova": null,
    "Sapanca": null,
    "Serdivan": [
     "Arabacıalanı Mahallesi",
     "Bahçelievler Mahallesi",
     "Beşköprü Mahallesi",
     "Esentepe Mahallesi",
+    "Hamitabat Mahallesi",
     "Kemalpaşa Mahallesi",
     "Köprübaşı Mahallesi",
+    "Otuziki Evler Mahallesi",
+    "Vatan Mahallesi",
+    "Yazlık Mahallesi",
     "İstiklal Mahallesi"
-   ]
+   ],
+   "Söğütlü": [
+    "Gündoğan Mahallesi"
+   ],
+   "Taraklı": null
   },
   "Samsun": {
-   "19 Mayıs": null,
+   "19 Mayıs": [
+    "Cumhuriyet Mahallesi"
+   ],
+   "Alaçam": [
+    "Yenicami"
+   ],
    "Atakum": [
+    "Alanlı Mahallesi",
     "Atakent Mahallesi",
     "Atatepe Mahallesi",
     "Balaç Mahallesi",
     "Büyükkolpınar Mahallesi",
     "Cumhurıyet Mahallesi",
+    "Denizevleri Mahallesi",
     "Esenevler Mahallesi",
+    "Güzelyalı Mahallesi",
     "Küçükkolpınar Mahallesi",
     "Mevlana Mahallesi",
     "Mimarsinan Mahallesi",
@@ -2129,54 +4154,156 @@
     "Yeşildere Mahallesi",
     "İstiklal Mahallesi"
    ],
-   "Canik": null,
+   "Ayvacık": null,
+   "Bafra": [
+    "Altınyaprak Mahallesi",
+    "Emirefendi Mahallesi",
+    "Fatih Mahallesi",
+    "Fevzi Çakmak Mahallesi",
+    "Mevlana Mahallesi",
+    "İshaklı Mahallesi",
+    "İsmetpaşa Mahallesi"
+   ],
+   "Canik": [
+    "Kuzey Yıldızı Mahallesi",
+    "Yenimahalle Mahallesi"
+   ],
+   "Havza": null,
+   "Ladik": null,
+   "Salıpazarı": null,
+   "Tekkeköy": [
+    "19 Mayıs Mahallesi",
+    "Sanayi Mahallesi",
+    "Selyeri Mahallesi"
+   ],
+   "Terme": [
+    "Yalı Mahallesi",
+    "Çay Mahallesi"
+   ],
+   "Vezirköprü": null,
+   "Yakakent": [
+    "Kozköy Mahallesi"
+   ],
    "Çarşamba": [
     "Kirazlıkçay Mahallesi",
-    "Orta Mahallesi"
+    "Orta Mahallesi",
+    "Sarıcalı Mahallesi",
+    "Çay Mahallesi"
    ],
    "İlkadım": [
+    "19 Mayıs Mahallesi",
     "Adalet Mahallesi",
+    "Bahçelievler Mahallesi",
+    "Baruthane Mahallesi",
+    "Cedit Mahallesi",
+    "Derebahçe Mahallesi",
+    "Fatih Mahallesi",
     "Fevzi Çakmak Mahallesi",
+    "Hançerli Mahallesi",
+    "Hürriyet Mahallesi",
+    "Kadıköy Mahallesi",
     "Kale Mahallesi",
     "Kalkancı Mahallesi",
     "Karasamsun Mahallesi",
-    "Kazım Karabekir Mahallesi"
+    "Kazım Karabekir Mahallesi",
+    "Kılıçdede Mahallesi",
+    "Kışla Mahallesi",
+    "Liman Mahallesi",
+    "Reşadiye Mahallesi",
+    "Yaşardoğu Mahallesi",
+    "Yenidoğan Mahallesi",
+    "Zafer Mahallesi",
+    "Çatalarmut Mahallesi",
+    "Çiftlik Mahallesi",
+    "İlyasköy Mahallesi"
    ]
   },
   "Siirt": {
-   "Siirt Merkez": null
+   "Kurtalan": [
+    "Cumhuriyet Mahallesi"
+   ],
+   "Pervari": null,
+   "Siirt Merkez": [
+    "Bahçelievler Mahallesi",
+    "Yeni Mahallesi"
+   ],
+   "Tillo": null
   },
   "Sinop": {
+   "Ayancık": null,
+   "Boyabat": null,
+   "Erfelek": [
+    "Kınık Mahallesi"
+   ],
+   "Gerze": null,
    "Sinop Merkez": [
+    "Ada Mahallesi",
     "Bostancılı Mahallesi",
+    "Camikebir Mahallesi",
+    "Dibekli Köyü",
+    "Gelincik Mahallesi",
+    "Kefevi Mahallesi",
+    "Korucuk Mahallesi",
+    "Yeni Mahallesi",
     "Zeytinlik Mahallesi"
-   ]
+   ],
+   "Türkeli": null
   },
   "Sivas": {
+   "Akıncılar": null,
+   "Altınyayla": null,
+   "Divriği": [
+    "Ahmetpaşa Mahallesi",
+    "Hacıkumru Mahallesi"
+   ],
    "Gürün": [
     "Çayboyu Mahallesi"
    ],
+   "Hafik": null,
+   "Koyulhisar": null,
    "Sivas Merkez": [
+    "Ahmet Turangazi Mahallesi",
+    "Alibaba Mahallesi",
     "Aydoğan Mahallesi",
     "Danişmentgazi Mahallesi",
+    "Demircilerardı Mahallesi",
     "Diriliş Mahallesi",
+    "Dörteylül Mahallesi",
+    "Ece Mahallesi",
     "Eskikale Mahallesi",
+    "Eğriköprü Mahallesi",
     "Fatih Mahallesi",
+    "Gökmedrese Mahallesi",
+    "Gültepe Mahallesi",
+    "Halil Rıfat Paşa Mahallesi",
     "Kadı Burhanettin Mahallesi",
+    "Kaleardı Mahallesi",
     "Kardeşler Mahallesi",
+    "Karşıyaka Mahallesi",
+    "Kılavuz Mahallesi",
+    "Kızılırmak Mahallesi",
+    "Mehmet Akif Ersoy Mahallesi",
+    "Mevlana Mahallesi",
     "Mimar Sinan Mahallesi",
+    "Orhangazi Mahallesi",
     "Paşabey Mahallesi",
+    "Pulur Mahallesi",
     "Selçuklu Mahallesi",
     "Serpincik Köyü",
     "Sularbaşı Mahallesi",
     "Tuzlugöl Mahallesi",
     "Yenişehir Mahallesi",
+    "Yeşilyurt Mahallesi",
+    "Yüceyurt Mahallesi",
+    "Çarşıbaşı Mahallesi",
+    "İnönü Mahallesi",
     "Şeyh Şamil Mahallesi"
    ],
    "Suşehri": null,
    "Yıldızeli": null,
    "Zara": null,
    "Şarkışla": [
+    "Gültekin Mahallesi",
     "Kale Mahallesi",
     "Yıldırım Mahallesi"
    ]
@@ -2184,7 +4311,9 @@
   "Tekirdağ": {
    "Ergene": [
     "Marmaracık Mahallesi",
+    "Misinli Mahallesi",
     "Sağlık Mahallesi",
+    "Ulaş Mahallesi",
     "Velimeşe Mahallesi",
     "Yeşiltepe Mahallesi"
    ],
@@ -2196,13 +4325,16 @@
     "Cumhuriyet Mahallesi",
     "Mimar Sinan Mahallesi",
     "Vatan Mahallesi",
+    "Yunus Emre Mahallesi",
     "Yıldızkent Mahallesi",
     "İnönü Mahallesi",
     "İsmet Paşa Mahallesi"
    ],
    "Malkara": null,
    "Marmaraereğlisi": [
+    "Bahçelievler Mahallesi",
     "Dereağzı Mahallesi",
+    "Kamaradere Mahallesi",
     "Sultanköy Mahallesi",
     "Yeniçiftlik Mahallesi",
     "Çeşmeli Mahallesi"
@@ -2217,30 +4349,41 @@
    "Saray": [
     "Atatürk Mahallesi",
     "Ayaspaşa Mahallesi",
+    "Aziziye Mahallesi",
     "Güngörmez Mahallesi",
     "Kemalpaşa Mahallesi",
-    "Pazarcık Mahallesi"
+    "Pazarcık Mahallesi",
+    "Yeni Mahalle",
+    "Çayla Mahallesi"
    ],
    "Süleymanpaşa": [
     "100. Yıl Mahallesi",
     "Altınova Mahallesi",
     "Atatürk Mahallesi",
+    "Aydoğdu Mahallesi",
     "Bahçelievler Mahallesi",
+    "Barbaros Mahallesi",
     "Cumhuriyet Mahallesi",
     "Değirmenaltı Mahallesi",
+    "Ertuğrul Mahallesi",
     "Hürriyet Mahallesi",
     "Karadeniz Mahallesi",
+    "Kumbağ Mahallesi",
     "Namık Kemal Mahallesi",
+    "Ortacami Mahallesi",
     "Topağaç Mahallesi",
     "Vatan Mahallesi",
     "Yavuz Mahallesi",
+    "Yeniköy Mahallesi",
     "Zafer Mahallesi",
+    "Çiftlikönü Mahallesi",
     "Çınarlı Mahallesi",
     "İstiklal Mahallesi"
    ],
    "Çerkezköy": [
     "Bağlık Mahallesi",
     "Cumhuriyet Mahallesi",
+    "Fatih Mahallesi",
     "Fevzi Paşa Mahallesi",
     "Gazi Mustafa Kemal Paşa Mahallesi",
     "Gazi Osman Paşa Mahallesi",
@@ -2252,7 +4395,11 @@
    ],
    "Çorlu": [
     "Alipaşa Mahallesi",
+    "Cemaliye Mahallesi",
+    "Cumhuriyet Mahallesi",
     "Esentepe Mahallesi",
+    "Hatip Mahallesi",
+    "Havuzlar Mahallesi",
     "Hürriyet Mahallesi",
     "Hıdırağa Mahallesi",
     "Kazımiye Mahallesi",
@@ -2262,6 +4409,7 @@
     "Reşadiye Mahallesi",
     "Rumeli Mahallesi",
     "Seymen Mahallesi",
+    "Silahtarağa Mahallesi",
     "Yenice Mahallesi",
     "Zafer Mahallesi",
     "Çobançeşme Mahallesi",
@@ -2269,24 +4417,51 @@
     "Şeyhsinan Mahallesi"
    ],
    "Şarköy": [
+    "Aşağıkalamış Mahallesi",
+    "Hoşköy Mahallesi",
     "Kızılcaterzi Mahallesi"
    ]
   },
   "Tokat": {
+   "Almus": null,
    "Artova": null,
    "Erbaa": [
+    "Cumhuriyet Mahallesi",
+    "Ertuğrulgazi Mahallesi",
+    "Fatihsultanmehmet Mahallesi",
+    "Gaziosmanpaşa Mahallesi",
     "Kelkit Mahallesi",
+    "Kuruçay Mahallesi",
+    "Mevlana Mahallesi",
+    "Mimarsinan Mahallesi",
     "Yavuzsultanselim Mahallesi",
-    "Yunusemre Mahallesi"
+    "Yunusemre Mahallesi",
+    "Ziyagökalp Mahallesi",
+    "İsmetpaşa Mahallesi"
    ],
    "Niksar": [
+    "50. Yıl Mahallesi",
+    "Ayvaz Mahallesi",
     "Kayapaşa Mahallesi"
    ],
+   "Reşadiye": [
+    "Kızılcaören Köyü",
+    "Çermik Mahallesi"
+   ],
    "Tokat Merkez": [
+    "Alipaşa Mahallesi",
     "Bahçelievler Mahallesi",
+    "Esentepe Mahallesi",
+    "Gülbaharhatun Mahallesi",
+    "Karşıyaka Mahallesi",
+    "Mehmetpaşa Mahallesi",
+    "Semerkant Mahallesi",
     "Taşlıçiftlik Köyü",
+    "Yarahmet Mahallesi",
+    "Yeni Mahalle",
     "Yeşilırmak Mahallesi"
    ],
+   "Turhal": null,
    "Zile": null
   },
   "Trabzon": {
@@ -2295,35 +4470,71 @@
     "Yıldızlı Mahallesi"
    ],
    "Araklı": null,
+   "Arsin": null,
+   "Beşikdüzü": null,
+   "Düzköy": null,
+   "Hayrat": null,
+   "Maçka": null,
+   "Of": null,
    "Ortahisar": [
     "1 Nolu Beşirli Mahallesi",
+    "1 Nolu Erdoğdu Mahallesi",
     "2 Nolu Beşirli Mahallesi",
+    "2 Nolu Bostancı Mahallesi",
     "2 Nolu Erdoğdu Mahallesi",
     "3 Nolu Erdoğdu Mahallesi",
+    "Akyazı Mahallesi",
     "Aydınlıkevler Mahallesi",
     "Bahçecik Mahallesi",
+    "Boztepe Mahallesi",
     "Cumhuriyet Mahallesi",
+    "Değirmendere Mahallesi",
     "Fatih Mahallesi",
     "Gazipaşa Mahallesi",
     "Kalkınma Mahallesi",
+    "Kanuni Mahallesi",
     "Karşıyaka Mahallesi",
+    "Kaymaklı Mahallesi",
     "Kemerkaya Mahallesi",
+    "Konaklar Mahallesi",
+    "Pazarkapı Mahallesi",
     "Pelitli Mahallesi",
     "Sanayi Mahallesi",
     "Soğuksu Mahallesi",
+    "Yalı Mahallesi",
     "Yalıncak Mahallesi",
     "Yenicuma Mahallesi",
+    "Yenimahalle Mahallesi",
     "Yeşilköy Mahallesi",
     "Yeşiltepe Mahallesi",
     "Çarşı Mahallesi",
+    "Çilekli Mahallesi",
+    "Çimenli Mahallesi",
     "Çukurçayır Mahallesi",
     "Üniversite Mahallesi",
-    "İnönü Mahallesi"
+    "İnönü Mahallesi",
+    "İskenderpaşa Mahallesi"
    ],
-   "Yomra": null
+   "Sürmene": null,
+   "Vakfıkebir": [
+    "Çarşı Mah."
+   ],
+   "Yomra": null,
+   "Çarşıbaşı": null,
+   "Çaykara": null,
+   "Şalpazarı": null
+  },
+  "Tunceli": {
+   "Hozat": null,
+   "Ovacık": null,
+   "Tunceli Merkez": [
+    "Cumhuriyet Mahallesi"
+   ]
   },
   "Uşak": {
+   "Banaz": null,
    "Eşme": null,
+   "Karahallı": null,
    "Uşak Merkez": [
     "Atatürk Mahallesi",
     "Aybey Mahallesi",
@@ -2331,9 +4542,12 @@
     "Durak Mahallesi",
     "Fatih Mahallesi",
     "Fevzi Çakmak Mahallesi",
+    "Işık Mahallesi",
+    "Kalfa Mahallesi",
     "Karaağaç Mahallesi",
     "Kemalöz Mahallesi",
     "Kurtuluş Mahallesi",
+    "Mehmet Akif Ersoy Mahallesi",
     "Sarayaltı Mahallesi",
     "Özdemir Mahallesi",
     "Ünalan Mahallesi",
@@ -2341,32 +4555,63 @@
    ]
   },
   "Van": {
+   "Bahçesaray": null,
+   "Başkale": null,
+   "Edremit": [
+    "Eminpaşa Mahallesi",
+    "Süphan Mahallesi",
+    "Şabaniye Mahallesi"
+   ],
+   "Erciş": null,
    "Tuşba": [
-    "Bardakçı Mahallesi"
+    "Bardakçı Mahallesi",
+    "Kalecik Mahallesi",
+    "İstasyon Mahallesi"
    ],
    "İpekyolu": [
     "Alipaşa Mahallesi",
+    "Bahçıvan Mahallesi",
+    "Cevdet Paşa Mahallesi",
+    "Cumhuriyet Mahallesi",
     "Gündoğdu Mahallesi",
     "Hafiziye Mahallesi",
     "Halilağa Mahallesi",
     "Kevenli Mahallesi",
-    "Serhat Mahallesi"
+    "Selimbey Mahallesi",
+    "Serhat Mahallesi",
+    "Vali Mithat Bey Mahallesi",
+    "Yalı Mahallesi",
+    "Şerefiye Mahallesi"
    ]
   },
   "Yalova": {
-   "Altınova": null,
+   "Altınova": [
+    "Hersek Mahallesi"
+   ],
    "Armutlu": null,
+   "Termal": [
+    "Akköy"
+   ],
    "Yalova Merkez": [
     "Bahçelievler Mahallesi",
     "Bağlarbaşı Mahallesi",
     "Dere Mahallesi",
+    "Kadıköy Beldesi",
+    "Kazımiye Köyü",
+    "Kirazlı Köyü",
     "Mustafa Kemal Paşa Mahallesi",
+    "Rüstem Paşa Mahallesi",
+    "Safran Köyü",
     "Samanlı Köyü",
+    "Sugören Köyü",
     "Yalova Belediye sınırı"
    ],
    "Çiftlikköy": null,
    "Çınarcık": [
+    "Esenköy",
     "Hürriyet mahallesi",
+    "Koru",
+    "Teşvikiye",
     "Çınarcık"
    ]
   },
@@ -2374,80 +4619,160 @@
    "Akdağmadeni": null,
    "Boğazlıyan": [
     "Aşağı Mahalle",
+    "Bağlarbaşı Mahallesi",
+    "Kaymakam Kemal Bey Mahallesi",
     "Mevlana Mahallesi"
+   ],
+   "Sarıkaya": [
+    "Bahçelievler Mahallesi",
+    "Kaplıca Mahallesi",
+    "Kazım Karabekir Mahallesi"
    ],
    "Sorgun": null,
    "Yenifakılı": [
-    "Mehmet Akif Ersoy mahallesi"
+    "Mehmet Akif Ersoy mahallesi",
+    "Yeni mahallesi"
    ],
+   "Yerköy": null,
    "Yozgat Merkez": [
-    "Aşağınohutlu Mahallesi"
-   ]
+    "Aşağınohutlu Mahallesi",
+    "Medrese Mahallesi"
+   ],
+   "Çayıralan": null
   },
   "Zonguldak": {
    "Alaplı": null,
+   "Devrek": null,
    "Ereğli": [
+    "Akarca Mahallesi",
+    "Bağlık Mahallesi",
+    "Belenyeni Mahallesi",
+    "Elma Tepe Mahallesi",
+    "Kavaklık Mahallesi",
     "Kepez Mahallesi",
+    "Kestaneci Mahallesi",
     "Korubaşı Mahallesi",
+    "Kırmacı Mahallesi",
+    "Kışla Mahallesi",
     "Murtaza Mahallesi",
     "Müftü Mahallesi",
+    "Sarıkokmaz Mahallesi",
+    "Süleymanlar Mahallesi",
     "Uzunmehmet Mahallesi",
-    "Ömerli Mahallesi"
+    "Uzunçayır Mahallesi",
+    "Ömerli Mahallesi",
+    "Ören Mahallesi"
    ],
+   "Gökçebey": null,
+   "Kilimli": null,
    "Kozlu": null,
    "Zonguldak Merkez": [
     "Bahçelievler Mahallesi",
+    "Karaelmas Mahallesi",
+    "Meşrutiyet Mahallesi",
     "Mithatpaşa Mahallesi",
+    "On Temmuz Mahallesi",
+    "Tepebaşı Mahallesi",
+    "Terakki Mahallesi",
+    "Yayla Mahallesi",
+    "Yeni Mahalle",
+    "Yeşil Mahalle",
     "İncivez Mahallesi"
    ],
    "Çaycuma": null
   },
   "Çanakkale": {
    "Ayvacık": null,
-   "Biga": null,
+   "Bayramiç": null,
+   "Biga": [
+    "Esentepe Mahallesi",
+    "İstiklal Mahallesi",
+    "Şirintepe Mahallesi"
+   ],
    "Bozcaada": null,
-   "Ezine": null,
-   "Gelibolu": null,
+   "Eceabat": null,
+   "Ezine": [
+    "Camikebir Mahallesi",
+    "Seferşah Mahallesi"
+   ],
+   "Gelibolu": [
+    "Camiikebir Mahallesi",
+    "Hoca Hamza Mahallesi",
+    "Yazıcızade Mahallesi"
+   ],
    "Gökçeada": null,
    "Lapseki": null,
+   "Yenice": null,
    "Çan": null,
    "Çanakkale Merkez": [
     "Barbaros Mahallesi",
+    "Boğazkent Mahallesi",
     "Cevat Paşa Mahallesi",
     "Cumhuriyet Mahallesi",
     "Esenler Mahallesi",
+    "Güzelyalı Köyü",
     "Hamidiye Mahallesi",
+    "Kemalpaşa Mahallesi",
+    "Çınarlı Köyü",
     "İsmetpaşa Mahallesi"
    ]
   },
   "Çankırı": {
+   "Atkaracalar": null,
    "Bayramören": null,
+   "Eldivan": [
+    "Beydere Mahallesi"
+   ],
+   "Korgun": null,
    "Kurşunlu": null,
    "Çankırı Merkez": [
+    "Abdulhalik Renda Mahallesi",
     "Aksu Mahallesi",
     "Cumhuriyet Mahallesi"
-   ]
+   ],
+   "Çerkeş": null,
+   "Şabanözü": null
   },
   "Çorum": {
    "Alaca": null,
+   "Dodurga": null,
+   "Kargı": null,
    "Osmancık": null,
    "Sungurlu": null,
    "Çorum Merkez": [
     "Bahçelievler Mahallesi",
+    "Buharaevler Mahallesi",
+    "Gülabibey Mahallesi",
+    "Kale Mahallesi",
     "Kunduzhan Mahallesi",
-    "Ulukavak Mahallesi"
-   ]
+    "Mimar Sinan Mahallesi",
+    "Ulukavak Mahallesi",
+    "Yavruturna Mahallesi",
+    "Yeniyol Mahallesi",
+    "Çepni Mahallesi",
+    "Çöplü Mahallesi",
+    "Üçtutlar Mahallesi"
+   ],
+   "İskilip": null
   },
   "İstanbul": {
    "Adalar": [
     "Maden Mahallesi"
    ],
    "Arnavutköy": [
+    "Arnavutköy Merkez Mahallesi",
+    "Bolluca Mahallesi",
+    "Boğazköy İstiklal Mahallesi",
     "Deliklikaya Mahallesi",
     "Hadımköy Mahallesi",
+    "Hastane Mahallesi",
     "Mareşal Fevzi Çakmak Mahallesi",
+    "Mavigöl Mahallesi",
+    "Mehmet Akif Ersoy Mahallesi",
     "Mustafa Kemal Paşa Mahallesi",
     "Nene hatun Mahallesi",
+    "Tayakadın Mahallesi",
+    "Taşoluk Mahallesi",
     "Yassıören Mahallesi",
     "Yavuz Selim Mahallesi",
     "Yeşilbayır Mahallesi",
@@ -2455,13 +4780,18 @@
    ],
    "Ataşehir": [
     "Atatürk Mahallesi",
+    "Aşıkveysel Mahallesi",
     "Barbaros Mahallesi",
     "Esatpaşa Mahallesi",
+    "Ferhatpaşa Mahallesi",
     "Fetih Mahallesi",
+    "Kayışdağı Mahallesi",
     "Küçükbakkalköy Mahallesi",
     "Mevlana Mahallesi",
+    "Mimar Sinan Mahallesi",
     "Mustafa Kemal Mahallesi",
     "Yeni Çamlıca Mahallesi",
+    "Yenisahra Mahallesi",
     "Yenişehir Mahallesi",
     "Örnek Mahallesi",
     "İnönü Mahallesi",
@@ -2471,47 +4801,81 @@
     "Ambarlı Mahallesi",
     "Cihangir Mahallesi",
     "Denizköşkler Mahallesi",
+    "Firuzköy Mahallesi",
     "Gümüşpala Mahallesi",
     "Merkez Mahallesi",
+    "Mustafa Kemal Paşa Mahallesi",
     "Tahtakale Mahallesi",
     "Yeşilkent Mahallesi",
     "Üniversite Mahallesi"
    ],
    "Bahçelievler": [
     "Bahçelievler Mahallesi",
+    "Cumhuriyet Mahallesi",
+    "Hürriyet Mahallesi",
+    "Kocasinan Merkez Mahallesi",
+    "Siyavuşpaşa Mahallesi",
     "Soğanlı Mahallesi",
     "Yenibosna Merkez Mahallesi",
-    "Zafer Mahallesi"
+    "Zafer Mahallesi",
+    "Çobançeşme Mahallesi",
+    "Şirinevler Mahallesi"
    ],
    "Bakırköy": [
+    "Ataköy 1. Kısım Mahallesi",
     "Ataköy 2-5-6. Kısım Mahallesi",
+    "Ataköy 3-4-11. Kısım Mahallesi",
     "Ataköy 7-8-9-10. Kısım Mahallesi",
+    "Basınköy Mahallesi",
     "Cevizlik Mahallesi",
     "Kartaltepe Mahallesi",
     "Osmaniye Mahallesi",
     "Sakızağacı Mahallesi",
+    "Yenimahalle Mahallesi",
     "Yeşilköy Mahallesi",
+    "Yeşilyurt Mahallesi",
+    "Zeytinlik Mahallesi",
     "Zuhuratbaba Mahallesi",
     "Şenlikköy Mahallesi"
    ],
    "Bayrampaşa": [
+    "Altıntepsi Mahallesi",
     "Kartaltepe Mahallesi",
+    "Kocatepe Mahallesi",
     "Muratpaşa Mahallesi",
     "Orta Mahallesi",
+    "Terazidere Mahallesi",
+    "Vatan Mahallesi",
     "Yenidoğan Mahallesi",
     "Yıldırım Mahallesi",
     "İsmet Paşa Mahallesi"
    ],
    "Bağcılar": [
+    "100. Yıl Mahallesi",
     "15 Temmuz Mahallesi",
+    "Barbaros Mahallesi",
     "Bağlar Mahallesi",
+    "Demirkapı Mahallesi",
+    "Fatih Mahallesi",
+    "Fevzi Çakmak Mahallesi",
     "Göztepe Mahallesi",
     "Güneşli Mahallesi",
+    "Hürriyet Mahallesi",
+    "Kemalpaşa Mahallesi",
+    "Kirazlı Mahallesi",
+    "Kâzım Karabekir Mahallesi",
     "Mahmutbey Mahallesi",
     "Merkez Mahallesi",
-    "Yenimahalle Mahallesi"
+    "Sancaktepe Mahallesi",
+    "Yavuz Selim Mahallesi",
+    "Yenigün Mahallesi",
+    "Yenimahalle Mahallesi",
+    "Yıldıztepe Mahallesi",
+    "Çınar Mahallesi",
+    "İnönü Mahallesi"
    ],
    "Başakşehir": [
+    "Altınşehir Mahallesi",
     "Bahçeşehir 1. Kısım Mahallesi",
     "Bahçeşehir 2. Kısım Mahallesi",
     "Başak Mahallesi",
@@ -2520,16 +4884,34 @@
     "Kayabaşı Mahallesi",
     "Ziya Gökalp Mahallesi",
     "İkitelli OSB Mahallesi",
+    "Şahintepe Mahallesi",
     "Şamlar Mahallesi"
    ],
    "Beykoz": [
     "Acarlar Mahallesi",
+    "Akbaba Mahallesi",
+    "Anadolu Hisarı Mahallesi",
+    "Baklacı Mahallesi",
+    "Cumhuriyetköy Mahallesi",
+    "Dereseki Mahallesi",
+    "Görele Mahallesi",
     "Göztepe Mahallesi",
+    "Gümüşsuyu Mahallesi",
+    "Kanlıca Mahallesi",
     "Kavacık Mahallesi",
+    "Merkez Mahallesi",
+    "Paşabahçe Mahallesi",
     "Paşamandıra Mahallesi",
+    "Riva Mahallesi",
     "Rüzgarlıbahçe Mahallesi",
     "Soğuksu Mahallesi",
-    "Çubuklu Mahallesi"
+    "Yavuz Selim Mahallesi",
+    "Yeni Mahalle Mahallesi",
+    "Zerzavatçı Mahallesi",
+    "Çengeldere Mahallesi",
+    "Çiğdem Mahallesi",
+    "Çubuklu Mahallesi",
+    "Öğümce Mahallesi"
    ],
    "Beylikdüzü": [
     "Adnan Kahveci Mahallesi",
@@ -2545,31 +4927,53 @@
     "Yakuplu Mahallesi"
    ],
    "Beyoğlu": [
+    "Arap Cami Mahallesi",
     "Asmalı Mescit Mahallesi",
+    "Bedrettin Mahallesi",
     "Bereketzade Mahallesi",
+    "Camiikebir Mahallesi",
+    "Cihangir Mahallesi",
+    "Emekyemez Mahallesi",
+    "Evliya Çelebi Mahallesi",
     "Fetihtepe Mahallesi",
     "Gümüşsuyu Mahallesi",
+    "Hacıahmet Mahallesi",
     "Hacımimi Mahallesi",
+    "Halıcıoğlu Mahallesi",
+    "Hüseyinağa Mahallesi",
+    "Kamer Hatun Mahallesi",
     "Kemankeş Karamustafa Paşa Mahallesi",
+    "Kocatepe Mahallesi",
+    "Küçük Piyale Mahallesi",
+    "Piyalepaşa Mahallesi",
+    "Sütlüce Mahallesi",
     "Tomtom Mahallesi",
+    "Yenişehir Mahallesi",
+    "Çukur Mahallesi",
+    "Ömer Avni Mahallesi",
     "Örnektepe Mahallesi",
-    "İstiklal Mahallesi"
+    "İstiklal Mahallesi",
+    "Şahkulu Mahallesi"
    ],
    "Beşiktaş": [
     "Abbasağa Mahallesi",
     "Akat Mahallesi",
     "Balmumcu Mahallesi",
     "Bebek Mahallesi",
+    "Cihannüma Mahallesi",
     "Dikilitaş Mahallesi",
     "Etiler Mahallesi",
     "Gayrettepe Mahallesi",
     "Konaklar Mahallesi",
+    "Kuruçeşme Mahallesi",
     "Kültür Mahallesi",
     "Levazım Mahallesi",
+    "Levent Mahallesi",
     "Mecidiye Mahallesi",
     "Nisbetiye Mahallesi",
     "Ortaköy Mahallesi",
     "Sinanpaşa Mahallesi",
+    "Türkali Mahallesi",
     "Ulus Mahallesi",
     "Vişnezade Mahallesi",
     "Yıldız Mahallesi"
@@ -2577,27 +4981,41 @@
    "Büyükçekmece": [
     "19 Mayıs Mahallesi",
     "Alkent 2000 Mahallesi",
+    "Atatürk Mahallesi",
+    "Bahçelievler Mahallesi",
     "Celaliye Mahallesi",
     "Cumhuriyet Mahallesi",
     "Dizdariye Mahallesi",
     "Ekinoba Mahallesi",
     "Fatih Mahallesi",
     "Güzelce Mahallesi",
+    "Hürriyet Mahallesi",
     "Kamiloba Mahallesi",
     "Karaağaç Mahallesi",
+    "Kumburgaz Mahallesi",
     "Mimaroba Mahallesi",
+    "Mimarsinan Mahallesi",
     "Murat Çesme Mahallesi",
     "Pınartepe Mahallesi",
     "Sinanoba Mahallesi",
     "Türkoba Mahallesi",
+    "Ulus Mahallesi",
     "Yenimahalle Mahallesi",
     "Çakmaklı Mahallesi"
    ],
    "Esenler": [
+    "15 Temmuz Mahallesi",
+    "Atışalanı Mahallesi",
     "Birlik Mahallesi",
+    "Fevzi Çakmak Mahallesi",
+    "Kazım Karabekir Mahallesi",
     "Kemer Mahallesi",
+    "Menderes Mahallesi",
     "Namık Kemal Mahallesi",
+    "Nine Hatun Mahallesi",
     "Oruçreis Mahallesi",
+    "Tuna Mahallesi",
+    "Turgut Reis Mahallesi",
     "Çifte Havuzlar Mahallesi"
    ],
    "Esenyurt": [
@@ -2607,9 +5025,12 @@
     "Ardıçlı Mahallesi",
     "Atatürk Mahallesi",
     "Aşık Veysel Mahallesi",
+    "Balıkyolu Mahallesi",
     "Barbaros Hayrettin Paşa Mahallesi",
+    "Battalgazi Mahallesi",
     "Cumhuriyet Mahallesi",
     "Esenkent Mahallesi",
+    "Fatih Mahallesi",
     "Gökevler Mahallesi",
     "Güzelyurt Mahallesi",
     "Hürriyet Mahallesi",
@@ -2618,9 +5039,16 @@
     "Mehterçeşme Mahallesi",
     "Merkez Mahallesi",
     "Mevlana Mahallesi",
+    "Namık Kemal Mahallesi",
+    "Necip Fazıl Kısakürek Mahallesi",
     "Orhan Gazi Mahallesi",
+    "Osmangazi Mahallesi",
     "Piri Reis Mahallesi",
+    "Pınar Mahallesi",
+    "Saadetdere Mahallesi",
     "Selahaddin Eyyubi Mahallesi",
+    "Sultaniye Mahallesi",
+    "Süleymaniye Mahallesi",
     "Talatpaşa Mahallesi",
     "Turgut Özal Mahallesi",
     "Yenikent Mahallesi",
@@ -2628,7 +5056,11 @@
     "Yunus Emre Mahallesi",
     "Zafer Mahallesi",
     "Çınar Mahallesi",
-    "Örnek Mahallesi"
+    "Örnek Mahallesi",
+    "Üçevler Mahallesi",
+    "İncirtepe Mahallesi",
+    "İnönü Mahallesi",
+    "Şehitler Mahallesi"
    ],
    "Eyüpsultan": [
     "5. Levent Mahallesi",
@@ -2638,29 +5070,61 @@
     "Düğmeciler Mahallesi",
     "Emniyettepe Mahallesi",
     "Göktürk Merkez Mahallesi",
+    "Güzeltepe Mahallesi",
     "Karadolap Mahallesi",
+    "Mimar Sinan Mahallesi",
     "Mithatpaşa Mahallesi",
     "Nişancı Mahallesi",
+    "Odayeri Mahallesi",
     "Rami Cuma Mahallesi",
     "Rami Yeni Mahallesi",
+    "Sakarya Mahallesi",
+    "Silahtarağa Mahallesi",
     "Topçular Mahallesi",
-    "Çırçır Mahallesi"
+    "Yeşilpınar Mahallesi",
+    "Çırçır Mahallesi",
+    "İslambey Mahallesi"
    ],
    "Fatih": [
     "Aksaray Mahallesi",
+    "Akşemsettin Mahallesi",
+    "Alemdar Mahallesi",
+    "Ali Kuşçu Mahallesi",
+    "Ayvansaray Mahallesi",
+    "Balabanağa Mahallesi",
     "Balat Mahallesi",
+    "Beyazıt Mahallesi",
+    "Binbirdirek Mahallesi",
+    "Cerrahpaşa Mahallesi",
     "Demirtaş Mahallesi",
+    "Haseki Sultan Mahallesi",
     "Hobyar Mahallesi",
     "Hocapaşa Mahallesi",
+    "Hırka-i Şerif Mahallesi",
+    "Karagümrük Mahallesi",
+    "Kemalpaşa Mahallesi",
+    "Koca Mustafapaşa Mahallesi",
+    "Küçük Ayasofya Mahallesi",
     "Mercan Mahallesi",
+    "Mesihpaşa Mahallesi",
     "Mevlanakapı Mahallesi",
+    "Mimar Kemalettin Mahallesi",
     "Molla Fenari Mahallesi",
+    "Molla Gürani Mahallesi",
+    "Muhsine Hatun Mahallesi",
     "Rüstempaşa Mahallesi",
+    "Saraç İshak Mahallesi",
+    "Seyyid Ömer Mahallesi",
     "Silivrikapı Mahallesi",
+    "Sultan Ahmet Mahallesi",
     "Sururi Mahallesi",
     "Süleymaniye Mahallesi",
     "Tahtakale Mahallesi",
-    "Taya Hatun Mahallesi"
+    "Taya Hatun Mahallesi",
+    "Topkapı Mahallesi",
+    "Yavuz Sultan Selim Mahallesi",
+    "İskenderpaşa Mahallesi",
+    "Şehremini Mahallesi"
    ],
    "Gaziosmanpaşa": [
     "Barbaros Hayrettin Paşa Mahallesi",
@@ -2671,10 +5135,20 @@
     "Merkez Mahallesi",
     "Mevlana Mahallesi",
     "Sarıgöl Mahallesi",
-    "Yeni Mahalle Mahallesi"
+    "Yeni Mahalle Mahallesi",
+    "Yenidoğan Mahallesi",
+    "Yıldıztabya Mahallesi",
+    "Şemsipaşa Mahallesi"
    ],
    "Güngören": [
+    "Abdurrahman Nafiz Gürman Mahallesi",
+    "Akıncılar Mahallesi",
+    "Gençosman Mahallesi",
+    "Güneştepe Mahallesi",
+    "Güven Mahallesi",
+    "Haznedar Mahallesi",
     "Mehmet Nesih Özmen Mahallesi",
+    "Merkez Mahallesi",
     "Sanayi Mahallesi",
     "Tozkoparan Mahallesi"
    ],
@@ -2728,27 +5202,40 @@
     "Gürsel Mahallesi",
     "Hamidiye Mahallesi",
     "Harmantepe Mahallesi",
+    "Hürriyet Mahallesi",
     "Mehmet Akif Ersoy Mahallesi",
     "Merkez Mahallesi",
     "Nurtepe Mahallesi",
+    "Ortabayır Mahallesi",
     "Seyrantepe Mahallesi",
     "Sultan Selim Mahallesi",
     "Talatpaşa Mahallesi",
+    "Telsizler Mahallesi",
+    "Yahya Kemal Mahallesi",
     "Yeşilce Mahallesi",
-    "Çeliktepe Mahallesi"
+    "Çağlayan Mahallesi",
+    "Çeliktepe Mahallesi",
+    "Şirintepe Mahallesi"
    ],
    "Küçükçekmece": [
     "Atakent Mahallesi",
     "Atatürk Mahallesi",
+    "Beşyol Mahallesi",
+    "Cennet Mahallesi",
     "Cumhuriyet Mahallesi",
     "Fatih Mahallesi",
     "Fevzi Çakmak Mahallesi",
     "Gültepe Mahallesi",
     "Halkalı Merkez Mahallesi",
+    "Kanarya Mahallesi",
     "Kartaltepe Mahallesi",
+    "Kemalpaşa Mahallesi",
+    "Mehmet Akif Mahallesi",
     "Söğütlü Çeşme Mahallesi",
     "Tevfikbey Mahallesi",
     "Yarımburgaz Mahallesi",
+    "Yeni Mahalle Mahallesi",
+    "Yeşilova Mahallesi",
     "İnönü Mahallesi",
     "İstasyon Mahallesi"
    ],
@@ -2761,7 +5248,10 @@
     "Cevizli Mahallesi",
     "Esenkent Mahallesi",
     "Feyzullah Mahallesi",
+    "Fındıklı Mahallesi",
     "Girne Mahallesi",
+    "Gülensu Mahallesi",
+    "Gülsuyu Mahallesi",
     "Küçükyalı Merkez Mahallesi",
     "Yalı Mahallesi",
     "Zümrütevler Mahallesi",
@@ -2784,8 +5274,13 @@
     "Harmandere Mahallesi",
     "Kavakpınar Mahallesi",
     "Kaynarca Mahallesi",
+    "Kurna Mahallesi",
     "Kurtköy Mahallesi",
+    "Orhangazi Mahallesi",
+    "Orta Mahallesi",
+    "Ramazanoğlu Mahallesi",
     "Sanayi Mahallesi",
+    "Sapan Bağları Mahallesi",
     "Sülüntepe Mahallesi",
     "Velibaba Mahallesi",
     "Yayalar Mahallesi",
@@ -2806,29 +5301,41 @@
     "Fatih Mahallesi",
     "Kemal Türkler Mahallesi",
     "Meclis Mahallesi",
+    "Merve Mahallesi",
     "Osmangazi Mahallesi",
+    "Safa Mahallesi",
     "Sarıgazi Mahallesi",
     "Veysel Karani Mahallesi",
     "Yenidoğan Mahallesi",
-    "Yunus Emre Mahallesi"
+    "Yunus Emre Mahallesi",
+    "İnönü Mahallesi"
    ],
    "Sarıyer": [
     "Ayazağa Mahallesi",
     "Bahçeköy Kemer Mahallesi",
+    "Bahçeköy Merkez Mahallesi",
     "Bahçeköy Yeni Mahalle",
+    "Büyükdere Mahallesi",
+    "Cumhuriyet Mahallesi",
     "Darüşşafaka Mahallesi",
     "Demirciköy Mahallesi",
+    "Ferahevler Mahallesi",
+    "Garipçe Mahallesi",
     "Gümüşdere Mahallesi",
     "Huzur Mahallesi",
+    "Kazım Karabekir Paşa Mahallesi",
+    "Kireçburnu Mahallesi",
     "Kumköy (Kilyos) Mahallesi",
     "Maden Mahallesi",
     "Maslak Mahallesi",
+    "Merkez Mahallesi",
     "PTT Evleri Mahallesi",
     "Poligon Mahallesi",
     "Pınar Mahallesi",
     "Reşitpaşa Mahallesi",
     "Rumelifeneri Mahallesi",
     "Rumelihisarı Mahallesi",
+    "Rumelikavağı Mahallesi",
     "Tarabya Mahallesi",
     "Uskumruköy Mahallesi",
     "Yeniköy Mahallesi",
@@ -2838,29 +5345,43 @@
     "İstinye Mahallesi"
    ],
    "Silivri": [
+    "Akören Mahallesi",
+    "Alibey Mahallesi",
     "Alipaşa Mahallesi",
+    "Büyük Çavuşlu Mahallesi",
     "Cumhuriyet Mahallesi",
     "Değirmenköy İsmetpaşa Mahallesi",
     "Fatih Mahallesi",
     "Gümüşyaka Mahallesi",
+    "Kavaklı Hürriyet Mahallesi",
+    "Kavaklı İstiklal Mahallesi",
     "Mimar Sinan Mahallesi",
+    "Ortaköy Mahallesi",
     "Piri Mehmet Paşa Mahallesi",
     "Selimpaşa Mahallesi",
     "Semizkumlar Mahallesi",
     "Yeni Mahalle",
+    "Yolçatı Mahallesi",
     "Çanta Balaban Mahallesi",
     "Çanta Sancaktepe Mahallesi",
     "Çayırdere Mahallesi"
    ],
    "Sultanbeyli": [
+    "Abdurrahmangazi Mahallesi",
     "Adil Mahallesi",
     "Ahmet Yesevi Mahallesi",
     "Akşemsettin Mahallesi",
-    "Mimar Sinan Mahallesi"
+    "Battalgazi Mahallesi",
+    "Mecidiye Mahallesi",
+    "Mehmet Akif Mahallesi",
+    "Mimar Sinan Mahallesi",
+    "Necip Fazıl Mahallesi",
+    "Turgut Reis Mahallesi"
    ],
    "Sultangazi": [
     "50. Yıl Mahallesi",
     "Cebeci Mahallesi",
+    "Cumhuriyet Mahallesi",
     "Esentepe Mahallesi",
     "Eski Habipler Mahallesi",
     "Habibler Mahallesi",
@@ -2870,18 +5391,21 @@
     "İsmetpaşa Mahallesi"
    ],
    "Tuzla": [
+    "Anadolu Mahallesi",
     "Aydınlı Mahallesi",
     "Aydıntepe Mahallesi",
     "Cami Mahallesi",
     "Evliya Çelebi Mahallesi",
     "Fatih Mahallesi",
     "Mescit Mahallesi",
+    "Mimar Sinan Mahallesi",
     "Orhanlı Mahallesi",
     "Orta Mahallesi",
     "Postane Mahallesi",
     "Tepeören Mahallesi",
     "Yayla Mahallesi",
     "İstasyon Mahallesi",
+    "İçmeler Mahallesi",
     "Şifa Mahallesi"
    ],
    "Zeytinburnu": [
@@ -2889,28 +5413,43 @@
     "Kazlıçeşme Mahallesi",
     "Maltepe Mahallesi",
     "Merkezefendi Mahallesi",
+    "Nuripaşa Mahallesi",
     "Seyitnizam Mahallesi",
     "Sümer Mahallesi",
-    "Veliefendi Mahallesi"
+    "Telsiz Mahallesi",
+    "Veliefendi Mahallesi",
+    "Çırpıcı Mahallesi"
    ],
    "Çatalca": [
+    "Akalan Mahallesi",
+    "Ferhatpaşa Mahallesi",
+    "Kaleiçi Mahallesi",
+    "Muratbey Merkez Mahallesi",
     "Ovayenice Mahallesi",
+    "Subaşı Mahallesi",
+    "Yalıköy Mahallesi",
     "Çakıl Mahallesi",
-    "Örcünlü Mahallesi"
+    "Örcünlü Mahallesi",
+    "İnceğiz Mahallesi",
+    "İzzettin Mahallesi"
    ],
    "Çekmeköy": [
     "Alemdağ Mahallesi",
     "Aydınlar Mahallesi",
     "Cumhuriyet Mahallesi",
+    "Ekşioğlu Mahallesi",
     "Güngören Mahallesi",
     "Hamidiye Mahallesi",
+    "Hüseyinli Mahallesi",
     "Kirazlıdere Mahallesi",
     "Mehmet Akif Mahallesi",
     "Merkez Mahallesi",
     "Mimar Sinan Mahallesi",
     "Nişantepe Mahallesi",
+    "Reşadiye Mahallesi",
     "Soğukpınar Mahallesi",
     "Sultançiftliği Mahallesi",
+    "Sırapınar Mahallesi",
     "Taşdelen Mahallesi",
     "Çamlık Mahallesi",
     "Çatalmeşe Mahallesi",
@@ -2951,7 +5490,9 @@
    ],
    "Üsküdar": [
     "Acıbadem Mahallesi",
+    "Ahmediye Mahallesi",
     "Altunizade Mahallesi",
+    "Aziz Mahmut Hüdayi Mahallesi",
     "Bahçelievler Mahallesi",
     "Barbaros Mahallesi",
     "Beylerbeyi Mahallesi",
@@ -2961,247 +5502,652 @@
     "Ferah Mahallesi",
     "Güzeltepe Mahallesi",
     "Kandilli Mahallesi",
+    "Kirazlıtepe Mahallesi",
     "Kuzguncuk Mahallesi",
+    "Küplüce Mahallesi",
     "Küçük Çamlıca Mahallesi",
     "Küçüksu Mahallesi",
     "Kısıklı Mahallesi",
     "Mehmet Akif Ersoy Mahallesi",
     "Mimar Sinan Mahallesi",
     "Muratreis Mahallesi",
+    "Salacak Mahallesi",
     "Selami Ali Mahallesi",
+    "Sultantepe Mahallesi",
     "Yavuztürk Mahallesi",
     "Çengelköy Mahallesi",
     "Ünalan Mahallesi"
    ],
    "Şile": [
     "Ahmetli Mahallesi",
+    "Ağva Merkez Mahallesi",
+    "Balibey Mahallesi",
     "Doğancılı Mahallesi",
     "Kervansaray Mahallesi",
     "Kumbaba Mahallesi",
     "Meşrutiyet Mahallesi",
+    "Sahilköy Mahallesi",
+    "Ulupelit Mahallesi",
     "Yeniköy Mahallesi",
     "Çavuş Mahallesi",
-    "Çayırbaşı Mahallesi"
+    "Çayırbaşı Mahallesi",
+    "İmrendere Mahallesi",
+    "İmrenli Mahallesi"
    ],
    "Şişli": [
     "19 Mayıs Mahallesi",
+    "Bozkurt Mahallesi",
     "Cumhuriyet Mahallesi",
+    "Duatepe Mahallesi",
+    "Ergenekon Mahallesi",
     "Esentepe Mahallesi",
+    "Feriköy Mahallesi",
     "Fulya Mahallesi",
     "Gülbahar Mahallesi",
+    "Halaskargazi Mahallesi",
     "Halide Edip Adıvar Mahallesi",
+    "Halil Rıfat Paşa Mahallesi",
     "Harbiye Mahallesi",
     "Kaptanpaşa Mahallesi",
     "Kuştepe Mahallesi",
+    "Mahmut Şevket Paşa Mahallesi",
     "Mecidiyeköy Mahallesi",
     "Merkez Mahallesi",
+    "Meşrutiyet Mahallesi",
+    "Paşa Mahallesi",
     "Teşvikiye Mahallesi",
-    "İnönü Mahallesi"
+    "Yayla Mahallesi",
+    "İnönü Mahallesi",
+    "İzzetpaşa Mahallesi"
    ]
   },
   "İzmir": {
    "Aliağa": [
-    "Kültür Mahallesi"
+    "Atatürk Mahallesi",
+    "Kazım Dirik Mahallesi",
+    "Kültür Mahallesi",
+    "Siteler Mahallesi",
+    "Yalı Mahallesi",
+    "Yeni Mahalle",
+    "Örnekkent Mahallesi",
+    "Şakran Sayfiye Mahallesi"
    ],
    "Balçova": [
-    "Fevzi Çakmak Mahallesi"
+    "Bahçelerarası Mahallesi",
+    "Eğitim Mahallesi",
+    "Fevzi Çakmak Mahallesi",
+    "Korutürk Mahallesi",
+    "Onur Mahallesi",
+    "Teleferik Mahallesi",
+    "Çetin Emeç Mahallesi"
    ],
    "Bayraklı": [
     "100. Yıl Mahallesi",
     "75. Yıl Mahallesi",
     "Adalet Mahallesi",
     "Bayraklı Mahallesi",
+    "Emek Mahallesi",
+    "Fuat Edip Baksı Mahallesi",
+    "Gümüşpala Mahallesi",
     "Körfez Mahallesi",
     "Manavkuyu Mahallesi",
     "Mansuroğlu Mahallesi",
+    "Onur Mahallesi",
+    "Org.Nafiz Gürman Mahallesi",
     "Osmangazi Mahallesi",
+    "Postacılar Mahallesi",
+    "Soğukkuyu Mahallesi",
     "Tepekule Mahallesi",
-    "Turan Mahallesi"
+    "Turan Mahallesi",
+    "Yamanlar Mahallesi",
+    "Çiçek Mahallesi"
    ],
    "Bayındır": [
-    "Hatay Mahallesi"
+    "Demircilik Mahallesi",
+    "Hatay Mahallesi",
+    "Sadıkpaşa Mahallesi",
+    "Yakapınar Mahallesi"
    ],
    "Bergama": [
-    "Fatih Mahallesi"
+    "Bahçelievler Mahallesi",
+    "Ertuğrul Mahallesi",
+    "Fatih Mahallesi",
+    "Fevzipaşa Mahallesi",
+    "Gaziosmanpaşa Mahallesi",
+    "Gazipaşa Mahallesi",
+    "Kadriye Mahallesi",
+    "Maltepe Mahallesi",
+    "İslamsaray Mahallesi",
+    "İsmailli Mahallesi"
+   ],
+   "Beydağ": [
+    "Cumhuriyet Mahallesi"
    ],
    "Bornova": [
     "Atatürk Mahallesi",
     "Barbaros Mahallesi",
+    "Beşyol Mahallesi",
     "Doğanlar Mahallesi",
+    "Egemenlik Mahallesi",
+    "Ergene Mahallesi",
     "Erzene Mahallesi",
     "Evka 3 Mahallesi",
     "Evka 4 Mahallesi",
+    "Gazi Osman Paşa Mahallesi",
+    "Gürpınar Mahallesi",
+    "Işıklar Mahallesi",
     "Karacaoğlan Mahallesi",
     "Kazımdirik Mahallesi",
+    "Kemalpaşa Mahallesi",
     "Koşukavak Mahallesi",
+    "Kızılay Mahallesi",
+    "Meriç Mahallesi",
     "Mevlana Mahallesi",
     "Rafet Paşa Mahallesi",
+    "Tuna Mahallesi",
     "Yeşilova Mahallesi",
+    "Yunus Emre Mahallesi",
     "Çınar Mahallesi",
-    "Ümit Mahallesi"
+    "Ümit Mahallesi",
+    "İnönü Mahallesi"
    ],
    "Buca": [
     "Adatepe Mahallesi",
+    "Akıncılar Mahallesi",
     "Atatürk Mahallesi",
     "Aydoğdu Mahallesi",
+    "Barış Mahallesi",
     "Buca Koop Mahallesi",
+    "Buca Organize Sanayi Bölgesi",
+    "Dicle Mahallesi",
+    "Dumlupınar Mahallesi",
+    "Efeler Mahallesi",
     "Fırat Mahallesi",
+    "Gaziler Mahallesi",
+    "Güven Mahallesi",
+    "Hürriyet Mahallesi",
+    "Kozağaç Mahallesi",
+    "Kuruçeşme Mahallesi",
+    "Laleli Mahallesi",
+    "Menderes Mahallesi",
+    "Murathan Mahallesi",
+    "Mustafa Kemal Mahallesi",
+    "Seyhan Mahallesi",
+    "Ufuk Mahallesi",
+    "Vali Rahmi Bey Mahallesi",
+    "Yaylacık Mahallesi",
+    "Yenigün Mahallesi",
+    "Yeşilbağlar Mahallesi",
     "Yıldız Mahallesi",
+    "Çamlık Mahallesi",
     "Çamlıkule Mahallesi",
+    "Çamlıpınar Mahallesi",
+    "Çağdaş Mahallesi",
+    "İnkılap Mahallesi",
+    "İzkent Mahallesi",
     "Şirinkapı Mahallesi"
    ],
    "Dikili": [
     "Bademli Mahallesi",
     "Bahçeli Mahallesi",
+    "Cumhuriyet Mahallesi",
     "Denizköy Mahallesi",
+    "Gazipaşa Mahallesi",
     "Kabakum Mahallesi",
+    "Salihler Mahallesi",
+    "Salimbey Mahallesi",
     "Uzunburun Mahallesi",
-    "Çandarlı Mahallesi"
+    "Çandarlı Mahallesi",
+    "İsmetpaşa Mahallesi"
    ],
    "Foça": [
-    "Fevzi Çakmak Mahallesi"
+    "Atatürk Mahallesi",
+    "Cumhuriyet Mahallesi",
+    "Fatih Mahallesi",
+    "Fevzi Çakmak Mahallesi",
+    "Fevzipaşa Mahallesi",
+    "Hacıveli Mahallesi",
+    "Kazım Dirik Mahallesi",
+    "Kozbeyli Mahallesi",
+    "Mustafa Kemal Atatürk Mahallesi",
+    "İsmetpaşa Mahallesi"
    ],
    "Gaziemir": [
+    "Aktepe Mahallesi",
+    "Atıfbey Mahallesi",
     "Beyazevler Mahallesi",
     "Binbaşı Reşatbey Mahallesi",
     "Dokuz Eylül Mahallesi",
+    "Emrez Mahallesi",
     "Fatih Mahallesi",
+    "Gazi Mahallesi",
+    "Gazikent Mahallesi",
     "Irmak Mahallesi",
+    "Sevgi Mahallesi",
+    "Yeşil Mahallesi",
     "Zafer Mahallesi"
    ],
    "Güzelbahçe": [
+    "Atatürk Mahallesi",
+    "Kahramandere Mahallesi",
     "Küçükkaya Mahallesi",
+    "Maltepe Mahallesi",
     "Mustafa Kemal Paşa Mahallesi",
     "Siteler Mahallesi",
-    "Çamlı Mahallesi"
+    "Yaka Mahallesi",
+    "Yalı Mahallesi",
+    "Yelki Mahallesi",
+    "Çamlı Mahallesi",
+    "Çelebi Mahallesi"
    ],
    "Karabağlar": [
     "Adnan Süvari Mahallesi",
+    "Ali Fuat Cebesoy Mahallesi",
+    "Arap Hasan Mahallesi",
+    "Aşık Veysel Mahallesi",
+    "Bahar Mahallesi",
+    "Bahçelievler Mahallesi",
+    "Barış Mahallesi",
     "Basın Sitesi Mahallesi",
+    "Bozyaka Mahallesi",
     "Cennetoğlu Mahallesi",
+    "Devrim Mahallesi",
+    "Doğanay Mahallesi",
+    "Esentepe Mahallesi",
     "Fahrettin Altay Mahallesi",
+    "General Kazım Özalp Mahallesi",
+    "Gülyaka Mahallesi",
+    "Günaltay Mahallesi",
+    "Karabağlar Mahallesi",
     "Kazım Karabekir Mahallesi",
+    "Kibar Mahallesi",
+    "Maliyeciler Mahallesi",
+    "Poligon Mahallesi",
     "Refet Bele Mahallesi",
+    "Reis Mahallesi",
+    "Sarıyer Mahallesi",
+    "Selvili Mahallesi",
+    "Sevgi Mahallesi",
     "Tahsin Yazıcı Mahallesi",
     "Uzundere Mahallesi",
     "Vatan Mahallesi",
-    "Yaşar Kemal Mahallesi"
+    "Yaşar Kemal Mahallesi",
+    "Yunus Emre Mahallesi",
+    "Yurdoğlu Mahallesi",
+    "Çalıkuşu Mahallesi",
+    "Üçkuyular Mahallesi"
    ],
    "Karaburun": [
-    "Mordoğan Mahallesi"
+    "Küçükbahçe Mahallesi",
+    "Merkez Mahallesi",
+    "Mordoğan Mahallesi",
+    "Tepeboz Mahallesi",
+    "İskele Mahallesi"
    ],
    "Karşıyaka": [
     "Atakent Mahallesi",
+    "Bahariye Mahallesi",
+    "Bahriye Üçok Mahallesi",
     "Bahçelievler Mahallesi",
+    "Bostanlı Mahallesi",
+    "Cumhuriyet Mahallesi",
+    "Dedebaşı Mahallesi",
+    "Demirköprü Mahallesi",
+    "Donanmacı Mahallesi",
+    "Fikri Altay Mahallesi",
+    "Latife Hanım Mahallesi",
     "Mavişehir Mahallesi",
     "Mustafa Kemal Mahallesi",
+    "Nergiz Mahallesi",
+    "Tuna Mahallesi",
     "Yalı Mahallesi",
     "Zübeyde Hanım Mahallesi",
+    "Örnekköy Mahallesi",
+    "İmbatlı Mahallesi",
+    "İnönü Mahallesi",
     "Şemikler Mahallesi"
    ],
    "Kemalpaşa": [
+    "8 Eylül Mahallesi",
+    "Akalan Mahallesi",
+    "Beşpınar Mahallesi",
+    "Hürriyet Mahallesi",
+    "Kazımpaşa Mahallesi",
+    "Kemalpaşa Organize Sanayi Bölgesi",
+    "Mustafa Kemal Atatürk Mahallesi",
     "Soğukpınar Mahallesi",
     "Sütçüler Mahallesi",
-    "Çambel Mahallesi"
+    "Yeni Mahalle",
+    "Yenikurudere Mahallesi",
+    "Yiğitler Mahallesi",
+    "Yukarıkızılca Merkez Mahallesi",
+    "Çambel Mahallesi",
+    "Çiniliköy Mahallesi",
+    "Çınarköy Mahallesi"
+   ],
+   "Kiraz": [
+    "Yeni Mahalle",
+    "İstiklal Mahallesi"
    ],
    "Konak": [
     "Akdeniz Mahallesi",
     "Alsancak Mahallesi",
+    "Atilla Mahallesi",
+    "Dolaplıkuyu Mahallesi",
     "Ege Mahallesi",
     "Emir Sultan Mahallesi",
+    "Fevzi Paşa Mahallesi",
+    "Göztepe Mahallesi",
+    "Güneşli Mahallesi",
     "Güzelyurt Mahallesi",
     "Halkapınar Mahallesi",
+    "Kahramanlar Mahallesi",
+    "Kocakapı Mahallesi",
     "Konak Mahallesi",
+    "Kültür Mahallesi",
+    "Lale Mahallesi",
+    "Mehmet Ali Akman Mahallesi",
+    "Mersinli Mahallesi",
+    "Mimar Sinan Mahallesi",
+    "Murat Mahallesi",
+    "Oğuzlar Mahallesi",
+    "Piri Reis Mahallesi",
+    "Turgut Reis Mahallesi",
+    "Umurbey Mahallesi",
+    "Yenidoğan Mahallesi",
+    "Yenigün Mahallesi",
     "Yenişehir Mahallesi",
+    "Zafertepe Mahallesi",
     "Çınarlı Mahallesi",
-    "İsmet Kaptan Mahallesi"
+    "İsmet Kaptan Mahallesi",
+    "İsmet Paşa Mahallesi"
+   ],
+   "Kınık": [
+    "Türkcedit Mahallesi"
    ],
    "Menderes": [
     "Ahmetbeyli Mahallesi",
+    "Akçaköy Mahallesi",
+    "Altıntepe Mahallesi",
+    "Ata Mahallesi",
+    "Barbaros Mahallesi",
+    "Cüneytbey Mahallesi",
+    "Gölcükler Mahallesi",
+    "Görece Cumhuriyet Mahallesi",
+    "Gümüldür Atatürk Mahallesi",
+    "Gümüldür Fevzi Çakmak Mahallesi",
     "Gümüldür İnönü Mahallesi",
+    "Hürriyet Mahallesi",
+    "Kasımpaşa Mahallesi",
+    "Keler Mahallesi",
+    "Kemalpaşa Mahallesi",
+    "Kısık Mahallesi",
+    "Orta Mahallesi",
+    "Oğlananası Atatürk Mahallesi",
+    "Çakaltepe Mahallesi",
+    "Çamönü Mahallesi",
+    "Çukuraltı Mahallesi",
     "Özdere Cumhuriyet Mahallesi"
    ],
    "Menemen": [
+    "29 Ekim Mahallesi",
+    "30 Ağustos Mahallesi",
     "85.Yıl Cumhuriyet Mahallesi",
+    "9 Eylül Mahallesi",
     "Atatürk Mahallesi",
+    "Camiikebir Mahallesi",
     "Cumhuriyet Mahallesi",
     "Gazi Mahallesi",
     "Gazi Mustafa Kemal Mahallesi",
+    "Haykıran Mahallesi",
+    "Kasımpaşa Mahallesi",
+    "Kemal Atatürk Mahallesi",
     "Mermerli Mahallesi",
+    "Tülbentli Mahallesi",
+    "Ulus Mahallesi",
+    "Uğur Mumcu Mahallesi",
+    "Villakent Mahallesi",
+    "Yahşelli Mahallesi",
+    "Yeşil Pınar Mahallesi",
+    "Zeytinlik Mahallesi",
     "İncirli Pınar Mahallesi",
-    "İnönü Mahallesi"
+    "İnönü Mahallesi",
+    "İstiklal Mahallesi"
    ],
    "Narlıdere": [
+    "2. İnönü Mahallesi",
+    "Altıevler Mahallesi",
+    "Atatürk Mahallesi",
+    "Huzur Mahallesi",
+    "Ilıca Mahallesi",
+    "Limanreis Mahallesi",
     "Narlı Mahallesi",
-    "Yenikale Mahallesi"
+    "Sahilevleri Mahallesi",
+    "Yenikale Mahallesi",
+    "Çamtepe Mahallesi",
+    "Çatalkaya Mahallesi"
    ],
    "Seferihisar": [
     "Akarca Mahallesi",
     "Atatürk Mahallesi",
+    "Bengiler Mahallesi",
+    "Camikebir Mahallesi",
+    "Cumhuriyet Mahallesi",
+    "Düzce Mahallesi",
+    "Hıdırlık Mahallesi",
+    "Mersin Alanı Mahallesi",
     "Necat Hepkon Mahallesi",
     "Payamlı Mahallesi",
-    "Sığacık Mahallesi"
+    "Sığacık Mahallesi",
+    "Tepecik Mahallesi",
+    "Turabiye Mahallesi",
+    "Ulamış Mahallesi",
+    "Çolak İbrahim Bey Mahallesi"
    ],
    "Selçuk": [
     "Atatürk Mahallesi",
+    "Cumhuriyet Mahallesi",
     "Zafer Mahallesi",
     "Şirince Mahallesi"
    ],
+   "Tire": [
+    "Adnan Menderes Mahallesi",
+    "Atatürk Mahallesi",
+    "Fatih Mahallesi",
+    "Hürriyet Mahallesi",
+    "Turan Mahallesi",
+    "Yeni Mahallesi",
+    "İbni Melek Mahallesi"
+   ],
    "Torbalı": [
-    "Torbalı Mahallesi"
+    "Alpkent Mahallesi",
+    "Ayrancılar Mahallesi",
+    "Bahçelievler Mahallesi",
+    "Cumhuriyet Mahallesi",
+    "Ertuğrul Mahallesi",
+    "Fevzi Çakmak Mahallesi",
+    "Muratbey Mahallesi",
+    "Tepeköy Mahallesi",
+    "Torbalı Mahallesi",
+    "Türkmenköy Mahallesi",
+    "Yedi Eylül Mahallesi",
+    "Yemişlik Mahallesi",
+    "Çapak Mahallesi",
+    "İnönü Mahallesi"
    ],
    "Urla": [
+    "Altıntaş Mahallesi",
+    "Atatürk Mahallesi",
     "Bademler Mahallesi",
+    "Balıklıova Mahallesi",
+    "Camiatik Mahallesi",
     "Denizli Mahallesi",
     "Gülbahçe Mahallesi",
     "Güvendik Mahallesi",
+    "Hacı İsa Mahallesi",
     "Kalabak Mahallesi",
     "Kuşçular Mahallesi",
+    "M.Fevzi Çakmak Mahallesi",
+    "Rüstem Mahallesi",
     "Torasan Mahallesi",
+    "Uzunkuyu Mahallesi",
+    "Yaka Mahallesi",
+    "Yelaltı Mahallesi",
+    "Yeni Mahallesi",
     "Yenice Mahallesi",
-    "Yenikent Mahallesi"
+    "Yenikent Mahallesi",
+    "Zeytinalanı Mahallesi",
+    "Çamlıçay Mahallesi",
+    "Özbek Mahallesi",
+    "İskele Mahallesi",
+    "İçmeler Mahallesi",
+    "Şirinkent Mahallesi"
    ],
    "Çeşme": [
+    "16 Eylül Mahallesi",
     "Alaçatı Mahallesi",
-    "Ildır Mahallesi"
+    "Altınyunus Mahallesi",
+    "Ardıç Mahallesi",
+    "Boyalık Mahallesi",
+    "Celal Bayar Mahallesi",
+    "Cumhuriyet Mahallesi",
+    "Dalyan Mahallesi",
+    "Fahrettinpaşa Mahallesi",
+    "Germiyan Mahallesi",
+    "Ildır Mahallesi",
+    "Ilıca Mahallesi",
+    "Musalla Mahallesi",
+    "Ovacık Mahallesi",
+    "Reisdere Mahallesi",
+    "Sakarya Mahallesi",
+    "Yalı Mahallesi",
+    "Çakabey Mahallesi",
+    "Çiftlik Mahallesi",
+    "Üniversite Mahallesi",
+    "İsmet İnönü Mahallesi",
+    "Şehit Mehmet Mahallesi",
+    "Şifne Mahallesi"
    ],
    "Çiğli": [
+    "Ahmet Efendi Mahallesi",
+    "Ahmet Taner Kışlalı Mahallesi",
     "Atatürk Mahallesi",
+    "Atatürk Organize Sanayi Bölgesi",
     "Ataşehir Mahallesi",
+    "Aydınlıkevler Mahallesi",
     "Balatçık Mahallesi",
+    "Cumhuriyet Mahallesi",
+    "Egekent Mahallesi",
     "Esentepe Mahallesi",
     "Evka-5 Mahallesi",
+    "Küçük Çiğli Mahallesi",
     "Sasalı Merkez Mahallesi",
-    "Yakakent Mahallesi"
+    "Yakakent Mahallesi",
+    "Çağdaş Mahallesi",
+    "İnönü Mahallesi",
+    "İzkent Mahallesi",
+    "Şirintepe Mahallesi"
    ],
    "Ödemiş": [
+    "Emmioğlu Mahallesi",
+    "Gölcük Mahallesi",
+    "Hürriyet Mahallesi",
     "Ovakent Mahallesi",
     "Süleyman Demirel Mahallesi",
+    "Türkmen Mahallesi",
     "Zafer Mahallesi",
-    "Çamyayla Mahallesi"
+    "Çamyayla Mahallesi",
+    "Üç Eylül Mahallesi",
+    "İnönü Mahallesi"
    ]
   },
   "Şanlıurfa": {
+   "Akçakale": [
+    "Fatih Sultan Mehmet Mahallesi"
+   ],
    "Birecik": [
+    "Cumhuriyet Mahallesi",
+    "Meydan Mahallesi",
     "Çoğan Mahallesi"
    ],
+   "Bozova": [
+    "Yeşilova Mahallesi"
+   ],
+   "Ceylanpınar": [
+    "15 Temmuz Mahallesi"
+   ],
    "Eyyübiye": [
-    "Batıkent Mahallesi"
+    "Batıkent Mahallesi",
+    "Beykapusu Mahallesi",
+    "Direkli Mahallesi",
+    "Eyyüp Nebi Mahallesi",
+    "Eyüpkent Mahallesi",
+    "Kadıkendi Mahallesi",
+    "Kurtuluş Mahallesi",
+    "Muradiye Mahallesi",
+    "Süleymanşah Mahallesi",
+    "Yusufpaşa Mahallesi"
+   ],
+   "Halfeti": [
+    "Karaotlak Mahallesi"
    ],
    "Haliliye": [
+    "Ahmet Yesevi Mahallesi",
+    "Akpınar Mahallesi",
+    "Atatürk Mahallesi",
     "Bamyasuyu Mahallesi",
+    "Devteyşti Mahallesi",
+    "Ertuğrul Gazi Mahallesi",
+    "Kamberiye Mahallesi",
     "Karşıyaka Mahallesi",
     "Osman Gazi Mahallesi",
     "Paşabağı Mahallesi",
+    "Sancaktar Mahallesi",
+    "Selahaddin Eyyübi Mahallesi",
+    "Süleymaniye Mahallesi",
+    "Sırrın Mahallesi",
+    "Ulubatlı Mahallesi",
+    "Ulubağ Mahallesi",
     "Veysel Karani Mahallesi",
-    "Yenişehir Mahallesi"
+    "Yavuz Selim Mahallesi",
+    "Yenişehir Mahallesi",
+    "İmam Bakır Mahallesi",
+    "Şehitlik Mahallesi"
+   ],
+   "Harran": [
+    "İbni Teymiye Mahallesi"
+   ],
+   "Hilvan": [
+    "Bahçelievler Mahallesi"
    ],
    "Karaköprü": [
-    "Aşıkköy Mahallesi"
+    "Akbayır Mahallesi",
+    "Akpıyar Mahallesi",
+    "Ali Baba Mahallesi",
+    "Atakent Mahallesi",
+    "Aşıkköy Mahallesi",
+    "Doğukent Mahallesi",
+    "Güllübağ Mahallesi",
+    "Karşıyaka Mahallesi",
+    "Mehmetçik Mahallesi",
+    "Narlıkuyu Mahallesi",
+    "Seyrantepe Mahallesi",
+    "Çankaya Mahallesi",
+    "Şenevler Mahallesi"
    ],
    "Siverek": [
+    "Ayvanat Mahallesi",
+    "Bahçelievler Mahallesi",
+    "Güney Mahallesi",
+    "Hacı Ömer Mahallesi",
     "Hasan Çelebi Mahallesi",
-    "Kale Mahallesi"
+    "Kale Mahallesi",
+    "Selim Pınar Mahallesi",
+    "Yenişehir Mahallesi"
+   ],
+   "Suruç": [
+    "Dikili Mahallesi",
+    "Yenişehir Mahallesi"
    ],
    "Viranşehir": [
     "Yenişehir Mahallesi"
@@ -3209,7 +6155,10 @@
   },
   "Şırnak": {
    "Cizre": [
-    "Cumhuriyet Mahallesi"
+    "Cumhuriyet Mahallesi",
+    "Nur Mahallesi",
+    "Sur Mahallesi",
+    "Şah Mahallesi"
    ],
    "Silopi": [
     "Başak Mahallesi",
@@ -3219,6 +6168,9 @@
    ],
    "İdil": [
     "Turgut Özal Mahallesi"
+   ],
+   "Şırnak Merkez": [
+    "Atatürk Mahallesi"
    ]
   }
  }
