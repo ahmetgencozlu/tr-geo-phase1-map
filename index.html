@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Türkiye Faz 1 — Site / Toplu Konut / Plaza / Teknopark</title>
+<link href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css" rel="stylesheet">
+<script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+<style>
+ :root{--bg:#0f1115;--panel:#161a22;--fg:#e6e8ee;--muted:#8b93a7;--line:#262c38}
+ *{box-sizing:border-box}
+ html,body{margin:0;height:100%;background:var(--bg);color:var(--fg);font:14px/1.45 system-ui,Segoe UI,Roboto,sans-serif}
+ #app{display:grid;grid-template-columns:340px 1fr;height:100%}
+ #side{background:var(--panel);border-right:1px solid var(--line);padding:14px;overflow:auto}
+ #map{position:relative}
+ h1{font-size:16px;margin:0 0 4px}
+ .sub{color:var(--muted);font-size:12px;margin-bottom:12px}
+ .kpi{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:12px}
+ .kpi div{background:#1d2330;border:1px solid var(--line);border-radius:8px;padding:8px}
+ .kpi b{display:block;font-size:20px}
+ .kpi span{color:var(--muted);font-size:11px}
+ fieldset{border:1px solid var(--line);border-radius:8px;padding:8px 10px;margin:0 0 10px}
+ legend{color:var(--muted);font-size:11px;padding:0 4px}
+ label.row{display:flex;align-items:center;gap:8px;padding:3px 0;cursor:pointer}
+ .sw{width:12px;height:12px;border-radius:3px;display:inline-block}
+ input[type=search],select{width:100%;background:#0f1115;color:var(--fg);border:1px solid var(--line);border-radius:6px;padding:7px}
+ table{width:100%;border-collapse:collapse;font-size:12px}
+ td{padding:3px 2px;border-bottom:1px solid var(--line)}
+ td.n{text-align:right;color:var(--muted)}
+ #results div{padding:5px 6px;border-bottom:1px solid var(--line);cursor:pointer}
+ #results div:hover{background:#1d2330}
+ #results small{color:var(--muted)}
+ .maplibregl-popup-content{background:var(--panel);color:var(--fg);border:1px solid var(--line);border-radius:8px;font-size:12px;max-width:300px}
+ .maplibregl-popup-tip{border-top-color:var(--panel)!important}
+ .pop b{font-size:13px}
+ .pop .m{color:var(--muted)}
+ .warn{font-size:11px;color:#f0b35a;margin-top:10px}
+ a{color:#7cb4ff}
+ #loading{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(15,17,21,.7);z-index:5;font-size:15px}
+</style>
+</head>
+<body>
+<div id="app">
+ <aside id="side">
+  <h1>Türkiye Faz 1 — Kompleks Envanteri</h1>
+  <div class="sub">OSM tabanlı aday kayıtlar · © OpenStreetMap contributors (ODbL) · <span id="gen"></span></div>
+  <div class="kpi">
+   <div><b id="k-total">–</b><span>tekil kompleks</span></div>
+   <div><b id="k-poly">–</b><span>polygonlu</span></div>
+   <div><b id="k-addr">–</b><span>açık adresli (kaynak)</span></div>
+   <div><b id="k-raw">–</b><span>ham OSM nesnesi</span></div>
+  </div>
+  <fieldset><legend>Kategori</legend>
+   <label class="row"><input type="checkbox" data-cat="residential_site" checked><i class="sw" style="background:#3fa7ff"></i>Konut sitesi <span id="c-residential_site" style="margin-left:auto;color:var(--muted)"></span></label>
+   <label class="row"><input type="checkbox" data-cat="mass_housing" checked><i class="sw" style="background:#a06cff"></i>Toplu konut / TOKİ <span id="c-mass_housing" style="margin-left:auto;color:var(--muted)"></span></label>
+   <label class="row"><input type="checkbox" data-cat="plaza" checked><i class="sw" style="background:#ffb340"></i>Plaza / iş merkezi <span id="c-plaza" style="margin-left:auto;color:var(--muted)"></span></label>
+   <label class="row"><input type="checkbox" data-cat="technopark" checked><i class="sw" style="background:#3ddc84"></i>Teknopark / teknokent <span id="c-technopark" style="margin-left:auto;color:var(--muted)"></span></label>
+  </fieldset>
+  <fieldset><legend>Geometri türü</legend>
+   <label class="row"><input type="checkbox" data-role="mapped_complex_boundary" checked>Haritalanmış site sınırı</label>
+   <label class="row"><input type="checkbox" data-role="candidate_area_polygon" checked>Aday alan polygonu</label>
+   <label class="row"><input type="checkbox" data-role="building_footprint" checked>Bina ayak izi</label>
+   <label class="row"><input type="checkbox" data-role="point_only" checked>Sadece nokta</label>
+  </fieldset>
+  <fieldset><legend>İl</legend><select id="prov"><option value="">Tümü</option></select></fieldset>
+  <fieldset><legend>Ara</legend><input id="q" type="search" placeholder="isim, ilçe, adres…"><div id="results"></div></fieldset>
+  <fieldset><legend>İl bazında (ilk 15)</legend><table id="provtab"></table></fieldset>
+  <div class="warn">Polygonlar OSM'de çizildiği şekliyledir; resmî kadastro/kampüs sınırı değildir. "Bina ayak izi" kompleks sınırı değildir. Adresler yalnızca kaynakta açıkça yazılmışsa gösterilir.</div>
+ </aside>
+ <div id="map"><div id="loading">Veri yükleniyor…</div></div>
+</div>
+<script>
+const COLORS={residential_site:'#3fa7ff',mass_housing:'#a06cff',plaza:'#ffb340',technopark:'#3ddc84'};
+const CAT_TR={residential_site:'Konut sitesi',mass_housing:'Toplu konut',plaza:'Plaza / iş merkezi',technopark:'Teknopark'};
+const ROLE_TR={mapped_complex_boundary:'haritalanmış site sınırı',candidate_area_polygon:'aday alan polygonu',building_footprint:'bina ayak izi',point_only:'sadece nokta'};
+const catExpr=['match',['get','category'],...Object.entries(COLORS).flat(),'#999'];
+const map=new maplibregl.Map({container:'map',style:'https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json',center:[32.9,39.1],zoom:5.4,attributionControl:true});
+map.addControl(new maplibregl.NavigationControl());
+let points,polys,stats;
+Promise.all([fetch('data/entities_points.geojson').then(r=>r.json()),fetch('data/entities_polygons.geojson').then(r=>r.json()),fetch('data/stats.json').then(r=>r.json())]).then(([p,g,s])=>{points=p;polys=g;stats=s;map.loaded()?init():map.on('load',init)});
+function init(){
+ document.getElementById('loading').remove();
+ map.addSource('polys',{type:'geojson',data:polys});
+ map.addSource('pts',{type:'geojson',data:points});
+ map.addLayer({id:'poly-fill',type:'fill',source:'polys',minzoom:9,paint:{'fill-color':catExpr,'fill-opacity':0.35}});
+ map.addLayer({id:'poly-line',type:'line',source:'polys',minzoom:9,paint:{'line-color':catExpr,'line-width':1.2}});
+ map.addLayer({id:'pts',type:'circle',source:'pts',paint:{'circle-color':catExpr,'circle-radius':['interpolate',['linear'],['zoom'],5,2,10,5,14,8],'circle-opacity':['interpolate',['linear'],['zoom'],9,0.9,12,0.4],'circle-stroke-color':'#000','circle-stroke-width':0.5}});
+ map.addLayer({id:'labels',type:'symbol',source:'pts',minzoom:12,layout:{'text-field':['get','name'],'text-size':11,'text-offset':[0,1.1],'text-anchor':'top'},paint:{'text-color':'#e6e8ee','text-halo-color':'#000','text-halo-width':1}});
+ for(const l of ['pts','poly-fill']){map.on('click',l,e=>popup(e.features[0],e.lngLat));map.on('mouseenter',l,()=>map.getCanvas().style.cursor='pointer');map.on('mouseleave',l,()=>map.getCanvas().style.cursor='')}
+ // KPI
+ document.getElementById('k-total').textContent=stats.total.toLocaleString('tr');
+ document.getElementById('k-poly').textContent=Object.values(stats.by_category).reduce((a,c)=>a+c.with_polygon,0).toLocaleString('tr');
+ document.getElementById('k-addr').textContent=Object.values(stats.by_category).reduce((a,c)=>a+c.verified_address,0).toLocaleString('tr');
+ document.getElementById('k-raw').textContent=stats.raw_osm_objects.toLocaleString('tr');
+ document.getElementById('gen').textContent=stats.generated_at.slice(0,16).replace('T',' ');
+ for(const [c,v] of Object.entries(stats.by_category))document.getElementById('c-'+c).textContent=v.total.toLocaleString('tr');
+ const sel=document.getElementById('prov');
+ for(const p of stats.by_province)if(p.province!=='(bilinmiyor)'){const o=document.createElement('option');o.value=o.textContent=p.province;sel.append(o)}
+ document.getElementById('provtab').innerHTML=stats.by_province.slice(0,15).map(p=>`<tr><td>${p.province}</td><td class="n">${p.total.toLocaleString('tr')}</td><td class="n">${p.with_polygon.toLocaleString('tr')} ⬠</td></tr>`).join('');
+ document.querySelectorAll('input[type=checkbox],#prov').forEach(el=>el.addEventListener('change',applyFilter));
+ document.getElementById('q').addEventListener('input',search);
+}
+function applyFilter(){
+ const cats=[...document.querySelectorAll('[data-cat]:checked')].map(e=>e.dataset.cat);
+ const roles=[...document.querySelectorAll('[data-role]:checked')].map(e=>e.dataset.role);
+ const prov=document.getElementById('prov').value;
+ const f=['all',['in',['get','category'],['literal',cats]],['in',['get','geometry_role'],['literal',roles]]];
+ if(prov)f.push(['==',['get','province'],prov]);
+ for(const l of ['pts','labels','poly-fill','poly-line'])map.setFilter(l,f);
+ if(prov){const b=new maplibregl.LngLatBounds();let n=0;for(const ft of points.features)if(ft.properties.province===prov){b.extend(ft.geometry.coordinates);n++}if(n)map.fitBounds(b,{padding:40,maxZoom:11})}
+}
+function search(){
+ const q=this.value.trim().toLocaleLowerCase('tr');const box=document.getElementById('results');
+ if(q.length<2){box.innerHTML='';return}
+ const hits=points.features.filter(f=>{const p=f.properties;return (p.name+' '+(p.district||'')+' '+(p.province||'')+' '+(p.addr_full||'')).toLocaleLowerCase('tr').includes(q)}).slice(0,30);
+ box.innerHTML=hits.map((f,i)=>`<div data-i="${i}">${f.properties.name}<br><small>${CAT_TR[f.properties.category]} · ${[f.properties.district,f.properties.province].filter(Boolean).join(', ')}</small></div>`).join('')||'<small>sonuç yok</small>';
+ box.querySelectorAll('div').forEach(d=>d.onclick=()=>{const f=hits[+d.dataset.i];map.flyTo({center:f.geometry.coordinates,zoom:15});popup(f,{lng:f.geometry.coordinates[0],lat:f.geometry.coordinates[1]})});
+}
+function popup(f,ll){
+ const p=f.properties;
+ const osm=p.osm?p.osm.replace('osm:','').replace(':','/'):null;
+ new maplibregl.Popup().setLngLat(ll).setHTML(`<div class="pop"><b>${p.name}</b><br>
+ <span class="m">${CAT_TR[p.category]} · ${ROLE_TR[p.geometry_role]}</span><br>
+ ${[p.district,p.province].filter(Boolean).join(' / ')}<br>
+ ${p.addr_full?`<div>📍 ${p.addr_full}</div>`:'<span class="m">açık adres kaynakta yok</span>'}<br>
+ ${p.area_m2?`alan ≈ ${Number(p.area_m2).toLocaleString('tr')} m² · `:''}${p.member_count} OSM nesnesi · güven ${p.confidence}
+ ${osm?`<br><a target="_blank" href="https://www.openstreetmap.org/${osm}">OSM'de aç</a>`:''}</div>`).addTo(map);
+}
+</script>
+</body>
+</html>
