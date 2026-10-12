@@ -40,6 +40,10 @@
  .pop .m{color:var(--muted)}
  .warn{font-size:11px;color:#f0b35a;margin-top:10px}
  a{color:#7cb4ff}
+ #layers{position:absolute;top:10px;right:50px;background:rgba(22,26,34,.95);border:1px solid var(--line);border-radius:8px;padding:8px 10px;font-size:12px;z-index:3;min-width:190px}
+ #layers b{display:block;color:var(--muted);font-size:11px;margin-bottom:4px}
+ #layers label{display:flex;align-items:center;gap:6px;padding:2px 0;cursor:pointer}
+ #layers .sw{width:10px;height:10px}
  #zoomhint{position:absolute;top:10px;left:50%;transform:translateX(-50%);background:rgba(22,26,34,.9);border:1px solid var(--line);border-radius:6px;padding:4px 10px;font-size:12px;color:var(--muted);z-index:3;pointer-events:none}
 </style>
 </head>
@@ -68,11 +72,10 @@
   </fieldset>
   <fieldset><legend>Lejant</legend>
    <div class="lg"><span class="grad"></span></div>
-   <div class="lg">Uzak zoom: il → ilçe → mahalle alanları; renk = aktif kayıt yoğunluğu (az → çok), etiket = ad ve aktif kayıt sayısı.</div>
-   <div class="lg"><i class="sw" style="background:#3fa7ff"></i> Yakın zoom: renk = kategori; dolu alan = kompleks polygonu, nokta = konum</div>
+   <div class="lg">İdari katmanlar (sağ üst kutudan aç/kapat): renk = aktif kayıt yoğunluğu (az → çok), etiket = ad + aktif kayıt sayısı.</div>
+   <div class="lg"><i class="sw" style="background:#3fa7ff"></i> Kompleksler: renk = kategori; dolu alan = polygon (zoom ≥ 9), nokta = konum</div>
    <div class="lg"><span class="dot" style="border:1px dashed #f0b35a;background:transparent"></span> Boş turuncu daire = incelemede (tek kaynak, polygon yok)</div>
    <label class="row" style="margin-top:4px"><input type="checkbox" id="showReview">İncelemedekileri de göster</label>
-   <label class="row"><input type="checkbox" id="showAdmin" checked>İl / ilçe / mahalle sınırlarını göster</label>
   </fieldset>
   <fieldset><legend>Konum</legend>
    <select id="prov"><option value="">İl — tümü</option></select>
@@ -83,7 +86,18 @@
   <fieldset><legend>İl bazında (ilk 15, aktif)</legend><table id="provtab"></table></fieldset>
   <div class="warn">Polygonlar OSM'de çizildiği şekliyledir; resmî kadastro/kampüs sınırı değildir. "Bina ayak izi" kompleks sınırı değildir. Adresler yalnızca kaynakta açıkça yazılmışsa gösterilir.</div>
  </aside>
- <div id="map"><div id="zoomhint">Yakınlaştırdıkça il → ilçe → mahalle → kompleks detayına geçer</div></div>
+ <div id="map">
+  <div id="layers"><b>Katmanlar</b>
+   <label><input type="checkbox" data-adm="il" checked><i class="sw" style="background:#9aa7c0"></i>İl sınırları</label>
+   <label><input type="checkbox" data-adm="ilce"><i class="sw" style="background:#6f7d99"></i>İlçe sınırları</label>
+   <label><input type="checkbox" data-adm="mahalle"><i class="sw" style="background:#4a5570"></i>Mahalle sınırları</label>
+   <label><input type="checkbox" id="admFill" checked>Yoğunluk dolgusu</label>
+   <label><input type="checkbox" id="admLabel" checked>Etiketler</label>
+   <hr style="border:0;border-top:1px solid var(--line);margin:6px 0">
+   <label><input type="checkbox" id="showPoly" checked><i class="sw" style="background:#3fa7ff;opacity:.5"></i>Kompleks polygonları</label>
+   <label><input type="checkbox" id="showPts" checked><span class="dot" style="width:8px;height:8px"></span>Kompleks noktaları</label>
+  </div>
+ </div>
 </div>
 <script>
 const COLORS={residential_site:'#3fa7ff',mass_housing:'#a06cff',plaza:'#ffb340',technopark:'#3ddc84'};
@@ -98,21 +112,22 @@ let stats,searchIdx;
 Promise.all([fetch('data/stats.json').then(r=>r.json()),fetch('data/search_index.json').then(r=>r.json())]).then(([s,i])=>{stats=s;searchIdx=i;map.loaded()?init():map.on('load',init)});
 
 // Yoğunluk (choropleth): aktif kayıt sayısına göre; her idari seviye için ayrı üst sınır.
-function dens(max){return ['interpolate',['linear'],['coalesce',['get','active'],0],0,'rgba(27,42,58,0)',1,'rgba(45,108,223,0.25)',max*0.25,'rgba(45,108,223,0.45)',max*0.6,'rgba(240,179,90,0.55)',max,'rgba(255,90,60,0.65)']}
+function dens(max){return ['interpolate',['linear'],['coalesce',['get','active'],0],0,'rgba(27,42,58,0)',1,'rgba(45,108,223,0.10)',max*0.25,'rgba(45,108,223,0.18)',max*0.6,'rgba(240,179,90,0.22)',max,'rgba(255,90,60,0.28)']}
 function init(){
  map.addSource('tr',{type:'vector',url:TILES});
- const lv=[['il',3,7,1500],['ilce',7,10,250],['mahalle',10,12,40]];
- for(const [l,mn,mx,max] of lv){
-  map.addLayer({id:l+'-fill',type:'fill',source:'tr','source-layer':l,minzoom:mn,maxzoom:mx,paint:{'fill-color':dens(max)}});
-  map.addLayer({id:l+'-line',type:'line',source:'tr','source-layer':l,minzoom:mn,maxzoom:l==='mahalle'?15:mx,paint:{'line-color':l==='il'?'#9aa7c0':l==='ilce'?'#6f7d99':'#4a5570','line-width':l==='il'?1.2:l==='ilce'?0.8:0.5,'line-opacity':0.8}});
-  map.addLayer({id:l+'-label',type:'symbol',source:'tr','source-layer':l,minzoom:mn,maxzoom:mx,
+ // Tile'da il z3–7, ilçe z7–10, mahalle z10–12 var; MapLibre dışındaki zoom'larda over/underzoom ile aynı tile'ı kullanır.
+ const lv=[['il',3,1500],['ilce',5,250],['mahalle',8,40]];
+ for(const [l,mn,max] of lv){
+  map.addLayer({id:l+'-fill',type:'fill',source:'tr','source-layer':l,minzoom:mn,paint:{'fill-color':dens(max)}});
+  map.addLayer({id:l+'-line',type:'line',source:'tr','source-layer':l,minzoom:mn,paint:{'line-color':l==='il'?'#9aa7c0':l==='ilce'?'#6f7d99':'#4a5570','line-width':l==='il'?1.2:l==='ilce'?0.8:0.5,'line-opacity':0.5,'line-dasharray':l==='il'?[1,0]:l==='ilce'?[3,2]:[1,2]}});
+  map.addLayer({id:l+'-label',type:'symbol',source:'tr','source-layer':l,minzoom:mn,
     layout:{'text-field':['case',['>',['coalesce',['get','active'],0],0],['concat',['get','name'],'\n',['to-string',['get','active']]],['get','name']],'text-size':l==='il'?12:11,'text-font':['Open Sans Bold','Noto Sans Bold']},
-    paint:{'text-color':'#fff','text-halo-color':'#000','text-halo-width':1.2}});
+    paint:{'text-color':'#cfd6e6','text-halo-color':'#000','text-halo-width':1.2,'text-opacity':0.85}});
   map.on('click',l+'-fill',e=>adminPopup(e.features[0],e.lngLat,l));
   map.on('mouseenter',l+'-fill',()=>map.getCanvas().style.cursor='pointer');map.on('mouseleave',l+'-fill',()=>map.getCanvas().style.cursor='');
  }
- map.addLayer({id:'poly-fill',type:'fill',source:'tr','source-layer':'poly',minzoom:9,paint:{'fill-color':catExpr,'fill-opacity':0.35}});
- map.addLayer({id:'poly-line',type:'line',source:'tr','source-layer':'poly',minzoom:9,paint:{'line-color':catExpr,'line-width':1.2}});
+ map.addLayer({id:'poly-fill',type:'fill',source:'tr','source-layer':'poly',minzoom:9,paint:{'fill-color':catExpr,'fill-opacity':0.45}});
+ map.addLayer({id:'poly-line',type:'line',source:'tr','source-layer':'poly',minzoom:9,paint:{'line-color':catExpr,'line-width':1.4}});
  map.addLayer({id:'pts',type:'circle',source:'tr','source-layer':'pts',minzoom:6,paint:{'circle-color':catExpr,
    'circle-radius':['interpolate',['linear'],['zoom'],6,1.5,10,4,14,7],
    'circle-stroke-color':['case',['==',['get','status'],'review'],'#f0b35a','#000'],'circle-stroke-width':['case',['==',['get','status'],'review'],1.5,0.5],
@@ -132,8 +147,20 @@ function init(){
  document.getElementById('dist').addEventListener('change',e=>fillSel('nbhd',(stats.admin_tree[sel.value]||{})[e.target.value]||[],'Mahalle — tümü'));
  document.getElementById('provtab').innerHTML=stats.by_province.slice(0,15).map(p=>`<tr><td>${p.province}</td><td class="n">${p.total.toLocaleString('tr')}</td><td class="n">${p.with_polygon.toLocaleString('tr')} ⬠</td></tr>`).join('');
  document.querySelectorAll('input[type=checkbox],#prov,#dist,#nbhd').forEach(el=>el.addEventListener('change',applyFilter));
+ document.querySelectorAll('#layers input').forEach(el=>el.addEventListener('change',applyLayers));
+ applyLayers();
  document.getElementById('q').addEventListener('input',search);
  applyFilter();
+}
+function applyLayers(){
+ const fill=document.getElementById('admFill').checked,lab=document.getElementById('admLabel').checked;
+ for(const cb of document.querySelectorAll('#layers [data-adm]')){const l=cb.dataset.adm,on=cb.checked;
+  map.setLayoutProperty(l+'-line','visibility',on?'visible':'none');
+  map.setLayoutProperty(l+'-fill','visibility',on&&fill?'visible':'none');
+  map.setLayoutProperty(l+'-label','visibility',on&&lab?'visible':'none')}
+ const sp=document.getElementById('showPoly').checked?'visible':'none',st=document.getElementById('showPts').checked?'visible':'none';
+ map.setLayoutProperty('poly-fill','visibility',sp);map.setLayoutProperty('poly-line','visibility',sp);
+ map.setLayoutProperty('pts','visibility',st);map.setLayoutProperty('labels','visibility',st);
 }
 function fillSel(id,items,label){const el=document.getElementById(id);el.innerHTML=`<option value="">${label}</option>`+items.sort((a,b)=>a.localeCompare(b,'tr')).map(x=>`<option>${x}</option>`).join('');el.disabled=!items.length}
 function applyFilter(){
@@ -146,11 +173,10 @@ function applyFilter(){
  if(dist)f.push(['==',['get','district'],dist]);
  if(nbhd)f.push(['==',['get','neighbourhood'],nbhd]);
  for(const l of ['pts','labels','poly-fill','poly-line'])map.setFilter(l,f);
- const vis=document.getElementById('showAdmin').checked?'visible':'none';
- for(const l of ['il','ilce','mahalle'])for(const s of ['-fill','-line','-label'])map.setLayoutProperty(l+s,'visibility',vis);
  // idari seçim: il/ilçe/mahalle polygonunu vurgula ve oraya uç
  const adminF=prov?['==',['get','name'],nbhd||dist||prov]:null;
  const tgt=nbhd?'mahalle':dist?'ilce':'il';
+ if(prov){const cb=document.querySelector(`#layers [data-adm="${tgt}"]`);if(cb&&!cb.checked){cb.checked=true;applyLayers()}}
  for(const l of ['il','ilce','mahalle'])map.setFilter(l+'-line',l===tgt&&adminF?adminF:null);
  if(prov){const b=new maplibregl.LngLatBounds();let n=0;for(const r of searchIdx){if(r[2]===prov&&(!dist||r[3]===dist)&&(!nbhd||r[4]===nbhd)){b.extend([r[5],r[6]]);n++}}if(n)map.fitBounds(b,{padding:40,maxZoom:nbhd?15:dist?13:10.5})}
 }
