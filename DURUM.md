@@ -34,6 +34,8 @@ Repo: github.com/ahmetgencozlu/tr-geo-phase1 (özel) · Harita repo: tr-geo-phas
 - SONUÇ: 63.790 kayıt · active 29.797 · single_source 33.993 · polygonlu 25.500 · arşiv 892
 - [x] UI: 'Arşiv' katmanı (892 kapsam dışı kayıt, gri nokta, popup'ta sebep) — gözden geçirme için, varsayılan kapalı
 - [x] sql/22 mahalle tamamlama (adres metninden): FSQ/Overture ham adreslerindeki 'X Mah.' + ≤150 m komşu çoğunluk oyu → 5.364 kayda mahalle (inferred, nbhd_source); mahalle yok 14.695 → 9.331
+- [x] Kaynak araştırması 3 (subagent, 20 kaynak): docs/notes/kaynak_arastirma_3.md — kazanım: belediye açık veri mahalle polygonları (ttezer derlemesi 17.365 / 25 il) + Kontur 2023 (ODbL, 10.573); HGM yerleşim noktaları lisans gereği (humanitarian only) KULLANILMADI
+- [x] sql/23 dış mahalle polygonları (geo_phase1.nbhd_external, kaynak+lisans kayıt başına): 4.817 kayda mahalle (belediye 2.066, KML 2.735, Kontur 16); mahalle yok 9.331 → 4.514 (kalan: Mersin, Hatay, Adana, K.Maraş — belediye seti yok)
 
 ## 12 Ekim yapılanlar
 - [x] Overture Buildings footprint eşleştirme (6.782)
