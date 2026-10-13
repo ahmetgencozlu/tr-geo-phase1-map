@@ -20,7 +20,7 @@ Puan ölçeği (bizim için değer): 5 = binlerce yeni isimli kompleks + koordin
 - Değer: Az ama kaliteli ve **bağımsız 2. kaynak**; plaza/gökdelen/AVM için iyi, konut sitesi için zayıf. Yeni isim sayısı tahmini 100–300.
 - Kanıt:
   ```bash
-  curl -s -G https://query.wikidata.org/sparql -H 'Accept: text/csv' -A 'tr_geo_phase1/0.1 (mailto:x@y)' \
+  curl -s -G https://query.wikidata.org/sparql -H 'Accept: text/csv' -A 'yerdex/0.1 (mailto:x@y)' \
     --data-urlencode 'query=SELECT ?i ?iLabel ?c WHERE { ?i wdt:P31 wd:Q11303; wdt:P17 wd:Q43 . OPTIONAL{?i wdt:P625 ?c} SERVICE wikibase:label { bd:serviceParam wikibase:language "tr,en". } } LIMIT 5'
   # → Q166882,Istanbul Sapphire,Point(29.0058 41.085) ...
   ```

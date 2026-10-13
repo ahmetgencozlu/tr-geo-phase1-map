@@ -53,7 +53,7 @@ Puan: 5 = doğrudan büyük hacimli, açık lisanslı, koordinatlı; 1 = erişil
 - Değer: Wikidata'yı tamamlayan bağımsız ikinci kaynak; özellikle İstanbul/Ankara/İzmir'deki plaza/rezidans kuleleri için ad+koordinat doğrulaması. Konut sitesi (kooperatif/TOKİ) için neredeyse yok.
 - Kanıt:
   ```bash
-  curl -s -A 'tr_geo_phase1/0.1' 'https://commons.wikimedia.org/w/api.php?action=query&list=geosearch&gscoord=40.99|29.12&gsradius=3000&gslimit=500&gsnamespace=14&format=json' | python3 -c "import json,sys;m=json.load(sys.stdin)['query']['geosearch'];print(len(m),[x['title'] for x in m][:4])"
+  curl -s -A 'yerdex/0.1' 'https://commons.wikimedia.org/w/api.php?action=query&list=geosearch&gscoord=40.99|29.12&gsradius=3000&gslimit=500&gsnamespace=14&format=json' | python3 -c "import json,sys;m=json.load(sys.stdin)['query']['geosearch'];print(len(m),[x['title'] for x in m][:4])"
   # → 43 ['Category:Metropol İstanbul Tower C', 'Category:Metropol İstanbul', ...]
   ```
   Toplu çekim: TR'yi 10 km'lik grid ile tarayıp (gsradius max 10000) ad regex (`Residence|Rezidans|Plaza|Tower|Kule|Sitesi|Konutları|Evleri|AVM|Teknopark`) ile filtrele.

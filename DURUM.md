@@ -1,7 +1,7 @@
-# tr_geo_phase1 — Durum ve Gece Planı (12→13 Ekim 2026)
+# YERDEX — DURUM
 
-Harita: https://ahmetgencozlu.github.io/tr-geo-phase1-map/  ·  Rapor: …/report.html
-Repo: github.com/ahmetgencozlu/tr-geo-phase1 (özel) · Harita repo: tr-geo-phase1-map (Pages)
+Harita: https://ahmetgencozlu.github.io/yerdex-map/  ·  Rapor: …/report.html
+Repo: github.com/ahmetgencozlu/yerdex (özel) · Harita repo: yerdex-map (Pages)
 
 ## Mevcut sayılar (12 Ekim 23:50 UTC)
 - Varlık: 32.056 (aktif 13.271 / incelemede 18.785)
