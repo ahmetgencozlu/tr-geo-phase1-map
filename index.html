@@ -109,7 +109,8 @@ const side=document.getElementById('side'),isMobile=()=>matchMedia('(max-width:8
 document.getElementById('menuBtn').onclick=()=>side.classList.toggle('open');
 side.querySelector('h1').onclick=()=>{if(isMobile())side.classList.toggle('open')};
 let stats,idx,fc;
-Promise.all([fetch('data/stats.json').then(r=>r.json()),fetch('data/search_index.json').then(r=>r.json())]).then(([s,i])=>{stats=s;idx=i;map.loaded()?init():map.on('load',init)});
+function decodeIdx(j){if(Array.isArray(j))return j;const D=j.d,g=(k,v)=>v<0?null:D[k][v];return j.r.map(r=>[r[0],g('cat',r[1]),g('prov',r[2]),g('dist',r[3]),g('nbhd',r[4]),r[5],r[6],g('status',r[7]),g('role',r[8]),g('src',r[9]),r[10]])}
+Promise.all([fetch('data/stats.json').then(r=>r.json()),fetch('data/search_index.json').then(r=>r.json())]).then(([s,i])=>{stats=s;idx=decodeIdx(i);map.loaded()?init():map.on('load',init)});
 
 // idx satırı: [name, category, province, district, neighbourhood, lon, lat, status, geometry_role]
 function buildFC(){
