@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-13 11:09:43.915399+00",
+ "generated_at": "2026-10-13 11:10:54.715577+00",
  "total": 64668,
  "active": 30254,
  "raw_osm_objects": 12955,
@@ -9,15 +9,15 @@
    "with_polygon": 22644,
    "verified_address": 2858
   },
-  "plaza": {
-   "total": 6021,
-   "with_polygon": 2422,
-   "verified_address": 564
-  },
   "mass_housing": {
    "total": 3183,
    "with_polygon": 771,
    "verified_address": 34
+  },
+  "plaza": {
+   "total": 6021,
+   "with_polygon": 2422,
+   "verified_address": 564
   },
   "technopark": {
    "total": 249,
@@ -339,11 +339,6 @@
    "with_polygon": 21
   },
   {
-   "province": "Kırıkkale",
-   "total": 56,
-   "with_polygon": 18
-  },
-  {
    "province": "Çankırı",
    "total": 56,
    "with_polygon": 21
@@ -352,6 +347,11 @@
    "province": "Erzincan",
    "total": 56,
    "with_polygon": 23
+  },
+  {
+   "province": "Kırıkkale",
+   "total": 56,
+   "with_polygon": 18
   },
   {
    "province": "Kırşehir",
@@ -379,14 +379,14 @@
    "with_polygon": 13
   },
   {
-   "province": "Kars",
-   "total": 28,
-   "with_polygon": 12
-  },
-  {
    "province": "Bingöl",
    "total": 28,
    "with_polygon": 14
+  },
+  {
+   "province": "Kars",
+   "total": 28,
+   "with_polygon": 12
   },
   {
    "province": "Ağrı",
