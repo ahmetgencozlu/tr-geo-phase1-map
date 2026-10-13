@@ -56,6 +56,7 @@
   input,select,label.row,#results div{min-height:34px;font-size:14px}
   .maplibregl-popup-content{max-width:min(300px,86vw)}
  }
+.srcs div{line-height:1.35;margin-top:2px}.srcs a{color:var(--acc);text-decoration:none}.srcs a:hover{text-decoration:underline}
 </style>
 </head>
 <body>
@@ -100,6 +101,10 @@
 const COLORS={residential_site:'#3fa7ff',mass_housing:'#a06cff',plaza:'#ffb340',technopark:'#3ddc84'};
 const CAT_TR={residential_site:'Konut sitesi',mass_housing:'Toplu konut',plaza:'Plaza / iş merkezi',technopark:'Teknopark'};
 const SRC_TR={osm:'OSM',overture:'Overture',meta:'Meta',alltheplaces:'AllThePlaces',microsoft:'Microsoft',pinmeto:'PinMeTo',overture_buildings:'Overture Bina',foursquare:'Foursquare',toki_gov_tr:'TOKİ',sanayi_gov_tr:'Bakanlık TGB',wikidata:'Wikidata'};
+const SRC_URL_TR={osm:'OSM',overture:'Overture',meta:'Meta (Overture)',alltheplaces:'AllThePlaces (Overture)',microsoft:'Microsoft (Overture)',foursquare:'Foursquare',toki_gov_tr:'TOKİ',sanayi_gov_tr:'Sanayi Bak. TGB',wikidata:'Wikidata',geonames:'GeoNames',emlakkonut:'Emlak Konut',kiptas:'KİPTAŞ',overture_buildings:'Overture Bina',osm_buildings:'OSM Bina'};
+const srcCache={};
+async function loadSources(sid){const k=sid.slice(0,2);if(!srcCache[k]){try{srcCache[k]=await (await fetch('data/src/'+k+'.json')).json()}catch(e){srcCache[k]={}}}return srcCache[k][sid]||[]}
+function srcList(list){if(!list.length)return '<span class="m">kaynak kaydı yok</span>';return '<div class="srcs">'+list.map(s=>`<div><a href="${s[2]}" target="_blank" rel="noopener">${SRC_URL_TR[s[0]]||s[0]}</a>${s[1]?` <span class="m">${s[1].length>22?s[1].slice(0,22)+'…':s[1]}</span>`:''}${s[4]!=null?` <span class="m">· ${s[4]} m</span>`:''}${s[5]?` <span class="m">· ${s[5].replace('location','konum').replace('name','ad').replace('polygon','polygon').replace('address','adres').replace('official_name','resmî ad').replace('unit_count','konut sayısı')}</span>`:''}</div>`).join('')+'</div>'}
 const badges=s=>(s||'').split('+').filter(Boolean).map(x=>`<span class="bd">${SRC_TR[x]||x}</span>`).join('');
 const ROLE_TR={mapped_complex_boundary:'haritalanmış site sınırı',candidate_area_polygon:'aday alan polygonu',building_footprint:'bina ayak izi',point_only:'sadece nokta'};
 const catExpr=['match',['get','category'],...Object.entries(COLORS).flat(),'#999'];
@@ -112,7 +117,7 @@ const side=document.getElementById('side'),isMobile=()=>matchMedia('(max-width:8
 document.getElementById('menuBtn').onclick=()=>side.classList.toggle('open');
 side.querySelector('h1').onclick=()=>{if(isMobile())side.classList.toggle('open')};
 let stats,idx,fc;
-function decodeIdx(j){if(Array.isArray(j))return j;const D=j.d,g=(k,v)=>v<0?null:D[k][v];return j.r.map(r=>[r[0],g('cat',r[1]),g('prov',r[2]),g('dist',r[3]),g('nbhd',r[4]),r[5],r[6],g('status',r[7]),g('role',r[8]),g('src',r[9]),r[10],r[11]])}
+function decodeIdx(j){if(Array.isArray(j))return j;const D=j.d,g=(k,v)=>v<0?null:D[k][v];return j.r.map(r=>[r[0],g('cat',r[1]),g('prov',r[2]),g('dist',r[3]),g('nbhd',r[4]),r[5],r[6],g('status',r[7]),g('role',r[8]),g('src',r[9]),r[10],r[11],r[12]])}
 let mapReady=false,dataReady=false;const tryInit=()=>{if(mapReady&&dataReady&&!fc)init()};
 map.once('load',()=>{mapReady=true;tryInit()});
 Promise.all([fetch('data/stats.json').then(r=>r.json()),fetch('data/search_index.json').then(r=>r.json())]).then(([s,i])=>{stats=s;idx=decodeIdx(i);dataReady=true;tryInit()});
@@ -207,7 +212,8 @@ function search(){
  box.querySelectorAll('div').forEach(d=>d.onclick=()=>{const r=hits[+d.dataset.i];if(r[7]==='single_source'&&!document.getElementById('showReview').checked){document.getElementById('showReview').checked=true;applyFilter()}map.flyTo({center:[r[5],r[6]],zoom:16});side.classList.remove('open');setTimeout(()=>popup(r,{lng:r[5],lat:r[6]}),900)});
 }
 function popup(r,ll){
- new maplibregl.Popup().setLngLat(ll).setHTML(`<div class="pop"><b>${r[0]}</b><br><span class="m">${CAT_TR[r[1]]} · ${ROLE_TR[r[8]]||''}${r[7]==='single_source'?' · <span style="color:#f0b35a">incelemede</span>':''}</span><br>${[r[4],r[3],r[2]].filter(Boolean).join(' / ')}${r[10]?`<br>🏠 ${Number(r[10]).toLocaleString('tr')} konut`:''}<br>${badges(r[9])} <span class="bd" style="border-color:var(--acc)">${r[11]||1} kaynak</span><br><a href="https://www.openstreetmap.org/?mlat=${r[6]}&mlon=${r[5]}#map=17/${r[6]}/${r[5]}" target="_blank">OSM'de aç</a></div>`).addTo(map);
+ if(r[12])loadSources(r[12]).then(l=>{const d=document.getElementById('src-'+r[12]);if(d)d.outerHTML='<div class="m" style="margin-top:4px"><b>Kaynaklar</b>'+srcList(l)+'</div>'});
+ new maplibregl.Popup().setLngLat(ll).setHTML(`<div class="pop"><b>${r[0]}</b><br><span class="m">${CAT_TR[r[1]]} · ${ROLE_TR[r[8]]||''}${r[7]==='single_source'?' · <span style="color:#f0b35a">incelemede</span>':''}</span><br>${[r[4],r[3],r[2]].filter(Boolean).join(' / ')}${r[10]?`<br>🏠 ${Number(r[10]).toLocaleString('tr')} konut`:''}<br>${badges(r[9])} <span class="bd" style="border-color:var(--acc)">${r[11]||1} kaynak</span><div id="src-${r[12]}" class="m" style="margin-top:4px">kaynaklar yükleniyor…</div><br><a href="https://www.openstreetmap.org/?mlat=${r[6]}&mlon=${r[5]}#map=17/${r[6]}/${r[5]}" target="_blank">OSM'de aç</a></div>`).addTo(map);
 }
 function polyPopup(f,ll){const p=f.properties;
  new maplibregl.Popup().setLngLat(ll).setHTML(`<div class="pop"><b>${p.name}</b>${p.official_name?`<br><span class="m">resmî ad: ${p.official_name}</span>`:''}<br><span class="m">${CAT_TR[p.category]} · ${ROLE_TR[p.geometry_role]} · kaynak: ${p.sources||'osm'}</span><br>${[p.neighbourhood&&p.neighbourhood+' Mah.',p.district,p.province].filter(Boolean).join(' / ')}<br>${p.addr_full?`📍 ${p.addr_full}`:'<span class="m">açık adres kaynakta yok</span>'}<br>${p.area_m2?`alan ≈ ${Number(p.area_m2).toLocaleString('tr')} m² · `:''}güven ${p.confidence}${p.unit_count?` · 🏠 ${Number(p.unit_count).toLocaleString('tr')} konut`:''}<br>${badges(p.sources)}</div>`).addTo(map)}

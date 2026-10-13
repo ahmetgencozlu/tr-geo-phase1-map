@@ -36,6 +36,11 @@ Repo: github.com/ahmetgencozlu/tr-geo-phase1 (özel) · Harita repo: tr-geo-phas
 - [x] sql/22 mahalle tamamlama (adres metninden): FSQ/Overture ham adreslerindeki 'X Mah.' + ≤150 m komşu çoğunluk oyu → 5.364 kayda mahalle (inferred, nbhd_source); mahalle yok 14.695 → 9.331
 - [x] Kaynak araştırması 3 (subagent, 20 kaynak): docs/notes/kaynak_arastirma_3.md — kazanım: belediye açık veri mahalle polygonları (ttezer derlemesi 17.365 / 25 il) + Kontur 2023 (ODbL, 10.573); HGM yerleşim noktaları lisans gereği (humanitarian only) KULLANILMADI
 - [x] sql/23 dış mahalle polygonları (geo_phase1.nbhd_external, kaynak+lisans kayıt başına): 4.817 kayda mahalle (belediye 2.066, KML 2.735, Kontur 16); mahalle yok 9.331 → 4.514 (kalan: Mersin, Hatay, Adana, K.Maraş — belediye seti yok)
+- [x] sql/23 ek: en yakın dış polygon ≤300 m → +86; mahalle yok 4.428. Mersin/Adana/Hatay/K.Maraş portalları sandbox'tan erişilemiyor (000)
+- [x] Kaynak araştırması 4 (29 kaynak): docs/notes/kaynak_arastirma_4.md — K.Maraş Kent Rehberi ArcGIS REST (mahalle 716 + bina 298 k, site adı alanlı), Overture land_use residential (153 k, 16,5 k adlı), Urban Atlas/HRSL/GHSL (önceliklendirme)
+- [x] sql/24 İZLENEBİLİRLİK: geo_phase1.entity_source (kayıt × kaynak × kimlik × LINK × kaynağın koordinatı × uzaklık × lisans × ne sağladığı) 123.782 satır; complex_entity.location_source + source_spread_m; haritada popup'ta linkli kaynak listesi (docs/data/src/*.json lazy); export: entity_source.csv + GPKG katmanı
+- [x] Kaynak uyumu analizi: docs/notes/kaynak_uyumu.md — FSQ↔Overture medyan 13 m (%98 ≤100 m), FSQ↔OSM 34 m, OSM↔Overture 36 m; GeoNames ~120 m (sadece ad kanıtı); >250 m çelişkili 68 kayıt
+- [ ] Commons grid taraması sürüyor (arka plan) → sql/25
 
 ## 12 Ekim yapılanlar
 - [x] Overture Buildings footprint eşleştirme (6.782)

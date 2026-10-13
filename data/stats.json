@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-13 20:47:49.253797+00",
+ "generated_at": "2026-10-13 21:36:52.330216+00",
  "total": 63790,
  "active": 29797,
  "raw_osm_objects": 12955,
@@ -14,15 +14,15 @@
    "with_polygon": 131,
    "verified_address": 17
   },
-  "plaza": {
-   "total": 5698,
-   "with_polygon": 2314,
-   "verified_address": 564
-  },
   "mass_housing": {
    "total": 3219,
    "with_polygon": 762,
    "verified_address": 28
+  },
+  "plaza": {
+   "total": 5698,
+   "with_polygon": 2314,
+   "verified_address": 564
   }
  },
  "by_role": {
@@ -2326,6 +2326,7 @@
    "Hamur": null,
    "Patnos": [
     "Atatürk Mahallesi",
+    "Cumhuriyet Mahallesi",
     "Sanayi Mahallesi",
     "Yeni Mahallesi"
    ],
@@ -2800,6 +2801,7 @@
    "Osmaneli": [
     "Camikebir Mahallesi",
     "Haceloğlu Mahallesi",
+    "Karatekin Mahallesi",
     "Selçuk Mahallesi"
    ],
    "Pazaryeri": [
@@ -3190,6 +3192,7 @@
     "Mütareke Mahallesi",
     "Siteler Mahallesi",
     "Sukru Çavuş Mahallesi",
+    "Tirilye Mahallesi",
     "Yalı Mahallesi",
     "Yeni Mahallesi",
     "Yenimahalle",
@@ -3291,6 +3294,7 @@
     "Camiikebir Mahallesi",
     "Camikebir Mahallesi",
     "Gedelek Mahallesi",
+    "Gölyaka Mahallesi",
     "Gürle Mahallesi",
     "Hürriyet Mahallesi",
     "Muradiye Mahallesi",
@@ -4304,7 +4308,9 @@
    "Şenkaya": null
   },
   "Eskişehir": {
-   "Alpu": null,
+   "Alpu": [
+    "Osmanköy Mahallesi"
+   ],
    "Beylikova": [
     "Yeni Mahallesi"
    ],
@@ -4679,7 +4685,8 @@
    ],
    "Eynesil": [
     "Gümüşçay Mahallesi",
-    "Köseli Mahallesi"
+    "Köseli Mahallesi",
+    "Seyitahmet Mahallesi"
    ],
    "Giresun Merkez": [
     "Aksu Mahallesi",
@@ -6072,6 +6079,7 @@
    "Akşehir": [
     "Ahicelal Mahallesi",
     "Altunkalem Mahallesi",
+    "Cankurtaran Mahallesi",
     "Doğrugöz Mahallesi",
     "Gazi Mahallesi",
     "Kileci Mahallesi",
@@ -6939,6 +6947,7 @@
    ],
    "Kırkağaç": [
     "Tevfikiye Mahallesi",
+    "Yazören Mahallesi",
     "Şair Eşref Mahallesi"
    ],
    "Salihli": [
@@ -7497,6 +7506,7 @@
     "Hızırşah Mahallesi",
     "Iskele Mahallesi",
     "Kızlan Mahallesi",
+    "Mesudiye Mahallesi",
     "Reşadiye Mahallesi",
     "Yaka Mahallesi",
     "İskele Mahallesi"
@@ -7919,6 +7929,7 @@
     "Kavraz Mahallesi",
     "Kurtuluş Mahallesi",
     "Meşebükü Mahallesi",
+    "Mustafa Kemalpaşa Mahallesi",
     "Mustafakemalpaşa Mahallesi",
     "Sakarya Mahallesi",
     "Salihli Mahallesi",
