@@ -41,6 +41,9 @@ Repo: github.com/ahmetgencozlu/tr-geo-phase1 (özel) · Harita repo: tr-geo-phas
 - [x] sql/24 İZLENEBİLİRLİK: geo_phase1.entity_source (kayıt × kaynak × kimlik × LINK × kaynağın koordinatı × uzaklık × lisans × ne sağladığı) 123.782 satır; complex_entity.location_source + source_spread_m; haritada popup'ta linkli kaynak listesi (docs/data/src/*.json lazy); export: entity_source.csv + GPKG katmanı
 - [x] Kaynak uyumu analizi: docs/notes/kaynak_uyumu.md — FSQ↔Overture medyan 13 m (%98 ≤100 m), FSQ↔OSM 34 m, OSM↔Overture 36 m; GeoNames ~120 m (sadece ad kanıtı); >250 m çelişkili 68 kayıt
 - [ ] Commons grid taraması sürüyor (arka plan) → sql/25
+- [x] sql/26 Overture land_use residential (OSM türevi, 13.012 TR-içi adlı polygon): 104 point_only kayda site polygonu, 426 yeni aday (single_source/osm); polygonlu 26.030
+- [x] sql/25 K.Maraş BB Kent Rehberi ArcGIS REST: 716 mahalle → K.Maraş mahallesiz 183→1; MAKS YAPI site adlı 3.946 bina → 2.148 grup; 91 mevcut kayda polygon+konut sayısı kanıtı (bağımsız kaynak kmaras_kentrehberi), yeni site adayları (blok kodları elendi); lisans 'belirsiz (kamu kent rehberi)' kayıt başına
+- SONUÇ: mahalle yok 4.268 · active 29.850
 
 ## 12 Ekim yapılanlar
 - [x] Overture Buildings footprint eşleştirme (6.782)
