@@ -23,6 +23,15 @@ Repo: github.com/ahmetgencozlu/tr-geo-phase1 (özel) · Harita repo: tr-geo-phas
 - [x] sql/16 atlanmış kaynak kayıtları: Overture kalıplı-kullanılmamış 430 kanıt, FSQ kategori-bazlı 5.444 kanıt (2.794 tek→çoklu), 1.565 FSQ çoklu bağımsız giriş
 - [x] UI: kaynak sayısı filtresi (≥1/2/3), 'tek kaynaklıları göster', rozetlerde Meta/AllThePlaces/Microsoft, N kaynak rozeti; init yarış durumu düzeltildi
 - SONUÇ: 64.668 kayıt · active 29.460 (≥2 bağımsız kaynak) · single_source 35.208 · ≥3 kaynak 18.298 · polygonlu 25.969
+- [x] sql/17 resmî liste kanıtı: TGB eşleşme 58→64, TOKİ listesi ile 1.081 "TOKİ" isimli FSQ/OSM kaydına il+ilçe(+etap/mahalle) kanıtı, Wikidata 5 → aktif 30.254
+- [x] sql/18 aday komşu bina: ≤25 m'deki en yakın OSM binası AYRI tabloda (adjacent_building, 15.924); ana polygon'a dokunulmadı; haritada 'Aday bina' butonu (varsayılan kapalı, kesikli çizgi)
+- [x] AllThePlaces incelendi (MIT): TR 48 spider / 95 k kayıt — tamamı zincir market/banka/akaryakıt; site/plaza verisi YOK → atlandı
+- [x] Release v0.4.0 (kaynak-uzlaşısı modeli)
+- [x] sql/19 Emlak Konut GYO (30) + KİPTAŞ (212) proje listeleri → 9 kayda isim+ilçe kanıtı (koordinatsız; yeni kayıt açılmadı)
+- [x] sql/20 kalite geçişi: 43 çift birleşti; 892 kayıt ARŞİVE (excluded_entity: jenerik 440, ticari/sanayi sitesi 216, işletme 164, mahalle adı 29, çift 43); kategori düzeltme (TOKİ→mass_housing, plaza↔site); BÜYÜK HARF→başlık; ilçe/mahalle KNN tamamlama (mahalle yok 16.292→14.695); dev/minik polygon temizliği
+- [x] Yeni kaynak araştırması (subagent, 19 kaynak): docs/notes/kaynak_arastirma_2.md — kullanılabilir: Wikidata, GeoNames, Emlak Konut; kapalı/boş: TKGM, MEYDİP, KAP, OpenAddresses TR, Google Open Buildings, belediye portalları
+- [x] sql/21 GeoNames TR (CC BY, 481 aday → 89 kanıt) + Wikidata (CC0, 415 → 88 kanıt, 14 yeni gökdelen/kule kaydı)
+- SONUÇ: 63.790 kayıt · active 29.797 · single_source 33.993 · polygonlu 25.500 · arşiv 892
 
 ## 12 Ekim yapılanlar
 - [x] Overture Buildings footprint eşleştirme (6.782)
