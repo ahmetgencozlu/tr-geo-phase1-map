@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-13 17:03:09.891392+00",
+ "generated_at": "2026-10-13 17:30:18.583009+00",
  "totals": {
   "entities": 63790,
   "active": 29797,
@@ -7,7 +7,7 @@
   "with_polygon": 25500,
   "verified_address": 3443,
   "partial_address": 11464,
-  "with_neighbourhood": 49095
+  "with_neighbourhood": 54459
  },
  "by_category": [
   {
@@ -249,11 +249,11 @@
    "n": 5
   },
   {
-   "sources": "osm+overture+foursquare+geonames",
+   "sources": "osm+sanayi_gov_tr",
    "n": 4
   },
   {
-   "sources": "osm+sanayi_gov_tr",
+   "sources": "osm+overture+foursquare+geonames",
    "n": 4
   },
   {
@@ -265,15 +265,7 @@
    "n": 3
   },
   {
-   "sources": "overture+sanayi_gov_tr+overture_buildings+foursquare",
-   "n": 3
-  },
-  {
-   "sources": "foursquare+osm+toki_gov_tr+overture",
-   "n": 3
-  },
-  {
-   "sources": "overture+overture_buildings+geonames",
+   "sources": "foursquare+wikidata",
    "n": 3
   },
   {
@@ -281,7 +273,15 @@
    "n": 3
   },
   {
+   "sources": "overture+overture_buildings+geonames",
+   "n": 3
+  },
+  {
    "sources": "osm+sanayi_gov_tr+foursquare",
+   "n": 3
+  },
+  {
+   "sources": "foursquare+osm+toki_gov_tr+overture",
    "n": 3
   },
   {
@@ -289,19 +289,11 @@
    "n": 3
   },
   {
-   "sources": "foursquare+wikidata",
+   "sources": "overture+sanayi_gov_tr+overture_buildings+foursquare",
    "n": 3
   },
   {
    "sources": "osm+overture+toki_gov_tr+foursquare",
-   "n": 2
-  },
-  {
-   "sources": "osm+overture+sanayi_gov_tr",
-   "n": 2
-  },
-  {
-   "sources": "overture+overture_buildings+foursquare+wikidata",
    "n": 2
   },
   {
@@ -317,44 +309,16 @@
    "n": 2
   },
   {
-   "sources": "osm+foursquare+wikidata",
+   "sources": "overture+overture_buildings+foursquare+wikidata",
    "n": 2
   },
   {
-   "sources": "overture+osm+toki_gov_tr",
-   "n": 1
+   "sources": "osm+overture+sanayi_gov_tr",
+   "n": 2
   },
   {
-   "sources": "osm+sanayi_gov_tr+overture_buildings+foursquare",
-   "n": 1
-  },
-  {
-   "sources": "osm+wikidata",
-   "n": 1
-  },
-  {
-   "sources": "osm+toki_gov_tr+overture+foursquare",
-   "n": 1
-  },
-  {
-   "sources": "osm+toki_gov_tr+overture",
-   "n": 1
-  },
-  {
-   "sources": "foursquare+overture+wikidata",
-   "n": 1
-  },
-  {
-   "sources": "foursquare+overture+geonames",
-   "n": 1
-  },
-  {
-   "sources": "overture+emlakkonut",
-   "n": 1
-  },
-  {
-   "sources": "osm+overture_buildings+overture",
-   "n": 1
+   "sources": "osm+foursquare+wikidata",
+   "n": 2
   },
   {
    "sources": "osm+overture+wikidata",
@@ -365,31 +329,11 @@
    "n": 1
   },
   {
-   "sources": "overture+foursquare+kiptas",
-   "n": 1
-  },
-  {
-   "sources": "overture+osm+foursquare+toki_gov_tr",
-   "n": 1
-  },
-  {
-   "sources": "foursquare+overture_buildings+toki_gov_tr+overture",
-   "n": 1
-  },
-  {
    "sources": "foursquare+osm+toki_gov_tr+overture_buildings+overture",
    "n": 1
   },
   {
    "sources": "overture+sanayi_gov_tr+geonames",
-   "n": 1
-  },
-  {
-   "sources": "osm+overture+overture_buildings+sanayi_gov_tr",
-   "n": 1
-  },
-  {
-   "sources": "overture+sanayi_gov_tr+wikidata",
    "n": 1
   },
   {
@@ -405,7 +349,47 @@
    "n": 1
   },
   {
+   "sources": "overture+foursquare+kiptas",
+   "n": 1
+  },
+  {
+   "sources": "osm+wikidata",
+   "n": 1
+  },
+  {
+   "sources": "osm+overture+overture_buildings+sanayi_gov_tr",
+   "n": 1
+  },
+  {
+   "sources": "osm+sanayi_gov_tr+overture_buildings+foursquare",
+   "n": 1
+  },
+  {
    "sources": "foursquare+kiptas",
+   "n": 1
+  },
+  {
+   "sources": "overture+sanayi_gov_tr+wikidata",
+   "n": 1
+  },
+  {
+   "sources": "foursquare+overture_buildings+toki_gov_tr+overture",
+   "n": 1
+  },
+  {
+   "sources": "overture+osm+foursquare+toki_gov_tr",
+   "n": 1
+  },
+  {
+   "sources": "overture+emlakkonut",
+   "n": 1
+  },
+  {
+   "sources": "foursquare+overture+wikidata",
+   "n": 1
+  },
+  {
+   "sources": "overture+osm+toki_gov_tr",
    "n": 1
   },
   {
@@ -426,6 +410,22 @@
   },
   {
    "sources": "osm+overture_buildings+foursquare+overture",
+   "n": 1
+  },
+  {
+   "sources": "osm+toki_gov_tr+overture+foursquare",
+   "n": 1
+  },
+  {
+   "sources": "osm+toki_gov_tr+overture",
+   "n": 1
+  },
+  {
+   "sources": "foursquare+overture+geonames",
+   "n": 1
+  },
+  {
+   "sources": "osm+overture_buildings+overture",
    "n": 1
   }
  ],

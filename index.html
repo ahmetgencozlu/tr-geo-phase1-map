@@ -91,6 +91,7 @@
    <button id="bAdmin" type="button" class="on">Sınırlar</button>
    <button id="bPoly" type="button" class="on">Polygonlar</button>
    <button id="bAdj" type="button" title="≤25 m'deki en yakın OSM binası — doğrulanmamış aday">Aday bina</button>
+   <button id="bArc" type="button" title="Kapsam dışı bırakılan kayıtlar (çift, jenerik, işletme, sanayi sitesi, mahalle adı)">Arşiv</button>
    <span class="chip" id="lvl">il</span>
   </div>
  </div>
@@ -146,6 +147,9 @@ function init(){
  map.addLayer({id:'poly-line',type:'line',source:'cpx','source-layer':'poly',minzoom:12,paint:{'line-color':catExpr,'line-width':1.2,'line-opacity':0.9}});
  // aday komşu bina (≤25 m, OSM): kesikli çizgi, dolgusuz; varsayılan kapalı
  map.addLayer({id:'adj-line',type:'line',source:'cpx','source-layer':'adj',minzoom:12,layout:{visibility:'none'},paint:{'line-color':catExpr,'line-width':1,'line-dasharray':[2,2],'line-opacity':0.8}});
+ // arşiv: kapsam dışı bırakılan kayıtlar (gözden geçirme için), varsayılan kapalı
+ map.addLayer({id:'arc-pt',type:'circle',source:'cpx','source-layer':'arc',minzoom:9,layout:{visibility:'none'},paint:{'circle-color':'#888','circle-radius':['interpolate',['linear'],['zoom'],9,2.5,14,6],'circle-stroke-color':'#f0b35a','circle-stroke-width':1,'circle-opacity':0.7}});
+ map.on('click','arc-pt',e=>{if(e.originalEvent._pt)return;e.originalEvent._pt=1;const p=e.features[0].properties;const R={duplicate:'çift kayıt (birleştirildi)',generic_name:'jenerik / isimsiz',commercial_industrial_site:'ticari / sanayi sitesi',business:'işletme',neighbourhood_name:'mahalle adı'};new maplibregl.Popup().setLngLat(e.lngLat).setHTML(`<div class="pop"><b>${p.name}</b><br><span class="m"><span style="color:#f0b35a">ARŞİV</span> · ${R[p.reason]||p.reason} · ${CAT_TR[p.category]||p.category}</span><br>${[p.district,p.province].filter(Boolean).join(' / ')}<br>${badges(p.sources)}</div>`).addTo(map)});
  map.addLayer({id:'adj-hit',type:'fill',source:'cpx','source-layer':'adj',minzoom:12,layout:{visibility:'none'},paint:{'fill-color':'#000','fill-opacity':0}});
  map.on('click','adj-hit',e=>{if(e.originalEvent._pt)return;e.originalEvent._pt=1;const p=e.features[0].properties;new maplibregl.Popup().setLngLat(e.lngLat).setHTML(`<div class="pop"><b>${p.name}</b><br><span class="m">${CAT_TR[p.category]} · <span style="color:#f0b35a">aday komşu bina</span> (OSM, ${p.dist_m} m uzakta, ≈${Number(p.area_m2).toLocaleString('tr')} m²)</span><br>${[p.neighbourhood,p.district,p.province].filter(Boolean).join(' / ')}<br><span class="m">Doğrulanmış polygon değildir; noktaya en yakın bina.</span></div>`).addTo(map)});
  // --- kümeleme: noktalar istemci tarafında GeoJSON; küme rengi = baskın kategori
@@ -179,6 +183,7 @@ function init(){
  document.getElementById('dist').addEventListener('change',e=>fillSel('nbhd',(stats.admin_tree[sel.value]||{})[e.target.value]||[],'Mahalle — tümü'));
  document.querySelectorAll('#side input[type=checkbox],#prov,#dist,#nbhd,#minSrc').forEach(el=>el.addEventListener('change',applyFilter));
  document.getElementById('bAdmin').onclick=function(){this.classList.toggle('on');const v=this.classList.contains('on')?'visible':'none';for(const l of ['il','ilce','mahalle'])for(const s of ['-line','-label','-hit'])map.setLayoutProperty(l+s,'visibility',v)};
+ document.getElementById('bArc').onclick=function(){this.classList.toggle('on');map.setLayoutProperty('arc-pt','visibility',this.classList.contains('on')?'visible':'none')};
  document.getElementById('bAdj').onclick=function(){this.classList.toggle('on');const v=this.classList.contains('on')?'visible':'none';map.setLayoutProperty('adj-line','visibility',v);map.setLayoutProperty('adj-hit','visibility',v)};
  document.getElementById('bPoly').onclick=function(){this.classList.toggle('on');const v=this.classList.contains('on')?'visible':'none';map.setLayoutProperty('poly-fill','visibility',v);map.setLayoutProperty('poly-line','visibility',v)};
  document.getElementById('q').addEventListener('input',search);

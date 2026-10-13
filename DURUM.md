@@ -32,6 +32,8 @@ Repo: github.com/ahmetgencozlu/tr-geo-phase1 (özel) · Harita repo: tr-geo-phas
 - [x] Yeni kaynak araştırması (subagent, 19 kaynak): docs/notes/kaynak_arastirma_2.md — kullanılabilir: Wikidata, GeoNames, Emlak Konut; kapalı/boş: TKGM, MEYDİP, KAP, OpenAddresses TR, Google Open Buildings, belediye portalları
 - [x] sql/21 GeoNames TR (CC BY, 481 aday → 89 kanıt) + Wikidata (CC0, 415 → 88 kanıt, 14 yeni gökdelen/kule kaydı)
 - SONUÇ: 63.790 kayıt · active 29.797 · single_source 33.993 · polygonlu 25.500 · arşiv 892
+- [x] UI: 'Arşiv' katmanı (892 kapsam dışı kayıt, gri nokta, popup'ta sebep) — gözden geçirme için, varsayılan kapalı
+- [x] sql/22 mahalle tamamlama (adres metninden): FSQ/Overture ham adreslerindeki 'X Mah.' + ≤150 m komşu çoğunluk oyu → 5.364 kayda mahalle (inferred, nbhd_source); mahalle yok 14.695 → 9.331
 
 ## 12 Ekim yapılanlar
 - [x] Overture Buildings footprint eşleştirme (6.782)
