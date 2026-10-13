@@ -17,6 +17,12 @@ Repo: github.com/ahmetgencozlu/tr-geo-phase1 (özel) · Harita repo: tr-geo-phas
 - [x] Overture Buildings yeniden (parçalı, scripts/overture_buildings_chunked.py): +7.552 footprint, sql/08 terfisi +4.850. Aktif 34.366 / review 31.299 / polygonlu 25.957.
 - [x] sql/12 Overture geç eşleşme (+582 aktif). search_index sözlük-kodlu 10,5→4,4 MB. Aktif 34.948 / review 30.717.
 - [x] TOKİ eşleştirme (sql/10): 385 mevcut kayda resmî ad+konut sayısı+toki_id bağlandı; 755 yeni kayıt mahalle polygonundan nokta (inferred, review, conf 0.60). 2.307 TOKİ projesi mahallesiz → eklenmedi (standart). unit_count, external_ids kolonları eklendi.
+- [x] sql/13 review kalite: FSQ-içi çift 289 birleştirildi, aktif yakınındaki 708 alt-kayıt ana kayda kanıt olarak eklendi
+- [x] OSM bina polygonları çıkarıldı (5,65 M, data/osm_buildings.gpkg): sadece 33 nokta bina içinde → OSM footprint yolu kapalı; 19.448 nokta ≤25 m'de binaya komşu (karar: standart gevşetilmedi)
+- [x] sql/15 GÜVEN MODELİ: bağımsız kaynak uzlaşısı (osm/overture/meta/alltheplaces/microsoft/foursquare/toki/sanayi/wikidata); footprint kaynak değil (+0.05). status: ≥2 kaynak→active, 1→single_source (review kaldırıldı). Kolonlar: independent_sources, has_footprint, name_pattern, fsq_entry_count
+- [x] sql/16 atlanmış kaynak kayıtları: Overture kalıplı-kullanılmamış 430 kanıt, FSQ kategori-bazlı 5.444 kanıt (2.794 tek→çoklu), 1.565 FSQ çoklu bağımsız giriş
+- [x] UI: kaynak sayısı filtresi (≥1/2/3), 'tek kaynaklıları göster', rozetlerde Meta/AllThePlaces/Microsoft, N kaynak rozeti; init yarış durumu düzeltildi
+- SONUÇ: 64.668 kayıt · active 29.460 (≥2 bağımsız kaynak) · single_source 35.208 · ≥3 kaynak 18.298 · polygonlu 25.969
 
 ## 12 Ekim yapılanlar
 - [x] Overture Buildings footprint eşleştirme (6.782)
