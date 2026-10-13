@@ -34,6 +34,7 @@
  .maplibregl-popup-close-button{color:var(--muted);font-size:18px}
  .maplibregl-popup-tip{border-top-color:var(--panel)!important}
  .pop b{font-size:13px}.pop .m{color:var(--muted)}
+ .bd{display:inline-block;background:#1d2330;border:1px solid var(--line);border-radius:4px;padding:0 5px;font-size:10px;color:var(--muted);margin:3px 3px 0 0}
  .warn{font-size:11px;color:#f0b35a;margin-top:8px}
  a{color:#7cb4ff}
  #hud{position:absolute;top:10px;left:10px;z-index:3;display:flex;gap:6px;flex-wrap:wrap}
@@ -61,7 +62,7 @@
 <div id="app">
  <aside id="side">
   <h1>Türkiye Faz 1 — Kompleks Envanteri</h1>
-  <div class="sub">OSM + Overture + Bakanlık TGB listesi · © OpenStreetMap contributors (ODbL), Overture (CDLA-Permissive) · <span id="gen"></span> · <a href="report.html">kapsama raporu</a></div>
+  <div class="sub">OSM + Overture + Foursquare + TOKİ + Bakanlık TGB · © OpenStreetMap contributors (ODbL), Overture (CDLA-Permissive) · <span id="gen"></span> · <a href="report.html">kapsama raporu</a></div>
   <div class="kpi">
    <div><b id="k-total">–</b><span>aktif kompleks</span></div>
    <div><b id="k-poly">–</b><span>polygonlu</span></div>
@@ -95,6 +96,8 @@
 <script>
 const COLORS={residential_site:'#3fa7ff',mass_housing:'#a06cff',plaza:'#ffb340',technopark:'#3ddc84'};
 const CAT_TR={residential_site:'Konut sitesi',mass_housing:'Toplu konut',plaza:'Plaza / iş merkezi',technopark:'Teknopark'};
+const SRC_TR={osm:'OSM',overture:'Overture',overture_buildings:'Overture Bina',foursquare:'Foursquare',toki_gov_tr:'TOKİ',sanayi_gov_tr:'Bakanlık TGB'};
+const badges=s=>(s||'').split('+').filter(Boolean).map(x=>`<span class="bd">${SRC_TR[x]||x}</span>`).join('');
 const ROLE_TR={mapped_complex_boundary:'haritalanmış site sınırı',candidate_area_polygon:'aday alan polygonu',building_footprint:'bina ayak izi',point_only:'sadece nokta'};
 const catExpr=['match',['get','category'],...Object.entries(COLORS).flat(),'#999'];
 const protocol=new pmtiles.Protocol();maplibregl.addProtocol('pmtiles',protocol.tile);
@@ -139,13 +142,13 @@ function init(){
  // --- kümeleme: noktalar istemci tarafında GeoJSON; küme rengi = baskın kategori
  fc=buildFC();
  const cp={};for(const c in COLORS)cp[c]=['+',['case',['==',['get','category'],c],1,0]];
- map.addSource('pts',{type:'geojson',data:fc,cluster:true,clusterRadius:46,clusterMaxZoom:13,clusterProperties:cp});
+ map.addSource('pts',{type:'geojson',data:fc,cluster:true,clusterRadius:46,clusterMaxZoom:10,clusterProperties:cp});
  map.addLayer({id:'cl',type:'circle',source:'pts',filter:['has','point_count'],paint:{
    'circle-color':['case',['>=',['get','residential_site'],['*',0.6,['get','point_count']]],'#3fa7ff',['>=',['get','plaza'],['*',0.6,['get','point_count']]],'#ffb340',['>=',['get','mass_housing'],['*',0.6,['get','point_count']]],'#a06cff',['>=',['get','technopark'],['*',0.6,['get','point_count']]],'#3ddc84','#7c8db5'],
    'circle-opacity':0.85,'circle-stroke-color':'#0f1115','circle-stroke-width':2,
    'circle-radius':['interpolate',['linear'],['get','point_count'],2,14,50,20,500,28,5000,38]}});
  map.addLayer({id:'cl-n',type:'symbol',source:'pts',filter:['has','point_count'],layout:{'text-field':['get','point_count_abbreviated'],'text-size':12,'text-font':['Open Sans Bold','Noto Sans Bold'],'text-allow-overlap':true},paint:{'text-color':'#fff'}});
- map.addLayer({id:'pt',type:'circle',source:'pts',filter:['!',['has','point_count']],paint:{'circle-color':catExpr,'circle-radius':['interpolate',['linear'],['zoom'],10,4,14,7,17,9],
+ map.addLayer({id:'pt',type:'circle',source:'pts',filter:['!',['has','point_count']],paint:{'circle-color':catExpr,'circle-radius':['interpolate',['linear'],['zoom'],10,3.5,12,5,14,7,17,9],
    'circle-stroke-color':['case',['==',['get','status'],'review'],'#f0b35a','#0f1115'],'circle-stroke-width':['case',['==',['get','status'],'review'],2,1.2],'circle-opacity':['case',['==',['get','status'],'review'],0.55,0.95]}});
  map.on('click','cl',e=>{e.originalEvent._pt=1;const f=e.features[0];map.getSource('pts').getClusterExpansionZoom(f.properties.cluster_id,(err,z)=>{if(!err)map.easeTo({center:f.geometry.coordinates,zoom:Math.min(z,16)})})});
  map.on('click','pt',e=>{e.originalEvent._pt=1;popup(idx[e.features[0].properties.i],e.lngLat)});
@@ -189,10 +192,10 @@ function search(){
  box.querySelectorAll('div').forEach(d=>d.onclick=()=>{const r=hits[+d.dataset.i];if(r[7]==='review'&&!document.getElementById('showReview').checked){document.getElementById('showReview').checked=true;applyFilter()}map.flyTo({center:[r[5],r[6]],zoom:16});side.classList.remove('open');setTimeout(()=>popup(r,{lng:r[5],lat:r[6]}),900)});
 }
 function popup(r,ll){
- new maplibregl.Popup().setLngLat(ll).setHTML(`<div class="pop"><b>${r[0]}</b><br><span class="m">${CAT_TR[r[1]]} · ${ROLE_TR[r[8]]||''}${r[7]==='review'?' · <span style="color:#f0b35a">incelemede</span>':''}</span><br>${[r[4],r[3],r[2]].filter(Boolean).join(' / ')}<br><a href="https://www.openstreetmap.org/?mlat=${r[6]}&mlon=${r[5]}#map=17/${r[6]}/${r[5]}" target="_blank">OSM'de aç</a></div>`).addTo(map);
+ new maplibregl.Popup().setLngLat(ll).setHTML(`<div class="pop"><b>${r[0]}</b><br><span class="m">${CAT_TR[r[1]]} · ${ROLE_TR[r[8]]||''}${r[7]==='review'?' · <span style="color:#f0b35a">incelemede</span>':''}</span><br>${[r[4],r[3],r[2]].filter(Boolean).join(' / ')}${r[10]?`<br>🏠 ${Number(r[10]).toLocaleString('tr')} konut`:''}<br>${badges(r[9])}<br><a href="https://www.openstreetmap.org/?mlat=${r[6]}&mlon=${r[5]}#map=17/${r[6]}/${r[5]}" target="_blank">OSM'de aç</a></div>`).addTo(map);
 }
 function polyPopup(f,ll){const p=f.properties;
- new maplibregl.Popup().setLngLat(ll).setHTML(`<div class="pop"><b>${p.name}</b>${p.official_name?`<br><span class="m">resmî ad: ${p.official_name}</span>`:''}<br><span class="m">${CAT_TR[p.category]} · ${ROLE_TR[p.geometry_role]} · kaynak: ${p.sources||'osm'}</span><br>${[p.neighbourhood&&p.neighbourhood+' Mah.',p.district,p.province].filter(Boolean).join(' / ')}<br>${p.addr_full?`📍 ${p.addr_full}`:'<span class="m">açık adres kaynakta yok</span>'}<br>${p.area_m2?`alan ≈ ${Number(p.area_m2).toLocaleString('tr')} m² · `:''}güven ${p.confidence}</div>`).addTo(map)}
+ new maplibregl.Popup().setLngLat(ll).setHTML(`<div class="pop"><b>${p.name}</b>${p.official_name?`<br><span class="m">resmî ad: ${p.official_name}</span>`:''}<br><span class="m">${CAT_TR[p.category]} · ${ROLE_TR[p.geometry_role]} · kaynak: ${p.sources||'osm'}</span><br>${[p.neighbourhood&&p.neighbourhood+' Mah.',p.district,p.province].filter(Boolean).join(' / ')}<br>${p.addr_full?`📍 ${p.addr_full}`:'<span class="m">açık adres kaynakta yok</span>'}<br>${p.area_m2?`alan ≈ ${Number(p.area_m2).toLocaleString('tr')} m² · `:''}güven ${p.confidence}${p.unit_count?` · 🏠 ${Number(p.unit_count).toLocaleString('tr')} konut`:''}<br>${badges(p.sources)}</div>`).addTo(map)}
 function adminPopup(f,ll,l){const p=f.properties;const lvl={il:'İl',ilce:'İlçe',mahalle:'Mahalle'}[l];
  const pop=new maplibregl.Popup().setLngLat(ll).setHTML(`<div class="pop"><b>${p.name}</b> <span class="m">${lvl}${p.parent?' · '+p.parent:''}</span><br>aktif kompleks: <b>${Number(p.active||0).toLocaleString('tr')}</b> · polygonlu ${Number(p.poly||0).toLocaleString('tr')}<br><span class="m">site ${p.residential_site||0} · toplu konut ${p.mass_housing||0} · plaza ${p.plaza||0} · teknopark ${p.technopark||0}</span><br><a href="#" class="z">yakınlaş</a></div>`).addTo(map);
  pop.getElement().querySelector('.z').onclick=e=>{e.preventDefault();let w=180,s=90,E=-180,n=-90;const walk=c=>{if(typeof c[0]==='number'){w=Math.min(w,c[0]);E=Math.max(E,c[0]);s=Math.min(s,c[1]);n=Math.max(n,c[1])}else c.forEach(walk)};walk(f.geometry.coordinates);map.fitBounds([[w,s],[E,n]],{padding:30});pop.remove()}}
