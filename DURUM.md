@@ -9,7 +9,14 @@ Repo: github.com/ahmetgencozlu/tr-geo-phase1 (özel) · Harita repo: tr-geo-phas
 - Adres (kaynaktan): ~3.474 verified; mahalle eşleşen: büyük çoğunluk
 - Kategori: konut sitesi 28.096 · plaza 3.160 · toplu konut 614 · teknopark 186 (resmî TGB 115, eşleşen 58)
 
-## Bugün yapılanlar
+## 13 Ekim (gündüz)
+- [x] Review terfisi: isim kalıbı + (Overture footprint ≥250 m² VEYA Overture conf ≥0.70) → 12.514 kayıt aktif (13.271 → 25.601). sql/08
+- [x] Türkçe isim normalizasyonu (karışık harf), 187 işletme kaydı silindi, kategori düzeltme. sql/09
+- [x] TOKİ illere göre projeler listesi çekildi: output/toki_projeler.csv (5.211 satır; 3.376 konut projesi, 1,37 M konut; il/ilçe adda var, KOORDİNAT YOK)
+- [~] Foursquare OS Places (Apache 2.0): HF parquet'ten TR kesiti arka planda çekiliyor (11,6 GB tarama) → data/fsq_tr.parquet
+- [x] TOKİ eşleştirme (sql/10): 385 mevcut kayda resmî ad+konut sayısı+toki_id bağlandı; 755 yeni kayıt mahalle polygonundan nokta (inferred, review, conf 0.60). 2.307 TOKİ projesi mahallesiz → eklenmedi (standart). unit_count, external_ids kolonları eklendi.
+
+## 12 Ekim yapılanlar
 - [x] Overture Buildings footprint eşleştirme (6.782)
 - [x] Kapsama raporu + CSV/GPKG export (output/export, repo dışı)
 - [x] Harita: kümeleme (cluster), tek seviyeli dolgusuz sınırlar, mobil çekmece (iPhone test edildi)

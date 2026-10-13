@@ -1,19 +1,19 @@
 {
- "generated_at": "2026-10-13 07:25:31.85621+00",
+ "generated_at": "2026-10-13 08:02:18.040776+00",
  "totals": {
-  "entities": 31869,
-  "active": 25601,
-  "review": 6268,
+  "entities": 32624,
+  "active": 25624,
+  "review": 7000,
   "with_polygon": 18405,
   "verified_address": 3473,
   "partial_address": 11656,
-  "with_neighbourhood": 25999
+  "with_neighbourhood": 26754
  },
  "by_category": [
   {
    "category": "mass_housing",
-   "active": 516,
-   "review": 69,
+   "active": 539,
+   "review": 801,
    "with_polygon": 373,
    "mapped": 182,
    "candidate": 105,
@@ -54,19 +54,23 @@
  "by_source": [
   {
    "sources": "overture",
-   "n": 13037
+   "n": 12957
   },
   {
    "sources": "osm",
-   "n": 9161
+   "n": 9061
   },
   {
    "sources": "overture+overture_buildings",
-   "n": 6510
+   "n": 6482
   },
   {
    "sources": "osm+overture",
-   "n": 2632
+   "n": 2627
+  },
+  {
+   "sources": "toki_gov_tr",
+   "n": 755
   },
   {
    "sources": "overture+osm",
@@ -77,24 +81,40 @@
    "n": 161
   },
   {
+   "sources": "osm+toki_gov_tr",
+   "n": 100
+  },
+  {
+   "sources": "overture+toki_gov_tr",
+   "n": 80
+  },
+  {
    "sources": "osm+overture+overture_buildings",
    "n": 44
+  },
+  {
+   "sources": "overture+overture_buildings+toki_gov_tr",
+   "n": 28
   },
   {
    "sources": "overture+sanayi_gov_tr",
    "n": 21
   },
   {
-   "sources": "overture+sanayi_gov_tr+overture_buildings",
+   "sources": "osm+sanayi_gov_tr",
    "n": 9
   },
   {
-   "sources": "osm+sanayi_gov_tr",
+   "sources": "overture+sanayi_gov_tr+overture_buildings",
    "n": 9
   },
   {
    "sources": "osm+overture+sanayi_gov_tr",
    "n": 9
+  },
+  {
+   "sources": "osm+overture+toki_gov_tr",
+   "n": 5
   },
   {
    "sources": "osm+sanayi_gov_tr+overture_buildings",
@@ -104,22 +124,22 @@
  "by_province": [
   {
    "province": "İstanbul",
-   "active": 5323,
-   "review": 786,
+   "active": 5325,
+   "review": 872,
    "with_polygon": 4318,
    "residential_site": 4327,
-   "mass_housing": 48,
+   "mass_housing": 50,
    "plaza": 918,
    "technopark": 30,
    "address": 2832
   },
   {
    "province": "Ankara",
-   "active": 2702,
-   "review": 370,
+   "active": 2709,
+   "review": 434,
    "with_polygon": 2217,
    "residential_site": 2365,
-   "mass_housing": 28,
+   "mass_housing": 35,
    "plaza": 274,
    "technopark": 35,
    "address": 1569
@@ -127,7 +147,7 @@
   {
    "province": "İzmir",
    "active": 1326,
-   "review": 408,
+   "review": 432,
    "with_polygon": 800,
    "residential_site": 1170,
    "mass_housing": 15,
@@ -138,7 +158,7 @@
   {
    "province": "Balıkesir",
    "active": 1243,
-   "review": 182,
+   "review": 192,
    "with_polygon": 1053,
    "residential_site": 1185,
    "mass_housing": 10,
@@ -149,7 +169,7 @@
   {
    "province": "Antalya",
    "active": 1243,
-   "review": 406,
+   "review": 414,
    "with_polygon": 810,
    "residential_site": 1114,
    "mass_housing": 2,
@@ -159,11 +179,11 @@
   },
   {
    "province": "Bursa",
-   "active": 1076,
-   "review": 424,
+   "active": 1077,
+   "review": 434,
    "with_polygon": 623,
    "residential_site": 961,
-   "mass_housing": 11,
+   "mass_housing": 12,
    "plaza": 102,
    "technopark": 2,
    "address": 834
@@ -171,7 +191,7 @@
   {
    "province": "Kocaeli",
    "active": 757,
-   "review": 187,
+   "review": 207,
    "with_polygon": 585,
    "residential_site": 656,
    "mass_housing": 17,
@@ -182,7 +202,7 @@
   {
    "province": "Aydın",
    "active": 743,
-   "review": 211,
+   "review": 215,
    "with_polygon": 419,
    "residential_site": 718,
    "mass_housing": 4,
@@ -193,7 +213,7 @@
   {
    "province": "Mersin",
    "active": 703,
-   "review": 314,
+   "review": 318,
    "with_polygon": 333,
    "residential_site": 569,
    "mass_housing": 6,
@@ -204,7 +224,7 @@
   {
    "province": "Konya",
    "active": 702,
-   "review": 235,
+   "review": 254,
    "with_polygon": 485,
    "residential_site": 596,
    "mass_housing": 19,
@@ -215,7 +235,7 @@
   {
    "province": "Tekirdağ",
    "active": 688,
-   "review": 157,
+   "review": 166,
    "with_polygon": 536,
    "residential_site": 618,
    "mass_housing": 11,
@@ -226,7 +246,7 @@
   {
    "province": "Muğla",
    "active": 598,
-   "review": 257,
+   "review": 263,
    "with_polygon": 353,
    "residential_site": 560,
    "mass_housing": 1,
@@ -237,7 +257,7 @@
   {
    "province": "Diyarbakır",
    "active": 534,
-   "review": 50,
+   "review": 58,
    "with_polygon": 497,
    "residential_site": 494,
    "mass_housing": 9,
@@ -248,7 +268,7 @@
   {
    "province": "Batman",
    "active": 443,
-   "review": 10,
+   "review": 15,
    "with_polygon": 444,
    "residential_site": 378,
    "mass_housing": 6,
@@ -259,7 +279,7 @@
   {
    "province": "Sakarya",
    "active": 402,
-   "review": 135,
+   "review": 153,
    "with_polygon": 293,
    "residential_site": 384,
    "mass_housing": 2,
@@ -270,7 +290,7 @@
   {
    "province": "Denizli",
    "active": 358,
-   "review": 93,
+   "review": 98,
    "with_polygon": 249,
    "residential_site": 326,
    "mass_housing": 11,
@@ -281,7 +301,7 @@
   {
    "province": "Isparta",
    "active": 342,
-   "review": 38,
+   "review": 40,
    "with_polygon": 301,
    "residential_site": 326,
    "mass_housing": 9,
@@ -292,7 +312,7 @@
   {
    "province": "Adana",
    "active": 338,
-   "review": 135,
+   "review": 144,
    "with_polygon": 173,
    "residential_site": 264,
    "mass_housing": 11,
@@ -313,22 +333,22 @@
   },
   {
    "province": "Samsun",
-   "active": 319,
-   "review": 114,
+   "active": 321,
+   "review": 120,
    "with_polygon": 148,
    "residential_site": 291,
-   "mass_housing": 8,
+   "mass_housing": 10,
    "plaza": 18,
    "technopark": 2,
    "address": 218
   },
   {
    "province": "Trabzon",
-   "active": 297,
-   "review": 91,
+   "active": 298,
+   "review": 99,
    "with_polygon": 200,
    "residential_site": 262,
-   "mass_housing": 13,
+   "mass_housing": 14,
    "plaza": 21,
    "technopark": 1,
    "address": 165
@@ -347,7 +367,7 @@
   {
    "province": "Gaziantep",
    "active": 246,
-   "review": 85,
+   "review": 121,
    "with_polygon": 134,
    "residential_site": 198,
    "mass_housing": 6,
@@ -358,7 +378,7 @@
   {
    "province": "Kahramanmaraş",
    "active": 244,
-   "review": 91,
+   "review": 108,
    "with_polygon": 177,
    "residential_site": 223,
    "mass_housing": 4,
@@ -380,7 +400,7 @@
   {
    "province": "Eskişehir",
    "active": 240,
-   "review": 45,
+   "review": 57,
    "with_polygon": 150,
    "residential_site": 204,
    "mass_housing": 4,
@@ -391,7 +411,7 @@
   {
    "province": "Ordu",
    "active": 210,
-   "review": 46,
+   "review": 64,
    "with_polygon": 107,
    "residential_site": 200,
    "mass_housing": 4,
@@ -413,7 +433,7 @@
   {
    "province": "Düzce",
    "active": 195,
-   "review": 21,
+   "review": 23,
    "with_polygon": 159,
    "residential_site": 161,
    "mass_housing": 9,
@@ -423,11 +443,11 @@
   },
   {
    "province": "Hatay",
-   "active": 177,
-   "review": 76,
+   "active": 178,
+   "review": 116,
    "with_polygon": 98,
    "residential_site": 153,
-   "mass_housing": 5,
+   "mass_housing": 6,
    "plaza": 18,
    "technopark": 1,
    "address": 93
@@ -435,7 +455,7 @@
   {
    "province": "Kırklareli",
    "active": 172,
-   "review": 32,
+   "review": 36,
    "with_polygon": 118,
    "residential_site": 155,
    "mass_housing": 10,
@@ -446,7 +466,7 @@
   {
    "province": "Sivas",
    "active": 166,
-   "review": 17,
+   "review": 25,
    "with_polygon": 152,
    "residential_site": 132,
    "mass_housing": 7,
@@ -457,7 +477,7 @@
   {
    "province": "Kayseri",
    "active": 166,
-   "review": 71,
+   "review": 104,
    "with_polygon": 95,
    "residential_site": 121,
    "mass_housing": 9,
@@ -467,11 +487,11 @@
   },
   {
    "province": "Uşak",
-   "active": 148,
+   "active": 149,
    "review": 24,
    "with_polygon": 128,
    "residential_site": 127,
-   "mass_housing": 8,
+   "mass_housing": 9,
    "plaza": 12,
    "technopark": 1,
    "address": 47
@@ -479,7 +499,7 @@
   {
    "province": "Zonguldak",
    "active": 129,
-   "review": 47,
+   "review": 49,
    "with_polygon": 71,
    "residential_site": 113,
    "mass_housing": 9,
@@ -490,7 +510,7 @@
   {
    "province": "Kastamonu",
    "active": 124,
-   "review": 32,
+   "review": 35,
    "with_polygon": 68,
    "residential_site": 108,
    "mass_housing": 5,
@@ -500,11 +520,11 @@
   },
   {
    "province": "Malatya",
-   "active": 120,
-   "review": 55,
+   "active": 121,
+   "review": 123,
    "with_polygon": 75,
    "residential_site": 98,
-   "mass_housing": 7,
+   "mass_housing": 8,
    "plaza": 12,
    "technopark": 3,
    "address": 81
@@ -512,7 +532,7 @@
   {
    "province": "Kütahya",
    "active": 112,
-   "review": 47,
+   "review": 49,
    "with_polygon": 78,
    "residential_site": 99,
    "mass_housing": 10,
@@ -534,7 +554,7 @@
   {
    "province": "Osmaniye",
    "active": 103,
-   "review": 30,
+   "review": 31,
    "with_polygon": 81,
    "residential_site": 94,
    "mass_housing": 5,
@@ -555,11 +575,11 @@
   },
   {
    "province": "Tokat",
-   "active": 98,
+   "active": 99,
    "review": 26,
    "with_polygon": 48,
    "residential_site": 86,
-   "mass_housing": 6,
+   "mass_housing": 7,
    "plaza": 4,
    "technopark": 2,
    "address": 55
@@ -567,7 +587,7 @@
   {
    "province": "Afyonkarahisar",
    "active": 96,
-   "review": 50,
+   "review": 55,
    "with_polygon": 62,
    "residential_site": 83,
    "mass_housing": 5,
@@ -576,9 +596,20 @@
    "address": 65
   },
   {
+   "province": "Erzurum",
+   "active": 92,
+   "review": 36,
+   "with_polygon": 64,
+   "residential_site": 74,
+   "mass_housing": 5,
+   "plaza": 11,
+   "technopark": 2,
+   "address": 35
+  },
+  {
    "province": "Karabük",
    "active": 91,
-   "review": 43,
+   "review": 47,
    "with_polygon": 48,
    "residential_site": 79,
    "mass_housing": 4,
@@ -587,23 +618,12 @@
    "address": 51
   },
   {
-   "province": "Erzurum",
-   "active": 91,
-   "review": 34,
-   "with_polygon": 64,
-   "residential_site": 74,
-   "mass_housing": 4,
-   "plaza": 11,
-   "technopark": 2,
-   "address": 35
-  },
-  {
    "province": "Bolu",
-   "active": 90,
-   "review": 32,
+   "active": 91,
+   "review": 38,
    "with_polygon": 63,
    "residential_site": 74,
-   "mass_housing": 14,
+   "mass_housing": 15,
    "plaza": 1,
    "technopark": 1,
    "address": 48
@@ -611,7 +631,7 @@
   {
    "province": "Mardin",
    "active": 89,
-   "review": 16,
+   "review": 21,
    "with_polygon": 74,
    "residential_site": 71,
    "mass_housing": 5,
@@ -622,7 +642,7 @@
   {
    "province": "Rize",
    "active": 71,
-   "review": 33,
+   "review": 50,
    "with_polygon": 31,
    "residential_site": 67,
    "mass_housing": 3,
@@ -633,13 +653,24 @@
   {
    "province": "Adıyaman",
    "active": 65,
-   "review": 25,
+   "review": 29,
    "with_polygon": 58,
    "residential_site": 58,
    "mass_housing": 3,
    "plaza": 3,
    "technopark": 1,
    "address": 33
+  },
+  {
+   "province": "Elâzığ",
+   "active": 58,
+   "review": 27,
+   "with_polygon": 34,
+   "residential_site": 49,
+   "mass_housing": 4,
+   "plaza": 3,
+   "technopark": 2,
+   "address": 48
   },
   {
    "province": "Niğde",
@@ -653,20 +684,9 @@
    "address": 42
   },
   {
-   "province": "Elâzığ",
-   "active": 57,
-   "review": 23,
-   "with_polygon": 34,
-   "residential_site": 49,
-   "mass_housing": 3,
-   "plaza": 3,
-   "technopark": 2,
-   "address": 48
-  },
-  {
    "province": "Aksaray",
    "active": 57,
-   "review": 14,
+   "review": 15,
    "with_polygon": 40,
    "residential_site": 40,
    "mass_housing": 12,
@@ -677,7 +697,7 @@
   {
    "province": "Şanlıurfa",
    "active": 56,
-   "review": 37,
+   "review": 64,
    "with_polygon": 35,
    "residential_site": 34,
    "mass_housing": 10,
@@ -699,7 +719,7 @@
   {
    "province": "Nevşehir",
    "active": 54,
-   "review": 17,
+   "review": 19,
    "with_polygon": 37,
    "residential_site": 43,
    "mass_housing": 7,
@@ -708,26 +728,26 @@
    "address": 33
   },
   {
+   "province": "Van",
+   "active": 53,
+   "review": 33,
+   "with_polygon": 35,
+   "residential_site": 36,
+   "mass_housing": 8,
+   "plaza": 8,
+   "technopark": 1,
+   "address": 35
+  },
+  {
    "province": "Yozgat",
    "active": 52,
-   "review": 20,
+   "review": 29,
    "with_polygon": 30,
    "residential_site": 44,
    "mass_housing": 7,
    "plaza": 1,
    "technopark": 0,
    "address": 29
-  },
-  {
-   "province": "Van",
-   "active": 51,
-   "review": 23,
-   "with_polygon": 35,
-   "residential_site": 36,
-   "mass_housing": 6,
-   "plaza": 8,
-   "technopark": 1,
-   "address": 35
   },
   {
    "province": "Burdur",
@@ -765,7 +785,7 @@
   {
    "province": "Bilecik",
    "active": 35,
-   "review": 22,
+   "review": 24,
    "with_polygon": 18,
    "residential_site": 29,
    "mass_housing": 3,
@@ -776,7 +796,7 @@
   {
    "province": "Karaman",
    "active": 33,
-   "review": 11,
+   "review": 21,
    "with_polygon": 15,
    "residential_site": 30,
    "mass_housing": 2,
@@ -787,7 +807,7 @@
   {
    "province": "Kırşehir",
    "active": 32,
-   "review": 11,
+   "review": 13,
    "with_polygon": 20,
    "residential_site": 23,
    "mass_housing": 3,
@@ -820,7 +840,7 @@
   {
    "province": "Erzincan",
    "active": 28,
-   "review": 5,
+   "review": 14,
    "with_polygon": 17,
    "residential_site": 20,
    "mass_housing": 5,
@@ -842,7 +862,7 @@
   {
    "province": "Kırıkkale",
    "active": 23,
-   "review": 14,
+   "review": 21,
    "with_polygon": 12,
    "residential_site": 20,
    "mass_housing": 1,
@@ -853,7 +873,7 @@
   {
    "province": "Bitlis",
    "active": 18,
-   "review": 4,
+   "review": 8,
    "with_polygon": 7,
    "residential_site": 13,
    "mass_housing": 3,
@@ -862,9 +882,20 @@
    "address": 8
   },
   {
+   "province": "Gümüşhane",
+   "active": 16,
+   "review": 10,
+   "with_polygon": 10,
+   "residential_site": 12,
+   "mass_housing": 3,
+   "plaza": 1,
+   "technopark": 0,
+   "address": 10
+  },
+  {
    "province": "Bingöl",
    "active": 15,
-   "review": 3,
+   "review": 10,
    "with_polygon": 15,
    "residential_site": 14,
    "mass_housing": 0,
@@ -873,20 +904,9 @@
    "address": 10
   },
   {
-   "province": "Gümüşhane",
-   "active": 15,
-   "review": 7,
-   "with_polygon": 10,
-   "residential_site": 12,
-   "mass_housing": 2,
-   "plaza": 1,
-   "technopark": 0,
-   "address": 10
-  },
-  {
    "province": "Hakkâri",
    "active": 14,
-   "review": 1,
+   "review": 3,
    "with_polygon": 11,
    "residential_site": 3,
    "mass_housing": 4,
@@ -897,7 +917,7 @@
   {
    "province": "Kilis",
    "active": 13,
-   "review": 2,
+   "review": 6,
    "with_polygon": 9,
    "residential_site": 11,
    "mass_housing": 1,
@@ -908,7 +928,7 @@
   {
    "province": "Kars",
    "active": 12,
-   "review": 7,
+   "review": 13,
    "with_polygon": 6,
    "residential_site": 11,
    "mass_housing": 0,
@@ -930,7 +950,7 @@
   {
    "province": "Ağrı",
    "active": 9,
-   "review": 5,
+   "review": 7,
    "with_polygon": 6,
    "residential_site": 7,
    "mass_housing": 1,
@@ -941,7 +961,7 @@
   {
    "province": "Siirt",
    "active": 8,
-   "review": 5,
+   "review": 6,
    "with_polygon": 4,
    "residential_site": 6,
    "mass_housing": 1,
@@ -952,13 +972,24 @@
   {
    "province": "Bayburt",
    "active": 7,
-   "review": 3,
+   "review": 7,
    "with_polygon": 3,
    "residential_site": 6,
    "mass_housing": 0,
    "plaza": 1,
    "technopark": 0,
    "address": 5
+  },
+  {
+   "province": "Tunceli",
+   "active": 4,
+   "review": 2,
+   "with_polygon": 2,
+   "residential_site": 4,
+   "mass_housing": 0,
+   "plaza": 0,
+   "technopark": 0,
+   "address": 1
   },
   {
    "province": "Iğdır",
@@ -972,20 +1003,9 @@
    "address": 0
   },
   {
-   "province": "Tunceli",
-   "active": 4,
-   "review": 1,
-   "with_polygon": 2,
-   "residential_site": 4,
-   "mass_housing": 0,
-   "plaza": 0,
-   "technopark": 0,
-   "address": 1
-  },
-  {
    "province": "Ardahan",
    "active": 3,
-   "review": 2,
+   "review": 3,
    "with_polygon": 0,
    "residential_site": 2,
    "mass_housing": 1,
