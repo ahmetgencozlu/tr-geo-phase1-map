@@ -90,6 +90,7 @@
    <button id="menuBtn" type="button">☰ Filtre</button>
    <button id="bAdmin" type="button" class="on">Sınırlar</button>
    <button id="bPoly" type="button" class="on">Polygonlar</button>
+   <button id="bAdj" type="button" title="≤25 m'deki en yakın OSM binası — doğrulanmamış aday">Aday bina</button>
    <span class="chip" id="lvl">il</span>
   </div>
  </div>
@@ -143,6 +144,10 @@ function init(){
  map.addSource('cpx',{type:'vector',url:T_CPX});
  map.addLayer({id:'poly-fill',type:'fill',source:'cpx','source-layer':'poly',minzoom:12,paint:{'fill-color':catExpr,'fill-opacity':0.22}});
  map.addLayer({id:'poly-line',type:'line',source:'cpx','source-layer':'poly',minzoom:12,paint:{'line-color':catExpr,'line-width':1.2,'line-opacity':0.9}});
+ // aday komşu bina (≤25 m, OSM): kesikli çizgi, dolgusuz; varsayılan kapalı
+ map.addLayer({id:'adj-line',type:'line',source:'cpx','source-layer':'adj',minzoom:12,layout:{visibility:'none'},paint:{'line-color':catExpr,'line-width':1,'line-dasharray':[2,2],'line-opacity':0.8}});
+ map.addLayer({id:'adj-hit',type:'fill',source:'cpx','source-layer':'adj',minzoom:12,layout:{visibility:'none'},paint:{'fill-color':'#000','fill-opacity':0}});
+ map.on('click','adj-hit',e=>{if(e.originalEvent._pt)return;e.originalEvent._pt=1;const p=e.features[0].properties;new maplibregl.Popup().setLngLat(e.lngLat).setHTML(`<div class="pop"><b>${p.name}</b><br><span class="m">${CAT_TR[p.category]} · <span style="color:#f0b35a">aday komşu bina</span> (OSM, ${p.dist_m} m uzakta, ≈${Number(p.area_m2).toLocaleString('tr')} m²)</span><br>${[p.neighbourhood,p.district,p.province].filter(Boolean).join(' / ')}<br><span class="m">Doğrulanmış polygon değildir; noktaya en yakın bina.</span></div>`).addTo(map)});
  // --- kümeleme: noktalar istemci tarafında GeoJSON; küme rengi = baskın kategori
  fc=buildFC();
  const cp={};for(const c in COLORS)cp[c]=['+',['case',['==',['get','category'],c],1,0]];
@@ -174,6 +179,7 @@ function init(){
  document.getElementById('dist').addEventListener('change',e=>fillSel('nbhd',(stats.admin_tree[sel.value]||{})[e.target.value]||[],'Mahalle — tümü'));
  document.querySelectorAll('#side input[type=checkbox],#prov,#dist,#nbhd,#minSrc').forEach(el=>el.addEventListener('change',applyFilter));
  document.getElementById('bAdmin').onclick=function(){this.classList.toggle('on');const v=this.classList.contains('on')?'visible':'none';for(const l of ['il','ilce','mahalle'])for(const s of ['-line','-label','-hit'])map.setLayoutProperty(l+s,'visibility',v)};
+ document.getElementById('bAdj').onclick=function(){this.classList.toggle('on');const v=this.classList.contains('on')?'visible':'none';map.setLayoutProperty('adj-line','visibility',v);map.setLayoutProperty('adj-hit','visibility',v)};
  document.getElementById('bPoly').onclick=function(){this.classList.toggle('on');const v=this.classList.contains('on')?'visible':'none';map.setLayoutProperty('poly-fill','visibility',v);map.setLayoutProperty('poly-line','visibility',v)};
  document.getElementById('q').addEventListener('input',search);
 }
@@ -185,7 +191,7 @@ function applyFilter(){
  const f=['all',['in',['get','category'],['literal',cats]]];
  if(!document.getElementById('showReview').checked)f.push(['==',['get','status'],'active']);
  if(prov)f.push(['==',['get','province'],prov]);if(dist)f.push(['==',['get','district'],dist]);if(nbhd)f.push(['==',['get','neighbourhood'],nbhd]);
- map.setFilter('poly-fill',f);map.setFilter('poly-line',f);
+ map.setFilter('poly-fill',f);map.setFilter('poly-line',f);map.setFilter('adj-line',f);map.setFilter('adj-hit',f);
  if(prov&&fc.features.length){const b=new maplibregl.LngLatBounds();for(const x of fc.features)b.extend(x.geometry.coordinates);map.fitBounds(b,{padding:isMobile()?30:60,maxZoom:nbhd?15:dist?13:10.5})}
 }
 function search(){

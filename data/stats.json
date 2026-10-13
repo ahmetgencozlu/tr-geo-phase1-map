@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-10-13 10:48:04.820796+00",
+ "generated_at": "2026-10-13 11:09:43.915399+00",
  "total": 64668,
- "active": 29460,
+ "active": 30254,
  "raw_osm_objects": 12955,
  "by_category": {
   "residential_site": {
@@ -14,15 +14,15 @@
    "with_polygon": 2422,
    "verified_address": 564
   },
-  "technopark": {
-   "total": 249,
-   "with_polygon": 132,
-   "verified_address": 17
-  },
   "mass_housing": {
    "total": 3183,
    "with_polygon": 771,
    "verified_address": 34
+  },
+  "technopark": {
+   "total": 249,
+   "with_polygon": 132,
+   "verified_address": 17
   }
  },
  "by_role": {
@@ -31,217 +31,227 @@
   "candidate_area_polygon": 4246,
   "point_only": 38699
  },
- "review": 35208,
+ "review": 34414,
  "by_province": [
   {
    "province": "İstanbul",
-   "total": 5368,
-   "with_polygon": 3437
+   "total": 5387,
+   "with_polygon": 3441
   },
   {
    "province": "Ankara",
-   "total": 2715,
-   "with_polygon": 1735
+   "total": 2757,
+   "with_polygon": 1741
   },
   {
    "province": "İzmir",
-   "total": 1683,
-   "with_polygon": 692
+   "total": 1708,
+   "with_polygon": 701
   },
   {
    "province": "Antalya",
-   "total": 1579,
-   "with_polygon": 711
+   "total": 1583,
+   "with_polygon": 713
   },
   {
    "province": "Bursa",
-   "total": 1479,
+   "total": 1487,
    "with_polygon": 570
   },
   {
    "province": "Balıkesir",
-   "total": 1096,
-   "with_polygon": 708
+   "total": 1137,
+   "with_polygon": 715
   },
   {
    "province": "Mersin",
-   "total": 1008,
-   "with_polygon": 308
-  },
-  {
-   "province": "Aydın",
-   "total": 938,
-   "with_polygon": 388
+   "total": 1024,
+   "with_polygon": 310
   },
   {
    "province": "Konya",
-   "total": 931,
-   "with_polygon": 440
+   "total": 960,
+   "with_polygon": 444
+  },
+  {
+   "province": "Aydın",
+   "total": 955,
+   "with_polygon": 393
   },
   {
    "province": "Muğla",
-   "total": 832,
-   "with_polygon": 309
+   "total": 851,
+   "with_polygon": 314
   },
   {
    "province": "Kocaeli",
-   "total": 815,
-   "with_polygon": 425
+   "total": 827,
+   "with_polygon": 429
   },
   {
    "province": "Tekirdağ",
-   "total": 724,
+   "total": 731,
    "with_polygon": 411
   },
   {
    "province": "Sakarya",
-   "total": 513,
-   "with_polygon": 246
+   "total": 527,
+   "with_polygon": 251
   },
   {
    "province": "Adana",
-   "total": 485,
-   "with_polygon": 163
-  },
-  {
-   "province": "Samsun",
-   "total": 428,
-   "with_polygon": 130
+   "total": 503,
+   "with_polygon": 168
   },
   {
    "province": "Denizli",
-   "total": 422,
-   "with_polygon": 205
+   "total": 446,
+   "with_polygon": 211
+  },
+  {
+   "province": "Samsun",
+   "total": 442,
+   "with_polygon": 133
   },
   {
    "province": "Diyarbakır",
-   "total": 421,
-   "with_polygon": 320
-  },
-  {
-   "province": "Edirne",
-   "total": 385,
-   "with_polygon": 206
+   "total": 432,
+   "with_polygon": 323
   },
   {
    "province": "Trabzon",
-   "total": 379,
-   "with_polygon": 173
+   "total": 394,
+   "with_polygon": 174
+  },
+  {
+   "province": "Edirne",
+   "total": 389,
+   "with_polygon": 207
   },
   {
    "province": "Gaziantep",
-   "total": 368,
+   "total": 374,
    "with_polygon": 131
   },
   {
+   "province": "Manisa",
+   "total": 347,
+   "with_polygon": 173
+  },
+  {
    "province": "Kahramanmaraş",
-   "total": 335,
-   "with_polygon": 160
+   "total": 339,
+   "with_polygon": 163
   },
   {
    "province": "Çanakkale",
-   "total": 334,
-   "with_polygon": 154
-  },
-  {
-   "province": "Manisa",
-   "total": 323,
-   "with_polygon": 170
-  },
-  {
-   "province": "Hatay",
-   "total": 296,
-   "with_polygon": 93
+   "total": 338,
+   "with_polygon": 155
   },
   {
    "province": "Isparta",
-   "total": 286,
-   "with_polygon": 195
+   "total": 314,
+   "with_polygon": 208
+  },
+  {
+   "province": "Hatay",
+   "total": 310,
+   "with_polygon": 95
+  },
+  {
+   "province": "Kayseri",
+   "total": 305,
+   "with_polygon": 89
   },
   {
    "province": "Ordu",
-   "total": 281,
+   "total": 290,
    "with_polygon": 103
   },
   {
    "province": "Eskişehir",
-   "total": 279,
-   "with_polygon": 123
-  },
-  {
-   "province": "Kayseri",
-   "total": 271,
-   "with_polygon": 87
+   "total": 284,
+   "with_polygon": 124
   },
   {
    "province": "Malatya",
-   "total": 244,
+   "total": 254,
    "with_polygon": 77
   },
   {
    "province": "Batman",
-   "total": 224,
-   "with_polygon": 211
-  },
-  {
-   "province": "Kırklareli",
-   "total": 182,
-   "with_polygon": 90
-  },
-  {
-   "province": "Zonguldak",
-   "total": 172,
-   "with_polygon": 59
-  },
-  {
-   "province": "Amasya",
-   "total": 169,
-   "with_polygon": 112
-  },
-  {
-   "province": "Düzce",
-   "total": 162,
-   "with_polygon": 98
+   "total": 227,
+   "with_polygon": 212
   },
   {
    "province": "Kütahya",
-   "total": 153,
-   "with_polygon": 67
+   "total": 189,
+   "with_polygon": 74
+  },
+  {
+   "province": "Kırklareli",
+   "total": 185,
+   "with_polygon": 91
+  },
+  {
+   "province": "Zonguldak",
+   "total": 179,
+   "with_polygon": 59
+  },
+  {
+   "province": "Düzce",
+   "total": 174,
+   "with_polygon": 99
+  },
+  {
+   "province": "Amasya",
+   "total": 170,
+   "with_polygon": 112
+  },
+  {
+   "province": "Şanlıurfa",
+   "total": 162,
+   "with_polygon": 47
   },
   {
    "province": "Afyonkarahisar",
-   "total": 151,
-   "with_polygon": 60
+   "total": 160,
+   "with_polygon": 62
   },
   {
    "province": "Giresun",
-   "total": 149,
-   "with_polygon": 45
+   "total": 154,
+   "with_polygon": 46
   },
   {
    "province": "Kastamonu",
-   "total": 148,
+   "total": 153,
    "with_polygon": 55
   },
   {
    "province": "Karabük",
-   "total": 143,
+   "total": 145,
    "with_polygon": 46
   },
   {
    "province": "Uşak",
-   "total": 138,
+   "total": 143,
    "with_polygon": 90
   },
   {
-   "province": "Şanlıurfa",
-   "total": 132,
-   "with_polygon": 38
+   "province": "Tokat",
+   "total": 135,
+   "with_polygon": 45
   },
   {
-   "province": "Tokat",
-   "total": 128,
-   "with_polygon": 43
+   "province": "Rize",
+   "total": 132,
+   "with_polygon": 26
+  },
+  {
+   "province": "Bolu",
+   "total": 129,
+   "with_polygon": 56
   },
   {
    "province": "Yalova",
@@ -249,59 +259,54 @@
    "with_polygon": 64
   },
   {
-   "province": "Rize",
-   "total": 126,
-   "with_polygon": 25
-  },
-  {
    "province": "Osmaniye",
-   "total": 125,
+   "total": 126,
    "with_polygon": 69
   },
   {
-   "province": "Bolu",
-   "total": 124,
-   "with_polygon": 56
-  },
-  {
    "province": "Erzurum",
-   "total": 110,
-   "with_polygon": 44
+   "total": 121,
+   "with_polygon": 48
   },
   {
    "province": "Sivas",
-   "total": 101,
-   "with_polygon": 58
+   "total": 111,
+   "with_polygon": 61
   },
   {
    "province": "Niğde",
-   "total": 100,
-   "with_polygon": 24
-  },
-  {
-   "province": "Elâzığ",
-   "total": 88,
-   "with_polygon": 32
+   "total": 109,
+   "with_polygon": 25
   },
   {
    "province": "Van",
-   "total": 88,
-   "with_polygon": 31
+   "total": 105,
+   "with_polygon": 35
+  },
+  {
+   "province": "Elâzığ",
+   "total": 96,
+   "with_polygon": 32
   },
   {
    "province": "Mardin",
-   "total": 86,
-   "with_polygon": 47
-  },
-  {
-   "province": "Adıyaman",
-   "total": 86,
-   "with_polygon": 45
+   "total": 94,
+   "with_polygon": 48
   },
   {
    "province": "Yozgat",
-   "total": 80,
-   "with_polygon": 26
+   "total": 93,
+   "with_polygon": 27
+  },
+  {
+   "province": "Adıyaman",
+   "total": 89,
+   "with_polygon": 45
+  },
+  {
+   "province": "Nevşehir",
+   "total": 88,
+   "with_polygon": 35
   },
   {
    "province": "Bartın",
@@ -309,54 +314,54 @@
    "with_polygon": 21
   },
   {
-   "province": "Nevşehir",
-   "total": 74,
-   "with_polygon": 33
-  },
-  {
    "province": "Çorum",
-   "total": 67,
-   "with_polygon": 24
+   "total": 73,
+   "with_polygon": 25
   },
   {
    "province": "Aksaray",
-   "total": 65,
+   "total": 66,
    "with_polygon": 32
   },
   {
+   "province": "Bilecik",
+   "total": 66,
+   "with_polygon": 15
+  },
+  {
    "province": "Burdur",
-   "total": 62,
-   "with_polygon": 18
+   "total": 65,
+   "with_polygon": 19
   },
   {
    "province": "Karaman",
-   "total": 59,
-   "with_polygon": 20
-  },
-  {
-   "province": "Bilecik",
-   "total": 59,
-   "with_polygon": 15
-  },
-  {
-   "province": "Çankırı",
-   "total": 50,
-   "with_polygon": 20
+   "total": 62,
+   "with_polygon": 21
   },
   {
    "province": "Kırıkkale",
-   "total": 49,
-   "with_polygon": 15
-  },
-  {
-   "province": "Kırşehir",
-   "total": 46,
+   "total": 56,
    "with_polygon": 18
   },
   {
-   "province": "Erzincan",
-   "total": 42,
+   "province": "Çankırı",
+   "total": 56,
    "with_polygon": 21
+  },
+  {
+   "province": "Erzincan",
+   "total": 56,
+   "with_polygon": 23
+  },
+  {
+   "province": "Kırşehir",
+   "total": 47,
+   "with_polygon": 18
+  },
+  {
+   "province": "Artvin",
+   "total": 39,
+   "with_polygon": 12
   },
   {
    "province": "Sinop",
@@ -364,29 +369,29 @@
    "with_polygon": 13
   },
   {
-   "province": "Artvin",
-   "total": 36,
-   "with_polygon": 12
-  },
-  {
    "province": "Bitlis",
-   "total": 29,
-   "with_polygon": 6
-  },
-  {
-   "province": "Kars",
-   "total": 27,
-   "with_polygon": 11
+   "total": 35,
+   "with_polygon": 7
   },
   {
    "province": "Gümüşhane",
-   "total": 26,
-   "with_polygon": 10
+   "total": 33,
+   "with_polygon": 13
+  },
+  {
+   "province": "Kars",
+   "total": 28,
+   "with_polygon": 12
   },
   {
    "province": "Bingöl",
-   "total": 25,
+   "total": 28,
    "with_polygon": 14
+  },
+  {
+   "province": "Ağrı",
+   "total": 25,
+   "with_polygon": 5
   },
   {
    "province": "Kilis",
@@ -395,43 +400,38 @@
   },
   {
    "province": "Muş",
-   "total": 18,
-   "with_polygon": 6
-  },
-  {
-   "province": "Ağrı",
-   "total": 17,
-   "with_polygon": 4
+   "total": 19,
+   "with_polygon": 7
   },
   {
    "province": "Bayburt",
-   "total": 14,
+   "total": 16,
    "with_polygon": 3
   },
   {
    "province": "Siirt",
-   "total": 13,
+   "total": 14,
    "with_polygon": 1
   },
   {
    "province": "Hakkâri",
-   "total": 10,
-   "with_polygon": 4
+   "total": 11,
+   "with_polygon": 5
   },
   {
    "province": "Şırnak",
-   "total": 8,
-   "with_polygon": 1
+   "total": 11,
+   "with_polygon": 3
+  },
+  {
+   "province": "Ardahan",
+   "total": 10,
+   "with_polygon": 2
   },
   {
    "province": "Tunceli",
    "total": 7,
    "with_polygon": 3
-  },
-  {
-   "province": "Ardahan",
-   "total": 7,
-   "with_polygon": 1
   },
   {
    "province": "Iğdır",
