@@ -44,6 +44,11 @@ Repo: github.com/ahmetgencozlu/tr-geo-phase1 (özel) · Harita repo: tr-geo-phas
 - [x] sql/26 Overture land_use residential (OSM türevi, 13.012 TR-içi adlı polygon): 104 point_only kayda site polygonu, 426 yeni aday (single_source/osm); polygonlu 26.030
 - [x] sql/25 K.Maraş BB Kent Rehberi ArcGIS REST: 716 mahalle → K.Maraş mahallesiz 183→1; MAKS YAPI site adlı 3.946 bina → 2.148 grup; 91 mevcut kayda polygon+konut sayısı kanıtı (bağımsız kaynak kmaras_kentrehberi), yeni site adayları (blok kodları elendi); lisans 'belirsiz (kamu kent rehberi)' kayıt başına
 - SONUÇ: mahalle yok 4.268 · active 29.850
+- [x] sql/27 OSM adlı bina polygonları (Overture Buildings, 23 k kalıplı): 147 kayda polygon, 346 kayda OSM kanıtı, 451 yeni aday (AVM/sanayi elendi)
+- [x] Commons grid taraması: 20 kategori, çoğu Rodos/Erbil kuleleri → değersiz, iptal
+- [x] sql/28 bağlam rasterları: Meta HRSL 2020 nüfus (150 m) + GHSL NRES 2020 konut-dışı yapı → context_pop150/context_nres_m2/context_flag. empty_area 2.348 site (çoğu 2020 sonrası yeni proje ya da kırsal — inceleme listesi), commercial_area 100 tek-kaynaklı site (plaza olabilir)
+- [x] sql/29 Wikipedia liste sayfaları (891 satır, CC BY-SA olgu verisi): kanıt + koordinatlı yeni gökdelen/plaza adayları (source=wikipedia)
+- A (yarın): Türkiye içinden belediye kent rehberi uçları — cron hatırlatma 06:30 UTC
 
 ## 12 Ekim yapılanlar
 - [x] Overture Buildings footprint eşleştirme (6.782)
