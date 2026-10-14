@@ -140,7 +140,7 @@ function init(){
  const lv=[['il',0,7.5,'#b8c2d8',1.3],['ilce',7.5,10.5,'#8e9bb8',0.9],['mahalle',10.5,24,'#6a7694',0.7]];
  for(const [l,mn,mx,col,w] of lv){
   map.addLayer({id:l+'-line',type:'line',source:'adm','source-layer':l,minzoom:mn,maxzoom:mx,paint:{'line-color':col,'line-width':w,'line-opacity':0.75}});
-  map.addLayer({id:l+'-hit',type:'fill',source:'adm','source-layer':l,minzoom:mn,maxzoom:mx,paint:{'fill-color':'#000','fill-opacity':0}});
+  map.addLayer({id:l+'-hit',type:'fill',source:'adm','source-layer':l,minzoom:mn,maxzoom:mx,layout:{visibility:'none'},paint:{'fill-color':'#000','fill-opacity':0}});
   map.addLayer({id:l+'-label',type:'symbol',source:'adm','source-layer':l,minzoom:mn,maxzoom:mx,
     layout:{'text-field':['get','name'],'text-size':l==='il'?12:11,'text-font':['Open Sans Semibold','Noto Sans Regular'],'text-letter-spacing':0.05,'text-transform':l==='il'?'uppercase':'none','text-padding':6},
     paint:{'text-color':'#c9d2e6','text-halo-color':'#0f1115','text-halo-width':1.6,'text-opacity':0.9}});
@@ -170,6 +170,18 @@ function init(){
    'circle-stroke-color':['case',['==',['get','status'],'single_source'],'#f0b35a','#0f1115'],'circle-stroke-width':['case',['==',['get','status'],'single_source'],2,1.2],'circle-opacity':['case',['==',['get','status'],'single_source'],0.55,0.95]}});
  map.on('click','cl',e=>{e.originalEvent._pt=1;const f=e.features[0];map.getSource('pts').getClusterExpansionZoom(f.properties.cluster_id,(err,z)=>{if(!err)map.easeTo({center:f.geometry.coordinates,zoom:Math.min(z,16)})})});
  map.on('click','pt',e=>{e.originalEvent._pt=1;popup(idx[e.features[0].properties.i],e.lngLat)});
+// Mobilde nokta tam üstüne denk gelmezse yakın feature ara (±20px bbox)
+map.on('click',e=>{
+  if(e.originalEvent._pt)return;
+  const tol=isMobile()?20:6;
+  const p=e.point;
+  const hits=map.queryRenderedFeatures([[p.x-tol,p.y-tol],[p.x+tol,p.y+tol]],{layers:['pt']});
+  if(!hits.length)return;
+  // en yakın noktayı bul
+  let best=null,bestD=Infinity;
+  for(const f of hits){const c=f.geometry.coordinates;const dx=p.x-map.project(c).x;const dy=p.y-map.project(c).y;const d=dx*dx+dy*dy;if(d<bestD){bestD=d;best=f;}}
+  if(best){e.originalEvent._pt=1;popup(idx[best.properties.i],e.lngLat);}
+});
  map.on('click','poly-fill',e=>{if(e.originalEvent._pt)return;e.originalEvent._pt=1;polyPopup(e.features[0],e.lngLat)});
  for(const l of ['cl','pt','poly-fill','il-hit','ilce-hit','mahalle-hit']){map.on('mouseenter',l,()=>map.getCanvas().style.cursor='pointer');map.on('mouseleave',l,()=>map.getCanvas().style.cursor='')}
  map.on('click',()=>{if(isMobile())side.classList.remove('open')});
