@@ -58,8 +58,8 @@
  }
 .srcs div{line-height:1.35;margin-top:2px}.srcs a{color:var(--acc);text-decoration:none}.srcs a:hover{text-decoration:underline}
 /* ── Mobil bottom card (popup yerine) ─────────────────────── */
-#card{position:fixed;bottom:0;left:0;right:0;background:var(--panel);border-top:1px solid var(--line);border-radius:16px 16px 0 0;padding:0 16px calc(16px + env(safe-area-inset-bottom));z-index:20;max-height:62dvh;overflow-y:auto;transform:translateY(105%);transition:transform .28s cubic-bezier(.4,0,.2,1);box-shadow:0 -8px 32px rgba(0,0,0,.5)}
-#card.open{transform:translateY(0)}
+#card{position:fixed;bottom:0;left:0;right:0;background:var(--panel);border-top:1px solid var(--line);border-radius:16px 16px 0 0;padding:0 16px calc(16px + env(safe-area-inset-bottom));z-index:20;max-height:62dvh;overflow-y:auto;transform:translateY(calc(100% + 80px));pointer-events:none;transition:transform .28s cubic-bezier(.4,0,.2,1);box-shadow:0 -8px 32px rgba(0,0,0,.5)}
+#card.open{transform:translateY(0);pointer-events:auto}
 #card-handle{width:40px;height:4px;border-radius:2px;background:var(--muted);margin:10px auto 12px;opacity:.6}
 #card-close{position:absolute;top:12px;right:14px;background:rgba(255,255,255,.07);border:none;color:var(--muted);font-size:18px;line-height:1;padding:4px 8px;border-radius:6px;cursor:pointer}
 #card .pop b{font-size:14px}
