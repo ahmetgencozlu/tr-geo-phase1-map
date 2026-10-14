@@ -71,3 +71,39 @@ Her görev bittiğinde bu dosya + Telegram sessiz bildirim güncellenir.
 1. Veri zenginleştirme kaynağı seçimi (G3–G5 bulgularına göre)
 2. Review kuyruğu temizliği stratejisi (G2)
 3. GPKG/CSV'yi GitHub Release olarak yayınlama
+
+## 14 Ekim yapılanlar (A görevi: Mersin/Adana/Hatay mahalle polygon)
+- [x] sql/31 Hatay BB KBS WFS (https://cbs.hatay.bel.tr/rest/v1/geoserver/hatay/ows, typeName=maks_mahalle_usr):
+  601 mahalle polygon indirildi (EPSG:4326, GeoJSON WFS, --insecure), nbhd_external eklendi → Hatay mahallesiz 229→5 (224 atandı)
+- [x] Mersin (TR-P-33): Tüm CBS alt-alanları NXDOMAIN/bağlanamıyor — cbs/kentrehberi/arcgis/gis/harita/webgis/sehirharitasi.mersin.bel.tr HTTP+HTTPS. Halka açık endpoint yok. Atlandı.
+- [x] Adana (TR-P-01): cbs.adana.bel.tr HTTP ArcGIS REST erişilebilir (30 servis: KENTREH/KENTREH2/NUMARATAJ…), fakat MAKS token gerekli (499), mahalle katmanı yok. Atlandı.
+- Endpoint keşif yöntemi: Hatay → KBS SPA JS bundle (/static/js/main.86e03c1e.js) analizi ile WFS path bulundu
+- SONUÇ: mahalle yok 4.063 (önceki: 4.268; Hatay 224 azaldı, K.Maraş 1, diğer azalmalar başka servislerden)
+
+## 14 Ekim — G2/G3/G4 (cron: 14 Oct 2026)
+
+### G2 — single_source Profil Analizi (tamamlandı)
+- 34.868 single_source kaydı incelendi
+- Kaynak dağılımı: Foursquare 29.849 (%85,6), OSM 4.718 (%13,5), K.Maraş 252 (%0,7)
+- Kategori: residential_site 30.421, plaza 3.359, mass_housing 1.015, technopark 73
+- Yüksek güven segmenti: name_pattern=true AND geometri = **10.650 kayıt**
+- Detay: docs/notes/g2_single_source_profil.md
+
+### G3 — sql/30 Terfi (tamamlandı)
+- Kriter: `name_pattern = true AND (polygon IS NOT NULL OR has_footprint = true)`
+- **Öncesi:** active=30.027, single_source=34.868
+- **Terfı edilen:** 10.650 kayıt → active
+- **Sonrası:** active=**40.677**, single_source=**24.218**
+- Toplam: 64.895 kayıt
+
+### G4 — GPKG/CSV Export + GitHub Release v0.5.0 (tamamlandı)
+- output/yerdex_export.gpkg — 64.895 kayıt, ~22 MB (polygon/point karışık, EPSG:4326)
+- output/yerdex_export.csv — 64.895 kayıt, ~11 MB
+- GitHub Release: v0.5.0 — GPKG + CSV asset olarak yüklendi
+
+## Mevcut sayılar (14 Ekim)
+- Toplam: **64.895** kayıt
+- Aktif: **40.677** (≥2 bağımsız kaynak VEYA name_pattern+geometri)
+- Tek kaynak: **24.218** (doğrulama bekliyor)
+- Polygonlu: ~26.000
+- Mahalle yok: ~4.063
