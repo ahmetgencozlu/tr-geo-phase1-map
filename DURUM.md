@@ -139,3 +139,14 @@ Her görev bittiğinde bu dosya + Telegram sessiz bildirim güncellenir.
 - [x] PMTiles yeniden üretildi (complex 50.6MB) + yerdex-map yayınlandı
 - **SON SONUÇ (15 Ekim sabah): 65.584 kayıt · aktif 61.539 · tek kaynak 4.045 · polygonlu 46.452 · mahallesiz 463**
 - **GECE ÖZET: aktif +20.862 (40.677→61.539) · polygon +20.452 · tek kaynak -20.173 (24.218→4.045) · mahallesiz -3.600 (~4.063→463)**
+
+## 15 Ekim öğleden sonra oturumu
+- Mahallesiz (no_mah): 463→0 (OSM 1-2km geniş radius + district fallback)
+- OSM AVM multipolygon: 17 yeni plaza ekle (Ege Park, Deltapark, Rings AVM, ...)
+- OSM residential site polygon: 61 yeni site kaydı
+- Overture parquet residential_site: 3.087 yeni (conf≥0.65, 250m içinde eşleşme yok)
+- Overture mass_housing + plaza + teknopark: 7.018 yeni kayıt
+- Overture × FSQ terfi: 8 single_source → active
+- Teknopark sanayi.gov.tr listesi: 115 kayıt, DB'de 114 eşleşiyor (1 eksik ASBÜ eklendi)
+- **SON SONUÇ (15 Ekim öğle): 75.775 kayıt · aktif 71.741 · tek kaynak 4.034 · polygonlu 46.530 · mahallesiz 0**
+- **ÖĞLE ÖZET: +10.191 kayıt (65.584→75.775) · mahallesiz sıfırlandı · avg_confidence 0.82**

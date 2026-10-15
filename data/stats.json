@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-15 07:22:52.19427+00",
+ "generated_at": "2026-10-15 07:26:08.410566+00",
  "total": 75775,
  "active": 71741,
  "raw_osm_objects": 12955,
@@ -8,6 +8,11 @@
    "total": 59113,
    "with_polygon": 40680,
    "verified_address": 2834
+  },
+  "mass_housing": {
+   "total": 5202,
+   "with_polygon": 1429,
+   "verified_address": 28
   },
   "plaza": {
    "total": 11157,
@@ -18,11 +23,6 @@
    "total": 303,
    "with_polygon": 156,
    "verified_address": 17
-  },
-  "mass_housing": {
-   "total": 5202,
-   "with_polygon": 1429,
-   "verified_address": 28
   }
  },
  "by_role": {
@@ -157,14 +157,14 @@
    "with_polygon": 672
   },
   {
-   "province": "Eskişehir",
-   "total": 777,
-   "with_polygon": 502
-  },
-  {
    "province": "Trabzon",
    "total": 777,
    "with_polygon": 440
+  },
+  {
+   "province": "Eskişehir",
+   "total": 777,
+   "with_polygon": 502
   },
   {
    "province": "Edirne",
@@ -387,14 +387,14 @@
    "with_polygon": 67
   },
   {
-   "province": "Siirt",
-   "total": 95,
-   "with_polygon": 68
-  },
-  {
    "province": "Ağrı",
    "total": 95,
    "with_polygon": 59
+  },
+  {
+   "province": "Siirt",
+   "total": 95,
+   "with_polygon": 68
   },
   {
    "province": "Şırnak",
@@ -482,12 +482,12 @@
    "with_polygon": 0
   },
   {
-   "province": "Karadeniz Bölgesi",
+   "province": "Приморско",
    "total": 3,
    "with_polygon": 0
   },
   {
-   "province": "Приморско",
+   "province": "Karadeniz Bölgesi",
    "total": 3,
    "with_polygon": 0
   },
@@ -572,12 +572,12 @@
    "with_polygon": 0
   },
   {
-   "province": "Δήμος Σύμης",
+   "province": "Selçuk",
    "total": 1,
    "with_polygon": 0
   },
   {
-   "province": "Selçuk",
+   "province": "Δήμος Σύμης",
    "total": 1,
    "with_polygon": 0
   },
@@ -597,17 +597,17 @@
    "with_polygon": 0
   },
   {
+   "province": "Ulaş",
+   "total": 1,
+   "with_polygon": 0
+  },
+  {
    "province": "Περιφερειακή Ενότητα Έβρου",
    "total": 1,
    "with_polygon": 0
   },
   {
    "province": "წყალტუბო",
-   "total": 1,
-   "with_polygon": 0
-  },
-  {
-   "province": "Ulaş",
    "total": 1,
    "with_polygon": 0
   },
@@ -632,12 +632,12 @@
    "with_polygon": 0
   },
   {
-   "province": "Özalp",
+   "province": "Lüleburgaz",
    "total": 1,
    "with_polygon": 0
   },
   {
-   "province": "Lüleburgaz",
+   "province": "Özalp",
    "total": 1,
    "with_polygon": 0
   },
@@ -662,17 +662,17 @@
    "with_polygon": 0
   },
   {
+   "province": "Keçiören",
+   "total": 1,
+   "with_polygon": 0
+  },
+  {
    "province": "Başakşehir",
    "total": 1,
    "with_polygon": 0
   },
   {
    "province": "İzmit",
-   "total": 1,
-   "with_polygon": 0
-  },
-  {
-   "province": "Keçiören",
    "total": 1,
    "with_polygon": 0
   },
@@ -697,12 +697,12 @@
    "with_polygon": 0
   },
   {
-   "province": "Doğu Anadolu Bölgesi",
+   "province": "Şirvan",
    "total": 1,
    "with_polygon": 0
   },
   {
-   "province": "Şirvan",
+   "province": "Doğu Anadolu Bölgesi",
    "total": 1,
    "with_polygon": 0
   },
@@ -752,12 +752,12 @@
    "with_polygon": 0
   },
   {
-   "province": "Onikişubat",
+   "province": "Πάτμος",
    "total": 1,
    "with_polygon": 0
   },
   {
-   "province": "Πάτμος",
+   "province": "Onikişubat",
    "total": 1,
    "with_polygon": 0
   },
@@ -777,7 +777,7 @@
    "with_polygon": 0
   },
   {
-   "province": "Sorgun",
+   "province": "Ερεσός-Άντισσα",
    "total": 1,
    "with_polygon": 0
   },
@@ -787,12 +787,12 @@
    "with_polygon": 0
   },
   {
-   "province": "Свиленград",
+   "province": "Sorgun",
    "total": 1,
    "with_polygon": 0
   },
   {
-   "province": "Ερεσός-Άντισσα",
+   "province": "Свиленград",
    "total": 1,
    "with_polygon": 0
   },
@@ -827,7 +827,7 @@
    "with_polygon": 0
   },
   {
-   "province": "სტეფანწმინდა",
+   "province": "Hafik",
    "total": 1,
    "with_polygon": 0
   },
@@ -837,7 +837,7 @@
    "with_polygon": 0
   },
   {
-   "province": "Hafik",
+   "province": "სტეფანწმინდა",
    "total": 1,
    "with_polygon": 0
   },
@@ -862,7 +862,7 @@
    "with_polygon": 0
   },
   {
-   "province": "Demre (kale)",
+   "province": "Χίος",
    "total": 1,
    "with_polygon": 0
   },
@@ -872,7 +872,7 @@
    "with_polygon": 0
   },
   {
-   "province": "Keban",
+   "province": "Demre (kale)",
    "total": 1,
    "with_polygon": 0
   },
@@ -882,7 +882,7 @@
    "with_polygon": 0
   },
   {
-   "province": "Χίος",
+   "province": "Keban",
    "total": 1,
    "with_polygon": 0
   },
@@ -907,7 +907,7 @@
    "with_polygon": 0
   },
   {
-   "province": "Ορεστιάδα",
+   "province": "Εξωμβούργο",
    "total": 1,
    "with_polygon": 0
   },
@@ -917,7 +917,7 @@
    "with_polygon": 0
   },
   {
-   "province": "Εξωμβούργο",
+   "province": "Ορεστιάδα",
    "total": 1,
    "with_polygon": 0
   },
@@ -927,27 +927,37 @@
    "with_polygon": 0
   },
   {
-   "province": "Artuklu",
+   "province": "Περιφέρεια Βόρειου Αιγαίου",
    "total": 1,
    "with_polygon": 0
   },
   {
-   "province": "Περιφέρεια Βόρειου Αιγαίου",
+   "province": "Artuklu",
    "total": 1,
    "with_polygon": 0
   }
  ],
  "admin_tree": {
   "16": {
-   "Mudanya": null,
-   "İznik": null
+   "Mudanya": [
+    "Çayönü Mahallesi"
+   ],
+   "İznik": [
+    "Candarlı Mahallesi"
+   ]
   },
   "42": {
-   "Çeltik": null,
-   "İç Anadolu Bölgesi": null
+   "Çeltik": [
+    "Çeltik Mahallesi"
+   ],
+   "İç Anadolu Bölgesi": [
+    "Çöl Mahallesi"
+   ]
   },
   "Abast'umani": {
-   "Abast'umani": null
+   "Abast'umani": [
+    "Abast'umani Merkez"
+   ]
   },
   "Adana": {
    "Aladağ": [
@@ -1328,7 +1338,9 @@
    ]
   },
   "Afyonkarahisar": {
-   "Afyonkarahisar": null,
+   "Afyonkarahisar": [
+    "Ürküt Mahallesi"
+   ],
    "Afyonkarahisar Merkez": [
     "Afyonkarahisar Merkez Merkez",
     "Afyonkarahisar OSB",
@@ -1525,10 +1537,16 @@
    ]
   },
   "Akdeniz Bölgesi": {
-   "Akdeniz Bölgesi": null
+   "Akdeniz Bölgesi": [
+    "Akdeniz Bölgesi Merkez",
+    "Karacaören Mahallesi"
+   ]
   },
   "Aksaray": {
-   "Aksaray": null,
+   "Aksaray": [
+    "Aksaray Merkez",
+    "Topakkaya Mahallesi"
+   ],
    "Aksaray Merkez": [
     "Ararol İstiklal Mahallesi",
     "Aratol İstiklal",
@@ -2926,7 +2944,9 @@
    ]
   },
   "Artuklu": {
-   "Artuklu": null
+   "Artuklu": [
+    "Gökçe Mahallesi"
+   ]
   },
   "Artvin": {
    "Ardanuç": [
@@ -3356,7 +3376,9 @@
     "Kocacami Mahallesi",
     "Çamavşar Mahallesi"
    ],
-   "Balıkesir": null,
+   "Balıkesir": [
+    "Balıkesir Merkez"
+   ],
    "Bandırma": [
     "100. Yıl Mahallesi",
     "17 Eylül Mahallesi",
@@ -3719,7 +3741,9 @@
    ]
   },
   "Batman": {
-   "Batman": null,
+   "Batman": [
+    "Hasankeyf Mahallesi"
+   ],
    "Batman Merkez": [
     "Bahçelievler Mahallesi",
     "Batman Merkez Merkez",
@@ -4101,7 +4125,9 @@
    ]
   },
   "Bolvadin": {
-   "Bolvadin": null
+   "Bolvadin": [
+    "Kemerkaya Mahallesi"
+   ]
   },
   "Burdur": {
    "Altınyayla": [
@@ -4687,10 +4713,14 @@
    ]
   },
   "Demirözü": {
-   "Demirözü": null
+   "Demirözü": [
+    "Demirözü Mahallesi"
+   ]
   },
   "Demre (kale)": {
-   "Demre (kale)": null
+   "Demre (kale)": [
+    "Kapaklı Mahallesi"
+   ]
   },
   "Denizli": {
    "Acıpayam": [
@@ -4941,10 +4971,14 @@
    ]
   },
   "Derebucak": {
-   "Derebucak": null
+   "Derebucak": [
+    "Durak Mahallesi"
+   ]
   },
   "Dikmen": {
-   "Dikmen": null
+   "Dikmen": [
+    "Dikmen Mahallesi"
+   ]
   },
   "Diyarbakır": {
    "Bağlar": [
@@ -5095,10 +5129,14 @@
    ]
   },
   "Doğanşar": {
-   "Doğanşar": null
+   "Doğanşar": [
+    "Çatpınar Mahallesi"
+   ]
   },
   "Doğu Anadolu Bölgesi": {
-   "Doğu Anadolu Bölgesi": null
+   "Doğu Anadolu Bölgesi": [
+    "Ilıcalar Mahallesi"
+   ]
   },
   "Düzce": {
    "Akçakoca": [
@@ -5257,10 +5295,14 @@
    ]
   },
   "ELAZIĞ": {
-   "ELAZIĞ": null
+   "ELAZIĞ": [
+    "Çuhadarlı Mahallesi"
+   ]
   },
   "Edirne": {
-   "Edirne": null,
+   "Edirne": [
+    "Hatipköy Mahallesi"
+   ],
    "Edirne Merkez": [
     "1. Murat Mahallesi",
     "100. Yıl Mahallesi",
@@ -5488,10 +5530,14 @@
    ]
   },
   "Emet": {
-   "Emet": null
+   "Emet": [
+    "Emet Merkez"
+   ]
   },
   "Ereğli": {
-   "Ereğli": null
+   "Ereğli": [
+    "Belkaya Mahallesi"
+   ]
   },
   "Erzincan": {
    "Erzincan Merkez": [
@@ -6072,7 +6118,8 @@
   },
   "Gediz": {
    "Gediz": [
-    "Gediz Mahallesi"
+    "Gediz Mahallesi",
+    "Üzümlü Mahallesi"
    ]
   },
   "Giresun": {
@@ -6298,7 +6345,9 @@
    ]
   },
   "Hafik": {
-   "Hafik": null
+   "Hafik": [
+    "Hafik Mahallesi"
+   ]
   },
   "Hakkâri": {
    "Hakkari Merkez": [
@@ -6607,7 +6656,9 @@
    ]
   },
   "IQ-NI": {
-   "Mosul": null
+   "Mosul": [
+    "Mosul Merkez"
+   ]
   },
   "Isparta": {
    "Aksu": [
@@ -6662,7 +6713,9 @@
     "Musalla Mahallesi",
     "Çünür Mahallesi"
    ],
-   "Isparta": null,
+   "Isparta": [
+    "Isparta Merkez"
+   ],
    "Isparta Merkez": [
     "Akkent Mahallesi",
     "Anadolu Mahallesi",
@@ -6791,7 +6844,9 @@
    "Aralık": [
     "Aralık Mahallesi"
    ],
-   "Iğdır": null,
+   "Iğdır": [
+    "Suveren Mahallesi"
+   ],
    "Iğdır Merkez": [
     "14 Kasım Mahallesi",
     "Atatürk Mahallesi",
@@ -7162,7 +7217,10 @@
    ]
   },
   "Karadeniz Bölgesi": {
-   "Karadeniz Bölgesi": null
+   "Karadeniz Bölgesi": [
+    "Derinsu Mahallesi",
+    "Hamitköy Mahallesi"
+   ]
   },
   "Karahallı": {
    "Karahallı": [
@@ -7270,7 +7328,9 @@
    ]
   },
   "Karapınar": {
-   "Karapınar": null
+   "Karapınar": [
+    "Hotamış Mahallesi"
+   ]
   },
   "Kars": {
    "Akyaka": [
@@ -7715,10 +7775,14 @@
    ]
   },
   "Keban": {
-   "Keban": null
+   "Keban": [
+    "Keban Mahallesi"
+   ]
   },
   "Keçiören": {
-   "Keçiören": null
+   "Keçiören": [
+    "Gölköy Mahallesi"
+   ]
   },
   "Kilis": {
    "Kilis Merkez": [
@@ -8406,7 +8470,9 @@
    ]
   },
   "Kulu": {
-   "Kulu": null
+   "Kulu": [
+    "Ömeranlı Mahallesi"
+   ]
   },
   "Kütahya": {
    "Altıntaş": [
@@ -8800,7 +8866,9 @@
    ]
   },
   "Lüleburgaz": {
-   "Lüleburgaz": null
+   "Lüleburgaz": [
+    "Ahmetbey Mahallesi"
+   ]
   },
   "Malatya": {
    "Akçadağ": [
@@ -8907,7 +8975,9 @@
    "Kuluncak": [
     "Bahçelievler Mahallesi"
    ],
-   "Malatya": null,
+   "Malatya": [
+    "Malatya Merkez"
+   ],
    "Pütürge": [
     "Ağalar Mahallesi",
     "Hatip Mahallesi",
@@ -9552,7 +9622,9 @@
     "Yanışlı Mahallesi",
     "Çağlayık"
    ],
-   "Mersin": null,
+   "Mersin": [
+    "Mersin Merkez"
+   ],
    "Mezitli": [
     "75.Yıl",
     "Akdeniz Mahallesi",
@@ -9827,7 +9899,9 @@
    ]
   },
   "Mus": {
-   "Mus": null
+   "Mus": [
+    "Mus Merkez"
+   ]
   },
   "Muğla": {
    "Bodrum": [
@@ -10194,7 +10268,9 @@
    ]
   },
   "Mytilene": {
-   "Mytilene": null
+   "Mytilene": [
+    "Mytilene Merkez"
+   ]
   },
   "Nevşehir": {
    "Acıgöl": [
@@ -10392,7 +10468,9 @@
    ]
   },
   "Onikişubat": {
-   "Onikişubat": null
+   "Onikişubat": [
+    "Kale Mahallesi"
+   ]
   },
   "Ordu": {
    "Akkuş": [
@@ -10693,7 +10771,9 @@
    ]
   },
   "Rhodes": {
-   "Rhodes": null
+   "Rhodes": [
+    "Rhodes Merkez"
+   ]
   },
   "Rize": {
    "Ardeşen": [
@@ -11354,13 +11434,19 @@
    ]
   },
   "Sanlıurfa": {
-   "Sanlıurfa": null
+   "Sanlıurfa": [
+    "Karaburç Mahallesi"
+   ]
   },
   "Sarkısla": {
-   "Sarkısla": null
+   "Sarkısla": [
+    "Akçakışla Mahallesi"
+   ]
   },
   "Sarıcakaya": {
-   "Sarıcakaya": null
+   "Sarıcakaya": [
+    "Sarıcakaya Mahallesi"
+   ]
   },
   "Selçuk": {
    "Selçuk": [
@@ -11368,7 +11454,9 @@
    ]
   },
   "Seyhan": {
-   "Seyhan": null
+   "Seyhan": [
+    "Sarıçam Mahallesi"
+   ]
   },
   "Siirt": {
    "Baykan": [
@@ -11456,7 +11544,9 @@
     "Çarşı",
     "Çarşı Mahallesi"
    ],
-   "Sinop": null,
+   "Sinop": [
+    "Kabalı Mahallesi"
+   ],
    "Sinop Merkez": [
     "Ada Mahallesi",
     "Bostancılı Mahallesi",
@@ -11638,10 +11728,14 @@
    ]
   },
   "Sorgun": {
-   "Sorgun": null
+   "Sorgun": [
+    "Çadırardıç Mahallesi"
+   ]
   },
   "Taşköprü": {
-   "Taşköprü": null
+   "Taşköprü": [
+    "Alatarla Mahallesi"
+   ]
   },
   "Tekirdağ": {
    "Ergene": [
@@ -11819,10 +11913,14 @@
    ]
   },
   "Tel Afar": {
-   "Tel Afar": null
+   "Tel Afar": [
+    "Tel Afar Merkez"
+   ]
   },
   "Tepebaşı": {
-   "Tepebaşı": null
+   "Tepebaşı": [
+    "Babadat Mahallesi"
+   ]
   },
   "Tokat": {
    "Almus": [
@@ -11893,7 +11991,9 @@
    "Sulusaray": [
     "Bayazıt"
    ],
-   "Tokat": null,
+   "Tokat": [
+    "Güryıldız Mahallesi"
+   ],
    "Tokat Merkez": [
     "Akbelen Mahallesi",
     "Akdeğirmen",
@@ -12240,7 +12340,9 @@
    ]
   },
   "Ulaş": {
-   "Ulaş": null
+   "Ulaş": [
+    "Ulaş Mahallesi"
+   ]
   },
   "Uşak": {
    "Banaz": [
@@ -12506,7 +12608,9 @@
    ]
   },
   "Yenierenköy": {
-   "Yenierenköy": null
+   "Yenierenköy": [
+    "Yenierenköy Merkez"
+   ]
   },
   "Yozgat": {
    "Akdağmadeni": [
@@ -12733,7 +12837,9 @@
     "Yahma Köyü Mahallesi",
     "İncivez Mahallesi"
    ],
-   "Zonguldak": null,
+   "Zonguldak": [
+    "Taşçılar Mahallesi"
+   ],
    "Zonguldak Merkez": [
     "Bahçelievler Mahallesi",
     "Baştarla Mahallesi",
@@ -12968,7 +13074,9 @@
    ]
   },
   "Çankaya": {
-   "Çankaya": null
+   "Çankaya": [
+    "Sorgun Mahallesi"
+   ]
   },
   "Çankırı": {
    "Atkaracalar": [
@@ -13047,10 +13155,14 @@
    ]
   },
   "Çarşamba": {
-   "Çarşamba": null
+   "Çarşamba": [
+    "Ağcagüney Mahallesi"
+   ]
   },
   "Çaybaşı": {
-   "Çaybaşı": null
+   "Çaybaşı": [
+    "İlküvez Mahallesi"
+   ]
   },
   "Çorum": {
    "Alaca": [
@@ -13136,7 +13248,9 @@
    ]
   },
   "Özalp": {
-   "Özalp": null
+   "Özalp": [
+    "Özalp Merkez"
+   ]
   },
   "İnegöl": {
    "İnegöl": [
@@ -14983,13 +15097,19 @@
    ]
   },
   "Şehitkamil": {
-   "Şehitkamil": null
+   "Şehitkamil": [
+    "Başpınar Mahallesi"
+   ]
   },
   "Şenpazar": {
-   "Şenpazar": null
+   "Şenpazar": [
+    "Şenpazar Mahallesi"
+   ]
   },
   "Şirvan": {
-   "Şirvan": null
+   "Şirvan": [
+    "Şirvan Mahallesi"
+   ]
   },
   "Şırnak": {
    "Beytüşşebap": [
@@ -15051,145 +15171,239 @@
    ]
   },
   "Αλεξανδρούπολη": {
-   "Αλεξανδρούπολη": null
+   "Αλεξανδρούπολη": [
+    "Αλεξανδρούπολη Merkez"
+   ]
   },
   "Αποκεντρωμένη Διοίκηση Αιγαίου": {
-   "Αποκεντρωμένη Διοίκηση Αιγαίου": null
+   "Αποκεντρωμένη Διοίκηση Αιγαίου": [
+    "Αποκεντρωμένη Διοίκηση Αιγαίου Merkez"
+   ]
   },
   "Αστυπάλαια": {
-   "Αστυπάλαια": null
+   "Αστυπάλαια": [
+    "Αστυπάλαια Merkez"
+   ]
   },
   "Δήμος Σύμης": {
-   "Δήμος Σύμης": null
+   "Δήμος Σύμης": [
+    "Δήμος Σύμης Merkez"
+   ]
   },
   "Εξωμβούργο": {
-   "Εξωμβούργο": null
+   "Εξωμβούργο": [
+    "Εξωμβούργο Merkez"
+   ]
   },
   "Ερεσός-Άντισσα": {
-   "Ερεσός-Άντισσα": null
+   "Ερεσός-Άντισσα": [
+    "Ερεσός-Άντισσα Merkez"
+   ]
   },
   "Θήρα": {
-   "Θήρα": null
+   "Θήρα": [
+    "Θήρα Merkez"
+   ]
   },
   "Κάλυμνος": {
-   "Κάλυμνος": null
+   "Κάλυμνος": [
+    "Κάλυμνος Merkez"
+   ]
   },
   "Κουφονήσια": {
-   "Κουφονήσια": null
+   "Κουφονήσια": [
+    "Κουφονήσια Merkez"
+   ]
   },
   "Κως": {
-   "Κως": null
+   "Κως": [
+    "Κως Merkez"
+   ]
   },
   "Μύκονος": {
-   "Μύκονος": null
+   "Μύκονος": [
+    "Μύκονος Merkez"
+   ]
   },
   "Μύρινα": {
-   "Μύρινα": null
+   "Μύρινα": [
+    "Μύρινα Merkez"
+   ]
   },
   "Νάξος": {
-   "Νάξος": null
+   "Νάξος": [
+    "Νάξος Merkez"
+   ]
   },
   "Οία": {
-   "Οία": null
+   "Οία": [
+    "Οία Merkez"
+   ]
   },
   "Ορεστιάδα": {
-   "Ορεστιάδα": null
+   "Ορεστιάδα": [
+    "Ορεστιάδα Merkez"
+   ]
   },
   "Πάρος": {
-   "Πάρος": null
+   "Πάρος": [
+    "Πάρος Merkez"
+   ]
   },
   "Πάτμος": {
-   "Πάτμος": null
+   "Πάτμος": [
+    "Πάτμος Merkez"
+   ]
   },
   "Περιφέρεια Βόρειου Αιγαίου": {
-   "Περιφέρεια Βόρειου Αιγαίου": null
+   "Περιφέρεια Βόρειου Αιγαίου": [
+    "Περιφέρεια Βόρειου Αιγαίου Merkez"
+   ]
   },
   "Περιφέρεια Νοτίου Αιγαίου": {
-   "Περιφέρεια Νοτίου Αιγαίου": null
+   "Περιφέρεια Νοτίου Αιγαίου": [
+    "Περιφέρεια Νοτίου Αιγαίου Merkez"
+   ]
   },
   "Περιφερειακή Ενότητα Έβρου": {
-   "Περιφερειακή Ενότητα Έβρου": null
+   "Περιφερειακή Ενότητα Έβρου": [
+    "Περιφερειακή Ενότητα Έβρου Merkez"
+   ]
   },
   "Ρόδος": {
-   "Ρόδος": null
+   "Ρόδος": [
+    "Ρόδος Merkez"
+   ]
   },
   "Σχοινούσσα": {
-   "Σχοινούσσα": null
+   "Σχοινούσσα": [
+    "Σχοινούσσα Merkez"
+   ]
   },
   "Τήνος": {
-   "Τήνος": null
+   "Τήνος": [
+    "Τήνος Merkez"
+   ]
   },
   "Χίος": {
-   "Χίος": null
+   "Χίος": [
+    "Χίος Merkez"
+   ]
   },
   "Ардино": {
-   "Ардино": null
+   "Ардино": [
+    "Ардино Merkez"
+   ]
   },
   "Бургас": {
-   "Бургас": null
+   "Бургас": [
+    "Бургас Merkez"
+   ]
   },
   "Момчилград": {
-   "Момчилград": null
+   "Момчилград": [
+    "Момчилград Merkez"
+   ]
   },
   "Приморско": {
-   "Приморско": null
+   "Приморско": [
+    "Приморско Merkez"
+   ]
   },
   "Свиленград": {
-   "Свиленград": null
+   "Свиленград": [
+    "Свиленград Merkez"
+   ]
   },
   "Созопол": {
-   "Созопол": null
+   "Созопол": [
+    "Созопол Merkez"
+   ]
   },
   "Хасково": {
-   "Хасково": null
+   "Хасково": [
+    "Хасково Merkez"
+   ]
   },
   "Царево": {
-   "Царево": null
+   "Царево": [
+    "Царево Merkez"
+   ]
   },
   "Արտաշատ": {
-   "Արտաշատ": null
+   "Արտաշատ": [
+    "Արտաշատ Merkez"
+   ]
   },
   "Գյումրի": {
-   "Գյումրի": null
+   "Գյումրի": [
+    "Գյումրի Merkez"
+   ]
   },
   "Երեւան": {
-   "Երեւան": null
+   "Երեւան": [
+    "Երեւան Merkez"
+   ]
   },
   "Ծաղկա‎ձոր": {
-   "Ծաղկա‎ձոր": null
+   "Ծաղկա‎ձոր": [
+    "Ծաղկա‎ձոր Merkez"
+   ]
   },
   "Հրազդան": {
-   "Հրազդան": null
+   "Հրազդան": [
+    "Հրազդան Merkez"
+   ]
   },
   "Վաղարշապատ": {
-   "Վաղարշապատ": null
+   "Վաղարշապատ": [
+    "Վաղարշապատ Merkez"
+   ]
   },
   "Փարաքար": {
-   "Փարաքար": null
+   "Փարաքար": [
+    "Փարաքար Merkez"
+   ]
   },
   "أربيل": {
-   "أربيل": null
+   "أربيل": [
+    "أربيل Merkez"
+   ]
   },
   "ბათუმი": {
-   "ბათუმი": null
+   "ბათუმი": [
+    "ბათუმი Merkez"
+   ]
   },
   "ბორჯომი": {
-   "ბორჯომი": null
+   "ბორჯომი": [
+    "ბორჯომი Merkez"
+   ]
   },
   "თბილისი": {
-   "თბილისი": null
+   "თბილისი": [
+    "თბილისი Merkez"
+   ]
   },
   "ოზურგეთი": {
-   "ოზურგეთი": null
+   "ოზურგეთი": [
+    "ოზურგეთი Merkez"
+   ]
   },
   "სტეფანწმინდა": {
-   "სტეფანწმინდა": null
+   "სტეფანწმინდა": [
+    "სტეფანწმინდა Merkez"
+   ]
   },
   "ქუთაისი": {
-   "ქუთაისი": null
+   "ქუთაისი": [
+    "ქუთაისი Merkez"
+   ]
   },
   "წყალტუბო": {
-   "წყალტუბო": null
+   "წყალტუბო": [
+    "წყალტუბო Merkez"
+   ]
   }
  }
 }
