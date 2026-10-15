@@ -107,3 +107,33 @@ Her görev bittiğinde bu dosya + Telegram sessiz bildirim güncellenir.
 - Tek kaynak: **24.218** (doğrulama bekliyor)
 - Polygonlu: ~26.000
 - Mahalle yok: ~4.063
+
+## 15 Ekim gece (otomatik — Ahmet uyurken)
+- [x] Kaynak araştırması 5 (4 paralel subagent, ~30 kaynak): docs/notes/kaynak_arastirma_5.md
+  - OSM admin_level=8 mahalle polygonları: 13.811 adet (PBF'ten) → PostGIS yüklendi; mahallesiz 4.063 kayıt bu sınırları KAPSAMIYOR (Mersin/Adana/Afyon OSM'de haritalanamadı)
+  - OSM `building=apartments + name`: 31.116 kayıt
+  - Antalya BB ArcGIS FeatureServer: 200.276 bina, PUBLIC (token yok)
+  - Nominatim reverse geocoding: `suburb` alanı = mahalle adı ✓
+- [x] sql/32: OSM admin_level=8 yükleme (kapsama yok → kullanışsız bu mahalleler için)
+- [x] sql/33: OSM building=apartments site kalıbı → **409 yeni aday**, 87 polygon eklendi
+- [x] sql/34 Antalya BB ArcGIS: 55.782 bina → 1.397 site grubu → **143 yeni kayıt** + 305 polygon eşleşmesi
+- [x] sql/35 OSM landuse=residential: 13.309 adlı polygon → **114 yeni aday** + 407+253 polygon terfi
+- [x] sql/36 FSQ polygon + name_pattern + Meta 2.kaynak:
+  - OSM residential/apartments içinde FSQ noktası: 116 polygon ata
+  - name_pattern genişletme (konakları/loft/etap/kent/rezidance): 3.141 güncelleme → 560 terfi
+  - OSM commercial plaza: 23 yeni aday
+  - Meta (overture_places_tr 1.8M) → FSQ eşleşme ≥0.55 sim: **798 kayıt** Meta 2.kaynak → active
+  - OSM 9 kayda Meta 2.kaynak
+- [x] sql/37 Overture 1.9M büyük bina polygon ataması (kademeli 10→50m):
+  - 1.9M bina geo_phase1.ov_large_buildings tablosuna yüklendi
+  - 10m: 109 · 15m: 2.014 · 20m: 2.487 · 30m: 4.102 · 50m: 4.367 kayıt terfi
+  - TOPLAM sql/37: ~13.000 kayıt single_source→active
+- [x] Nominatim reverse geocoding (~42%): mahallesiz 4.063 → ~1.600 (devam ediyor)
+- [x] OSM place=neighbourhood/quarter (23k): 925 kayda mahalle
+- [x] OSM place=village/hamlet/town (46k): 721 kayda mahalle
+- [x] sql/37b Overture 7.4M bina (küçükler dahil) genişletilmiş eşleşme:
+  - 25m+40m+50m+100m kademeli (küçük binalar da dahil): +4.662 kayıt terfi
+  - Meta full dataset (1.8M → grid matching): +210 FSQ → active
+  - AllThePlaces 62k: +6 kayıt
+- **SON SONUÇ: 65.584 kayıt · aktif 61.420 · tek kaynak 4.164 · polygonlu 46.415 · mahalle yok ~1.365 (Nominatim devam ~57%)**
+- **GÜNLÜK ÖZET: aktif +20.743 (40.677→61.420) · polygon +20.415 · tek kaynak -20.054 (24.218→4.164)**
