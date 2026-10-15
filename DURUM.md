@@ -135,5 +135,7 @@ Her görev bittiğinde bu dosya + Telegram sessiz bildirim güncellenir.
   - 25m+40m+50m+100m kademeli (küçük binalar da dahil): +4.662 kayıt terfi
   - Meta full dataset (1.8M → grid matching): +210 FSQ → active
   - AllThePlaces 62k: +6 kayıt
-- **SON SONUÇ: 65.584 kayıt · aktif 61.420 · tek kaynak 4.164 · polygonlu 46.415 · mahalle yok ~1.365 (Nominatim devam ~57%)**
-- **GÜNLÜK ÖZET: aktif +20.743 (40.677→61.420) · polygon +20.415 · tek kaynak -20.054 (24.218→4.164)**
+- [x] Nominatim gece bitti: 4.059 kayıt işlendi, 1.949+94=2.043 mahalle atandı
+- [x] PMTiles yeniden üretildi (complex 50.6MB) + yerdex-map yayınlandı
+- **SON SONUÇ (15 Ekim sabah): 65.584 kayıt · aktif 61.539 · tek kaynak 4.045 · polygonlu 46.452 · mahallesiz 463**
+- **GECE ÖZET: aktif +20.862 (40.677→61.539) · polygon +20.452 · tek kaynak -20.173 (24.218→4.045) · mahallesiz -3.600 (~4.063→463)**
