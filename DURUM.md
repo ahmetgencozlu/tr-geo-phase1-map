@@ -150,3 +150,65 @@ Her görev bittiğinde bu dosya + Telegram sessiz bildirim güncellenir.
 - Teknopark sanayi.gov.tr listesi: 115 kayıt, DB'de 114 eşleşiyor (1 eksik ASBÜ eklendi)
 - **SON SONUÇ (15 Ekim öğle): 75.775 kayıt · aktif 71.741 · tek kaynak 4.034 · polygonlu 46.530 · mahallesiz 0**
 - **ÖĞLE ÖZET: +10.191 kayıt (65.584→75.775) · mahallesiz sıfırlandı · avg_confidence 0.82**
+
+## Birleştirilmiş Eylem Planı (15 Ekim öğleden sonra)
+
+### P0 — Kalite (hemen yapılacak)
+- [ ] Genel isimli kayıtları temizle: "Konut", "Site", "Blok", "A Blok" → excluded_entity (sql/38)
+- [ ] Koordinat-il tutarsızlığı: location başka ilde olan kayıtları düzelt (sql/39)
+- [ ] Polygon ≠ location uyumsuzluğu: centroid ile location >300m sapma → işaretle (sql/40)
+- [ ] nbhd_source='district_fallback' olan 166 kaydı Nominatim ile gerçek mahalle al
+
+### P1 — Kapsam (yeni kayıt)
+- [ ] Overture parquet eşiği düşür: conf≥0.55 (şu an 0.65) → tahminen +10-15K kayıt (sql/41)
+- [ ] OSM PBF: shop=mall, amenity=marketplace filtrelemesi (ogr2ogr, direkt PBF)
+- [ ] TOKİ resmi site: toki.gov.tr il sayfaları → isim+ilçe kanıtı (koordinat yok)
+- [ ] Emlak Konut GYO 2024 proje listesi (koordinatlı bazıları)
+- [ ] İl bazlı OSM/Overture kapsam boşluğu analizi → öncelikli il listesi
+
+### P1 — Terfi (single_source → active, 4.034 kaldı)
+- [ ] Overture land_use residential polygon içinde kalan FSQ noktaları → polygon+kanıt
+- [ ] OSM PBF: building=residential + name kalıbı → daha fazla named polygon
+- [ ] Nominatim forward geocoding: FSQ adres doğrulama → 2.kaynak sayılabilir mi?
+
+### P2 — Zenginleştirme
+- [ ] TOKİ unit_count: scripts/output/toki_projeler.csv'deki 3.376 proje → eşleştir
+- [ ] Teknopark kuruluş yılı: Wikipedia 97 TGB → kalan 88'e trigram eşleştirme (9 yapıldı)
+- [ ] İl bazlı coverage.json üret → haritada görünürlük
+- [ ] Kayseri/Malatya CBS: farklı endpoint var mı? Yeniden dene
+
+### P2 — Kategori Kalitesi
+- [ ] 11.157 plaza kaydı denetimi: gerçek AVM vs ofis/ticaret → yanlış kategorileri düzelt
+- [ ] commercial_area flag'li 100 tek-kaynaklı site → plaza mı, excluded_entity mi?
+- [ ] Teknopark isimli ama kategori=diğer olan 29 FSQ kaydı → düzelt (G1 bulgusu)
+
+### P1 — Data Augmentation (yeni kaynak entegrasyonu)
+
+| Kod | Kaynak | Lisans | Hacim | Değer | Zorluk |
+|-----|--------|--------|-------|-------|--------|
+| DA-8 | Overture Maps 2024-10 release (güncel) | ODbL | Yeni TR kayıtları | Mevcut 2024-Q2'den daha taze | Kolay |
+| DA-9 | AMPD AVM Listesi (ampd.org.tr) | Faktüel | 400+ AVM | Plaza doğrulama + yeni kayıt | Kolay |
+| DA-3 | İBB Açık Veri (data.ibb.gov.tr) | CC BY 4.0 | Yapı ruhsatı/parsel | İstanbul kapsam artışı | Kolay |
+| DA-4 | Ankara Açık Veri (opendata.ankara.bel.tr) | CC BY | Bina/adres | Ankara kapsam artışı | Kolay |
+| DA-5 | İzmir Açık Veri (acikveri.bizizmir.com) | CC BY | Yapı ruhsatı | İzmir kapsam artışı | Kolay |
+| DA-1 | Microsoft ML Building Footprints TR | ODbL | ~20M+ bina polygon | Kırsal boşluklar, küçük siteler | Orta |
+| DA-2 | Google Open Buildings TR v3 | CC BY 4.0 | ~50M+ bina | Yüksek güvenilirlik, alan+conf | Orta |
+| DA-6 | GYO Proje Listeleri (Emlak Konut/Torunlar/YDA) | Faktüel | ~300-500 proje | İsim+konum kanıtı, 2.kaynak | Orta |
+| DA-7 | Konut.gov.tr / ÇŞİDB Kentsel Dönüşüm | Kamu | Proje listesi | Riskli alan projeleri | Orta |
+| DA-10 | OSM Türkiye Wikidata bağlantıları | ODbL | ~500-2K bina | Q-ID → koordinat + enrichment | Orta |
+
+- [ ] DA-8: Overture 2024-10 diff → mevcut parquet ile karşılaştır, yeni kayıtları yükle
+- [ ] DA-9: AMPD AVM tablosu parse → 400+ AVM isim+il eşleştirmesi (plaza kategori doğrulama)
+- [ ] DA-3: data.ibb.gov.tr dataset envanteri → bina/site veri seti var mı kontrol et
+- [ ] DA-4/5: Ankara + İzmir açık veri portali → site/bina dataset indir
+- [ ] DA-1: Microsoft ML Building Footprints TR → GitHub'dan GeoJSON indir, polygon atama için kullan
+- [ ] DA-2: Google Open Buildings TR tile'ları → TR bbox ile parquet indir
+- [ ] DA-6: Emlak Konut + Torunlar GYO 2024 proje sayfaları scrape
+- [ ] DA-7: konut.gov.tr kentsel dönüşüm proje listesi
+
+### P3 — Platform
+- [ ] GitHub Release v0.6.0: güncel GPKG+CSV (75.775 kayıt)
+- [ ] Province/district bazlı GeoJSON export → açık veri yayını
+- [ ] created_at / updated_at damgası ekle
+- [ ] CI: GitHub Action → tile build + otomatik yayın
+- [ ] DB backup: weekly pg_dump → Release asset
