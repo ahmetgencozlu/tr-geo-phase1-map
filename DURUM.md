@@ -151,6 +151,42 @@ Her görev bittiğinde bu dosya + Telegram sessiz bildirim güncellenir.
 - **SON SONUÇ (15 Ekim öğle): 75.775 kayıt · aktif 71.741 · tek kaynak 4.034 · polygonlu 46.530 · mahallesiz 0**
 - **ÖĞLE ÖZET: +10.191 kayıt (65.584→75.775) · mahallesiz sıfırlandı · avg_confidence 0.82**
 
+## 15 Ekim gece oturumu (P0+P1+P2 iş akışı)
+
+### P0 — Kalite
+- [x] sql/38: 26 genel isimli kayıt excluded_entity ("Site", "Konut", "Bina" vb.)
+- [x] sql/39: 54 kayıt il adı düzeltildi (koordinat-il tutarsızlığı, ST_Within ile admin)
+- [x] sql/40: 27 kayıt polygon-location gap işaretlendi (>300m), 4 polygon kaldırıldı (>1000m)
+- [x] scripts/nominatim_fallback_fix.py: 406 district/province fallback kaydı → Nominatim (~284 güncellendi)
+
+### P1 — Kapsam ve Augmentation
+- [x] scripts/overture_055_insert.py: conf≥0.55 (önceki 0.65) → **+2.055 yeni kayıt** (sql/41)
+- [x] OSM PBF building=residential + isim kalıbı → 247 polygon çıkarıldı, 1 polygon atandı
+- [x] OSM PBF AVM/mall polygon → 192 çıkarıldı, 67 plaza polygon atandı, 5 yeni kayıt
+- [x] data/osm_residential_bldg.gpkg + data/osm_mall.gpkg oluşturuldu
+- [x] Mahallesiz (no_mah): 2.060 yeni kayıt → OSM fallback → **no_mah=0** ✅
+
+### P1 — Terfi (single_source → active)
+- [x] osm_residential_named ST_Within FSQ: +2 terfi
+- [x] osm_mall polygon → 67 plaza kayda polygon + bazılarına 2.kaynak
+
+### P2 — Zenginleştirme
+- [x] TOKİ unit_count: 3.542 proje CSV × 5.201 mass_housing → **35 kayda konut sayısı** eklendi
+- [x] Teknopark kuruluş yılı: threshold 0.40→0.25 → **+55 kayıt** (toplam 64/303 teknopark)
+- [x] docs/data/coverage.json: 135 il/bölge × 5 metrik × kategori dağılımı
+- [x] Kayseri CBS: SPA/ASP.NET Telerik (bloke), Malatya CBS: 404 (bloke)
+
+### P2 — Kategori Kalitesi
+- [x] Teknopark isimli ama diğer kategoride: 0 kayıt (zaten doğru)
+- [x] plaza/residential_site kategori çapraz denetimi: mevcut dağılım doğru
+- [x] "İş Merkezi", "Tower" → plaza kategorisi zaten doğru
+
+### DA Subagentlar (arka planda devam ediyor)
+- DA-8 Overture 2024-10 diff, DA-9 AMPD AVM, DA-3/4/5 Belediye açık veri, DA-6/7 GYO/Kentsel Dönüşüm
+
+- **SON SONUÇ (15 Ekim gece): 77.835 kayıt · aktif 71.721 · tek kaynak 6.087 · excluded 27 · polygonlu 46.575 · mahallesiz 0**
+- **GECE ÖZETI: +2.060 kayıt · 67 plaza polygon · 54 teknopark kuruluş yılı · 54 il düzeltme · coverage.json · avg_conf 0.82**
+
 ## Birleştirilmiş Eylem Planı (15 Ekim öğleden sonra)
 
 ### P0 — Kalite (hemen yapılacak)
