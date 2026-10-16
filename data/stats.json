@@ -1,34 +1,34 @@
 {
- "generated_at": "2026-10-16 00:17:08.048327+00",
- "total": 78264,
- "active": 71723,
+ "generated_at": "2026-10-16 23:35:43.121763+00",
+ "total": 78269,
+ "active": 71697,
  "raw_osm_objects": 12955,
  "by_category": {
   "residential_site": {
-   "total": 60918,
-   "with_polygon": 40680,
+   "total": 60922,
+   "with_polygon": 40681,
    "verified_address": 2834
-  },
-  "mass_housing": {
-   "total": 5447,
-   "with_polygon": 1653,
-   "verified_address": 28
   },
   "technopark": {
    "total": 304,
    "with_polygon": 156,
    "verified_address": 17
   },
+  "mass_housing": {
+   "total": 5447,
+   "with_polygon": 1653,
+   "verified_address": 28
+  },
   "plaza": {
-   "total": 11595,
+   "total": 11596,
    "with_polygon": 4337,
    "verified_address": 564
   }
  },
  "by_role": {
   "site_polygon": 5,
-  "primary": 429,
   "site": 78,
+  "primary": 434,
   "building_footprint": 17266,
   "point": 10113,
   "site_boundary": 667,
@@ -36,46 +36,46 @@
   "candidate_area_polygon": 4207,
   "point_only": 40188
  },
- "review": 6514,
+ "review": 6034,
  "by_province": [
   {
    "province": "İstanbul",
-   "total": 10871,
+   "total": 10851,
    "with_polygon": 6868
   },
   {
    "province": "Ankara",
-   "total": 5844,
+   "total": 5840,
    "with_polygon": 3991
   },
   {
    "province": "İzmir",
-   "total": 4357,
+   "total": 4354,
    "with_polygon": 2676
   },
   {
    "province": "Antalya",
-   "total": 3853,
+   "total": 3851,
    "with_polygon": 2750
   },
   {
    "province": "Bursa",
-   "total": 2965,
+   "total": 2962,
    "with_polygon": 1538
   },
   {
    "province": "Konya",
-   "total": 2294,
+   "total": 2287,
    "with_polygon": 1413
   },
   {
    "province": "Balıkesir",
-   "total": 2279,
+   "total": 2276,
    "with_polygon": 1673
   },
   {
    "province": "Mersin",
-   "total": 2135,
+   "total": 2134,
    "with_polygon": 1145
   },
   {
@@ -90,22 +90,22 @@
   },
   {
    "province": "Aydın",
-   "total": 1735,
+   "total": 1734,
    "with_polygon": 896
   },
   {
    "province": "Tekirdağ",
-   "total": 1393,
+   "total": 1391,
    "with_polygon": 919
   },
   {
    "province": "Adana",
-   "total": 1346,
+   "total": 1345,
    "with_polygon": 811
   },
   {
    "province": "Kayseri",
-   "total": 1213,
+   "total": 1212,
    "with_polygon": 833
   },
   {
@@ -120,7 +120,7 @@
   },
   {
    "province": "Denizli",
-   "total": 1162,
+   "total": 1161,
    "with_polygon": 777
   },
   {
@@ -130,17 +130,17 @@
   },
   {
    "province": "Kahramanmaraş",
-   "total": 962,
-   "with_polygon": 719
+   "total": 994,
+   "with_polygon": 750
   },
   {
    "province": "Samsun",
-   "total": 954,
+   "total": 952,
    "with_polygon": 450
   },
   {
    "province": "Manisa",
-   "total": 937,
+   "total": 934,
    "with_polygon": 643
   },
   {
@@ -150,7 +150,7 @@
   },
   {
    "province": "Çanakkale",
-   "total": 874,
+   "total": 872,
    "with_polygon": 584
   },
   {
@@ -165,12 +165,12 @@
   },
   {
    "province": "Trabzon",
-   "total": 777,
+   "total": 776,
    "with_polygon": 440
   },
   {
    "province": "Edirne",
-   "total": 730,
+   "total": 728,
    "with_polygon": 462
   },
   {
@@ -205,7 +205,7 @@
   },
   {
    "province": "Düzce",
-   "total": 488,
+   "total": 486,
    "with_polygon": 344
   },
   {
@@ -254,14 +254,14 @@
    "with_polygon": 281
   },
   {
-   "province": "Tokat",
-   "total": 351,
-   "with_polygon": 201
-  },
-  {
    "province": "Giresun",
    "total": 351,
    "with_polygon": 187
+  },
+  {
+   "province": "Tokat",
+   "total": 351,
+   "with_polygon": 201
   },
   {
    "province": "Uşak",
@@ -469,12 +469,12 @@
    "with_polygon": 0
   },
   {
-   "province": "ბათუმი",
+   "province": "Θήρα",
    "total": 7,
    "with_polygon": 0
   },
   {
-   "province": "Θήρα",
+   "province": "ბათუმი",
    "total": 7,
    "with_polygon": 0
   },
@@ -489,13 +489,18 @@
    "with_polygon": 4
   },
   {
+   "province": "Царево",
+   "total": 3,
+   "with_polygon": 0
+  },
+  {
    "province": "Приморско",
    "total": 3,
    "with_polygon": 0
   },
   {
-   "province": "Царево",
-   "total": 3,
+   "province": "Μύρινα",
+   "total": 2,
    "with_polygon": 0
   },
   {
@@ -509,32 +514,12 @@
    "with_polygon": 0
   },
   {
-   "province": "Արտաշատ",
-   "total": 2,
-   "with_polygon": 0
-  },
-  {
-   "province": "Μύρινα",
-   "total": 2,
-   "with_polygon": 0
-  },
-  {
-   "province": "Փարաքար",
-   "total": 2,
-   "with_polygon": 0
-  },
-  {
-   "province": "Хасково",
-   "total": 2,
-   "with_polygon": 0
-  },
-  {
    "province": "EDİRNE",
    "total": 2,
    "with_polygon": 1
   },
   {
-   "province": "Κως",
+   "province": "Փարաքար",
    "total": 2,
    "with_polygon": 0
   },
@@ -544,152 +529,22 @@
    "with_polygon": 0
   },
   {
-   "province": "Ερεσός-Άντισσα",
-   "total": 1,
+   "province": "Արտաշատ",
+   "total": 2,
    "with_polygon": 0
   },
   {
-   "province": "Χίος",
-   "total": 1,
+   "province": "Хасково",
+   "total": 2,
    "with_polygon": 0
   },
   {
-   "province": "Бургас",
-   "total": 1,
-   "with_polygon": 0
-  },
-  {
-   "province": "Πάτμος",
-   "total": 1,
-   "with_polygon": 0
-  },
-  {
-   "province": "ოზურგეთი",
-   "total": 1,
-   "with_polygon": 0
-  },
-  {
-   "province": "Mytilene",
-   "total": 1,
-   "with_polygon": 0
-  },
-  {
-   "province": "Свиленград",
-   "total": 1,
-   "with_polygon": 0
-  },
-  {
-   "province": "Κουφονήσια",
-   "total": 1,
-   "with_polygon": 0
-  },
-  {
-   "province": "სტეფანწმინდა",
-   "total": 1,
-   "with_polygon": 0
-  },
-  {
-   "province": "Εξωμβούργο",
-   "total": 1,
-   "with_polygon": 0
-  },
-  {
-   "province": "ქუთაისი",
-   "total": 1,
-   "with_polygon": 0
-  },
-  {
-   "province": "Ардино",
-   "total": 1,
-   "with_polygon": 0
-  },
-  {
-   "province": "Οία",
-   "total": 1,
-   "with_polygon": 0
-  },
-  {
-   "province": "წყალტუბო",
-   "total": 1,
-   "with_polygon": 0
-  },
-  {
-   "province": "Κάλυμνος",
-   "total": 1,
+   "province": "Κως",
+   "total": 2,
    "with_polygon": 0
   },
   {
    "province": "Գյումրի",
-   "total": 1,
-   "with_polygon": 0
-  },
-  {
-   "province": "Yenierenköy",
-   "total": 1,
-   "with_polygon": 0
-  },
-  {
-   "province": "Περιφέρεια Βόρειου Αιγαίου",
-   "total": 1,
-   "with_polygon": 0
-  },
-  {
-   "province": "Σχοινούσσα",
-   "total": 1,
-   "with_polygon": 0
-  },
-  {
-   "province": "Ծաղկա‎ձոր",
-   "total": 1,
-   "with_polygon": 0
-  },
-  {
-   "province": "Δήμος Σύμης",
-   "total": 1,
-   "with_polygon": 0
-  },
-  {
-   "province": "Հրազդան",
-   "total": 1,
-   "with_polygon": 0
-  },
-  {
-   "province": "Tel Afar",
-   "total": 1,
-   "with_polygon": 0
-  },
-  {
-   "province": "Վաղարշապատ",
-   "total": 1,
-   "with_polygon": 0
-  },
-  {
-   "province": "Момчилград",
-   "total": 1,
-   "with_polygon": 0
-  },
-  {
-   "province": "Περιφερειακή Ενότητα Έβρου",
-   "total": 1,
-   "with_polygon": 0
-  },
-  {
-   "province": "Rhodes",
-   "total": 1,
-   "with_polygon": 0
-  },
-  {
-   "province": "Ρόδος",
-   "total": 1,
-   "with_polygon": 0
-  },
-  {
-   "province": "Τήνος",
-   "total": 1,
-   "with_polygon": 0
-  },
-  {
-   "province": "Αστυπάλαια",
    "total": 1,
    "with_polygon": 0
   },
@@ -704,7 +559,7 @@
    "with_polygon": 0
   },
   {
-   "province": "Αποκεντρωμένη Διοίκηση Αιγαίου",
+   "province": "Ծաղկա‎ձոր",
    "total": 1,
    "with_polygon": 0
   },
@@ -714,7 +569,167 @@
    "with_polygon": 0
   },
   {
+   "province": "Δήμος Σύμης",
+   "total": 1,
+   "with_polygon": 0
+  },
+  {
+   "province": "Ερεσός-Άντισσα",
+   "total": 1,
+   "with_polygon": 0
+  },
+  {
+   "province": "Αποκεντρωμένη Διοίκηση Αιγαίου",
+   "total": 1,
+   "with_polygon": 0
+  },
+  {
+   "province": "Χίος",
+   "total": 1,
+   "with_polygon": 0
+  },
+  {
+   "province": "Πάτμος",
+   "total": 1,
+   "with_polygon": 0
+  },
+  {
+   "province": "ოზურგეთი",
+   "total": 1,
+   "with_polygon": 0
+  },
+  {
+   "province": "Свиленград",
+   "total": 1,
+   "with_polygon": 0
+  },
+  {
+   "province": "Бургас",
+   "total": 1,
+   "with_polygon": 0
+  },
+  {
    "province": "Abast'umani",
+   "total": 1,
+   "with_polygon": 0
+  },
+  {
+   "province": "Rhodes",
+   "total": 1,
+   "with_polygon": 0
+  },
+  {
+   "province": "Περιφερειακή Ενότητα Έβρου",
+   "total": 1,
+   "with_polygon": 0
+  },
+  {
+   "province": "Οία",
+   "total": 1,
+   "with_polygon": 0
+  },
+  {
+   "province": "Վաղարշապատ",
+   "total": 1,
+   "with_polygon": 0
+  },
+  {
+   "province": "Tel Afar",
+   "total": 1,
+   "with_polygon": 0
+  },
+  {
+   "province": "Αστυπάλαια",
+   "total": 1,
+   "with_polygon": 0
+  },
+  {
+   "province": "Հրազդան",
+   "total": 1,
+   "with_polygon": 0
+  },
+  {
+   "province": "Σχοινούσσα",
+   "total": 1,
+   "with_polygon": 0
+  },
+  {
+   "province": "Yenierenköy",
+   "total": 1,
+   "with_polygon": 0
+  },
+  {
+   "province": "Bi̇leci̇k",
+   "total": 1,
+   "with_polygon": 1
+  },
+  {
+   "province": "წყალტუბო",
+   "total": 1,
+   "with_polygon": 0
+  },
+  {
+   "province": "სტეფანწმინდა",
+   "total": 1,
+   "with_polygon": 0
+  },
+  {
+   "province": "Κουφονήσια",
+   "total": 1,
+   "with_polygon": 0
+  },
+  {
+   "province": "Mytilene",
+   "total": 1,
+   "with_polygon": 0
+  },
+  {
+   "province": "Εξωμβούργο",
+   "total": 1,
+   "with_polygon": 0
+  },
+  {
+   "province": "Περιφέρεια Βόρειου Αιγαίου",
+   "total": 1,
+   "with_polygon": 0
+  },
+  {
+   "province": "ქუთაისი",
+   "total": 1,
+   "with_polygon": 0
+  },
+  {
+   "province": "Başakşehir",
+   "total": 1,
+   "with_polygon": 1
+  },
+  {
+   "province": "Момчилград",
+   "total": 1,
+   "with_polygon": 0
+  },
+  {
+   "province": "Ардино",
+   "total": 1,
+   "with_polygon": 0
+  },
+  {
+   "province": "Ρόδος",
+   "total": 1,
+   "with_polygon": 0
+  },
+  {
+   "province": "Κάλυμνος",
+   "total": 1,
+   "with_polygon": 0
+  },
+  {
+   "province": "Mersi̇n",
+   "total": 1,
+   "with_polygon": 1
+  },
+  {
+   "province": "Τήνος",
    "total": 1,
    "with_polygon": 0
   }
@@ -726,11 +741,14 @@
     "Acısu Mahallesi",
     "Akbağ Mahallesi",
     "Akkonak Mahallesi",
+    "Akçay Mahallesi",
     "Alakonak Mahallesi",
     "Altay Mahallesi",
+    "Armutlu Mahallesi",
     "Ayvalı Mahallesi",
     "Azizli Mahallesi",
     "Ağzıkara Mahallesi",
+    "Aşağı Mahalle Mahallesi",
     "Bahçekapı Mahallesi",
     "Bahçeli Mahallesi",
     "Bağcılar Mahallesi",
@@ -743,6 +761,7 @@
     "Bolacalı Koyuncu Mahallesi",
     "Bünüş Mahallesi",
     "Büyüktepe Mahallesi",
+    "Ceylanpınar Mahallesi",
     "Darende Mahallesi",
     "Dağoba Mahallesi",
     "Demirkent Mahallesi",
@@ -752,6 +771,8 @@
     "Dumlupınar Mahallesi",
     "Durumtay Mahallesi",
     "Efirli Mahallesi",
+    "Elmalı Mahallesi",
+    "Erdemli Mahallesi",
     "Ergili Mahallesi",
     "Erzene Mahallesi",
     "Esenlioba Hacılıoba Kümeevleri Mahallesi",
@@ -761,6 +782,7 @@
     "Furuncu Mahallesi",
     "Gökçebelen Mahallesi",
     "Gözlühüyük Mahallesi",
+    "Gülbahçesi Mahallesi",
     "Gülpınar Mahallesi",
     "Gümüşyayla Mahallesi",
     "Gündoğdu Mahallesi",
@@ -778,6 +800,7 @@
     "Kapancı Mahallesi",
     "Karaaptiler Mahallesi",
     "Kartalpınar Mahallesi",
+    "Kavaklı Mahallesi",
     "Kayakent Mahallesi",
     "Kayaköy Mahallesi",
     "Kaşlıca Mahallesi",
@@ -789,6 +812,7 @@
     "Kum Mahallesi",
     "Kumçiftlik Mahallesi",
     "Kömürçukuru Mahallesi",
+    "Köçekkömü Mahallesi",
     "Küçükköy Mahallesi",
     "Küçüksergen Mahallesi",
     "Kırkpınar Mahallesi",
@@ -808,6 +832,7 @@
     "Selimiye Mahallesi",
     "Sipahi Mahallesi",
     "Siteler Mahallesi",
+    "Sivaslılar Mahallesi",
     "Söbüçimen Mahallesi",
     "Tekeliler Mahallesi",
     "Toplu Konut Mahallesi",
@@ -825,6 +850,7 @@
     "Yıldız Mahallesi",
     "Zübeyde Hanım Mahallesi",
     "mezra Mahallesi",
+    "Çakıl Mahallesi",
     "Çalkayık Yaylası Mahallesi",
     "Çalıyazı Mahallesi",
     "Çamlıtepe Mahallesi",
@@ -833,6 +859,7 @@
     "Çatalzeytin Mahallesi",
     "Çitlice Mahallesi",
     "Ören Mahallesi",
+    "İlkbahar Mahallesi",
     "İstasyon Mahallesi",
     "Şehitlik Mahallesi",
     "Şeker Mahallesi",
@@ -895,7 +922,7 @@
    ],
    "Çankaya": [
     "Balgat Mahallesi",
-    "Çankaya Merkez",
+    "Çankaya Mahallesi",
     "Üniversiteler Mahallesi"
    ]
   },
@@ -923,7 +950,6 @@
     "Hacıoğlan Mahallesi",
     "Kalkan Mahallesi",
     "Kaş Mahallesi",
-    "Kaş Merkez",
     "Ova Mahallesi",
     "Çavdır Mahallesi",
     "Çukurbağ Mahallesi",
@@ -934,7 +960,7 @@
     "Tekirova Mahallesi"
    ],
    "Kepez": [
-    "Kepez Merkez",
+    "Güzelyurt Mahallesi",
     "Çamlıbel Mahallesi"
    ],
    "Konyaaltı": [
@@ -945,8 +971,8 @@
     "Korkuteli Mahallesi"
    ],
    "Kumluca": [
-    "Kumluca Merkez",
-    "Mavikent Mahallesi"
+    "Mavikent Mahallesi",
+    "Yazır Mahallesi"
    ],
    "Manavgat": [
     "Denizkent Mahallesi",
@@ -993,7 +1019,7 @@
   "19 Mayıs": {
    "19 Mayıs": [
     "19 Mayıs Mahallesi",
-    "19 Mayıs Merkez"
+    "Erenköy Mahallesi"
    ]
   },
   "20": {
@@ -1010,7 +1036,7 @@
    ],
    "Gebze": [
     "Gebze Mahallesi",
-    "Gebze Merkez"
+    "İnönü Mahallesi"
    ],
    "Kandıra": [
     "Çalköy Mahallesi",
@@ -1179,6 +1205,7 @@
    ],
    "Sarıçam": [
     "Acıdere Mahallesi",
+    "Acıdere OSB Mahallesi",
     "Akkuyu Mahallesi",
     "Balcalı Mahallesi",
     "Bayramhacılı",
@@ -1216,6 +1243,7 @@
     "Çarkıpare",
     "Çarkıpare Mahallesi",
     "Çınarlı",
+    "Çınarlı Mahallesi",
     "İstiklal",
     "Şahintepe Mahallesi"
    ],
@@ -1477,8 +1505,8 @@
     "Merkez"
    ],
    "Çelikhan": [
-    "Yunus Emre",
-    "Çelikhan Merkez"
+    "Mahmut Nedim Ökmen Mahallesi",
+    "Yunus Emre"
    ]
   },
   "Afyon": {
@@ -1491,7 +1519,7 @@
   },
   "Afyonkarahisar": {
    "Afyonkarahisar": [
-    "Afyonkarahisar Merkez",
+    "Demirçevre Mahallesi",
     "Ertuğrul Gazi Mahallesi",
     "Güvenevler Mahallesi",
     "Hasan Karaağaç Mahallesi",
@@ -1530,6 +1558,7 @@
     "Eşrefpaşa Mahallesi",
     "Fatih Mahallesi",
     "Fevzi Çakmak Mahallesi",
+    "Gözsüzlü Mahallesi",
     "Güvenevler Mahallesi",
     "Hasan Karaağaç",
     "Hoca Ahmet Yesevi",
@@ -1766,12 +1795,13 @@
   },
   "Aksaray": {
    "Aksaray": [
-    "Aksaray Merkez",
+    "Hacılar Harmanı Mahallesi",
     "Laleli Mahallesi",
     "Sağlık Mahallesi",
     "Somuncu Baba Mahallesi",
     "Tacin Mahallesi",
-    "Topakkaya Mahallesi"
+    "Topakkaya Mahallesi",
+    "İvazlar Mahallesi"
    ],
    "Aksaray Merkez": [
     "Ararol İstiklal Mahallesi",
@@ -1875,7 +1905,7 @@
   },
   "Aksu": {
    "Aksu": [
-    "Aksu Merkez"
+    "Solak Mahallesi"
    ]
   },
   "Akyaka": {
@@ -1890,9 +1920,9 @@
   },
   "Akşehir": {
    "Akşehir": [
-    "Akşehir Merkez",
     "Alanyurt Mahallesi",
-    "Atakent Mahallesi"
+    "Atakent Mahallesi",
+    "Yarenler Mahallesi"
    ]
   },
   "Alanya": {
@@ -1922,7 +1952,7 @@
   },
   "Aleppo": {
    "Aleppo": [
-    "Aleppo Merkez"
+    "حي حلب الجديدة Mahallesi"
    ]
   },
   "Alexandroúpolis": {
@@ -1979,7 +2009,7 @@
   },
   "Amasya": {
    "Amasya": [
-    "Amasya Merkez",
+    "Akbilek Mahallesi",
     "Yeşilyenice Mahallesi",
     "İpekköy Mahallesi"
    ],
@@ -3402,7 +3432,7 @@
   },
   "Armutlu": {
    "Armutlu": [
-    "Armutlu Merkez"
+    "Tavşantepe Mahallesi"
    ]
   },
   "Arnavutköy": {
@@ -3420,8 +3450,8 @@
   "Arsuz": {
    "Arsuz": [
     "Arsuz Mahallesi",
-    "Arsuz Merkez",
-    "Karaağaç Övündük Mahallesi"
+    "Karaağaç Övündük Mahallesi",
+    "Karaağaç Şarkkonak Mahallesi"
    ]
   },
   "Artuklu": {
@@ -3527,7 +3557,6 @@
   },
   "Ataşehir": {
    "Ataşehir": [
-    "Ataşehir Merkez",
     "Esatpaşa Mahallesi",
     "Ferhatpaşa Mahallesi",
     "Yeniyol Mahallesi"
@@ -3541,8 +3570,8 @@
   },
   "Avcılar": {
    "Avcılar": [
-    "Avcılar Merkez",
-    "Esenyurt Mahallesi"
+    "Esenyurt Mahallesi",
+    "Firuzköy Mahallesi"
    ]
   },
   "Ayaş": {
@@ -3921,7 +3950,7 @@
   },
   "Bahçeköy": {
    "Bahçeköy": [
-    "Bahçeköy Merkez"
+    "Bahçeköy Kemer Mahallesi"
    ]
   },
   "Bahçelievler": {
@@ -3935,7 +3964,7 @@
   },
   "Bakuriani": {
    "Bakuriani": [
-    "Bakuriani Merkez",
+    "ასპინძა Mahallesi",
     "ახალსოფელი Mahallesi",
     "ახალციხე Mahallesi",
     "ბაკურიანის ანდეზიტი Mahallesi"
@@ -4536,7 +4565,6 @@
     "Ataşehir Mahallesi",
     "Bahçeşehir 1. Kısım Mahallesi",
     "Başak Mahallesi",
-    "Başakşehir Merkez",
     "Güvercintepe Mahallesi",
     "Hoşdere Mahallesi",
     "Kayabaşı Mahallesi",
@@ -4672,7 +4700,7 @@
     "Türkmenbaşı Mahallesi"
    ],
    "İnhisar": [
-    "İnhisar Merkez"
+    "İnhisar Mahallesi"
    ]
   },
   "Bingöl": {
@@ -4838,8 +4866,8 @@
   "Bodrum": {
    "Bodrum": [
     "Bodrum Mahallesi",
-    "Bodrum Merkez",
     "Geriş Mahallesi",
+    "Gölköy Mahallesi",
     "Gündoğan Mahallesi",
     "Gürece Mahallesi",
     "Müskebi Mahallesi",
@@ -4981,9 +5009,9 @@
   },
   "Bornova": {
    "Bornova": [
+    "29 Ekim Mahallesi",
     "Bayraklı Mahallesi",
     "Bornova Mahallesi",
-    "Bornova Merkez",
     "Egemenlik Mahallesi",
     "Gazi Osman Paşa Mahallesi",
     "Işıklar Mahallesi",
@@ -5080,7 +5108,7 @@
     "Ürkütlü Mahallesi"
    ],
    "Burdur": [
-    "Burdur Merkez",
+    "Atatürk Mahallesi",
     "Kurna Mahallesi",
     "Kışla Mahallesi"
    ],
@@ -5138,7 +5166,7 @@
     "Gölhi̇sar Merkez"
    ],
    "Isparta": [
-    "Isparta Merkez"
+    "Çamlıdere Mahallesi"
    ],
    "Karamanlı": [
     "Eşeler Mahallesi",
@@ -5194,7 +5222,6 @@
   "Burhaniye": {
    "Burhaniye": [
     "Burhaniye Mahallesi",
-    "Burhaniye Merkez",
     "Ören Mahallesi"
    ]
   },
@@ -5686,11 +5713,11 @@
    "Büyükçekmece": [
     "Alkent 2000 Mahallesi",
     "Batıköy Mahallesi",
-    "Büyükçekmece Merkez",
     "Güzelce Mahallesi",
     "Kamiloba Mahallesi",
     "Karaağaç Mahallesi",
-    "Kumburgaz Mahallesi"
+    "Kumburgaz Mahallesi",
+    "Ulus Mahallesi"
    ]
   },
   "Camlıhemsin": {
@@ -5711,13 +5738,13 @@
   },
   "Chíos": {
    "Chíos": [
-    "Chíos Merkez"
+    "Βουνό Mahallesi"
    ]
   },
   "Cizre": {
    "Cizre": [
     "Cizre Mahallesi",
-    "Cizre Merkez"
+    "Dirsekli Mahallesi"
    ]
   },
   "Cınarcık": {
@@ -6054,7 +6081,8 @@
   "Didim": {
    "Didim": [
     "Akbük Mahallesi",
-    "Didim Merkez"
+    "Didim Merkez",
+    "Hisar Mahallesi"
    ]
   },
   "Dikili": {
@@ -6207,6 +6235,7 @@
    "Yenişehir": [
     "Aziziye Mahallesi",
     "Dokuzçeltik",
+    "Elidolu Mahallesi",
     "Fabrika Mah.",
     "Fabrika Mahallesi",
     "Fabrika Mahallesi Mahallesi",
@@ -6215,7 +6244,6 @@
     "Medya Mahallesi",
     "Seyrantepe Sanayi Mahallesi",
     "Yenişehir Mahallesi",
-    "Yenişehir Merkez",
     "Yolaltı Mahallesi",
     "Üçkuyu Mahallesi",
     "Şehitlik Mahallesi"
@@ -6264,7 +6292,7 @@
   "Doğubayazıt": {
    "Doğubayazıt": [
     "Doğubayazıt Mahallesi",
-    "Doğubayazıt Merkez"
+    "Uluyol Mah."
    ]
   },
   "Duhok": {
@@ -6676,7 +6704,7 @@
   },
   "Elazıg": {
    "Elazıg": [
-    "Elazıg Merkez",
+    "Aksaray Mahallesi",
     "Yadigar Mahallesi"
    ]
   },
@@ -6715,6 +6743,7 @@
     "Akpınar Mahallesi",
     "Aksaray Mahallesi",
     "Ataşehir Mahallesi",
+    "Beyyurdu Mahallesi",
     "Cumhuriyet Mahallesi",
     "Dogukent Mahallesi",
     "Doğu Kent Mah.",
@@ -6811,7 +6840,7 @@
   },
   "Erdemli": {
    "Erdemli": [
-    "Erdemli Merkez"
+    "Arpaçbahşiş Mahallesi"
    ]
   },
   "Ereğli": {
@@ -6847,8 +6876,8 @@
    "Erzincan": [
     "Bahçelievler Mahallesi",
     "Cumhuriyet Mahallesi",
-    "Erzincan Merkez",
     "Yalnızbağ Mahallesi",
+    "Çarşı Mahallesi",
     "İnönü Mahallesi"
    ],
    "Erzincan Merkez": [
@@ -7073,7 +7102,6 @@
   "Esenyurt": {
    "Esenyurt": [
     "Cumhuriyet Mahallesi",
-    "Esenyurt Merkez",
     "Kıraç Mahallesi",
     "Osmangazi Mahallesi",
     "Tahtakale Mahallesi"
@@ -7146,6 +7174,7 @@
     "Karapınar Mahallesi",
     "Kurtuluş Mahallesi",
     "Kırmızıtoprak Mahallesi",
+    "Odunpazarı Mahallesi",
     "Odunpazarı Merkez",
     "Orhangazi Mahallesi",
     "Osmangazi Mahallesi",
@@ -7273,8 +7302,8 @@
   },
   "Eyüpsultan": {
    "Eyüpsultan": [
-    "Eyüpsultan Merkez",
-    "Mimar Sinan Mahallesi"
+    "Mimar Sinan Mahallesi",
+    "Mithatpaşa Mahallesi"
    ]
   },
   "Fatih": {
@@ -7293,7 +7322,6 @@
   "Fethiye": {
    "Fethiye": [
     "Akarca Mahallesi",
-    "Fethiye Merkez",
     "Hisar Mahallesi",
     "Kadıköy Mahallesi",
     "Karagedik Mahallesi",
@@ -7323,7 +7351,6 @@
   },
   "Garni": {
    "Garni": [
-    "Garni Merkez",
     "Գառնի Mahallesi"
    ]
   },
@@ -7892,7 +7919,7 @@
     "Altıntaşlar Mahallesi",
     "Mananda Mahallesi",
     "Merkez",
-    "Torul Merkez",
+    "Torul Mahallesi",
     "Tuğrulbey"
    ],
    "Şiran": [
@@ -7989,7 +8016,7 @@
   },
   "Haskovo": {
    "Haskovo": [
-    "Haskovo Merkez"
+    "Гняздово Mahallesi"
    ]
   },
   "Hassa": {
@@ -8384,7 +8411,6 @@
    "Isparta": [
     "Akçaşar Mahallesi",
     "Gökçay Mahallesi",
-    "Isparta Merkez",
     "Kutlubey Mahallesi",
     "Yeni Sanayi Mahallesi",
     "Çünür Mahallesi"
@@ -9163,7 +9189,7 @@
   },
   "Kardzhali": {
    "Kardzhali": [
-    "Kardzhali Merkez"
+    "Старо място Mahallesi"
    ]
   },
   "Kars": {
@@ -9180,7 +9206,6 @@
     "Merkez Mahallesi"
    ],
    "Kars": [
-    "Kars Merkez",
     "Yusufpaşa Mahallesi",
     "Şehitler Mahallesi"
    ],
@@ -9215,7 +9240,6 @@
    ],
    "Sarıkamış": [
     "Sarıkamış Mahallesi",
-    "Sarıkamış Merkez",
     "Yukarı Sarıkamış",
     "İnönü Mahallesi"
    ],
@@ -9251,9 +9275,9 @@
    ],
    "Araç": [
     "Araç Mahallesi",
-    "Araç Merkez",
     "Aşağı Yazı",
     "Aşağı Yazı Mahallesi",
+    "Gemi Mahallesi",
     "Karaçayır Mahallesi",
     "Yeni Mahallesi",
     "Yeşil Mahallesi",
@@ -9695,11 +9719,11 @@
     "Bayındır Mahallesi",
     "Kalkan Mahallesi",
     "Kaş Mahallesi",
-    "Kaş Merkez",
     "Kınık Mahallesi",
     "Ova Mahallesi",
     "Sarıbelen Mahallesi",
     "Sütleğen Mahallesi",
+    "mahalle Mahallesi",
     "Çukurbağ Mahallesi",
     "Üzümlü Mahallesi"
    ]
@@ -9821,7 +9845,7 @@
   },
   "Kocaali": {
    "Kocaali": [
-    "Kocaali Merkez"
+    "Alandere Mahallesi"
    ]
   },
   "Kocaeli": {
@@ -10383,7 +10407,7 @@
    ],
    "Konya": [
     "Büyükkayacık Mahallesi",
-    "Konya Merkez"
+    "Ortakonak Mahallesi"
    ],
    "Kulu": [
     "Alparslan Mahallesi",
@@ -10602,28 +10626,28 @@
   },
   "Kutaisi": {
    "Kutaisi": [
-    "Kutaisi Merkez"
+    "გოდოგანი Mahallesi"
    ]
   },
   "Kuşadası": {
    "Kuşadası": [
     "Bayraklıdede Mahallesi",
+    "Davutlar Mahallesi",
     "Karaova Mahallesi",
     "Kuşadası Mahallesi",
-    "Kuşadası Merkez",
     "Soğucak Mahallesi",
     "İkiçeşmelik Mahallesi"
    ]
   },
   "Kálymnos": {
    "Kálymnos": [
-    "Kálymnos Merkez",
-    "Βλυχάδια Mahallesi"
+    "Βλυχάδια Mahallesi",
+    "Εμπορειός Mahallesi"
    ]
   },
   "Káto Koufonísion": {
    "Káto Koufonísion": [
-    "Káto Koufonísion Merkez"
+    "Κουφονήσι Mahallesi"
    ]
   },
   "Körfez": {
@@ -10670,7 +10694,6 @@
    "Emet": [
     "Akpınar Mahallesi",
     "Emet Mahallesi",
-    "Emet Merkez",
     "Esentepe Mahallesi",
     "Göncek Mahallesi",
     "Kapaklıca Mahallesi"
@@ -10703,7 +10726,7 @@
     "Bölücek Mahallesi",
     "Dumlupınar Mahallesi",
     "Gaybiefendi Mahallesi",
-    "Kütahya Merkez",
+    "Kirazpınar Mahallesi",
     "Yeni Bosna Mahallesi"
    ],
    "Kütahya Merkez": [
@@ -10791,7 +10814,6 @@
     "Ovacık Mahallesi",
     "Subaşı Mahallesi",
     "Tavşanlı Mahallesi",
-    "Tavşanlı Merkez",
     "Tepecik",
     "Tepecik Mahallesi",
     "Tunçbilek",
@@ -11303,9 +11325,9 @@
   "Manavgat": {
    "Manavgat": [
     "Manavgat Mahallesi",
-    "Manavgat Merkez",
     "Mimar Sinan Mahallesi",
     "Oymapınar Mahallesi",
+    "Sorgun Mahallesi",
     "Çolaklı Mahallesi"
    ]
   },
@@ -11597,6 +11619,7 @@
     "Akıncılar Mahallesi",
     "Alaybey Mahallesi",
     "Arda Mahallesi",
+    "Ayvacık Mahallesi",
     "Aşağı Çobanisa Mahallesi",
     "Dilşikar Mahallesi",
     "Gediz Mahallesi",
@@ -11617,8 +11640,7 @@
     "Yarhasanlar Mahallesi",
     "Yukarı Çobanisa",
     "İshakçelebi Mahallesi",
-    "Şehitler Mahallesi",
-    "Şehzadeler Merkez"
+    "Şehitler Mahallesi"
    ]
   },
   "Mani̇sa": {
@@ -11777,11 +11799,12 @@
    "Melikgazi": [
     "30 Ağustos Mahallesi",
     "Anbar Mahallesi",
+    "Becen Mahallesi",
     "Eğribucak Mahallesi",
     "Germir Mahallesi",
+    "Karpuzsekisi Mahallesi",
     "Kazım Karabekir Mahallesi",
     "Melikgazi Mahallesi",
-    "Melikgazi Merkez",
     "Mimarsinan Demokrasi Mahallesi",
     "Selimiye Mahallesi",
     "Yeni Mahallesi"
@@ -11790,9 +11813,9 @@
   "Menderes": {
    "Menderes": [
     "Görece Cumhuriyet Mahallesi",
-    "Menderes Merkez",
     "Tekeli Mahallesi",
     "Zeytinköy Mahallesi",
+    "Çukuraltı Mahallesi",
     "Özdere Mahallesi"
    ]
   },
@@ -12352,7 +12375,7 @@
   },
   "Mosul": {
    "Mosul": [
-    "Mosul Merkez"
+    "حي السكك Mahallesi"
    ]
   },
   "Mtskheta": {
@@ -12378,7 +12401,7 @@
   "Muratpaşa": {
    "Muratpaşa": [
     "Güzeloba Mahallesi",
-    "Muratpaşa Merkez",
+    "Muratpaşa Mahallesi",
     "Topçular Mahallesi"
    ]
   },
@@ -12783,8 +12806,8 @@
   },
   "Mytilene": {
    "Mytilene": [
-    "Mytilene Merkez",
-    "Πλιγόνι Mahallesi"
+    "Πλιγόνι Mahallesi",
+    "Πύργοι Θερμής Mahallesi"
    ]
   },
   "Míkonos": {
@@ -12795,9 +12818,9 @@
   },
   "Mýkonos": {
    "Mýkonos": [
-    "Mýkonos Merkez",
     "Άγιος Σώστης Mahallesi",
     "Βόθωνας Mahallesi",
+    "Καλαφάτη Mahallesi",
     "Κανάλια Mahallesi",
     "Φάμπρικα Mahallesi"
    ]
@@ -12849,7 +12872,7 @@
    "Hacıbektaş": [
     "Bala Mahallesi",
     "Hacıbektaş Mahallesi",
-    "Hacıbektaş Merkez",
+    "Hacıbektaş İlçe Merkezi Mahallesi",
     "Mikail Köyü",
     "Zir Mahallesi"
    ],
@@ -13073,7 +13096,7 @@
   },
   "Náousa": {
    "Náousa": [
-    "Náousa Merkez"
+    "Λάγγερη Mahallesi"
    ]
   },
   "Náxos": {
@@ -13098,7 +13121,7 @@
   },
   "Onikişubat": {
    "Onikişubat": [
-    "Onikişubat Merkez",
+    "Gedemen Mahallesi",
     "Yürükselim Mahallesi"
    ]
   },
@@ -13474,7 +13497,7 @@
   },
   "Paroikía": {
    "Paroikía": [
-    "Paroikía Merkez"
+    "Αγκαιριά Mahallesi"
    ]
   },
   "Paros": {
@@ -13497,8 +13520,7 @@
   "Pendik": {
    "Pendik": [
     "Fatih Mahallesi",
-    "Kurna Mahallesi",
-    "Pendik Merkez"
+    "Kurna Mahallesi"
    ]
   },
   "Plomári": {
@@ -13518,13 +13540,13 @@
   },
   "Páros": {
    "Páros": [
-    "Páros Merkez",
+    "Αλυκή Mahallesi",
     "Αμπελάς Mahallesi"
    ]
   },
   "Pétra": {
    "Pétra": [
-    "Pétra Merkez"
+    "Πετρί Mahallesi"
    ]
   },
   "Qamishli": {
@@ -13706,8 +13728,11 @@
   "Ródos": {
    "Ródos": [
     "Ródos Merkez",
+    "Ιαλυσός Mahallesi",
     "Κάλαθος Mahallesi",
-    "Κολύμπια Mahallesi"
+    "Κολύμπια Mahallesi",
+    "Μαριτσά Mahallesi",
+    "Σορωνή Mahallesi"
    ]
   },
   "Safranbolu": {
@@ -14356,7 +14381,7 @@
     "Hüsamettin Çelebi Mahallesi",
     "Kosova Mahallesi",
     "Malazgirt Mahallesi",
-    "Selçuklu Merkez",
+    "Sille Ak Mahallesi",
     "Tepekent Mahallesi"
    ]
   },
@@ -14376,7 +14401,7 @@
   "Serik": {
    "Serik": [
     "Belek Mahallesi",
-    "Serik Merkez"
+    "Kadriye Mahallesi"
    ]
   },
   "Seydikemer": {
@@ -14787,7 +14812,7 @@
   },
   "Skouréïka": {
    "Skouréïka": [
-    "Skouréïka Merkez"
+    "Σκουραίικα Mahallesi"
    ]
   },
   "Solhan": {
@@ -14825,7 +14850,7 @@
    "Sultangazi": [
     "Gazi Mahallesi",
     "Sultangazi Mahallesi",
-    "Sultangazi Merkez"
+    "Zübeyde Hanım Mahallesi"
    ]
   },
   "Sultanhisar": {
@@ -14847,7 +14872,7 @@
   },
   "Surami": {
    "Surami": [
-    "Surami Merkez"
+    "კაკალთხევი Mahallesi"
    ]
   },
   "Suruç": {
@@ -14858,7 +14883,7 @@
   },
   "Sámos": {
    "Sámos": [
-    "Sámos Merkez"
+    "Σκουραίικα Mahallesi"
    ]
   },
   "Sími": {
@@ -14912,7 +14937,7 @@
   },
   "Taskent": {
    "Taskent": [
-    "Taskent Merkez"
+    "Taşkent Mahallesi"
    ]
   },
   "Tatvan": {
@@ -14944,7 +14969,9 @@
   },
   "Tbilisi": {
    "Tbilisi": [
-    "Tbilisi Merkez"
+    "Tbilisi Merkez",
+    "სამგორის რაიონი Mahallesi",
+    "ქვემო ლისი Mahallesi"
    ]
   },
   "Tefenni": {
@@ -15176,7 +15203,7 @@
   "Tire": {
    "Tire": [
     "Tire Mahallesi",
-    "Tire Merkez"
+    "Toki Mahallesi"
    ]
   },
   "Tokat": {
@@ -15345,7 +15372,7 @@
   },
   "Toprakkale": {
    "Toprakkale": [
-    "Toprakkale Merkez"
+    "Büyüktüysüz Mahallesi"
    ]
   },
   "Torbalı": {
@@ -15504,7 +15531,6 @@
     "Konaklar Mahallesi",
     "Kurtuluş Mahallesi",
     "Ortahisar Mahallesi",
-    "Ortahisar Merkez",
     "Pelitli Mahallesi",
     "Sanayi Mahallesi",
     "Soğuksu Mahallesi",
@@ -15660,24 +15686,25 @@
   "Tuzla": {
    "Tuzla": [
     "Anadolu Mahallesi",
+    "Aydınlı Mahallesi",
+    "Cumhuriyet Mahallesi",
     "Tepeören Mahallesi",
-    "Tuzla Merkez",
     "İçmeler Mahallesi"
    ]
   },
   "Tuşba": {
    "Tuşba": [
+    "Altıntepe Mahallesi",
     "Bardakçı Mahallesi",
     "Seyrantepe Mahallesi",
-    "Tuşba Merkez",
     "Şemsibey Mahallesi"
    ]
   },
   "Tínos": {
    "Tínos": [
-    "Tínos Merkez",
     "Όρμος Αγίου Ιωάννου Mahallesi",
-    "Καλλονή Mahallesi"
+    "Καλλονή Mahallesi",
+    "Τριπόταμος Mahallesi"
    ]
   },
   "Türkeli": {
@@ -15697,7 +15724,7 @@
    "Urla": [
     "Gülbahçe Mahallesi",
     "Urla Mahallesi",
-    "Urla Merkez",
+    "Yenice Mahallesi",
     "Özbek Mahallesi"
    ]
   },
@@ -15748,8 +15775,8 @@
    ],
    "Uşak": [
     "Atatürk Mahallesi",
-    "Fevzi Çakmak Mahallesi",
-    "Uşak Merkez"
+    "Fatih Mahallesi",
+    "Fevzi Çakmak Mahallesi"
    ],
    "Uşak Merkez": [
     "Altıntaş",
@@ -16087,8 +16114,8 @@
   },
   "Yerevan": {
    "Yerevan": [
-    "Yerevan Merkez",
-    "Զովունի Mahallesi"
+    "Զովունի Mahallesi",
+    "Նորք Մարաշ Mahallesi"
    ]
   },
   "Yeşilova": {
@@ -16202,9 +16229,9 @@
     "Yerköy Mahallesi"
    ],
    "Yozgat": [
+    "Azizli Mahallesi",
     "Bahçeşehir Mahallesi",
-    "Fatih Mahallesi",
-    "Yozgat Merkez"
+    "Fatih Mahallesi"
    ],
    "Yozgat Merkez": [
     "Azizli Mahallesi",
@@ -16695,7 +16722,6 @@
     "Mutlukent Mahallesi",
     "Sağlık Mahallesi",
     "Çankaya Mahallesi",
-    "Çankaya Merkez",
     "Üniversiteler Mahallesi"
    ]
   },
@@ -16837,8 +16863,8 @@
   },
   "Çerkezköy": {
    "Çerkezköy": [
-    "Çerkezköy Mahallesi",
-    "Çerkezköy Merkez"
+    "Fatih Mahallesi",
+    "Çerkezköy Mahallesi"
    ]
   },
   "Çermik": {
@@ -16851,10 +16877,10 @@
     "16 Eylül Mahallesi",
     "Alaçatı Mahallesi",
     "Altınkum Mahallesi",
+    "Dalyan Mahallesi",
     "Reisdere Mahallesi",
     "Çakabey Mahallesi",
     "Çeşme Mahallesi",
-    "Çeşme Merkez",
     "Şifne Mahallesi"
    ]
   },
@@ -16871,8 +16897,7 @@
   "Çiğli": {
    "Çiğli": [
     "Sasalı Mahallesi",
-    "Çiğli Mahallesi",
-    "Çiğli Merkez"
+    "Çiğli Mahallesi"
    ]
   },
   "Çorlu": {
@@ -16936,12 +16961,12 @@
     "İnegazili Mahallesi"
    ],
    "Çorum": [
+    "Buharaevler Mahallesi",
     "Celilkırı Mahallesi",
     "Gülabibey Mahallesi",
     "Kunduzhan Mahallesi",
     "Pınarçay Mahallesi",
-    "Çepni Mahallesi",
-    "Çorum Merkez"
+    "Çepni Mahallesi"
    ],
    "Çorum Merkez": [
     "Akkent",
@@ -17020,8 +17045,8 @@
   },
   "Ünye": {
    "Ünye": [
-    "Ünye Mahallesi",
-    "Ünye Merkez"
+    "Keş Mahallesi",
+    "Ünye Mahallesi"
    ]
   },
   "Ürgüp": {
@@ -17085,7 +17110,8 @@
   },
   "İstanbul": {
    "": [
-    " Merkez"
+    " Merkez",
+    "İstanbul Merkez"
    ],
    "Adalar": [
     "Adalar Mahallesi",
@@ -17098,6 +17124,7 @@
    "Arnavutköy": [
     "Adnan Menderes Mahallesi",
     "Anadolu Mahallesi",
+    "Arnavutköy Merkez",
     "Arnavutköy Merkez Mahallesi",
     "Baklalı Mahallesi",
     "Balaban Mahallesi",
@@ -18094,8 +18121,8 @@
    ],
    "Balçova": [
     "Bahçelerarası Mahallesi",
-    "Balçova Merkez",
     "Eğitim Mahallesi",
+    "Karşıyaka Mahallesi",
     "Korutürk Mahallesi",
     "Onur Mahallesi",
     "Teleferik Mahallesi",
@@ -18842,7 +18869,6 @@
     "Çamtepe Mahallesi",
     "Üçoklar Mahallesi",
     "Şahinbey Mahallesi",
-    "Şahinbey Merkez",
     "Şehitkamil Mahallesi"
    ]
   },
@@ -19168,7 +19194,7 @@
   },
   "Άγιος Κήρυκος": {
    "Άγιος Κήρυκος": [
-    "Άγιος Κήρυκος Merkez"
+    "Λαρδάδες Mahallesi"
    ]
   },
   "Ίος": {
@@ -19183,7 +19209,6 @@
   },
   "Αλεξανδρούπολη": {
    "Αλεξανδρούπολη": [
-    "Αλεξανδρούπολη Merkez",
     "Μαΐστρος Mahallesi"
    ]
   },
@@ -19198,9 +19223,11 @@
     "Άγιος Γεώργιος Συκούσης Mahallesi",
     "Αποκεντρωμένη Διοίκηση Αιγαίου Merkez",
     "Δήμος Χάλκης Mahallesi",
+    "Ευρειακή Mahallesi",
     "Κάλαθος Mahallesi",
     "Καλλιμασιά Mahallesi",
-    "Κολύμπια Mahallesi"
+    "Κολύμπια Mahallesi",
+    "Λαχανιά Mahallesi"
    ]
   },
   "Αρχάγγελος": {
@@ -19221,9 +19248,9 @@
   },
   "Βαθύ": {
    "Βαθύ": [
-    "Βαθύ Merkez",
     "Κοκκάρι Mahallesi",
-    "Μελεμενέικα Mahallesi"
+    "Μελεμενέικα Mahallesi",
+    "Χαραυγή Mahallesi"
    ]
   },
   "Δήμος Σύμης": {
@@ -19233,7 +19260,7 @@
   },
   "Δίκαιο": {
    "Δίκαιο": [
-    "Δίκαιο Merkez"
+    "Ζια Mahallesi"
    ]
   },
   "Εξωμβούργο": {
@@ -19254,10 +19281,11 @@
   },
   "Θήρα": {
    "Θήρα": [
+    "Άγιος Γεώργιος Mahallesi",
     "Όρμος Φηρών Mahallesi",
     "Ακρωτήρι Mahallesi",
-    "Θήρα Merkez",
     "Καμάρι Mahallesi",
+    "Καρτεράδος Mahallesi",
     "Μονόλιθος Mahallesi",
     "Περίσσα Mahallesi",
     "Πύργος Καλλίστης Mahallesi",
@@ -19267,14 +19295,14 @@
   "Ιαλυσός": {
    "Ιαλυσός": [
     "Ιαλυσός Mahallesi",
-    "Ιαλυσός Merkez",
     "Κρεμαστή Mahallesi",
     "Παστίδα Mahallesi"
    ]
   },
   "Κάλυμνος": {
    "Κάλυμνος": [
-    "Κάλυμνος Merkez"
+    "Μυρτιές Mahallesi",
+    "Χωριό Mahallesi"
    ]
   },
   "Κάμειρος": {
@@ -19298,6 +19326,7 @@
     "Καλλιθέα Merkez",
     "Καλυθιές Mahallesi",
     "Κοσκινού Mahallesi",
+    "Φαληράκι Mahallesi",
     "Ψίνθος Mahallesi"
    ]
   },
@@ -19313,7 +19342,6 @@
   },
   "Κουφονήσια": {
    "Κουφονήσια": [
-    "Κουφονήσια Merkez",
     "Στρούμπος Mahallesi"
    ]
   },
@@ -19326,14 +19354,13 @@
   },
   "Λέρος": {
    "Λέρος": [
-    "Λέρος Merkez"
+    "Βρομόλιθος Mahallesi"
    ]
   },
   "Λίνδος": {
    "Λίνδος": [
     "Κάλαθος Mahallesi",
     "Λάρδος Mahallesi",
-    "Λίνδος Merkez",
     "Πεύκοι Mahallesi"
    ]
   },
@@ -19345,13 +19372,13 @@
   "Μαραθόκαμπος": {
    "Μαραθόκαμπος": [
     "Όρμος Μαραθόκαμπου Mahallesi",
-    "Μαραθόκαμπος Merkez"
+    "Μελεμενέικα Mahallesi"
    ]
   },
   "Μυτιλήνη": {
    "Μυτιλήνη": [
     "Βουναράκι Mahallesi",
-    "Μυτιλήνη Merkez"
+    "Χαραμίδα Mahallesi"
    ]
   },
   "Μύκονος": {
@@ -19362,6 +19389,7 @@
     "Άνω Μερά Mahallesi",
     "Γιαλός Mahallesi",
     "Καλαφάτη Mahallesi",
+    "Κουκουλού Mahallesi",
     "Κόστα Ήλιος Mahallesi",
     "Μύκονος Merkez",
     "Ορνός Mahallesi",
@@ -19379,24 +19407,25 @@
   "Νάξος": {
    "Νάξος": [
     "Άγιος Αρσένιος Mahallesi",
+    "Αγία Αννα Mahallesi",
     "Αγκίδια Mahallesi",
     "Αλυκή Mahallesi",
+    "Καστράκι Mahallesi",
     "Μικρή Βίβλα Mahallesi",
-    "Νάξος Merkez"
+    "Ορκός Mahallesi"
    ]
   },
   "Νότια Ρόδος": {
    "Νότια Ρόδος": [
+    "Ασκληπιείο Mahallesi",
     "Γεννάδι Mahallesi",
-    "Κιοτάρι Mahallesi",
-    "Νότια Ρόδος Merkez"
+    "Κιοτάρι Mahallesi"
    ]
   },
   "Οία": {
    "Οία": [
     "Όρμος Αμμουδιού Mahallesi",
-    "Αρμένιοι Mahallesi",
-    "Οία Merkez"
+    "Αρμένιοι Mahallesi"
    ]
   },
   "Ορεστιάδα": {
@@ -19418,14 +19447,15 @@
     "Κρωτήρι Mahallesi",
     "Λάγγερη Mahallesi",
     "Λιβάδια Mahallesi",
-    "Πάρος Merkez"
+    "Λογαράς Mahallesi",
+    "Πηγάδα Mahallesi",
+    "Πούντα Mahallesi"
    ]
   },
   "Πάτμος": {
    "Πάτμος": [
     "Γρίγος Mahallesi",
-    "Πάτμος Mahallesi",
-    "Πάτμος Merkez"
+    "Πάτμος Mahallesi"
    ]
   },
   "Πέτρα": {
@@ -19442,14 +19472,15 @@
    "Περιφέρεια Βόρειου Αιγαίου": [
     "Κάμπος Μαραθόκαμπου Mahallesi",
     "Κοντακαίικα Mahallesi",
-    "Περιφέρεια Βόρειου Αιγαίου Merkez",
+    "Μεσόκαμπος Mahallesi",
+    "Πύργοι Μεσαγρού Mahallesi",
     "Σκουραίικα Mahallesi"
    ]
   },
   "Περιφέρεια Νοτίου Αιγαίου": {
    "Περιφέρεια Νοτίου Αιγαίου": [
-    "Δρυός Mahallesi",
-    "Περιφέρεια Νοτίου Αιγαίου Merkez"
+    "Άγιος Ρωμανός Mahallesi",
+    "Δρυός Mahallesi"
    ]
   },
   "Περιφερειακή Ενότητα Έβρου": {
@@ -19460,18 +19491,18 @@
   "Περιφερειακή Ενότητα Καρπάθου-Ηρωικής Νήσου Κάσου": {
    "Περιφερειακή Ενότητα Καρπάθου-Ηρωικής Νήσου Κάσου": [
     "Κάρπαθος Mahallesi",
-    "Περιφερειακή Ενότητα Καρπάθου-Ηρωικής Νήσου Κάσου Merkez"
+    "Μυρτώνας Mahallesi"
    ]
   },
   "Περιφερειακή Ενότητα Λήμνου": {
    "Περιφερειακή Ενότητα Λήμνου": [
-    "Περιφερειακή Ενότητα Λήμνου Merkez"
+    "Νέο Πεδινό Mahallesi"
    ]
   },
   "Περιφερειακή Ενότητα Ρόδου": {
    "Περιφερειακή Ενότητα Ρόδου": [
+    "Αρχάγγελος Mahallesi",
     "Κολύμπια Mahallesi",
-    "Περιφερειακή Ενότητα Ρόδου Merkez",
     "Σάλακος Mahallesi"
    ]
   },
@@ -19479,8 +19510,7 @@
    "Πεταλούδες": [
     "Δαματρία Mahallesi",
     "Κρεμαστή Mahallesi",
-    "Παστίδα Mahallesi",
-    "Πεταλούδες Merkez"
+    "Παστίδα Mahallesi"
    ]
   },
   "Πυθαγόρειο": {
@@ -19499,12 +19529,12 @@
   },
   "Σχοινούσσα": {
    "Σχοινούσσα": [
-    "Σχοινούσσα Merkez"
+    "Σχοινούσσα Mahallesi"
    ]
   },
   "Σύμη": {
    "Σύμη": [
-    "Σύμη Merkez"
+    "Συκίδι Mahallesi"
    ]
   },
   "Τήλος": {
@@ -19517,7 +19547,7 @@
     "Άγιος Ρωμανός Mahallesi",
     "Όρμος Αγίου Ιωάννου Mahallesi",
     "Δυο Χωριά Mahallesi",
-    "Τήνος Merkez"
+    "Σταυρουδάκι Mahallesi"
    ]
   },
   "Χάλκη": {
@@ -19532,7 +19562,7 @@
   },
   "Ардино": {
    "Ардино": [
-    "Ардино Merkez"
+    "кв. Бостанджиите Mahallesi"
    ]
   },
   "Бургас": {
@@ -19577,6 +19607,7 @@
     "Буджака Mahallesi",
     "Равадиново Mahallesi",
     "Свети Никола Mahallesi",
+    "Созопол Mahallesi",
     "Созопол Merkez"
    ]
   },
@@ -19587,15 +19618,14 @@
   },
   "Хасково": {
    "Хасково": [
-    "Хасково Merkez",
     "ж.к. Дружба 1 Mahallesi"
    ]
   },
   "Царево": {
    "Царево": [
     "Ахтопол Mahallesi",
+    "Велика Mahallesi",
     "Лозенец Mahallesi",
-    "Царево Merkez",
     "кв. Василико Mahallesi",
     "кв.Мандрата Mahallesi"
    ]
@@ -19624,9 +19654,9 @@
     "Արաբկիր Mahallesi",
     "Բագրևանդ Mahallesi",
     "Դավթաշեն Mahallesi",
-    "Երեւան Merkez",
     "Էրեբունի Mahallesi",
     "Կենտրոն Mahallesi",
+    "Մալաթիա-Սեբաստիա Mahallesi",
     "Նոր Նորք Mahallesi",
     "Նորք Մարաշ Mahallesi",
     "Շենգավիթ Mahallesi",
@@ -19675,7 +19705,6 @@
   },
   "أربيل": {
    "أربيل": [
-    "أربيل Merkez",
     "باداوە Mahallesi",
     "بەختیاری ٢١٤ Mahallesi",
     "تەیراوە ١٠٨ Mahallesi",
@@ -19699,7 +19728,7 @@
   },
   "აჭარის ავტონომიური რესპუბლიკა": {
    "აჭარის ავტონომიური რესპუბლიკა": [
-    "აჭარის ავტონომიური რესპუბლიკა Merkez"
+    "სინდიეთი Mahallesi"
    ]
   },
   "ბათუმი": {
@@ -19707,8 +19736,10 @@
     "აეროპორტი Mahallesi",
     "ბაგრატიონი I Mahallesi",
     "ბაგრატიონი II Mahallesi",
-    "ბათუმი Merkez",
+    "ბონი-გოროდოკი Mahallesi",
     "გონიო-კვარიათი Mahallesi",
+    "რუსთაველი Mahallesi",
+    "ფერია Mahallesi",
     "ძველი ბათუმი Mahallesi",
     "ხიმშიაშვილი Mahallesi"
    ]
@@ -19717,7 +19748,6 @@
    "ბორჯომი": [
     "ბაკურიანი Mahallesi",
     "ბორჯომი Mahallesi",
-    "ბორჯომი Merkez",
     "ლიკანი Mahallesi"
    ]
   },
@@ -19733,7 +19763,8 @@
     "ნაძალადევი Mahallesi",
     "ნაძალადევის რაიონი Mahallesi",
     "საბურთალოს რაიონი Mahallesi",
-    "სამგორის რაიონი Mahallesi"
+    "სამგორის რაიონი Mahallesi",
+    "ჩუღურეთის რაიონი Mahallesi"
    ]
   },
   "ლანჩხუთი": {
@@ -19743,7 +19774,7 @@
   },
   "მცხეთა": {
    "მცხეთა": [
-    "მცხეთა Merkez"
+    "მცხეთა Mahallesi"
    ]
   },
   "ოზურგეთი": {
@@ -19753,14 +19784,12 @@
   },
   "სტეფანწმინდა": {
    "სტეფანწმინდა": [
-    "ახალი გუდაური Mahallesi",
-    "სტეფანწმინდა Merkez"
+    "ახალი გუდაური Mahallesi"
    ]
   },
   "ქობულეთი": {
    "ქობულეთი": [
-    "ქობულეთი Mahallesi",
-    "ქობულეთი Merkez"
+    "ქობულეთი Mahallesi"
    ]
   },
   "ქუთაისი": {
@@ -19770,7 +19799,7 @@
   },
   "ყიზილ-აჯლო": {
    "ყიზილ-აჯლო": [
-    "ყიზილ-აჯლო Merkez"
+    "ყიზილ-აჯლო Mahallesi"
    ]
   },
   "ცხვარიჭამია": {
