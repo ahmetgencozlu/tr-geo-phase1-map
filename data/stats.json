@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-10-16 23:35:43.121763+00",
- "total": 78269,
- "active": 71697,
+ "generated_at": "2026-10-17 00:30:55.333466+00",
+ "total": 82685,
+ "active": 71700,
  "raw_osm_objects": 12955,
  "by_category": {
   "residential_site": {
@@ -15,13 +15,13 @@
    "verified_address": 17
   },
   "mass_housing": {
-   "total": 5447,
-   "with_polygon": 1653,
+   "total": 5470,
+   "with_polygon": 1659,
    "verified_address": 28
   },
   "plaza": {
-   "total": 11596,
-   "with_polygon": 4337,
+   "total": 15989,
+   "with_polygon": 4338,
    "verified_address": 564
   }
  },
@@ -33,10 +33,11 @@
   "point": 10113,
   "site_boundary": 667,
   "mapped_complex_boundary": 5311,
+  "centroid": 4416,
   "candidate_area_polygon": 4207,
   "point_only": 40188
  },
- "review": 6034,
+ "review": 10447,
  "by_province": [
   {
    "province": "İstanbul",
@@ -81,7 +82,7 @@
   {
    "province": "Muğla",
    "total": 2007,
-   "with_polygon": 1234
+   "with_polygon": 1235
   },
   {
    "province": "Kocaeli",
@@ -204,14 +205,14 @@
    "with_polygon": 307
   },
   {
-   "province": "Düzce",
-   "total": 486,
-   "with_polygon": 344
-  },
-  {
    "province": "Batman",
    "total": 486,
    "with_polygon": 442
+  },
+  {
+   "province": "Düzce",
+   "total": 486,
+   "with_polygon": 344
   },
   {
    "province": "Erzurum",
@@ -244,14 +245,14 @@
    "with_polygon": 263
   },
   {
-   "province": "Yalova",
-   "total": 375,
-   "with_polygon": 256
-  },
-  {
    "province": "Burdur",
    "total": 375,
    "with_polygon": 281
+  },
+  {
+   "province": "Yalova",
+   "total": 375,
+   "with_polygon": 256
   },
   {
    "province": "Giresun",
@@ -479,14 +480,19 @@
    "with_polygon": 0
   },
   {
+   "province": "(bilinmiyor)",
+   "total": 6,
+   "with_polygon": 4
+  },
+  {
    "province": "Πάρος",
    "total": 6,
    "with_polygon": 0
   },
   {
-   "province": "(bilinmiyor)",
-   "total": 6,
-   "with_polygon": 4
+   "province": "KOCAELI",
+   "total": 3,
+   "with_polygon": 3
   },
   {
    "province": "Царево",
@@ -544,7 +550,7 @@
    "with_polygon": 0
   },
   {
-   "province": "Գյումրի",
+   "province": "Ծաղկա‎ձոր",
    "total": 1,
    "with_polygon": 0
   },
@@ -559,17 +565,12 @@
    "with_polygon": 0
   },
   {
-   "province": "Ծաղկա‎ձոր",
+   "province": "Δήμος Σύμης",
    "total": 1,
    "with_polygon": 0
   },
   {
    "province": "Ορεστιάδα",
-   "total": 1,
-   "with_polygon": 0
-  },
-  {
-   "province": "Δήμος Σύμης",
    "total": 1,
    "with_polygon": 0
   },
@@ -689,12 +690,17 @@
    "with_polygon": 0
   },
   {
+   "province": "ქუთაისი",
+   "total": 1,
+   "with_polygon": 0
+  },
+  {
    "province": "Περιφέρεια Βόρειου Αιγαίου",
    "total": 1,
    "with_polygon": 0
   },
   {
-   "province": "ქუთაისი",
+   "province": "Ардино",
    "total": 1,
    "with_polygon": 0
   },
@@ -709,7 +715,7 @@
    "with_polygon": 0
   },
   {
-   "province": "Ардино",
+   "province": "Κάλυμνος",
    "total": 1,
    "with_polygon": 0
   },
@@ -719,7 +725,7 @@
    "with_polygon": 0
   },
   {
-   "province": "Κάλυμνος",
+   "province": "Գյումրի",
    "total": 1,
    "with_polygon": 0
   },
@@ -1074,6 +1080,11 @@
    ],
    "Yunak": [
     "Yunak Mahallesi"
+   ]
+  },
+  "ANKARA": {
+   "ETIMESGUT": [
+    "ETIMESGUT Merkez"
    ]
   },
   "Abana": {
@@ -3933,6 +3944,11 @@
     "Yeni Mahallesi"
    ]
   },
+  "BARTIN": {
+   "BARTIN": [
+    "BARTIN Merkez"
+   ]
+  },
   "Babaeski": {
    "Babaeski": [
     "Babaeski Mahallesi"
@@ -5752,6 +5768,11 @@
     "Çınarcık Mahallesi"
    ]
   },
+  "DENIZLI": {
+   "PAMUKKALE": [
+    "PAMUKKALE Merkez"
+   ]
+  },
   "Dalaman": {
    "Dalaman": [
     "Bezkese Mahallesi",
@@ -6593,6 +6614,7 @@
    ],
    "Lalapaşa": [
     "Küçünlü Mahallesi",
+    "Lalapaşa Merkez",
     "Merkez Mahallesi",
     "Tuğlalık Mahallesi",
     "Vaysal Mahallesi"
@@ -7988,6 +8010,7 @@
     "Tuğlu",
     "Yeni Mahallesi",
     "Yeşildere Mahallesi",
+    "Yüksekova Merkez",
     "İpek Mahallesi"
    ],
    "Çukurca": [
@@ -8335,6 +8358,25 @@
     "حي السكك Mahallesi"
    ]
   },
+  "ISTANBUL": {
+   "BASAKSEHIR": [
+    "BASAKSEHIR Merkez"
+   ],
+   "USKUDAR": [
+    "USKUDAR Merkez"
+   ],
+   "ZEYTINBURNU": [
+    "ZEYTINBURNU Merkez"
+   ]
+  },
+  "IZMIR": {
+   "CIGLI": [
+    "CIGLI Merkez"
+   ],
+   "KARABAGLAR": [
+    "KARABAGLAR Merkez"
+   ]
+  },
   "Ikizce": {
    "Ikizce": [
     "Yoğunoluk Mahallesi"
@@ -8348,6 +8390,7 @@
   },
   "Irbil": {
    "Irbil": [
+    "Irbil Merkez",
     "کەسنەزان Mahallesi",
     "کەلەکان Mahallesi",
     "گوندی ئیتاڵی 2 Mahallesi"
@@ -8579,6 +8622,11 @@
    "Tuzluca": [
     "Adalet Mahallesi",
     "Cumhuriyet"
+   ]
+  },
+  "KOCAELI": {
+   "IZMIT": [
+    "IZMIT Merkez"
    ]
   },
   "Kabadüz": {
@@ -9793,6 +9841,7 @@
     "Gülbaba Mahallesi",
     "Kanuni Sultan Süleyman Mahallesi",
     "Kazım Karabekir Mahallesi",
+    "Kilis Merkez Merkez",
     "Mehmet Abdi Bulut Mahallesi",
     "Mehmet Rıfat Kazancıoğlu Mahallesi",
     "Mehmet Sanlı Mahallesi",
@@ -11137,6 +11186,14 @@
    "Lüleburgaz": [
     "Lüleburgaz Mahallesi",
     "Turgutbey Mahallesi"
+   ]
+  },
+  "MANISA": {
+   "TURGUTLU": [
+    "TURGUTLU Merkez"
+   ],
+   "YUNUSEMRE": [
+    "YUNUSEMRE Merkez"
    ]
   },
   "Maden": {
@@ -13554,6 +13611,11 @@
     "حي الوسطى Mahallesi"
    ]
   },
+  "RIZE": {
+   "CAYELI": [
+    "CAYELI Merkez"
+   ]
+  },
   "Reyhanlı": {
    "Reyhanlı": [
     "Reyhanlı Mahallesi"
@@ -14832,6 +14894,7 @@
   },
   "Stara Zagora": {
    "Stara Zagora": [
+    "Stara Zagora Merkez",
     "Змейово Mahallesi"
    ]
   },
